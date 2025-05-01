@@ -3,7 +3,7 @@ include "./includes/datos_usuario.php"; ?>
 <header class="encabezado">
     <!-- Logo -->
     <a href="index.php" class="logo">
-        <img src="../../img" alt="proa"/>
+        <img src="https://placehold.co/120x60" alt="proa"/>
     </a>
     <!-- Menú de navegación -->
     <nav class="cosas_del_header">
@@ -19,7 +19,7 @@ include "./includes/datos_usuario.php"; ?>
                     <li><a href="#">Cerrar sesión</a></li>
                 </ul>
             </li>
-            <li><a href="#"><img src="../../img/campanaB.png" alt="campanita" class="notificaciones"/></a></li>
+            <li><a href="#"><img src="https://placehold.co/30x30" alt="campanita" class="notificaciones"/></a></li>
         </ul>
     </nav>
 </header>
