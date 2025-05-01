@@ -1,0 +1,123 @@
+/* region--- ENCABEZADO --- */
+
+.encabezado {
+    background-color: #444444;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    min-height: 70px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.logo img {
+    height: 40px;
+    width: 120px; /* Ajustá según tu logo */
+}
+.notificaciones{
+    height: 25px;
+    width: 25px;
+}
+
+/* MENÚ PRINCIPAL */
+.cosas_del_header{
+    margin-left: auto;
+}
+
+.cosas_del_header ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center ;
+    gap: 20px;
+}
+
+.cosas_del_header ul li {
+    position: relative;
+}
+
+/* ESTILO DE LOS LINKS */
+.encabezado a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.encabezado a:hover {
+    color: darkgray;
+}
+
+/* SUBMENÚ DEL USUARIO */
+.nombre_de_usuario .user {
+    display: none;
+    position: absolute;
+    top: 110%; /* debajo del botón "User" */
+    left: -90px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 10;
+    font-size: 12px;
+    list-style: none;
+
+}
+
+.nombre_de_usuario:hover .user {
+    display: block;
+}
+
+/* ITEMS DEL SUBMENÚ */
+.user li {
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+
+.user li a {
+    color: aliceblue;
+}
+.user li a:hover {
+    color: lightgray;
+}
+
+@media (max-width:600px){
+    .encabezado{
+        font-size: 12px;
+    }
+    .cosas_del_header ul {
+        gap:10px;
+    }
+    .nombre_de_usuario .user {
+        left: -70px;
+    }
+}
+/*-----------------------------------------------------------------------------------------------------*/
+/* endregion */
+/*region --- FOOTER ---*/
+
+.pie_de_pagina{
+    background-color: #444444;
+    color: aliceblue;
+    padding: 10px;
+}
+
+.pie_de_pagina p{
+    font-size: 10px;
+}
+.pie_de_pagina nav{
+    font-size: 10px;
+}
+.pie_de_pagina nav ul{
+    margin: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+.pie_de_pagina nav ul li{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/*--endregion--*/
