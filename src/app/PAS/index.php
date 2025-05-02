@@ -1,9 +1,8 @@
 <?php
 include "./includes/funciones.php";
 include "./includes/datos_usuario.php";
-
 ?>
-
+<!----------------------------------------------------------------------------------------------------------->
 <!doctype html>
 <html lang="es">
 <head>
@@ -15,18 +14,151 @@ include "./includes/datos_usuario.php";
     <link rel="stylesheet" href="../../css/header_footer.css">
 </head>
 <body>
+<!--encabezado-->
 <?php include "./header_bienvenidos.php" ?>
+<!--fin del encabezado-->
 <main class="contenido">
+
+    <!--esto es el saludo-------------------------------------------------------------------------------->
     <div class="saludo">
-        <?php
-        $hola = buenas();
-        echo "<h1>$hola, $userName</h1>";
-        ?>
+        <div class="texto">
+            <?php
+            $hola = buenas();
+            echo "<h1>$hola,<br> $userName</h1>";
+            ?>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Architecto consequuntur dolore, excepturi expedita fugit.</p>
+        </div>
     </div>
+    <!--fin del saludo------------------------------------------------------------------------------------>
+    <!--esto son las solicitudes recientes-------------------------------------------------------------->
     <div class="solicitudes">
-        <h2>solicitudes recientes</h2>
+        <h2>Solicitudes más recientes</h2>
+        <!--las 5 solicitudes mas recientes----------------------------->
+        <div class="mensajes">
+            <ol>
+                <!--1 solicitud-->
+                <li class="item">
+                        <a href="solicitudes/index.php">
+                            <div class="arriba_mensaje">
+                                <img src="../../../img/user.png" alt="icono">
+                                <ul>
+                                    <li>Quiannette Hachel</li>
+                                    <li><span>Estudiante<span></li>
+                                </ul>
+                                <p><span>Asunto:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Doloremque hic iste labore.</p>
+                            </div>
+                            <div class="fecha_y_hora">
+                                <ul>
+                                    <li>yyyy/mm/dd</li>
+                                    <li>hh:mm</li>
+                                </ul>
+                            </div>
+                        </a>
+                </li>
+
+                <!--1 solicitud-->
+                <li class="item">
+                    <a href="solicitudes/index.php">
+                        <div class="arriba_mensaje">
+                            <img src="../../../img/user.png" alt="icono">
+                            <ul>
+                                <li>Nombre</li>
+                                <li>Rol</li>
+                            </ul>
+                            <p><span>Asunto:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Doloremque hic iste labore, libero maxime mollitia obcaecati. Eius, repellendus
+                                reprehenderit? A ab aspernatur delectus ducimus, est iusto minima molestias
+                                quidem voluptas.</p>
+                        </div>
+                        <div class="fecha_y_hora">
+                            <ul>
+                                <li>yyyy/mm/dd</li>
+                                <li>hh:mm</li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+
+                <!--1 solicitud-->
+                <li class="item">
+                    <a href="solicitudes/index.php">
+                        <div class="arriba_mensaje">
+                            <img src="../../../img/user.png" alt="icono">
+                            <ul>
+                                <li>Nombre</li>
+                                <li>Rol</li>
+                            </ul>
+                            <p><span>Asunto:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Doloremque hic iste labore, libero maxime mollitia obcaecati. Eius, repellendus
+                                reprehenderit? A ab aspernatur delectus ducimus, est iusto minima molestias
+                                quidem voluptas.</p>
+                        </div>
+                        <div class="fecha_y_hora">
+                            <ul>
+                                <li>yyyy/mm/dd</li>
+                                <li>hh:mm</li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+
+                <!--1 solicitud-->
+                <li class="item">
+                    <a href="solicitudes/index.php">
+                        <div class="arriba_mensaje">
+                            <img src="../../../img/user.png" alt="icono">
+                            <ul>
+                                <li>Nombre</li>
+                                <li>Rol</li>
+                            </ul>
+                            <p><span>Asunto:  </span> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Doloremque hic iste labore, libero maxime mollitia obcaecati. Eius, repellendus
+                                reprehenderit? A ab aspernatur delectus ducimus, est iusto minima molestias
+                                quidem voluptas.</p>
+                        </div>
+                        <div class="fecha_y_hora">
+                            <ul>
+                                <li>yyyy/mm/dd</li>
+                                <li>hh:mm</li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+
+                <!--1 solicitud-->
+                <li class="item">
+                    <a href="solicitudes/index.php">
+                        <div class="arriba_mensaje">
+                            <img src="../../../img/user.png" alt="icono">
+                            <ul>
+                                <li>Nombre</li>
+                                <li>Rol</li>
+                            </ul>
+                            <p><span>Asunto:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Doloremque hic iste labore, libero maxime mollitia obcaecati. Eius, repellendus
+                                reprehenderit? A ab aspernatur delectus ducimus, est iusto minima molestias
+                                quidem voluptas.</p>
+                        </div>
+                        <div class="fecha_y_hora">
+                            <ul>
+                                <li>yyyy/mm/dd</li>
+                                <li>hh:mm</li>
+                            </ul>
+                        </div>
+                    </a>
+                </li>
+
+            </ol>
+        </div>
     </div>
+    <!-- fin de las 5 solicitudes mas recientes------------------------------------------------------------->
 </main>
+
+<!--footer-->
 <?php include "./includes/footer.php" ?>
+<!--fin del footer-->
+<script src="../../js/animacion.js"></script>
 </body>
 </html>

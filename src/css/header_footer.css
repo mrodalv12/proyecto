@@ -17,7 +17,7 @@
 }
 
 .logo img {
-    height: 60px;
+    height: 40px;
     width: 120px; /* Ajustá según tu logo */
     padding-right: 10px;
 }
@@ -98,8 +98,20 @@
         left: -70px;
     }
 }
+@media (max-width:350px){
+    .encabezado{
+        font-size: 8px;
+    }
+    .cosas_del_header ul {
+        gap:5px;
+    }
+    .nombre_de_usuario .user {
+        left: -70px;
+    }
+}
 /*-----------------------------------------------------------------------------------------------------*/
 /* endregion */
+
 /*region --- FOOTER ---*/
 
 .pie_de_pagina{

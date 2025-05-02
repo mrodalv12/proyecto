@@ -2,7 +2,7 @@
 <header class="encabezado">
     <!-- Logo -->
     <a href="../index.php" class="logo">
-        <img src="https://placehold.co/120x60" alt="proa" />
+        <img src="../../../../img/logoPROA.png" alt="proa" />
     </a>
     <!-- Menú de navegación -->
     <nav class="cosas_del_header">
@@ -18,7 +18,7 @@
                     <li><a href="#">Cerrar sesión</a></li>
                 </ul>
             </li>
-            <li><a href="#"><img src="https://placehold.co/30x30" alt="campanita" class="notificaciones"/></a></li>
+            <li><a href="#"><img src="../../../../img/🦆%20icon%20_notification%20outline_.png" alt="campanita" class="notificaciones"/></a></li>
         </ul>
     </nav>
 </header>
