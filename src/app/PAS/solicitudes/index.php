@@ -14,7 +14,7 @@ include "../includes/datos_usuario.php";
     <link rel="stylesheet" href="../../../css/header_footer.css">
 </head>
 <body>
-<?php include "../includes/header.php" ?>
+<?php include "../includes/headerPAS.php" ?>
 <h1>Solicitudes</h1>
 
 <!-- aqui comienza la bandeja de solicitudes-->

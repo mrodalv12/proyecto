@@ -19,7 +19,7 @@ include "./includes/datos_usuario.php"; ?>
                     <li><a href="#">Cerrar sesión</a></li>
                 </ul>
             </li>
-            <li><a href="#"><img src="../../../img/🦆%20icon%20_notification%20outline_.png" alt="campanita" class="notificaciones"/></a></li>
+            <li><a href="#"><img src="../../../img/iconoCampana.png" alt="campanita" class="notificaciones"/></a></li>
         </ul>
     </nav>
 </header>

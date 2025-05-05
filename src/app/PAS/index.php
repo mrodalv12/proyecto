@@ -38,16 +38,16 @@ include "./includes/datos_usuario.php";
         <div class="mensajes">
             <ol>
                 <!--1 solicitud-->
-                <li class="item">
+                <li class="item" id="0001">
                         <a href="solicitudes/index.php">
                             <div class="arriba_mensaje">
                                 <img src="../../../img/user.png" alt="icono">
                                 <ul>
                                     <li>Quiannette Hachel</li>
-                                    <li><span>Estudiante<span></li>
+                                    <li><span class="rol">Estudiante<span></li>
                                 </ul>
-                                <p><span>Asunto:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Doloremque hic iste labore.</p>
+                                <p><span class="rol">Asunto:</span> <span class="mensaje_del_asunto">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Doloremque hic iste labore.</span></p>
                             </div>
                             <div class="fecha_y_hora">
                                 <ul>
@@ -65,12 +65,12 @@ include "./includes/datos_usuario.php";
                             <img src="../../../img/user.png" alt="icono">
                             <ul>
                                 <li>Nombre</li>
-                                <li>Rol</li>
+                                <li class="rol">Profesor</li>
                             </ul>
-                            <p><span>Asunto:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            <p><span class="rol">Asunto:</span><span class="mensaje_del_asunto">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 Doloremque hic iste labore, libero maxime mollitia obcaecati. Eius, repellendus
                                 reprehenderit? A ab aspernatur delectus ducimus, est iusto minima molestias
-                                quidem voluptas.</p>
+                                    quidem voluptas.</span></p>
                         </div>
                         <div class="fecha_y_hora">
                             <ul>
@@ -88,12 +88,12 @@ include "./includes/datos_usuario.php";
                             <img src="../../../img/user.png" alt="icono">
                             <ul>
                                 <li>Nombre</li>
-                                <li>Rol</li>
+                                <li class="rol">Estudiante</li>
                             </ul>
-                            <p><span>Asunto:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            <p><span class="rol">Asunto:</span><span class="mensaje_del_asunto">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 Doloremque hic iste labore, libero maxime mollitia obcaecati. Eius, repellendus
                                 reprehenderit? A ab aspernatur delectus ducimus, est iusto minima molestias
-                                quidem voluptas.</p>
+                                    quidem voluptas.</span></p>
                         </div>
                         <div class="fecha_y_hora">
                             <ul>
@@ -111,12 +111,12 @@ include "./includes/datos_usuario.php";
                             <img src="../../../img/user.png" alt="icono">
                             <ul>
                                 <li>Nombre</li>
-                                <li>Rol</li>
+                                <li class="rol">Estudiante</li>
                             </ul>
-                            <p><span>Asunto:  </span> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            <p><span class="rol">Asunto:  </span><span class="mensaje_del_asunto"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 Doloremque hic iste labore, libero maxime mollitia obcaecati. Eius, repellendus
                                 reprehenderit? A ab aspernatur delectus ducimus, est iusto minima molestias
-                                quidem voluptas.</p>
+                                    quidem voluptas.</span></p>
                         </div>
                         <div class="fecha_y_hora">
                             <ul>
@@ -134,12 +134,12 @@ include "./includes/datos_usuario.php";
                             <img src="../../../img/user.png" alt="icono">
                             <ul>
                                 <li>Nombre</li>
-                                <li>Rol</li>
+                                <li class="rol">Profesor</li>
                             </ul>
-                            <p><span>Asunto:</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            <p><span class="rol">Asunto:</span><span class="mensaje_del_asunto">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 Doloremque hic iste labore, libero maxime mollitia obcaecati. Eius, repellendus
                                 reprehenderit? A ab aspernatur delectus ducimus, est iusto minima molestias
-                                quidem voluptas.</p>
+                                quidem voluptas.</span></p>
                         </div>
                         <div class="fecha_y_hora">
                             <ul>
@@ -159,6 +159,6 @@ include "./includes/datos_usuario.php";
 <!--footer-->
 <?php include "./includes/footer.php" ?>
 <!--fin del footer-->
-<script src="../../js/animacion.js"></script>
+<script src="../../js/inicioPAS.js"></script>
 </body>
 </html>
