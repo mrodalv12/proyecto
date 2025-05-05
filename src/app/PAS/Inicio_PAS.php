@@ -1,6 +1,11 @@
 <?php
 include "../includes/funciones_inicio_PAS.php";
 include "../includes/datos_usuario.php";
+
+if ($thisUser->rol != "PAS") {
+    echo "Acceso denegado. No tienes permisos para ver esta página.";
+    exit();
+}
 ?>
 <!----------------------------------------------------------------------------------------------------------->
 <!doctype html>
@@ -8,7 +13,7 @@ include "../includes/datos_usuario.php";
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>pas</title>
+    <title>PROA</title>
     <link rel="preload" href="../../css/inicioPAS.css" as="style" />
     <link rel="stylesheet" href="../../css/inicioPAS.css">
     <link rel="stylesheet" href="../../css/header_footer.css">

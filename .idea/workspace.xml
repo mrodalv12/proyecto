@@ -5,15 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fa65155-22b5-4a9b-85ca-5b360c417b0a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/app/Alumno/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/Inicio_Alumnos.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/PAS/Directorio_PAS.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PAS/Directorio_PAS.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/PAS/Inicio_PAS.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PAS/Inicio_PAS.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/PAS/Solicitudes_PAS.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PAS/Solicitudes_PAS.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/footer_proa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/headerPAS.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/header_proa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/profesor/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/Inicio_Profesor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/estilos.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/header_footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/header_footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/Inicio_Alumnos.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/Inicio_Alumnos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/Inicio_Profesor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/Inicio_Profesor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/includes/datos_usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/datos_usuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/includes/header_proa.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/header_proa.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +102,7 @@
       <workItem from="1746428043796" duration="251000" />
       <workItem from="1746428485984" duration="132000" />
       <workItem from="1746428780519" duration="7206000" />
+      <workItem from="1746436863279" duration="7347000" />
     </task>
     <servers />
   </component>

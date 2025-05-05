@@ -1,24 +1,48 @@
-
+<?php
+include "datos_usuario.php";
+?>
+<!----------------------------------------------------------------------------------------------------------->
 <header class="encabezado">
     <!-- Logo -->
-    <a href="../PAS/Inicio_PAS.php" class="logo">
-        <img src="../../../img/logoPROA.png" alt="proa" />
-    </a>
+    <?php if ($thisUser->rol=="PAS"):?>
+        <a href="../PAS/Inicio_PAS.php" class="logo">
+            <img src="../../../img/logoPROA.png" alt="proa" />
+        </a>
+    <?php elseif ($thisUser->rol=="Alumno"):?>
+        <a href="../Profesor_Alumno/Inicio_Alumnos.php" class="logo">
+            <img src="../../../img/logoPROA.png" alt="proa" />
+        </a>
+    <?php elseif ($thisUser->rol =="Profesor"):?>
+        <a href="../Profesor_Alumno/Inicio_Profesor.php" class="logo">
+            <img src="../../../img/logoPROA.png" alt="proa" />
+        </a>
+    <?php endif; ?>
+    <!----------------------------------------------------------------------------------------------------------->
     <!-- Menú de navegación -->
     <nav class="cosas_del_header">
         <ul>
-            <li><a href="../PAS/Directorio_PAS.php">Directorio</a></li>
-            <li><a href="../PAS/Solicitudes_PAS.php">Solicitudes</a></li>
+            <?php if($thisUser->rol =="PAS"): ?>
+                <li><a href="../PAS/Directorio_PAS.php">Directorio</a></li>
+                <li><a href="../PAS/Solicitudes_PAS.php">Solicitudes</a></li>
+            <?php elseif($thisUser->rol == "Alumno" || $thisUser->rol == "Profesor"): ?>
+                <li><a href="#">Asignaturas</a></li>
+                <li><a href="#">Calendario</a></li>
+                <li><a href="#">Solicitudes</a></li>
+            <?php endif; ?>
+
             <li class="nombre_de_usuario">
                 <a href="#">User</a>
                 <ul class="user">
-                    <li>nombre</li>
-                    <li>correo</li>
-                    <li>rol</li>
+                    <li><?php echo $thisUser->username?></li>
+                    <li><?php echo $thisUser->correo?></li>
+                    <li><?php echo $thisUser->rol?></li>
                     <li><a href="#">Cerrar sesión</a></li>
                 </ul>
             </li>
             <li><a href="#"><img src="../../../img/iconoCampana.png" alt="campanita" class="notificaciones"/></a></li>
         </ul>
     </nav>
+    <!----------------------------------------------------------------------------------------------------------->
 </header>
+<!----------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------->
