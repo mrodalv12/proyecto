@@ -1,5 +1,5 @@
 <?php
-include "../includes/funciones.php";
+include "../includes/funciones_inicio_PAS.php";
 include "../includes/datos_usuario.php";
 ?>
 <!----------------------------------------------------------------------------------------------------------->
@@ -15,7 +15,7 @@ include "../includes/datos_usuario.php";
 </head>
 <body>
 <!--encabezado-->
-<?php include "../includes/headerPAS.php" ?>
+<?php include "../includes/header_proa.php" ?>
 <!--fin del encabezado-->
 <main class="contenido">
 
@@ -157,7 +157,7 @@ include "../includes/datos_usuario.php";
 </main>
 
 <!--footer-->
-<?php include "../includes/footer.php" ?>
+<?php include "../includes/footer_proa.php" ?>
 <!--fin del footer-->
 <script src="../../js/inicioPAS.js"></script>
 </body>

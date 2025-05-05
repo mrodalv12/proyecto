@@ -1,5 +1,5 @@
 <?php
-include "../includes/funciones.php";
+include "../includes/funciones_inicio_PAS.php";
 include "../includes/datos_usuario.php";
 ?>
 
@@ -13,13 +13,13 @@ include "../includes/datos_usuario.php";
     <link rel="stylesheet" href="../../css/directorioPAS.css">
     <link rel="stylesheet" href="../../css/header_footer.css">
 </head>
-<body>
-<?php include "../includes/headerPAS.php" ?>
+<body><q></q>
+<?php include "../includes/header_proa.php" ?>
 <div class="contenido">
     <p>esto es el directorio</p>
 </div>
 
-<?php include "../includes/footer.php" ?>
+<?php include "../includes/footer_proa.php" ?>
 
 </body>
 </html>

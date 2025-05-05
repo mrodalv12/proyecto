@@ -1,4 +1,5 @@
 <?php include "../includes/datos_usuario.php"; ?>
+
 <!--seccion footer-->
 <footer class="pie_de_pagina" role="contentinfo">
         <nav class="texto">

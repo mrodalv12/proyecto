@@ -1,5 +1,5 @@
 <?php
-include "../includes/funciones.php";
+include "../includes/funciones_inicio_PAS.php";
 include "../includes/datos_usuario.php";
 ?>
 
@@ -14,7 +14,7 @@ include "../includes/datos_usuario.php";
     <link rel="stylesheet" href="../../css/header_footer.css">
 </head>
 <body>
-<?php include "../includes/headerPAS.php" ?>
+<?php include "../includes/header_proa.php" ?>
 <h1>Solicitudes</h1>
 
 <!-- aqui comienza la bandeja de solicitudes-->
@@ -33,7 +33,7 @@ include "../includes/datos_usuario.php";
     </ul>
 
 </section>
-<?php include "../includes/footer.php" ?>
+<?php include "../includes/footer_proa.php" ?>
 
 
 </body>
