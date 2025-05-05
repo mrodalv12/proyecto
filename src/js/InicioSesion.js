@@ -29,7 +29,7 @@
         document.getElementById('mensajeLogin').innerText = '¡Login exitoso! Bienvenido, ' + usuario.nombre;
     
         setTimeout(() => {
-          window.location.href = "C:\Users\minim\Documents\UNI1\PROYECTO\proyecto\src\app\GTI\Landing Page_Registrado\index.html";
+          window.location.href = "../GTI/LandingPage_Registrado.php";
         }, 2000);
       } else {
         document.getElementById('mensajeLogin').innerText = 'Email o contraseña incorrectos.';

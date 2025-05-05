@@ -32,10 +32,10 @@
 
 
 
-        <p class="register">¿Todavía no tienes una cuenta? <a href="../../GTI/Registro GTI/index.html">¡Regístrate!</a></p>
+        <p class="register">¿Todavía no tienes una cuenta? <a href="../GTI/RegistroGTI.php">¡Regístrate!</a></p>
     </div>
     <div class="image-box">
-        <img src="../../img/Inicio_Registro.png" alt="Inicio de sesión" />
+        <img src="/img/Inicio_Registro.png" alt="Inicio de sesión" />
     </div>
 </main>
 
@@ -43,6 +43,6 @@
     <?php include "../includes/footerGTI.php" ?>
 
     <!-- Scripts -->
-    <script src="script.js"></script>
+    <script src="../../js/InicioSesion.js"></script>
 </body>
 </html>

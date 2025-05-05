@@ -5,36 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fa65155-22b5-4a9b-85ca-5b360c417b0a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/GTI/LandingPage_No_Registrado.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/Inicio Sesion GTI/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/Inicio Sesion GTI/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/Inicio Sesion GTI/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/Inicio Sesion PROA/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/Inicio Sesion PROA/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/Inicio Sesion PROA/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/Landing Page_No registrado/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/Landing Page_No registrado/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/Landing Page_No registrado/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/Landing Page_Registrado/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/Landing Page_Registrado/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/Landing Page_Registrado/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/PROA No registrado/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/PROA No registrado/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/Proa Registrado/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/Proa Registrado/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/Proa Registrado/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/Registro GTI/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/Registro GTI/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/Registro GTI/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/footer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/header.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/header.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/estilos.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/InicioSesion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/GTI/InicioSesion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/InicioSesionProa.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/GTI/InicioSesionProa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/LandingPage_No Registrado.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/LandingPage_Registrado.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/GTI/LandingPage_Registrado.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/PROA_No registrado.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/GTI/PROA_No registrado.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/Proa_Registrado.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/GTI/Proa_Registrado.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/RegistroGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/GTI/RegistroGTI.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/includes/footerGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/footerGTI.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/includes/headerGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/headerGTI.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/includes/headerGTIregistrado.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/headerGTIregistrado.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/InicioSesion.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/InicioSesion.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/InicioSesion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/InicioSesion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/RegistroGTI.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/RegistroGTI.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +89,7 @@
       <workItem from="1741708473554" duration="187000" />
       <workItem from="1746442734220" duration="571000" />
       <workItem from="1746443307325" duration="529000" />
+      <workItem from="1746443927130" duration="5237000" />
     </task>
     <servers />
   </component>
