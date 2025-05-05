@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GTI - Plataforma PROA</title>
+    <link rel="preload" href="../../css/Footer_Header_Registrado.css" as="style" />
+    <link rel="stylesheet" href="../../css/Footer_Header_Registrado.css" />
   <link rel="stylesheet" href="../../css/LandingPage_Registrado.css" />
 </head>
 <body>
@@ -43,7 +45,7 @@
 
 
 <!-- Footer -->
-<?php include "../includes/footerGTI.php" ?>
+<?php include "../includes/footerGTIregistrado.php" ?>
 
   <script src="../../js/LandingPage_Registrado.js"></script>
 </body>

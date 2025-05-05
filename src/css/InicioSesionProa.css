@@ -2,110 +2,20 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Martel Sans', sans-serif;
   }
   
   body {
     background-color: #f5f5f5;
     color: #333;
   }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: white;
-  }
-  
-  .logo {
-    text-decoration: none;
-    color: inherit;
-    font-size: 1.8rem;
-    font-weight: bold;
-  }
-  
-  .logo .g {
-    color: black;
-  }
-  
-  .logo .ti {
-    color: #87005a;
-  }
-  
-  nav a,
-  .mi-cuenta button {
-    position: relative;
-    margin-left: 2em;
-    margin-right: 2em;
-    text-decoration: none;
-    color: #8e0f5c;
-    font-weight: 500;
-  }
 
-  nav a::after,
-  .mi-cuenta button::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: #8e0f5c;
-    left: 0;
-    bottom: -4px; /* puedes ajustar si quieres la línea más pegada o separada */
-    transition: width 0.3s ease;
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform 0.3s ease;
-  }
-  
-  nav a:hover::after,
-  .mi-cuenta button:hover::after {
-    width: 100%;
-    transform: scaleX(1);
-  }
-  
   .container {
     display: flex;
     flex-wrap: wrap;
-     height: 120vh
+    height: 100vh;
   }
 
-  .mi-cuenta {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .mi-cuenta button {
-    background: none;
-    border: none;
-    color: #800060;
-    cursor: pointer;
-    font-size: 1rem;
-  }
-  
-  .menu-cuenta {
-    display: none;
-    position: absolute;
-    background-color: white;
-    border: 1px solid #ccc;
-    min-width: 150px;
-    right: 0;
-    z-index: 1;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-  
-  .menu-cuenta a {
-    color: #800060;
-    padding: 10px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .menu-cuenta a:hover {
-    background-color: #f0f0f0;
-  }
-  
   .image-section {
     flex: 2;
   }
@@ -127,8 +37,8 @@
   }
 
   .login-section h2 {
-    margin-bottom: 1.5rem;
-    margin-left: 6.5rem;
+    margin-bottom: 1rem;
+    margin-left: 8.5rem;
   }
 
   form {
@@ -137,13 +47,13 @@
   }
 
   form label {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     margin-bottom: 0.3rem;
-    margin-left: 4.5rem;
+    margin-left: 5rem;
   }
   
   form input, form select {
-    padding: 0.4rem;
+    padding: 0.7rem;
     border-radius: 4px;
     border: none;
     margin-top: 0.3rem;
@@ -155,8 +65,8 @@
   form button {
     max-width: 400px;
     width: 70%;
-    margin-top: 1.5rem;
-    margin-left: 4.4rem;
+    margin-top: 2.5rem;
+    margin-left: 5.1rem;
     padding: 0.8rem;
     background-color: white;
     color: black;
@@ -174,56 +84,3 @@
     color: #ffbbbb;
     margin-top: 0.5rem;
   }
-
-  footer {
-    background: #eee;
-    padding: 2em;
-  }
-  
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 2em;
-  }
-  
-  .footer-info {
-    color: #555;
-    font-size: 0.9em;
-    text-align: left;
-    flex: 1;
-  }
-  
-  .footer-info p {
-    margin-bottom: 0.5em;
-  }
-  
-  .footer-info a {
-    color: #8e0f5c;
-    text-decoration: none;
-  }
-  
-  .footer-logo-block {
-    text-align: right;
-  }
-  
-  .footer-logo {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .footer-logo span {
-    color: #8e0f5c;
-  }
-  
-  .footer-copy {
-    font-size: 0.8em;
-    color: #555;
-    margin-top: 0.3em;
-  }
-
-
-
-  

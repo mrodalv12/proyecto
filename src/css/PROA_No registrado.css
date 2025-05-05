@@ -2,87 +2,39 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Martel Sans', sans-serif;
   }
   
   body {
     background-color: #f5f5f5;
     color: #333;
   }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: white;
-  }
-  
-  .logo {
-    text-decoration: none;
-    color: inherit;
-    font-size: 1.8rem;
-    font-weight: bold;
-  }
-  
-  .logo .g {
-    color: black;
-  }
-  
-  .logo .ti {
-    color: #87005a;
-  }
-  
-  nav a {
-    position: relative;
-    margin-left: 2em;
-    margin-right: 2em;
-    text-decoration: none;
-    color: #8e0f5c;
-    font-weight: 500;
-  }
-  
-  
-  nav a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: #8e0f5c;
-    left: 0;
-    bottom: -4px;
-    transition: width 0.3s ease;
-  }
-  
-  /* Línea crece al hacer hover */
-  nav a:hover::after {
-    width: 100%;
-  }
-  
+
   main {
     display: flex;
     justify-content: space-between;
     padding: 2rem;
     background: #f4f4f4;
+    min-height: 72.9vh;
   }
-  
+
   .info {
     width: 45%;
   }
-  
+
   .info h1 {
     color: #800060;
     font-size: 2.5rem;
     margin-left: 100px;
-    margin-bottom: 2rem;
-    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
   }
   
   .info p {
     margin: 1rem 0;
     line-height: 1.6;
     margin-left: 100px;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
   }
   
   .demo {
@@ -103,53 +55,5 @@
     border: 1px solid #ccc;
     border-radius: 10px;
     margin-right: 50px;
-  }
-  
-  footer {
-    background: #eee;
-    padding: 2em;
-  }
-  
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 2em;
-  }
-  
-  .footer-info {
-    color: #555;
-    font-size: 0.9em;
-    text-align: left;
-    flex: 1;
-  }
-  
-  .footer-info p {
-    margin-bottom: 0.5em;
-  }
-  
-  .footer-info a {
-    color: #8e0f5c;
-    text-decoration: none;
-  }
-  
-  .footer-logo-block {
-    text-align: right;
-  }
-  
-  .footer-logo {
-    font-size: 1.8em;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .footer-logo span {
-    color: #8e0f5c;
-  }
-  
-  .footer-copy {
-    font-size: 0.8em;
-    color: #555;
-    margin-top: 0.3em;
+    margin-top: 40px;
   }
