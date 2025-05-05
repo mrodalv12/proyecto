@@ -1,15 +1,14 @@
-<?php
-include "./includes/datos_usuario.php"; ?>
+
 <header class="encabezado">
     <!-- Logo -->
-    <a href="index.php" class="logo">
-        <img src="../../../img/logoPROA.png" alt="proa"/>
+    <a href="../PAS/Inicio_PAS.php" class="logo">
+        <img src="../../../img/logoPROA.png" alt="proa" />
     </a>
     <!-- Menú de navegación -->
     <nav class="cosas_del_header">
         <ul>
-            <li><a href="directorio/index.php">Directorio</a></li>
-            <li><a href="solicitudes/index.php">Solicitudes</a></li>
+            <li><a href="../PAS/Directorio_PAS.php">Directorio</a></li>
+            <li><a href="../PAS/Solicitudes_PAS.php">Solicitudes</a></li>
             <li class="nombre_de_usuario">
                 <a href="#">User</a>
                 <ul class="user">

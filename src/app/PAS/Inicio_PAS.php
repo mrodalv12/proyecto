@@ -1,6 +1,6 @@
 <?php
-include "./includes/funciones.php";
-include "./includes/datos_usuario.php";
+include "../includes/funciones.php";
+include "../includes/datos_usuario.php";
 ?>
 <!----------------------------------------------------------------------------------------------------------->
 <!doctype html>
@@ -15,7 +15,7 @@ include "./includes/datos_usuario.php";
 </head>
 <body>
 <!--encabezado-->
-<?php include "./header_bienvenidos.php" ?>
+<?php include "../includes/headerPAS.php" ?>
 <!--fin del encabezado-->
 <main class="contenido">
 
@@ -39,7 +39,7 @@ include "./includes/datos_usuario.php";
             <ol>
                 <!--1 solicitud-->
                 <li class="item" id="0001">
-                        <a href="solicitudes/index.php">
+                        <a href="Solicitudes_PAS.php">
                             <div class="arriba_mensaje">
                                 <img src="../../../img/user.png" alt="icono">
                                 <ul>
@@ -60,7 +60,7 @@ include "./includes/datos_usuario.php";
 
                 <!--1 solicitud-->
                 <li class="item">
-                    <a href="solicitudes/index.php">
+                    <a href="Solicitudes_PAS.php">
                         <div class="arriba_mensaje">
                             <img src="../../../img/user.png" alt="icono">
                             <ul>
@@ -83,7 +83,7 @@ include "./includes/datos_usuario.php";
 
                 <!--1 solicitud-->
                 <li class="item">
-                    <a href="solicitudes/index.php">
+                    <a href="Solicitudes_PAS.php">
                         <div class="arriba_mensaje">
                             <img src="../../../img/user.png" alt="icono">
                             <ul>
@@ -106,7 +106,7 @@ include "./includes/datos_usuario.php";
 
                 <!--1 solicitud-->
                 <li class="item">
-                    <a href="solicitudes/index.php">
+                    <a href="Solicitudes_PAS.php">
                         <div class="arriba_mensaje">
                             <img src="../../../img/user.png" alt="icono">
                             <ul>
@@ -129,7 +129,7 @@ include "./includes/datos_usuario.php";
 
                 <!--1 solicitud-->
                 <li class="item">
-                    <a href="solicitudes/index.php">
+                    <a href="Solicitudes_PAS.php">
                         <div class="arriba_mensaje">
                             <img src="../../../img/user.png" alt="icono">
                             <ul>
@@ -157,7 +157,7 @@ include "./includes/datos_usuario.php";
 </main>
 
 <!--footer-->
-<?php include "./includes/footer.php" ?>
+<?php include "../includes/footer.php" ?>
 <!--fin del footer-->
 <script src="../../js/inicioPAS.js"></script>
 </body>
