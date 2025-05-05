@@ -4,7 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fa65155-22b5-4a9b-85ca-5b360c417b0a" name="Changes" comment="" />
+    <list default="true" id="2fa65155-22b5-4a9b-85ca-5b360c417b0a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/Inicio Sesion GTI/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/Inicio Sesion GTI/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/Inicio Sesion GTI/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/Inicio Sesion PROA/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/Inicio Sesion PROA/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/Inicio Sesion PROA/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/Landing Page_No registrado/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/Landing Page_No registrado/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/Landing Page_No registrado/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/Landing Page_Registrado/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/Landing Page_Registrado/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/Landing Page_Registrado/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/PROA No registrado/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/PROA No registrado/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/Proa Registrado/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/Proa Registrado/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/Proa Registrado/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/Registro GTI/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/Registro GTI/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/Registro GTI/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/footer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/header.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/estilos.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/code.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +59,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -40,8 +72,8 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Applications/XAMPP/xamppfiles/htdocs/proyecto&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;nerva&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/minim/Documents/UNI1/PROYECTO/proyecto&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -54,8 +86,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-PS-243.23654.168" />
-        <option value="bundled-php-predefined-a98d8de5180a-4c3855d0ab16-com.jetbrains.php.sharedIndexes-PS-243.23654.168" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-PS-243.24978.50" />
+        <option value="bundled-php-predefined-a98d8de5180a-fbeb0b58ac0f-com.jetbrains.php.sharedIndexes-PS-243.24978.50" />
       </set>
     </attachedChunks>
   </component>
@@ -69,6 +101,8 @@
       <updated>1741707055592</updated>
       <workItem from="1741707059715" duration="696000" />
       <workItem from="1741708473554" duration="187000" />
+      <workItem from="1746442734220" duration="571000" />
+      <workItem from="1746443307325" duration="529000" />
     </task>
     <servers />
   </component>

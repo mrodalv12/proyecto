@@ -51,7 +51,7 @@
     height: 2px;
     background-color: #8e0f5c;
     left: 0;
-    bottom: -4px; /* puedes ajustar si quieres la línea más pegada o separada */
+    bottom: -4px; 
     transition: width 0.3s ease;
     transform: scaleX(0);
     transform-origin: center;

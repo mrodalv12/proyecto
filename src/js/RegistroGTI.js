@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     // Redirigir
     setTimeout(() => {
-      window.location.href = "C:\Users\minim\Documents\UNI1\PROYECTO\proyecto\src\app\GTI\Inicio Sesion GTI\index.html";
+      window.location.href = "C:/Users/minim/Documents/UNI1/PROYECTO/proyecto/src/app/GTI/Landing Page_Registrado/index.html";
     }, 2000);
   });
 });
