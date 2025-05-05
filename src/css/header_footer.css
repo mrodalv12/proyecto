@@ -55,58 +55,74 @@
     color: darkgray;
 }
 
-/* SUBMENÚ DEL USUARIO */
-.nombre_de_usuario .user {
+
+/* SUBMENÚ DEL USUARIO -----------------------------------------------------*/
+.perfil_notificaciones_pas .nombre_de_usuario {
+    position: relative;
+}
+
+.perfil_notificaciones_pas ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    align-content: center;
+    margin-left: 20px;
+    gap:20px;
+}
+
+.perfil_notificaciones_pas .nombre_de_usuario ul{
     display: none;
     position: absolute;
-    top: 110%; /* debajo del botón "User" */
-    left: -90px;
+    top: 110%;
+    left: -130px;
     background-color: #333;
     padding: 10px;
     border-radius: 5px;
     z-index: 10;
     font-size: 10px;
     list-style: none;
-
 }
 
-.nombre_de_usuario:hover .user {
+.perfil_notificaciones_pas .nombre_de_usuario:hover ul {
     display: block;
 }
 
 /* ITEMS DEL SUBMENÚ */
-.user li {
+.nombre_de_usuario ul li {
     padding: 5px 10px;
     white-space: nowrap;
 }
 
-.user li a {
+.nombre_de_usuario ul li a {
     color: aliceblue;
 }
-.user li a:hover {
+.nombre_de_usuario ul li a:hover {
     color: lightgray;
 }
-
-@media (max-width:500px){
-    .encabezado{
-        font-size: 10px;
-    }
-    .cosas_del_header ul {
-        gap:10px;
-    }
-    .nombre_de_usuario .user {
-        left: -70px;
-    }
+.MOVIL_cosas_del_header{
+    display: none;
 }
-@media (max-width:350px){
-    .encabezado{
-        font-size: 8px;
+
+@media (max-width:520px){
+
+    .MOVIL_cosas_del_header {
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        background-color: #333;
+        padding: 10px 0;
+        z-index: 1000;
     }
-    .cosas_del_header ul {
-        gap:5px;
+    .cosas_del_header{
+        display: none;
     }
-    .nombre_de_usuario .user {
-        left: -70px;
+    .MOVIL_cosas_del_header ul{
+        list-style: none;
+        display: flex;
+        gap:50px;
     }
 }
 /*-----------------------------------------------------------------------------------------------------*/

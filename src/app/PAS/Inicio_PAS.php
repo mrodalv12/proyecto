@@ -29,7 +29,7 @@ if ($thisUser->rol != "PAS") {
         <div class="texto">
             <?php
             $hola = buenas();
-            echo "<h1>$hola,<br> $userName</h1>";
+            echo "<h1>$hola <br> $thisUser->username</h1>";
             ?>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Architecto consequuntur dolore, excepturi expedita fugit.</p>
