@@ -1,3 +1,11 @@
+<?php
+session_start();  // Inicia la sesión al comienzo del archivo
+
+// Verifica si el usuario está logueado
+$usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
+?>
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,7 +20,7 @@
 
 
 <!-- Header -->
-<?php include "../includes/headerGTIregistrado.php" ?>
+<?php include "../includes/headerGTI.php" ?>
 
   <main class="container">
     <section class="image-section">
@@ -43,7 +51,7 @@
   </main>
 
 <!-- Footer -->
-<?php include "../includes/footerGTIregistrado.php" ?>
+<?php include "../includes/footerGTI.php" ?>
 
   <script src="../../js/InicioSesionProa.js"></script>
 </body>

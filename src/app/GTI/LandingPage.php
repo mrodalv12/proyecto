@@ -26,13 +26,7 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
 <body>
 
 <!-- Header -->
-<?php
-if ($usuario_logueado) {
-    include "../includes/headerGTIregistrado.php";
-} else {
-    include "../includes/headerGTI.php";
-}
-?>
+<?php include "../includes/headerGTI.php" ?>
 
 <section class="hero" id="proa">
     <div class="hero-content">
@@ -73,16 +67,11 @@ if ($usuario_logueado) {
 </section>
 
 <!-- Footer -->
-<?php if ($usuario_logueado) {
-    include "../includes/footerGTIregistrado.php";
-} else {
-    include "../includes/footerGTI.php";
-}
-?>
+<?php include "../includes/footerGTI.php"?>
 
 <!-- Scripts -->
 <?php if ($usuario_logueado): ?>
-<script src="../../js/LandingPage_No registrado.js"></script>
+<script src="../../js/LandingPage_Registrado.js"></script>
 <?php else: ?>
     <script src="../../js/LandingPage_No registrado.js"></script>
 <?php endif; ?>
