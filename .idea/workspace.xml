@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fa65155-22b5-4a9b-85ca-5b360c417b0a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/includes/obtener_datos_usuario.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/includes/procesar_login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/loginPROA.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/RegistroGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/RegistroGTI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/usuarioProa.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/usuarioProa.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/usuarios.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/usuarios.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/InicioSesionProa.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/GTI/InicioSesionProa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/InicioSesionProa.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +86,7 @@
       <workItem from="1746442734220" duration="571000" />
       <workItem from="1746443307325" duration="529000" />
       <workItem from="1746443927130" duration="20357000" />
-      <workItem from="1746540326567" duration="12140000" />
+      <workItem from="1746540326567" duration="15223000" />
     </task>
     <servers />
   </component>

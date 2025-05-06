@@ -29,20 +29,20 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
 
     <section class="login-section">
       <h2>Inicia sesión en PROA</h2>
-      <form id="loginForm">
+        <form id="loginForm" action="../includes/procesar_login.php" method="GET">
         <label for="rolSeleccionado">Opciones de rol para PROA</label>
-        <select id="rolSeleccionado" required>
+            <select id="rolSeleccionado" name="rol" required onchange="completarDatos()">
           <option value="">Selecciona un rol</option>
           <option value="pas">Personal de Administración y Servicios</option>
           <option value="profesor">Profesor</option>
           <option value="alumno">Alumno</option>
         </select>
 
-        <label for="email">Correo electrónico</label>
-        <input type="email" id="email" placeholder="Introduce tu correo electrónico" required autocomplete="email">
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" placeholder="Introduce tu correo electrónico" required autocomplete="email">
 
-        <label for="password">Contraseña</label>
-        <input type="password" id="password" placeholder="Introduce tu contraseña" required autocomplete="current-password"/>
+        <label for="contraseña">Contraseña</label>
+        <input type="password" id="contraseña" name="contraseña" placeholder="Introduce tu contraseña" required autocomplete="current-password"/>
 
         <button type="submit">Acceder</button>
         <div id="mensajeError" class="error"></div>
@@ -53,6 +53,8 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
 <!-- Footer -->
 <?php include "../includes/footerGTI.php" ?>
 
-  <script src="../../js/InicioSesionProa.js"></script>
+<?php include "../includes/procesar_login.php" ?>
+
+<script src="../../js/loginPROA.js" ></script>
 </body>
 </html>
