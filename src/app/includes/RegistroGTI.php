@@ -4,8 +4,18 @@ if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET["usuario"], $_GET["corre
     // Recoger datos del formulario
     $usuario = $_GET["usuario"];
     $correo = $_GET["correo"];
-    $contraseña = password_hash($_GET["contraseña"], PASSWORD_DEFAULT); // Encriptar
-    
+    $contraseña = $_GET["contraseña"];
+    $confirmarContraseña = $_GET["confirmarContraseña"];
+
+    // Comprobar si las contraseñas coinciden
+    if ($contraseña !== $confirmarContraseña) {
+        echo "<p>Las contraseñas no coinciden. Intenta de nuevo.</p>";
+        exit;
+    }
+
+    // Encriptar la contraseña
+    $contraseña = password_hash($contraseña, PASSWORD_DEFAULT);
+
     // Nuevo usuario en formato array
     $nuevo_usuario = [
         "usuario" => $usuario,

@@ -52,7 +52,6 @@
   <?php include "../includes/footerGTI.php" ?>
 
   <?php include "../includes/RegistroGTI.php" ?>
-    <script src="../../js/RegistroGTI.js"></script>
 
 </body>
 </html>

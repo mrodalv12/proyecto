@@ -1,4 +1,6 @@
 <?php
+session_start();  // Inicia la sesión al comienzo del archivo
+
 if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET["usuario"], $_GET["contraseña"])) {
     $identificador = $_GET["usuario"]; // Puede ser nombre de usuario o correo
     $clave = $_GET["contraseña"];
@@ -19,15 +21,19 @@ if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET["usuario"], $_GET["contr
         $coincideUsuario = $u["usuario"] === $identificador;
         $coincideCorreo = $u["correo"] === $identificador;
 
+        // Dentro del bucle donde se verifica el usuario y la contraseña:
         if (($coincideUsuario || $coincideCorreo) && password_verify($clave, $u["contraseña"])) {
+            // Guarda el usuario en la sesión
+            $_SESSION["usuario"] = $u["usuario"];  // O el campo que desees guardar en la sesión
             $usuario_encontrado = true;
             break;
         }
     }
 
     if ($usuario_encontrado) {
-        echo "<h2>Inicio de sesión exitoso</h2>";
-        // Aquí podrías redirigir o iniciar una sesión si lo necesitaras
+        // Redirigir al usuario a la landing page después de un inicio de sesión exitoso
+        header("Location: ../GTI/LandingPage.php");  // Cambia esto por la ruta correcta de tu landing page
+        exit;  // Terminar la ejecución del script después de la redirección
     } else {
         echo "<p>Usuario o contraseña incorrectos.</p>";
     }
