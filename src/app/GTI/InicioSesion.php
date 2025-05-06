@@ -18,12 +18,12 @@
 <main class="main-content">
     <div class="login-box">
         <h2>Inicia sesión</h2>
-        <form id="loginForm">
-            <label for="email">Nombre de usuario o correo electrónico</label>
-            <input type="email" id="email" placeholder="Introduce tu correo electrónico" required />
+        <form id="loginForm" method="get" action="../includes/InicioSesion.php">
+            <label for="usuario">Nombre de usuario o correo electrónico</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Introduce tu correo electrónico" required />
 
-            <label for="password">Contraseña</label>
-            <input type="password" id="password" placeholder="Introduce tu contraseña" required />
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="contraseña" name="contraseña" placeholder="Introduce tu contraseña" required />
 
             <button type="submit">Acceder</button>
 
@@ -43,6 +43,6 @@
     <?php include "../includes/footerGTI.php" ?>
 
     <!-- Scripts -->
-    <script src="../../js/InicioSesion.js"></script>
+    <?php include "../includes/InicioSesion.php" ?>
 </body>
 </html>

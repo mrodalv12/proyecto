@@ -16,18 +16,21 @@
   <main class="main-container">
     <section class="form-box">
       <h2>Crea una cuenta</h2>
-      <form id="registroForm">
-        <label>Nombre de usuario</label>
-        <input type="text" id= "nombre" placeholder="Introduce tu nombre de usuario" required>
+      <form id="registroForm" action="../includes/RegistroGTI.php" method="get">
+        <label for="usuario">Nombre de usuario</label>
 
-        <label>Correo electrónico</label>
-        <input type="email" id="email" placeholder="Introduce tu correo electrónico" required>
+          <!-- El atributo name es lo que se envía al servidor, si no hay, no se envía nada, aunque tenga id -->
+        <input type="text" id= "usuario" name="usuario" placeholder="Introduce tu nombre de usuario" required>
 
-        <label>Contraseña</label>
-        <input type="password" id="password" placeholder="Introduce una contraseña" required>
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="email" name="correo" placeholder="Introduce tu correo electrónico" required>
 
-        <label>Confirmación de contraseña</label>
-        <input type="password" id= "confirmarPassword" placeholder="Vuelve a introducir la contraseña" required>
+        <label for="contraseña">Contraseña</label>
+        <input type="password" id="contraseña" name="contraseña" placeholder="Introduce una contraseña" required>
+
+          <label for="confirmarContraseña">Contraseña</label>
+          <input type="password" id="confirmarContraseña" name="confirmarContraseña" placeholder="Introduce una contraseña" required>
+
 
         <button type="submit">Crear cuenta</button>
 
@@ -48,6 +51,8 @@
   <!-- Footer -->
   <?php include "../includes/footerGTI.php" ?>
 
-  <script src="../../js/RegistroGTI.js"></script>
+  <?php include "../includes/RegistroGTI.php" ?>
+    <script src="../../js/RegistroGTI.js"></script>
+
 </body>
 </html>
