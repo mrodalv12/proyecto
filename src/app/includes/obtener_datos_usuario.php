@@ -16,8 +16,8 @@ if (isset($_GET['rol'])) {
             if ($usuario['rol'] === $rol) {
                 // Devolver los datos del usuario en formato JSON
                 echo json_encode([
-                    'email' => $usuario['correo'],
-                    'password' => $usuario['contraseña']
+                    'email' => $usuario['email'],
+                    'password' => $usuario['password']
                 ]);
                 exit; // Salir después de enviar la respuesta
             }

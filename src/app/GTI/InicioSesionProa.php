@@ -12,9 +12,15 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Inicio de sesión PROA</title>
-    <link rel="preload" href="../../css/Footer_Header_Registrado.css" as="style" />
-    <link rel="stylesheet" href="../../css/Footer_Header_Registrado.css" />
-  <link rel="stylesheet" href="../../css/InicioSesionProa.css" />
+    <?php if ($usuario_logueado): ?>
+        <link rel="preload" href="../../css/Footer_Header_Registrado.css" as="style" />
+        <link rel="stylesheet" href="../../css/Footer_Header_Registrado.css" />
+        <link rel="stylesheet" href="../../css/InicioSesionProa.css" />
+    <?php else: ?>
+        <link rel="preload" href="../../css/Footer_Header_Noregistrado.css" as="style" />
+        <link rel="stylesheet" href="../../css/Footer_Header_Noregistrado.css" />
+        <link rel="stylesheet" href="../../css/InicioSesionProa.css" />
+    <?php endif; ?>
 </head>
 <body>
 
