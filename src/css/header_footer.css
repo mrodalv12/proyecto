@@ -104,6 +104,11 @@
 }
 
 @media (max-width:520px){
+    body {
+        padding-bottom: 50px;
+        margin: 0;
+        box-sizing: border-box;
+    }
 
     .MOVIL_cosas_del_header {
         display: flex;
@@ -113,7 +118,7 @@
         left: 0;
         width: 100vw;
         background-color: #333;
-        padding: 10px 0;
+        padding: 10px;
         z-index: 1000;
     }
     .cosas_del_header{
@@ -122,8 +127,16 @@
     .MOVIL_cosas_del_header ul{
         list-style: none;
         display: flex;
-        gap:50px;
     }
+    .MOVIL_cosas_del_header ul li{
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    .MOVIL_cosas_del_header .enlaces img{
+        height: 30px;
+        width: 30px;
+    }
+
 }
 /*-----------------------------------------------------------------------------------------------------*/
 /* endregion */
@@ -141,8 +154,8 @@
     justify-content: space-between;
 }
 .pie_de_pagina .logoGTI img{
-    width: 90px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
 
 }
 
@@ -176,7 +189,7 @@
     margin-top: 5px;
 }
 
-@media (max-width:500px){
+@media (max-width:520px){
     .pie_de_pagina .logoGTI p{
         font-size: 7px;
     }

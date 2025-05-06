@@ -34,12 +34,12 @@ include "datos_usuario.php";
     <nav class="MOVIL_cosas_del_header">
         <ul>
             <?php if($thisUser->rol =="PAS"): ?>
-                <li class="enlaces_pas"><a href="../PAS/Directorio_PAS.php"></a><img src="https://placehold.co/30x30" alt="directorio"></li>
-                <li class="enlaces_pas"><a href="../PAS/Solicitudes_PAS.php"><img src="https://placehold.co/30x30" alt="solicitudes"></a></li>
+                <li class="enlaces"><a href="../PAS/Directorio_PAS.php"><img src="../../../img/iconoDirectorio.png" alt="directorio"></a></li>
+                <li class="enlaces"><a href="../PAS/Solicitudes_PAS.php"><img src="../../../img/iconoSolicitudes.png" alt="solicitudes"></a></li>
             <?php elseif($thisUser->rol == "Alumno" || $thisUser->rol == "Profesor"): ?>
-                <li><a href="#"><img src="https://placehold.co/30x30" alt="Asignaruras"></a></li>
-                <li><a href="#"><img src="https://placehold.co/30x30" alt="Calendario"></a></li>
-                <li><a href="#"><img src="https://placehold.co/30x30" alt="Solicitudes"></a></li>
+                <li class="enlaces"><a href="#"><img src="../../../img/iconoAsignaturas.png" alt="Asignaruras"></a></li>
+                <li class="enlaces"><a href="#"><img src="../../../img/iconoCalendario.png" alt="Calendario"></a></li>
+                <li class="enlaces"><a href="#"><img src="../../../img/iconoSolicitudes.png" alt="Solicitudes"></a></li>
             <?php endif; ?>
         </ul>
     </nav>

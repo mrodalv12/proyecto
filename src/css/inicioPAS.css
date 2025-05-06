@@ -25,7 +25,6 @@ a { color: inherit; }
 /*-----------------------------------------------------------------------------------------------------*/
 /* region --- GENERAL --- */
 html, body {
-    height: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -171,7 +170,7 @@ h1{
 /* endregion */
 /*-----------------------------------------------------------------------------------------------------*/
 
-@media (max-width: 550px){
+@media (max-width: 520px){
     main{
         display: flow;
     }

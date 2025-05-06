@@ -46,7 +46,7 @@ if ($thisUser->rol != "PAS") {
                 <li class="item" id="0001">
                         <a href="Solicitudes_PAS.php">
                             <div class="arriba_mensaje">
-                                <img src="../../../img/user.png" alt="icono">
+                                <img src="../../../img/iconoUser.png" alt="icono">
                                 <ul>
                                     <li>Quiannette Hachel</li>
                                     <li><span class="rol">Estudiante<span></li>
@@ -67,7 +67,7 @@ if ($thisUser->rol != "PAS") {
                 <li class="item">
                     <a href="Solicitudes_PAS.php">
                         <div class="arriba_mensaje">
-                            <img src="../../../img/user.png" alt="icono">
+                            <img src="../../../img/iconoUser.png" alt="icono">
                             <ul>
                                 <li>Nombre</li>
                                 <li class="rol">Profesor</li>
@@ -90,7 +90,7 @@ if ($thisUser->rol != "PAS") {
                 <li class="item">
                     <a href="Solicitudes_PAS.php">
                         <div class="arriba_mensaje">
-                            <img src="../../../img/user.png" alt="icono">
+                            <img src="../../../img/iconoUser.png" alt="icono">
                             <ul>
                                 <li>Nombre</li>
                                 <li class="rol">Estudiante</li>
@@ -113,7 +113,7 @@ if ($thisUser->rol != "PAS") {
                 <li class="item">
                     <a href="Solicitudes_PAS.php">
                         <div class="arriba_mensaje">
-                            <img src="../../../img/user.png" alt="icono">
+                            <img src="../../../img/iconoUser.png" alt="icono">
                             <ul>
                                 <li>Nombre</li>
                                 <li class="rol">Estudiante</li>
@@ -136,7 +136,7 @@ if ($thisUser->rol != "PAS") {
                 <li class="item">
                     <a href="Solicitudes_PAS.php">
                         <div class="arriba_mensaje">
-                            <img src="../../../img/user.png" alt="icono">
+                            <img src="../../../img/iconoUser.png" alt="icono">
                             <ul>
                                 <li>Nombre</li>
                                 <li class="rol">Profesor</li>
