@@ -16,12 +16,29 @@ if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET["usuario"], $_GET["corre
     // Encriptar la contraseña
     $contraseña = password_hash($contraseña, PASSWORD_DEFAULT);
 
-    // Nuevo usuario en formato array
+    // Nuevo usuario en formato array (con datos base)
     $nuevo_usuario = [
         "usuario" => $usuario,
         "correo" => $correo,
         "contraseña" => $contraseña
     ];
+
+    // Cargar usuarios predefinidos desde el archivo JSON
+    $archivoUsuarios = 'usuarioProa.json';
+    if (file_exists($archivoUsuarios)) {
+        $usuarios_predefinidos = json_decode(file_get_contents($archivoUsuarios), true);
+    } else {
+        echo "<p>Error: No se encuentra el archivo de usuarios predefinidos.</p>";
+        exit;
+    }
+
+    // Asegurarse de que los arrays de 'alumno', 'profesor' y 'pas' existan
+    if (!isset($usuarios_predefinidos['alumno']) || !is_array($usuarios_predefinidos['alumno']) ||
+        !isset($usuarios_predefinidos['profesor']) || !is_array($usuarios_predefinidos['profesor']) ||
+        !isset($usuarios_predefinidos['pas']) || !is_array($usuarios_predefinidos['pas'])) {
+        echo "<p>Error: Los usuarios predefinidos no están definidos correctamente.</p>";
+        exit;
+    }
 
     // Leer usuarios existentes o crear array vacío
     $archivo = "usuarios.json";
@@ -35,20 +52,31 @@ if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET["usuario"], $_GET["corre
     // Verificar si el usuario ya existe
     foreach ($usuarios as $u) {
         if ($u["usuario"] === $usuario) {
-            echo "<p> El nombre de usuario ya está registrado.</p>";
+            echo "<p>El nombre de usuario ya está registrado.</p>";
             exit;
         }
     }
 
-    // Agregar nuevo usuario al array
-    $usuarios[] = $nuevo_usuario;
+    // Función para obtener un usuario aleatorio de un array
+    function obtenerUsuarioAleatorio($usuarios) {
+        return $usuarios[array_rand($usuarios)];
+    }
 
-    // Guardar en el archivo JSON
+    // Asignar un alumno, un profesor y un pas aleatorio
+    $alumno = obtenerUsuarioAleatorio($usuarios_predefinidos['alumno']);
+    $profesor = obtenerUsuarioAleatorio($usuarios_predefinidos['profesor']);
+    $pas = obtenerUsuarioAleatorio($usuarios_predefinidos['pas']);
+
+    // Crear registros para el nuevo usuario con los roles correspondientes
+    $usuarios[] = array_merge($nuevo_usuario, $alumno); // Asigna un alumno
+    $usuarios[] = array_merge($nuevo_usuario, $profesor); // Asigna un profesor
+    $usuarios[] = array_merge($nuevo_usuario, $pas); // Asigna un pas
+
+    // Guardar la lista actualizada de usuarios en el archivo JSON
     file_put_contents($archivo, json_encode($usuarios, JSON_PRETTY_PRINT));
 
-    // Confirmación
-    // Redirigir después de 2 segundos
+    // Confirmación y redirección
     header("Location: ../GTI/InicioSesion.php");
-    exit;
+    exit; // Asegura que no se siga ejecutando el código después de la redirección
 }
 ?>

@@ -6,16 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2fa65155-22b5-4a9b-85ca-5b360c417b0a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/InicioSesionProa.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/GTI/InicioSesionProa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/LandingPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/GTI/LandingPage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/PROA_No registrado.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/Proa_Registrado.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/GTI/PROA.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/cerrarSesion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/cerrarSesion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/footerGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/footerGTI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/footerGTIregistrado.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/headerGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/headerGTI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/headerGTIregistrado.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/LandingPage_Registrado.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/LandingPage_Registrado.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/includes/RegistroGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/RegistroGTI.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/includes/usuarioProa.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/usuarioProa.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/includes/usuarios.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/usuarios.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +84,7 @@
       <workItem from="1746442734220" duration="571000" />
       <workItem from="1746443307325" duration="529000" />
       <workItem from="1746443927130" duration="20357000" />
-      <workItem from="1746540326567" duration="8725000" />
+      <workItem from="1746540326567" duration="12140000" />
     </task>
     <servers />
   </component>
