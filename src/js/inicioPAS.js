@@ -40,8 +40,8 @@ function largoMensajeAsunto(callback){
 
     texto.forEach(parrafo =>{
         const asunto = parrafo.innerText;
-        if (asunto.length > 100){
-            parrafo.innerText = asunto.slice(0,100) + "[...]";
+        if (asunto.length > 50){
+            parrafo.innerText = asunto.slice(0,50) + "[...]";
         }
     })
 }

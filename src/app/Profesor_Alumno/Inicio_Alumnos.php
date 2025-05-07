@@ -15,6 +15,7 @@ if ($thisUser->rol != "Alumno") {
     <title>PROA</title>
     <link rel="stylesheet" href="../../css/inicioPAS.css"> <!--QUITAR LUEGO-->
     <link rel="stylesheet" href="../../css/header_footer.css">
+    <link rel="stylesheet" href="../../css/MOVILmenu-Profesores_y_alumnos.css">
 </head>
 <body>
     <header>

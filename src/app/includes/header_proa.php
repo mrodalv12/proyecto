@@ -22,7 +22,6 @@ include "datos_usuario.php";
     <nav class="cosas_del_header">
         <ul>
             <?php if($thisUser->rol =="PAS"): ?>
-                <li class="enlaces_pas"><a href="../PAS/Directorio_PAS.php">Directorio</a></li>
                 <li class="enlaces_pas"><a href="../PAS/Solicitudes_PAS.php">Solicitudes</a></li>
             <?php elseif($thisUser->rol == "Alumno" || $thisUser->rol == "Profesor"): ?>
                 <li><a href="#">Asignaturas</a></li>
@@ -33,10 +32,7 @@ include "datos_usuario.php";
     </nav>
     <nav class="MOVIL_cosas_del_header">
         <ul>
-            <?php if($thisUser->rol =="PAS"): ?>
-                <li class="enlaces"><a href="../PAS/Directorio_PAS.php"><img src="../../../img/iconoDirectorio.png" alt="directorio"></a></li>
-                <li class="enlaces"><a href="../PAS/Solicitudes_PAS.php"><img src="../../../img/iconoSolicitudes.png" alt="solicitudes"></a></li>
-            <?php elseif($thisUser->rol == "Alumno" || $thisUser->rol == "Profesor"): ?>
+            <?php if($thisUser->rol == "Alumno" || $thisUser->rol == "Profesor"): ?>
                 <li class="enlaces"><a href="#"><img src="../../../img/iconoAsignaturas.png" alt="Asignaruras"></a></li>
                 <li class="enlaces"><a href="#"><img src="../../../img/iconoCalendario.png" alt="Calendario"></a></li>
                 <li class="enlaces"><a href="#"><img src="../../../img/iconoSolicitudes.png" alt="Solicitudes"></a></li>

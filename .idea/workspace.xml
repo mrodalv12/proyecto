@@ -5,14 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fa65155-22b5-4a9b-85ca-5b360c417b0a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/phpGrandioso.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/v0.0/solicitudes.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/MOVILmenu-Profesores_y_alumnos.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/solicitudes_PAS.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/user.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/userAlumno.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/PAS/Inicio_PAS.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PAS/Inicio_PAS.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/footer_proa.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/footer_proa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/PAS/Solicitudes_PAS.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PAS/Solicitudes_PAS.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/Inicio_Alumnos.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/Inicio_Alumnos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/includes/datos_usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/datos_usuario.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/includes/header_proa.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/header_proa.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/header_footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/header_footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/inicioPAS.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/inicioPAS.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/solicitudesPAS.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/solicitudesPAS.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/inicioPAS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/inicioPAS.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +30,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="tsconfig.json" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -109,7 +115,10 @@
       <workItem from="1746513381583" duration="1596000" />
       <workItem from="1746515922487" duration="1177000" />
       <workItem from="1746523429425" duration="282000" />
-      <workItem from="1746542140060" duration="4489000" />
+      <workItem from="1746542140060" duration="13389000" />
+      <workItem from="1746610649157" duration="1299000" />
+      <workItem from="1746617957928" duration="576000" />
+      <workItem from="1746629672021" duration="5812000" />
     </task>
     <servers />
   </component>
