@@ -22,9 +22,7 @@ img, video, svg { height: auto; max-width: 100%; }
 
 a { color: inherit; }
 /* endregion */
-
-/*-----------------------------------------------------------------------------------------------------*/
-/* GENERAL */
+/* region -- GENERAL -- */
 html, body {
     height: 100%;
     margin: 0;
@@ -35,7 +33,148 @@ body {
     margin: 0;
     font-family: "Andale Mono", monospace;
 }
-.contenido {
+main {
+    display: flex;
+    align-content: space-between;
     flex: 1;
 }
+/* endregion */
 /*-----------------------------------------------------------------------------------------------------*/
+
+/* lo mas basico */
+
+h1{
+    margin: 5px;
+    padding: 10px;
+}
+
+.todas_las_solicitudes{
+    display: flex;
+    margin: 10px 10px 5px 10px;
+}
+
+.todas_las_solicitudes div{
+    margin: 0 5px;
+    flex-wrap: wrap;
+}
+
+.bandeja_columna1{
+    width: 20vw;
+    font-size: 0.7rem;
+    list-style: none;
+    /*background-color: beige;*/
+    max-height: 80vh;
+}
+.bandeja_columna1 a{
+    width: 100%;
+    margin: 2px 0;
+    border-radius: 10px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+}
+.bandeja_columna1 a.activo{
+    background-color: #DB98A1;
+}
+
+.bandeja_columna1 a p{
+    list-style: none;
+    padding: 5px;
+}
+
+.columna_2{
+    width: 20vw;
+    max-height: 80vh;
+    overflow-y: scroll;
+    padding-right: 10px;
+    font-size: 0.7rem;
+    /*background-color: cornflowerblue;*/
+    border-left: 1px solid #4D4A4A;
+
+}
+
+.columna_2 div a ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    text-align: left;
+}
+.bandeja_columna1 a:hover{
+    background-color: lightgray;
+}
+.columna_2 div a ul{
+    padding: 5px 10px;
+}
+.item-columna2 ul{
+    width: 100%;
+    margin: 1px;
+    border: 1px solid #4D4A4A;
+    border-radius: 5px;
+}
+
+.columna_2 a:hover{
+    background-color: lightgray;
+}
+.item-columna2{
+    display: none;
+}
+
+.item-columna2.activo {
+    display: block;
+}
+
+
+.solicitudes_vista_del_contenido{
+    width: 60vw;
+    /*background-color: burlywood;*/
+    max-height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.solicitudes_vista_del_contenido>ul{
+    background-color: #4D4A4A;
+    margin: 5px;
+    color: white;
+    border-radius: 20px;
+    border: 0;
+    height: 95%;
+}
+.solicitudes_vista_del_contenido #sin_contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.solicitudes_vista_del_contenido #sin_contenido li{
+    margin: 10px;
+}
+.solicitudes_vista_del_contenido .contenidoPendientes{
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.solicitudes_vista_del_contenido .contenidoPendientes img{
+    height: 100px;
+    width: 100px;
+}
+.solicitudes_vista_del_contenido .contenidoPendientes>div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: space-between;
+    flex: 1;
+}
+.solicitudes_vista_del_contenido .contenidoPendientes div div{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: flex-end;
+    padding: 10px 5px 0;
+}
+
+/* fin de lo mas basico*/

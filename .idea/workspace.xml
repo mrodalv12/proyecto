@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fa65155-22b5-4a9b-85ca-5b360c417b0a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/phpGrandioso.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/api/v0.0/solicitudes.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/MOVILmenu-Profesores_y_alumnos.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/solicitudes_PAS.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/PAS/Solicitudes_PAS.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PAS/Solicitudes_PAS.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/Inicio_Alumnos.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/Inicio_Alumnos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/datos_usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/datos_usuario.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/header_proa.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/header_proa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/header_footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/header_footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/Inicio_Profesor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/Inicio_Profesor.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/inicioPAS.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/inicioPAS.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/solicitudesPAS.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/solicitudesPAS.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/inicioPAS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/inicioPAS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/solicitudes_PAS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/solicitudes_PAS.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,22 +47,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;majolink&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Applications/XAMPP/xamppfiles/htdocs/proyecto&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.Solicitudes_PAS.php.executor": "Run",
+    "Node.js.solicitudes_PAS.js.executor": "Run",
+    "PHP Script.Solicitudes_PAS.php.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "majolink",
+    "last_opened_file_path": "/Applications/XAMPP/xamppfiles/htdocs/proyecto",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/app/Profesor_Alumno" />
@@ -118,7 +114,8 @@
       <workItem from="1746542140060" duration="13389000" />
       <workItem from="1746610649157" duration="1299000" />
       <workItem from="1746617957928" duration="576000" />
-      <workItem from="1746629672021" duration="5812000" />
+      <workItem from="1746629672021" duration="19985000" />
+      <workItem from="1746685019442" duration="9693000" />
     </task>
     <servers />
   </component>

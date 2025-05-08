@@ -34,12 +34,11 @@ body {
     margin: 0;
     font-family: "Martel Sans", monospace;
 }
-.contenido {
-    flex: 1;
-}
+
 main {
     display: flex;
     align-content: space-between;
+    flex: 1;
 }
 p{
     font-size: 0.7em;
