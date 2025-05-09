@@ -19,76 +19,73 @@ if ($thisUser->rol != "PAS") {
     <link rel="stylesheet" href="../../css/solicitudesPAS.css">
     <link rel="stylesheet" href="../../css/header_footer.css">
 </head>
-<!----------------------------------------------------------------------------------------------------------->
 <body>
     <!-- encabezado-->
     <?php include "../includes/header_proa.php" ?>
     <!-- fin del encabezado-->
-<!----------------------------------------------------------------------------------------------------------->
-
-
-
     <!-- aqui comienza la bandeja de solicitudes-->
-    <section class="contenido">
+    <main class="contenido">
         <h1>Solicitudes</h1>
         <!--botones primarios-->
         <div class="todas_las_solicitudes">
             <div class="bandeja_columna1">
-                    <a onclick="activarEstilo(this); mostrarContenido('solicitud_pendiente_')">
-                            <p>Bandeja de entrada</p>
-                            <p>num</p>
-                            </a>
-                    <a onclick="activarEstilo(this); mostrarContenido('solicitud_hecha_')">
+                <a onclick="activarEstilo(this); mostrarContenido('solicitud_pendiente_')">
+                        <p>Bandeja de entrada</p>
+                        <p>6</p>
+                    </a>
+
+                <a onclick="activarEstilo(this); mostrarContenido('solicitud_hecha_')">
                         <p>Bandeja de Hechas</p>
-                        <p>num</p>
+                        <p>2</p>
                     </a>
                     <a onclick="activarEstilo(this); mostrarContenido('solicitud_rechazada_')">
                         <p>Papelera</p>
-                        <p>num</p>
+                        <p>1</p>
                     </a>
             </div>
 
             <!--fin de botones primarios-->
-
             <!--botones secundarios-->
             <div class="columna_2">
                 <!--vacio-->
-                <p id="bandeja_vacia">vacio</p>
+                <div id="bandeja_vacia">
+                    <p>vacio</p>
+                </div>
                 <!--fin de vacio-->
                 <!--bandeja de entrada-->
                 <div class="bandeja">
-                    <a id="solicitud_pendiente_contenido_1" class="item-columna2" onclick="hacerAlgo()">
+                    <a id="solicitud_pendiente_aceptada_contenido_1" class="item-columna2" onclick="activarEstilo2(this); mostrarContenido2('pendiente_aceptada_contenido_1')">
                             <ul>
                                 <li><p>Lorem ipsum movedae tiresio</p></li>
                                 <li><img src="https://placehold.co/30x30" alt="aceptada?"></li>
                             </ul>
                     </a>
 
-                    <a id="solicitud_pendiente_contenido_2" class="item-columna2" onclick="hacerAlgo()">
+                    <a id="solicitud_pendiente_contenido_2" class="item-columna2" onclick="activarEstilo2(this); mostrarContenido2('pendiente_contenido_2')">
                         <ul>
                             <li><p>Lorem ipsum movedae tiresio</p></li>
                             <li><img src="https://placehold.co/30x30" alt="aceptada?"></li>
                         </ul>
                     </a>
-                    <a id="solicitud_pendiente_contenido_3" class="item-columna2" onclick="hacerAlgo()">
+                    <a id="solicitud_pendiente_contenido_3" class="item-columna2" onclick="activarEstilo2(this); mostrarContenido2('pendiente_contenido_3')">
                         <ul>
                             <li><p>Lorem ipsum movedae tiresio</p></li>
                             <li><img src="https://placehold.co/30x30" alt="aceptada?"></li>
                         </ul>
                     </a>
-                    <a id="solicitud_pendiente_contenido_4" class="item-columna2" onclick="hacerAlgo()">
+                    <a id="solicitud_pendiente_contenido_4" class="item-columna2" onclick="activarEstilo2(this); mostrarContenido2('pendiente_contenido_4')">
                         <ul>
                             <li><p>Lorem ipsum movedae tiresio</p></li>
                             <li><img src="https://placehold.co/30x30" alt="aceptada?"></li>
                         </ul>
                     </a>
-                    <a id="solicitud_pendiente_contenido_5" class="item-columna2" onclick="hacerAlgo()">
+                    <a id="solicitud_pendiente_contenido_5" class="item-columna2" onclick="activarEstilo2(this); mostrarContenido2('pendiente_contenido_5')">
                         <ul>
                             <li><p>Lorem ipsum movedae tiresio</p></li>
                             <li><img src="https://placehold.co/30x30" alt="aceptada?"></li>
                         </ul>
                     </a>
-                    <a id="solicitud_pendiente_contenido_6" class="item-columna2" onclick="hacerAlgo()">
+                    <a id="solicitud_pendiente_contenido_6" class="item-columna2" onclick="activarEstilo2(this); mostrarContenido2('pendiente_contenido_6')">
                         <ul>
                             <li><p>Lorem ipsum movedae tiresio</p></li>
                             <li><img src="https://placehold.co/30x30" alt="aceptada?"></li>
@@ -99,22 +96,20 @@ if ($thisUser->rol != "PAS") {
 
                 <!--bandeja de hechas-->
                 <div class="bandeja">
-                    <a id="solicitud_hecha_contenido_7" class="item-columna2" onclick="hacerAlgo()">
+                    <a id="solicitud_hecha_contenido_7" class="item-columna2" onclick="activarEstilo2(this); mostrarContenido2('hecha_contenido_7')">
                         <ul>
                             <li><p>Lorem ipsum movedae tiresio</p></li>
                         </ul>
                     </a>
-                    <a id="solicitud_hecha_contenido_7" class="item-columna2" onclick="hacerAlgo()">
+                    <a id="solicitud_hecha_contenido_8" class="item-columna2" onclick="activarEstilo2(this); mostrarContenido2('hecha_contenido_8')">
                         <ul>
                             <li><p>Lorem ipsum movedae tiresio</p></li>
                         </ul>
                     </a>
                 </div>
-
-
                 <!--bandeja de rechazadas-->
                 <div class="bandeja">
-                    <a id="solicitud_rechazada_contenido_9" class="item-columna2" onclick="hacerAlgo()">
+                    <a id="solicitud_rechazada_contenido_9" class="item-columna2" onclick="activarEstilo2(this); mostrarContenido2('rechazada_contenido_9')">
                         <ul>
                             <li><p>Lorem ipsum movedae tiresio</p></li>
                         </ul>
@@ -122,115 +117,122 @@ if ($thisUser->rol != "PAS") {
                 </div>
             </div>
             <!--fin de botones secundarios-->
-
             <!--vista del contenido-->
             <div class="solicitudes_vista_del_contenido">
-
-                <ul class="contenidoPendientes" id="contenido_1">
-                    <img src="https://placehold.co/50x50" alt="user">
-                    <div>
-                        <li>nombre y apellido</li>
-                        <li>rol</li>
-                        <li>DNI</li>
-                        <li>asunto</li>
-                        <li>tema</li>
-                        <li>descripcion</li>
+                <div class="item-columna3" id="solicitud_desplegada_pendiente_aceptada_contenido_1">
+                    <img src="../../../img/iconoUser.png" alt="user">
                         <div>
-                            <button>aceptada</button>
-                            <button>rechazada</button>
+                            <ul>
+                                <li>contenido 1</li>
+                                <li>rol</li>
+                                <li>DNI</li>
+                                <li>asunto</li>
+                                <li>tema</li>
+                                <li>descripcion</li>
+                            </ul>
+                            <div class="boton">
+                                <a>realizada</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="item-columna3" id="solicitud_desplegada_pendiente_contenido_2">
+                    <img src="../../../img/iconoUser.png" alt="user">
+                    <div>
+                        <ul>
+                            <li>contenido 2</li>
+                            <li>rol</li>
+                            <li>DNI</li>
+                            <li>asunto</li>
+                            <li>tema</li>
+                            <li>descripcion</li>
+                        </ul>
+                        <div class="boton">
+                            <a>aceptada</a>
+                            <a>rechazada</a>
                         </div>
                     </div>
-                </ul>
+                </div>
+                <div class="item-columna3" id="solicitud_desplegada_pendiente_contenido_3">
+                    <img src="../../../img/iconoUser.png" alt="user">
+                    <div>
+                        <ul>
+                            <li>contenido 3</li>
+                            <li>rol</li>
+                            <li>DNI</li>
+                            <li>asunto</li>
+                            <li>tema</li>
+                            <li>descripcion</li>
+                        </ul>
+                        <div class="boton">
+                            <a>aceptada</a>
+                            <a>rechazada</a>
+                        </div>
+                    </div>
+                </div>
+                    <div class="item-columna3" id="solicitud_desplegada_pendiente_contenido_4">
+                        <img src="../../../img/iconoUser.png" alt="user">
+                        <div>
+                            <ul>
+                                <li>contenido 4</li>
+                                <li>rol</li>
+                                <li>DNI</li>
+                                <li>asunto</li>
+                                <li>tema</li>
+                                <li>descripcion</li>
+                            </ul>
+                            <div class="boton">
+                                <a>aceptada</a>
+                                <a>rechazada</a>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="item-columna3" id="solicitud_desplegada_pendiente_contenido_5">
+                            <img src="../../../img/iconoUser.png" alt="user">
+                            <div>
+                                <ul>
+                                    <li>contenido 5</li>
+                                    <li>rol</li>
+                                    <li>DNI</li>
+                                    <li>asunto</li>
+                                    <li>tema</li>
+                                    <li>descripcion</li>
+                                </ul>
+                                <div class="boton">
+                                    <a>aceptada</a>
+                                    <a>rechazada</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-columna3" id="solicitud_desplegada_pendiente_contenido_6">
+                            <img src="../../../img/iconoUser.png" alt="user">
+                            <div>
+                                <ul>
+                                    <li>contenido 6</li>
+                                    <li>rol</li>
+                                    <li>DNI</li>
+                                    <li>asunto</li>
+                                    <li>tema</li>
+                                    <li>descripcion</li>
+                                </ul>
+                                <div class="boton">
+                                    <a>aceptada</a>
+                                    <a>rechazada</a>
+                                </div>
+                            </div>
+                        </div>
                 <!--sin contenido seleccionado-->
-                <ul id="sin_contenido">
-                    <li><img src="https://placehold.co/100x100" alt="icono sin solicitudes"></li>
-                    <li><p>No hay solicitudes que atender</p></li>
-                </ul>
-
-                <!--contenido de solicitudes pendientes-->
-
-                <ul class="contenidoPendientes" id="contenido_2">
-                    <img src="https://placehold.co/50x50" alt="user">
-                    <li>nombre y apellido</li>
-                    <li>rol</li>
-                    <li>DNI</li>
-                    <li>asunto</li>
-                    <li>tema</li>
-                    <li>descripcion</li>
+                <div class="sin_contenido" id="sin_contenido_desplegado">
                     <ul>
-                        <li><button>aceptada</button></li>
-                        <li><button>rechazada</button></li>
+                        <li><img src="https://placehold.co/100x100" alt="icono sin solicitudes"></li>
+                        <li><p>Selecciona una solicitud</p></li>
                     </ul>
-                </ul>
-                <ul class="contenidoPendientes" id="contenido_3">
-                    <img src="https://placehold.co/50x50" alt="user">
-                    <li>nombre y apellido</li>
-                    <li>rol</li>
-                    <li>DNI</li>
-                    <li>asunto</li>
-                    <li>tema</li>
-                    <li>descripcion</li>
-                    <ul>
-                        <li><button>aceptada</button></li>
-                        <li><button>rechazada</button></li>
-                    </ul>
-                </ul>
-                <ul class="contenidoPendientes" id="contenido_4">
-                    <img src="https://placehold.co/50x50" alt="user">
-                    <li>nombre y apellido</li>
-                    <li>rol</li>
-                    <li>DNI</li>
-                    <li>asunto</li>
-                    <li>tema</li>
-                    <li>descripcion</li>
-                    <ul>
-                        <li><button>aceptada</button></li>
-                        <li><button>rechazada</button></li>
-                    </ul>
-                </ul>
-                <ul class="contenidoPendientes" id="contenido_5">
-                    <img src="https://placehold.co/50x50" alt="user">
-                    <li>nombre y apellido</li>
-                    <li>rol</li>
-                    <li>DNI</li>
-                    <li>asunto</li>
-                    <li>tema</li>
-                    <li>descripcion</li>
-                    <ul>
-                        <li><button>aceptada</button></li>
-                        <li><button>rechazada</button></li>
-                    </ul>
-                </ul>
-                <ul class="contenidoPendientes" id="contenido_6">
-                    <img src="https://placehold.co/50x50" alt="user">
-                    <li>nombre y apellido</li>
-                    <li>rol</li>
-                    <li>DNI</li>
-                    <li>asunto</li>
-                    <li>tema</li>
-                    <li>descripcion</li>
-                    <ul>
-                        <li><button>aceptada</button></li>
-                        <li><button>rechazada</button></li>
-                    </ul>
-                </ul>
-
-            </div>
+                </div>
         </div>
-
-
         <!--fin de vista de contenido-->
-    </section>
-
-
-    <!----------------------------------------------------------------------------------------------------------->
+    </main>
     <!-- footer-->
     <?php include "../includes/footer_proa.php" ?>
     <!-- fin del footer-->
-
     <script src="../../js/solicitudes_PAS.js"></script>
 </body>
-<!----------------------------------------------------------------------------------------------------------->
 </html>
-<!----------------------------------------------------------------------------------------------------------->
-<!----------------------------------------------------------------------------------------------------------->
