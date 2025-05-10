@@ -5,7 +5,8 @@ function mostrarContenido(id) {
     document.querySelectorAll('[id^="solicitud_"]').forEach(solicitud => {
         solicitud.classList.remove('activo');
         solicitud.classList.remove('activo2');
-        document.getElementById("sin_contenido_desplegado").style.display = "block";
+        document.getElementById("sin_contenido_desplegado").style.display = "flex";
+
     });
     let hayElementos = false;
 
@@ -16,7 +17,7 @@ function mostrarContenido(id) {
     });
     const mensajeVacio = document.getElementById("bandeja_vacia");
     if (mensajeVacio) {
-        mensajeVacio.style.display = hayElementos ? "none" : "block";
+        mensajeVacio.style.display = hayElementos ? "none" : "flex";
     }
 }
 
@@ -34,7 +35,7 @@ function mostrarContenido2(id) {
         });
         if (mensajeVaciodesplegado) mensajeVaciodesplegado.style.display = "none";
     } else {
-        if (mensajeVaciodesplegado) mensajeVaciodesplegado.style.display = "block";
+        if (mensajeVaciodesplegado) mensajeVaciodesplegado.style.display = "flex";
     }
 }
 //---------------------------------------------------------------------------------

@@ -25,7 +25,7 @@ if ($thisUser->rol != "PAS") {
     <!-- fin del encabezado-->
     <!-- aqui comienza la bandeja de solicitudes-->
     <main class="contenido">
-        <h1>Solicitudes</h1>
+        <a href="Solicitudes_PAS.php"><h1>Solicitudes</h1></a>
         <!--botones primarios-->
         <div class="todas_las_solicitudes">
             <div class="bandeja_columna1">
@@ -116,19 +116,19 @@ if ($thisUser->rol != "PAS") {
             <div class="solicitudes_vista_del_contenido">
                 <div class="item-columna3" id="solicitud_desplegada_pendiente_aceptada_contenido_1">
                     <img src="../../../img/iconoUser.png" alt="user">
-                        <div>
-                            <ul>
-                                <li>contenido 1</li>
-                                <li>rol</li>
-                                <li>DNI</li>
-                                <li>asunto</li>
-                                <li>tema</li>
-                                <li>descripcion</li>
-                            </ul>
-                            <div class="boton">
-                                <a>realizada</a>
-                            </div>
+                    <div>
+                        <ul>
+                            <li>contenido 1</li>
+                            <li>rol</li>
+                            <li>DNI</li>
+                            <li>asunto</li>
+                            <li>tema</li>
+                            <li>descripcion</li>
+                        </ul>
+                        <div class="boton">
+                            <a>realizada</a>
                         </div>
+                    </div>
                 </div>
                 <div class="item-columna3" id="solicitud_desplegada_pendiente_contenido_2">
                     <img src="../../../img/iconoUser.png" alt="user">
@@ -164,63 +164,62 @@ if ($thisUser->rol != "PAS") {
                         </div>
                     </div>
                 </div>
-                    <div class="item-columna3" id="solicitud_desplegada_pendiente_contenido_4">
-                        <img src="../../../img/iconoUser.png" alt="user">
-                        <div>
-                            <ul>
-                                <li>contenido 4</li>
-                                <li>rol</li>
-                                <li>DNI</li>
-                                <li>asunto</li>
-                                <li>tema</li>
-                                <li>descripcion</li>
-                            </ul>
-                            <div class="boton">
-                                <a>aceptada</a>
-                                <a>rechazada</a>
-                            </div>
+                <div class="item-columna3" id="solicitud_desplegada_pendiente_contenido_4">
+                    <img src="../../../img/iconoUser.png" alt="user">
+                    <div>
+                        <ul>
+                            <li>contenido 4</li>
+                            <li>rol</li>
+                            <li>DNI</li>
+                            <li>asunto</li>
+                            <li>tema</li>
+                            <li>descripcion</li>
+                        </ul>
+                        <div class="boton">
+                            <a>aceptada</a>
+                            <a>rechazada</a>
                         </div>
                     </div>
-                        <div class="item-columna3" id="solicitud_desplegada_pendiente_contenido_5">
-                            <img src="../../../img/iconoUser.png" alt="user">
-                            <div>
-                                <ul>
-                                    <li>contenido 5</li>
-                                    <li>rol</li>
-                                    <li>DNI</li>
-                                    <li>asunto</li>
-                                    <li>tema</li>
-                                    <li>descripcion</li>
-                                </ul>
-                                <div class="boton">
-                                    <a>aceptada</a>
-                                    <a>rechazada</a>
-                                </div>
-                            </div>
+                </div>
+                <div class="item-columna3" id="solicitud_desplegada_pendiente_contenido_5">
+                    <img src="../../../img/iconoUser.png" alt="user">
+                    <div>
+                        <ul>
+                            <li>contenido 5</li>
+                            <li>rol</li>
+                            <li>DNI</li>
+                            <li>asunto</li>
+                            <li>tema</li>
+                            <li>descripcion</li>
+                        </ul>
+                        <div class="boton">
+                            <a>aceptada</a>
+                            <a>rechazada</a>
                         </div>
-                        <div class="item-columna3" id="solicitud_desplegada_pendiente_contenido_6">
-                            <img src="../../../img/iconoUser.png" alt="user">
-                            <div>
-                                <ul>
-                                    <li>contenido 6</li>
-                                    <li>rol</li>
-                                    <li>DNI</li>
-                                    <li>asunto</li>
-                                    <li>tema</li>
-                                    <li>descripcion</li>
-                                </ul>
-                                <div class="boton">
-                                    <a>aceptada</a>
-                                    <a>rechazada</a>
-                                </div>
-                            </div>
+                    </div>
+                </div>
+                <div class="item-columna3" id="solicitud_desplegada_pendiente_contenido_6">
+                    <img src="../../../img/iconoUser.png" alt="user">
+                    <div>
+                        <ul>
+                            <li>contenido 6</li>
+                            <li>rol</li>
+                            <li>DNI</li>
+                            <li>asunto</li>
+                            <li>tema</li>
+                            <li>descripcion</li>
+                        </ul>
+                        <div class="boton">
+                            <a>aceptada</a>
+                            <a>rechazada</a>
                         </div>
+                    </div>
+                </div>
                 <!--sin contenido seleccionado-->
                 <div class="sin_contenido" id="sin_contenido_desplegado">
-                    <ul>
-                        <li><img src="https://placehold.co/100x100" alt="icono sin solicitudes"></li>
-                        <li><p>Selecciona una solicitud</p></li>
-                    </ul>
+                    <img src="../../../img/iconoNoHaySolicitudesSeleccionadas.png" alt="icono sin solicitudes"></li>
+                    <p>Selecciona una solicitud para atenderla</p>
+                    <p>No hay solicitudes seleccionadas</p>
                 </div>
         </div>
         <!--fin de vista de contenido-->
