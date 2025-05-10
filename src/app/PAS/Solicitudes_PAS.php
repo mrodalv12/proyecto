@@ -29,16 +29,16 @@ if ($thisUser->rol != "PAS") {
         <!--botones primarios-->
         <div class="todas_las_solicitudes">
             <div class="bandeja_columna1">
-                <a onclick="activarEstilo(this); mostrarContenido('solicitud_pendiente_')">
+                <a id="boton1pendientes" onclick="activarEstilo(this); mostrarContenido('solicitud_pendiente_')">
                         <p>Bandeja de entrada</p>
                         <p>6</p>
                     </a>
 
-                <a onclick="activarEstilo(this); mostrarContenido('solicitud_hecha_')">
+                <a id="boton2hechas" onclick="activarEstilo(this); mostrarContenido('solicitud_hecha_')">
                         <p>Bandeja de Hechas</p>
                         <p>2</p>
                     </a>
-                    <a onclick="activarEstilo(this); mostrarContenido('solicitud_rechazada_')">
+                    <a id="boton3papelera" onclick="activarEstilo(this); mostrarContenido('solicitud_rechazada_')">
                         <p>Papelera</p>
                         <p>1</p>
                     </a>
@@ -57,38 +57,33 @@ if ($thisUser->rol != "PAS") {
                     <a id="solicitud_pendiente_aceptada_contenido_1" class="item-columna2" onclick="activarEstilo2(this); mostrarContenido2('pendiente_aceptada_contenido_1')">
                             <ul>
                                 <li><p>Lorem ipsum movedae tiresio</p></li>
-                                <li><img src="https://placehold.co/30x30" alt="aceptada?"></li>
+                                <li><img src="../../../img/iconoSolicitudAceptada.png" alt="aceptada"></li>
                             </ul>
                     </a>
 
                     <a id="solicitud_pendiente_contenido_2" class="item-columna2" onclick="activarEstilo2(this); mostrarContenido2('pendiente_contenido_2')">
                         <ul>
                             <li><p>Lorem ipsum movedae tiresio</p></li>
-                            <li><img src="https://placehold.co/30x30" alt="aceptada?"></li>
                         </ul>
                     </a>
                     <a id="solicitud_pendiente_contenido_3" class="item-columna2" onclick="activarEstilo2(this); mostrarContenido2('pendiente_contenido_3')">
                         <ul>
                             <li><p>Lorem ipsum movedae tiresio</p></li>
-                            <li><img src="https://placehold.co/30x30" alt="aceptada?"></li>
                         </ul>
                     </a>
                     <a id="solicitud_pendiente_contenido_4" class="item-columna2" onclick="activarEstilo2(this); mostrarContenido2('pendiente_contenido_4')">
                         <ul>
                             <li><p>Lorem ipsum movedae tiresio</p></li>
-                            <li><img src="https://placehold.co/30x30" alt="aceptada?"></li>
                         </ul>
                     </a>
                     <a id="solicitud_pendiente_contenido_5" class="item-columna2" onclick="activarEstilo2(this); mostrarContenido2('pendiente_contenido_5')">
                         <ul>
                             <li><p>Lorem ipsum movedae tiresio</p></li>
-                            <li><img src="https://placehold.co/30x30" alt="aceptada?"></li>
                         </ul>
                     </a>
                     <a id="solicitud_pendiente_contenido_6" class="item-columna2" onclick="activarEstilo2(this); mostrarContenido2('pendiente_contenido_6')">
                         <ul>
                             <li><p>Lorem ipsum movedae tiresio</p></li>
-                            <li><img src="https://placehold.co/30x30" alt="aceptada?"></li>
                         </ul>
                     </a>
                 </div>

@@ -44,7 +44,7 @@ if ($thisUser->rol != "PAS") {
             <ol>
                 <!--1 solicitud-->
                 <li class="item" id="0001">
-                        <a href="Solicitudes_PAS.php">
+                        <a href="Solicitudes_PAS.php?seccion=solicitud_desplegada_pendiente_contenido_2">
                             <div class="arriba_mensaje">
                                 <img src="../../../img/iconoUser.png" alt="icono">
                                 <ul>
@@ -63,9 +63,9 @@ if ($thisUser->rol != "PAS") {
                         </a>
                 </li>
 
-                <!--1 solicitud-->
+                <!--2 solicitud-->
                 <li class="item">
-                    <a href="Solicitudes_PAS.php">
+                    <a href="Solicitudes_PAS.php?seccion=solicitud_desplegada_pendiente_contenido_3">
                         <div class="arriba_mensaje">
                             <img src="../../../img/iconoUser.png" alt="icono">
                             <ul>
@@ -86,9 +86,9 @@ if ($thisUser->rol != "PAS") {
                     </a>
                 </li>
 
-                <!--1 solicitud-->
+                <!--3 solicitud-->
                 <li class="item">
-                    <a href="Solicitudes_PAS.php">
+                    <a href="Solicitudes_PAS.php?seccion=solicitud_desplegada_pendiente_contenido_4">
                         <div class="arriba_mensaje">
                             <img src="../../../img/iconoUser.png" alt="icono">
                             <ul>
@@ -109,9 +109,9 @@ if ($thisUser->rol != "PAS") {
                     </a>
                 </li>
 
-                <!--1 solicitud-->
+                <!--4 solicitud-->
                 <li class="item">
-                    <a href="Solicitudes_PAS.php">
+                    <a href="Solicitudes_PAS.php?seccion=solicitud_desplegada_pendiente_contenido_5">
                         <div class="arriba_mensaje">
                             <img src="../../../img/iconoUser.png" alt="icono">
                             <ul>
@@ -132,9 +132,9 @@ if ($thisUser->rol != "PAS") {
                     </a>
                 </li>
 
-                <!--1 solicitud-->
+                <!--5 solicitud-->
                 <li class="item">
-                    <a href="Solicitudes_PAS.php">
+                    <a href="Solicitudes_PAS.php?seccion=solicitud_desplegada_pendiente_contenido_6">
                         <div class="arriba_mensaje">
                             <img src="../../../img/iconoUser.png" alt="icono">
                             <ul>

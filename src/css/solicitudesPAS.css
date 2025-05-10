@@ -35,6 +35,7 @@ body {
 }
 main {
     flex: 1;
+    margin-bottom: 40px;
 }
 /* endregion */
 /*-----------------------------------------------------------------------------------------------------*/
@@ -92,6 +93,7 @@ h1{
     padding: 5px;
     border: 1px solid #4D4A4A;
     border-radius: 5px;
+    height: 45px;
 }
 .columna_2 a:hover{
     background-color: #D0D3E8;
@@ -99,6 +101,9 @@ h1{
 .columna_2 a.color{
     background-color: #7280B9;
     color: white;
+    img{
+        filter: brightness(0) invert(1);
+    }
 }
 .columna_2 .bandeja a ul{
     list-style: none;
@@ -108,7 +113,11 @@ h1{
 .columna_2 .bandeja a img{
     width: 30px;
     height: 30px;
-    padding-left: 5px;
+    padding: 0 5px;
+    box-sizing: content-box;
+}
+.columna_2 .bandeja a p{
+    width: 70%;
 }
 /*fin de la columna 2*/
 /*columna 3*/

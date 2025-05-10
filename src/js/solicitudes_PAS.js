@@ -13,7 +13,6 @@ function mostrarContenido(id) {
     elementos.forEach(elemento => {
         elemento.classList.add('activo');
         hayElementos = true;
-        console.log("Activado: ", elemento.id);
     });
     const mensajeVacio = document.getElementById("bandeja_vacia");
     if (mensajeVacio) {
@@ -60,3 +59,26 @@ function activarEstilo2(elemento) {
     elemento.classList.add('color');
 }
 //---------------------------------------------------------------------------------
+function activarBotonDesdeInicioPas() {
+    const params = new URLSearchParams(window.location.search);
+    const seccionActiva = params.get("seccion");
+    const boton2activo = seccionActiva.replace("_desplegada", "");
+
+    if (seccionActiva) {
+        const boton = document.getElementById(seccionActiva);
+        const boton2 = document.getElementById(boton2activo);
+        const seccion2 = document.querySelectorAll(`[id^="solicitud_pendiente_"]`)
+        if (boton) {
+            boton.classList.add("activo2");
+            boton2.classList.add("color")
+            seccion2.forEach(botones => {
+                botones.classList.add('activo');
+            });
+            document.getElementById("boton1pendientes").classList.add("activo");
+            document.getElementById("sin_contenido_desplegado").style.display = "none";
+            document.getElementById("bandeja_vacia").style.display = "none";
+        }
+    }
+}
+//---------------------------------------------------------------------------------
+activarBotonDesdeInicioPas();
