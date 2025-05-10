@@ -31,7 +31,7 @@ html, body {
 }
 body {
     margin: 0;
-    font-family: "Andale Mono", monospace;
+    font-family: "Martel Sans", monospace;
 }
 main {
     flex: 1;
@@ -135,6 +135,7 @@ main>a{
     width: 70%;
 }
 /*fin de la columna 2*/
+
 /*columna 3*/
 .solicitudes_vista_del_contenido{
     width: 65vw;
@@ -154,43 +155,59 @@ main>a{
     margin: 5px;
     height: 70vh;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
-.solicitudes_vista_del_contenido .item-columna3 div{ /*veremos*/
+.solicitudes_vista_del_contenido .item-columna3 ul{
     display: flex;
-    justify-content: space-between;
-    align-content: space-between;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
+    height: 90%;
+    gap:20px;
+    overflow-y: scroll;
 }
-.solicitudes_vista_del_contenido>div>img {
+.solicitudes_vista_del_contenido .item-columna3 ul li img {
     width: 100px;
-    height: 100px;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-shrink: 0;
     margin-right: 20px;
 }
-.solicitudes_vista_del_contenido div div{
-    list-style: none;
-}
-
-.solicitudes_vista_del_contenido div ul li{
-    padding: 10px 0;
+.solicitudes_vista_del_contenido .item-columna3 ul div {
+    padding: 20px 40px 20px 0;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
-
-.solicitudes_vista_del_contenido div.boton a{
+.solicitudes_vista_del_contenido .item-columna3 ul div p{
+    margin: 10px 0;
+    font-size: 0.7rem;
+}
+.solicitudes_vista_del_contenido .item-columna3 ul li.img_del_user_en_solicitudes{
+    width: 30%;
+}
+.solicitudes_vista_del_contenido .item-columna3 div.boton{
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+    justify-content: flex-end;
+}
+.solicitudes_vista_del_contenido .item-columna3>div.boton a{
     border: 1px solid #4D4A4A;
     padding: 5px 15px;
     border-radius: 5px;
     background-color: transparent;
     margin-left: 15px;
     font-size: 0.7rem;
-    display: flex;
-    align-items: flex-end;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
 }
-.solicitudes_vista_del_contenido div.boton a:hover{
+.solicitudes_vista_del_contenido .item-columna3 div.boton a:hover{
     background-color: #aeaeae;
 }
+
+
+/*ventana sin contenido desplegado*/
+
 .solicitudes_vista_del_contenido #sin_contenido_desplegado {
     background-color: #686565;
     padding: 20px;

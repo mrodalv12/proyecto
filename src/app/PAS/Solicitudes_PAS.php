@@ -115,104 +115,122 @@ if ($thisUser->rol != "PAS") {
             <!--vista del contenido-->
             <div class="solicitudes_vista_del_contenido">
                 <div class="item-columna3" id="solicitud_desplegada_pendiente_aceptada_contenido_1">
-                    <img src="../../../img/iconoUser.png" alt="user">
-                    <div>
-                        <ul>
-                            <li>contenido 1</li>
-                            <li>rol</li>
-                            <li>DNI</li>
-                            <li>asunto</li>
-                            <li>tema</li>
-                            <li>descripcion</li>
-                        </ul>
-                        <div class="boton">
-                            <a>realizada</a>
-                        </div>
+                    <ul>
+                        <li class="img_del_user_en_solicitudes"><img src="../../../img/iconoUser.png" alt="user"></li>
+                        <li><div>
+                            <p>contenido 1</p>
+                            <p>Estudiantes</p>
+                            <p>Z123456789</p>
+                            <p> Asunto: quiero matar a alguien porque esta M*ERDA de css no quiere,
+                                no le da la gana, a ocupar todo el espacio disponible</p>
+                            <p> Tema: auxilio por favor saquenme de la carrera</p>
+                            <p>Descripcion:<br>NECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
+                                DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
+                                que eso esta bien????? NO, NO, NO LO ESTA</p>
+                            </div></li>
+                    </ul>
+                    <div class="boton">
+                        <a>realizada</a>
                     </div>
                 </div>
                 <div class="item-columna3" id="solicitud_desplegada_pendiente_contenido_2">
-                    <img src="../../../img/iconoUser.png" alt="user">
-                    <div>
-                        <ul>
-                            <li>contenido 2</li>
-                            <li>rol</li>
-                            <li>DNI</li>
-                            <li>asunto</li>
-                            <li>tema</li>
-                            <li>descripcion</li>
-                        </ul>
-                        <div class="boton">
-                            <a>aceptada</a>
-                            <a>rechazada</a>
-                        </div>
+                    <ul>
+                        <li class="img_del_user_en_solicitudes"><img src="../../../img/iconoUser.png" alt="user"></li>
+                        <li><div>
+                            <p>contenido 2</p>
+                            <p>profesor</p>
+                            <p>Z123456789</p>
+                            <p> Asunto: quiero matar a alguien porque esta M*ERDA de css no quiere,
+                                no le da la gana, a ocupar todo el espacio disponible</p>
+                            <p> Tema: auxilio por favor saquenme de la carrera</p>
+                            <p>Descripcion:<br>NECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
+                                DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
+                                que eso esta bien????? NO, NO, NO LO ESTA</p>
+                            </div></li>
+                    </ul>
+                    <div class="boton">
+                        <a>aceptada</a>
+                        <a>rechazada</a>
                     </div>
                 </div>
                 <div class="item-columna3" id="solicitud_desplegada_pendiente_contenido_3">
-                    <img src="../../../img/iconoUser.png" alt="user">
-                    <div>
-                        <ul>
-                            <li>contenido 3</li>
-                            <li>rol</li>
-                            <li>DNI</li>
-                            <li>asunto</li>
-                            <li>tema</li>
-                            <li>descripcion</li>
-                        </ul>
-                        <div class="boton">
-                            <a>aceptada</a>
-                            <a>rechazada</a>
-                        </div>
+                    <ul>
+                        <li class="img_del_user_en_solicitudes"><img src="../../../img/iconoUser.png" alt="user"></li>
+                        <li><div>
+                            <p>contenido 3</p>
+                            <p>Estudiantes</p>
+                            <p>Z123456789</p>
+                            <p> Asunto: quiero matar a alguien porque esta M*ERDA de css no quiere,
+                                no le da la gana, a ocupar todo el espacio disponible</p>
+                            <p> Tema: auxilio por favor saquenme de la carrera</p>
+                            <p>Descripcion:<br>NECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
+                                DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
+                                que eso esta bien????? NO, NO, NO LO ESTA</p>
+                            </div></li>
+                    </ul>
+                    <div class="boton">
+                        <a>aceptada</a>
+                        <a>rechazada</a>
                     </div>
                 </div>
                 <div class="item-columna3" id="solicitud_desplegada_pendiente_contenido_4">
-                    <img src="../../../img/iconoUser.png" alt="user">
-                    <div>
-                        <ul>
-                            <li>contenido 4</li>
-                            <li>rol</li>
-                            <li>DNI</li>
-                            <li>asunto</li>
-                            <li>tema</li>
-                            <li>descripcion</li>
-                        </ul>
-                        <div class="boton">
-                            <a>aceptada</a>
-                            <a>rechazada</a>
-                        </div>
+                    <ul>
+                        <li class="img_del_user_en_solicitudes"><img src="../../../img/iconoUser.png" alt="user"></li>
+                        <li><div>
+                            <p>contenido 4</p>
+                            <p>profesor</p>
+                            <p>Z123456789</p>
+                            <p> Asunto: quiero matar a alguien porque esta M*ERDA de css no quiere,
+                                no le da la gana, a ocupar todo el espacio disponible</p>
+                            <p> Tema: auxilio por favor saquenme de la carrera</p>
+                            <p>Descripcion:<br>NECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
+                                DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
+                                que eso esta bien????? NO, NO, NO LO ESTA</p>
+                            </div></li>
+                    </ul>
+                    <div class="boton">
+                        <a>aceptada</a>
+                        <a>rechazada</a>
                     </div>
                 </div>
                 <div class="item-columna3" id="solicitud_desplegada_pendiente_contenido_5">
-                    <img src="../../../img/iconoUser.png" alt="user">
-                    <div>
-                        <ul>
-                            <li>contenido 5</li>
-                            <li>rol</li>
-                            <li>DNI</li>
-                            <li>asunto</li>
-                            <li>tema</li>
-                            <li>descripcion</li>
-                        </ul>
-                        <div class="boton">
-                            <a>aceptada</a>
-                            <a>rechazada</a>
-                        </div>
+                    <ul>
+                        <li class="img_del_user_en_solicitudes"><img src="../../../img/iconoUser.png" alt="user"></li>
+                        <li><div>
+                                <p>contenido 5</p>
+                                <p>Estudiantes</p>
+                                <p>Z123456789</p>
+                                <p> Asunto: quiero matar a alguien porque esta M*ERDA de css no quiere,
+                                    no le da la gana, a ocupar todo el espacio disponible</p>
+                                <p> Tema: auxilio por favor saquenme de la carrera</p>
+                                <p>Descripcion:<br>NECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
+                                    DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
+                                    que eso esta bien????? NO, NO, NO LO ESTA</p>
+                            </div></li>
+                    </ul>
+                    <div class="boton">
+                        <a>aceptada</a>
+                        <a>rechazada</a>
                     </div>
                 </div>
                 <div class="item-columna3" id="solicitud_desplegada_pendiente_contenido_6">
-                    <img src="../../../img/iconoUser.png" alt="user">
-                    <div>
-                        <ul>
-                            <li>contenido 6</li>
-                            <li>rol</li>
-                            <li>DNI</li>
-                            <li>asunto</li>
-                            <li>tema</li>
-                            <li>descripcion</li>
-                        </ul>
-                        <div class="boton">
-                            <a>aceptada</a>
-                            <a>rechazada</a>
-                        </div>
+                    <ul>
+                        <li class="img_del_user_en_solicitudes"><img src="../../../img/iconoUser.png" alt="user"></li>
+                        <li><div>
+                                <p>contenido 6</p>
+                                <p>Estudiantes</p>
+                                <p>Z123456789</p>
+                                <p> Asunto: quiero matar a alguien porque esta M*ERDA de css no quiere,
+                                    no le da la gana, a ocupar todo el espacio disponible</p>
+                                <p> Tema: auxilio por favor saquenme de la carrera</p>
+                                <p>Descripcion:<br>NECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
+                                    DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
+                                    que eso esta bien????? NO, NO, NO LO ESTA</p>
+                            </div></li>
+                    </ul>
+                    <div class="boton">
+                        <a>aceptada</a>
+                        <a>rechazada</a>
                     </div>
                 </div>
                 <!--sin contenido seleccionado-->

@@ -22,7 +22,7 @@ include "datos_usuario.php";
     <nav class="cosas_del_header">
         <ul>
             <?php if($thisUser->rol =="PAS"): ?>
-                <li class="enlaces_pas"><a href="../PAS/Solicitudes_PAS.php">Solicitudes</a></li>
+                <li class="enlaces_pas"><a href="../PAS/Solicitudes_PAS.php?esto=boton1pendientes">Solicitudes</a></li>
             <?php elseif($thisUser->rol == "Alumno" || $thisUser->rol == "Profesor"): ?>
                 <li><a href="#">Asignaturas</a></li>
                 <li><a href="#">Calendario</a></li>

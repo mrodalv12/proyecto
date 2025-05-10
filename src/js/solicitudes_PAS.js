@@ -82,4 +82,23 @@ function activarBotonDesdeInicioPas() {
     }
 }
 //---------------------------------------------------------------------------------
-activarBotonDesdeInicioPas();
+/*function activardesdeheaderPAS() {
+    const direccion = new URLSearchParams(window.location.search);
+    const labroma = direccion.get("esto");
+
+    if (labroma) {
+        const esteboton = document.getElementById(labroma);
+        const botones2 = document.querySelectorAll(`[id^="solicitud_pendiente_"]`);
+        if (esteboton) {
+            esteboton.classList.add('activo');
+            botones2.forEach(minibotones => {
+                minibotones.classList.add('activo');
+            });
+            document.getElementById("sin_contenido_desplegado").style.display = "none";
+            document.getElementById("bandeja_vacia").style.display = "none";
+        }
+    }
+}*/
+//---------------------------------------------------------------------------------
+activarBotonDesdeInicioPas();/*
+activardesdeheaderPAS();*/
