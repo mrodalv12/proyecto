@@ -1,0 +1,156 @@
+
+.intro_asig {
+    margin: auto 170px;
+    gap: 50px;
+    justify-content: space-between;
+    margin-bottom: 50px; /* MÁS ESPACIO ABAJO */
+}
+
+.intro_asig > p {
+    margin-bottom: 50px;
+}
+
+.desplegables {
+    margin:  auto 170px;
+    margin-top: 50px; /* MÁS ESPACIO ARRIBA */
+}
+
+h1{
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 15px;
+}
+
+button {
+    color: white;
+    border: none;
+    border-radius: 20px;
+    width: 313px;
+    height: 86px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.boton_tareas {
+    background-color: #C46575;
+}
+
+.boton_calificaciones {
+    background-color: #7280B9;
+}
+
+.boton_guia_docente {
+    background-color: #5A9E5D;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.especificaciones_asign {
+    font-size: 14px;
+
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 10px; /* Espacio entre elementos */
+    list-style: none; /* Quita los puntitos */
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+/*Desplegables de acordeón*/
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    margin: 10px 0;
+    padding: 10px;
+    width: 1155px;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
+
+details[open] {
+    padding-left: 20px;
+}
+
+/*Profesores*/
+.contenedor_profesores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.profesor {
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    width: 400px;
+    margin-right: 20px;
+    align-items: center;
+}
+.profesor img {
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+/*Evaluación*/
+.contenedor_evaluacion {
+    padding: 20px;
+}
+
+/*Bibliografía*/
+.contenedor_bibliografia {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre las dos columnas */
+    padding: 20px;
+}
+
+.contenedor_bibliografia > div {
+    width: 48%;
+}
+
+.bibliografia-titulo {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+ul {
+    padding-left: 20px; /* Añade sangría en las listas */
+}
+
+/*Unidades didácticas*/
+
+.table {
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+th {
+    font-weight: bold;
+    background-color: #4D4A4A;
+    color: white;
+}
+
+td {
+    font-size: 14px;
+    border: 1px solid #4D4A4A;
+    /*padding: 8px; */
+}

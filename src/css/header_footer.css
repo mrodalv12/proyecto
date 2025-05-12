@@ -1,0 +1,141 @@
+/*Importación de la tipografía Martel Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Space+Mono&display=swap');
+
+/* region--- HEADER --- */
+body {
+    margin: 0;
+    font-family: "Martel Sans";
+}
+
+.header {
+    padding: 0px 30px;
+    height: 80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #4D4A4A;
+
+    font-size: 15px;
+}
+
+.logo_proa {
+    width: 150px;
+}
+.notificaciones{
+    width: 20px;
+}
+
+.links_del_header ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.links_del_header ul li {
+    position: relative;
+}
+
+/* --- ESTILO DE LOS LINKS --- */
+.header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* --- SUBMENÚ DEL USUARIO --- */
+.nombre_de_usuario {
+    color: #FFF;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.datos_usuario {
+    font-weight: normal;
+    color: black;
+}
+
+.nombre_de_usuario
+.datos_usuario {
+    display: none;
+    position: absolute;
+
+    left: -100px;
+    width: 150px;
+    padding: 10px;
+    z-index: 1;
+
+    list-style: none;
+    background-color: rgba(157, 157, 157, 0.89);
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.nombre_de_usuario:hover .datos_usuario {
+    display: block;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #4D4A4A; /* elige tu color */
+    margin: 10px 0;
+}
+
+#cerrar_sesion {
+    display: block;
+    margin: 10px auto 0 auto;
+    padding: 2px 8px;
+
+    color: white;
+    background-color: #c72f2f;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/*Hacer el media query de móvil, header*/
+@media (max-width:500px){
+    .encabezado{
+        font-size: 10px;
+    }
+    .cosas_del_header ul {
+        gap:10px;
+    }
+    .nombre_de_usuario .user {
+        left: -70px;
+    }
+}
+/* endregion */
+
+/*region --- FOOTER ---*/
+
+footer{
+    position: relative;
+    background-color: #4D4A4A;
+    color: white;
+    font-size: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+footer img{
+    position: absolute;
+    right: 30px;
+    top: 50%; /* Lo coloca a mitad del contenedor */
+    transform: translateY(-50%); /* Lo sube la mitad de su propia altura */
+    width: 30px;
+}
+
+/*Hacer el media query de móvil, footer*/
+@media (max-width:500px){
+    .footer .logoGTI p{
+        font-size: 7px;
+   }
+}
+
+/* endregion */
+
+.cositas{
+    height: 30px;
+}
