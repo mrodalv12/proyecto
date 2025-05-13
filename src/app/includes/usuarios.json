@@ -1,41 +1,5 @@
 [
     {
-        "usuario": "Minerva",
-        "correo": "minimv06@gmail.com",
-        "contrase\u00f1a": "$2y$12$6MsSQpQfgYTBzlJLpHyO2eOe579OnRnXM8ls4G2f2S9WgCSSSLYOG",
-        "dni": "01-9218611",
-        "nombre": "Lief",
-        "apellido1": "Simants",
-        "apellido2": "Dredge",
-        "email": "l.simdre@epsg.upv.es",
-        "password": "9218611",
-        "rol": "alumno"
-    },
-    {
-        "usuario": "Minerva",
-        "correo": "minimv06@gmail.com",
-        "contrase\u00f1a": "$2y$12$6MsSQpQfgYTBzlJLpHyO2eOe579OnRnXM8ls4G2f2S9WgCSSSLYOG",
-        "dni": "60-4525956",
-        "nombre": "Kevan",
-        "apellido1": "Pounds",
-        "apellido2": "Mainston",
-        "email": "k.poumai@upv.es",
-        "password": "4525956",
-        "rol": "profesor"
-    },
-    {
-        "usuario": "Minerva",
-        "correo": "minimv06@gmail.com",
-        "contrase\u00f1a": "$2y$12$6MsSQpQfgYTBzlJLpHyO2eOe579OnRnXM8ls4G2f2S9WgCSSSLYOG",
-        "dni": "88-1316390",
-        "nombre": "Ondrea",
-        "apellido1": "Brezlaw",
-        "apellido2": "Sherwill",
-        "email": "o.breshe@upv.es",
-        "password": "1316390",
-        "rol": "pas"
-    },
-    {
         "usuario": "nerva",
         "correo": "mmarvid1@upv.edu.es",
         "contrase\u00f1a": "$2y$12$jMm8MMghTV.T.J1sbA3Xm.BHAqi25gyPPjCZXOwg9cCOl9tMi.0cS",
@@ -70,5 +34,42 @@
         "email": "b.maltho@upv.es",
         "password": "1970980",
         "rol": "pas"
+    },
+    {
+        "usuario": "Minerva",
+        "correo": "minimv06@gmail.com",
+        "contrase\u00f1a": "$2y$12$6MsSQpQfgYTBzlJLpHyO2eOe579OnRnXM8ls4G2f2S9WgCSSSLYOG",
+        "dni": "01-9218611",
+        "nombre": "Lief",
+        "apellido1": "Simants",
+        "apellido2": "Dredge",
+        "email": "l.simdre@epsg.upv.es",
+        "password": "9218611",
+        "rol": "alumno"
+    },
+    {
+        "usuario": "Minerva",
+        "correo": "minimv06@gmail.com",
+        "contrase\u00f1a": "$2y$12$6MsSQpQfgYTBzlJLpHyO2eOe579OnRnXM8ls4G2f2S9WgCSSSLYOG",
+        "dni": "60-4525956",
+        "nombre": "Kevan",
+        "apellido1": "Pounds",
+        "apellido2": "Mainston",
+        "email": "k.poumai@upv.es",
+        "password": "4525956",
+        "rol": "profesor"
+    },
+    {
+        "usuario": "Minerva",
+        "correo": "minimv06@gmail.com",
+        "contrase\u00f1a": "$2y$12$6MsSQpQfgYTBzlJLpHyO2eOe579OnRnXM8ls4G2f2S9WgCSSSLYOG",
+        "dni": "88-1316390",
+        "nombre": "Ondrea",
+        "apellido1": "Brezlaw",
+        "apellido2": "Sherwill",
+        "email": "o.breshe@upv.es",
+        "password": "1316390",
+        "rol": "pas"
     }
+
 ]

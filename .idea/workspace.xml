@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fa65155-22b5-4a9b-85ca-5b360c417b0a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/PROA/solicitudes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/includes/datos_usuario.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/includes/footerPROA.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/includes/headerPROA.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/headeryfooterPROA.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/solicitudes.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/enviarSolicitud.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/GTI/InicioSesionProa.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/GTI/InicioSesionProa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/obtener_datos_usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/obtener_datos_usuario.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/procesar_login.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/procesar_login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/includes/usuarios.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/usuarios.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/LandingPage_No registrado.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/LandingPage_No registrado.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +68,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\minim\Documents\UNI1\PROYECTO\proyecto\src\app\PROA" />
       <recent name="C:\Users\minim\Documents\UNI1\PROYECTO\proyecto\src\app\includes" />
     </key>
   </component>
@@ -84,7 +93,8 @@
       <workItem from="1746442734220" duration="571000" />
       <workItem from="1746443307325" duration="529000" />
       <workItem from="1746443927130" duration="20357000" />
-      <workItem from="1746540326567" duration="15854000" />
+      <workItem from="1746540326567" duration="23048000" />
+      <workItem from="1747033476746" duration="17132000" />
     </task>
     <servers />
   </component>

@@ -62,5 +62,6 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
 <?php include "../includes/procesar_login.php" ?>
 
 <script src="../../js/loginPROA.js" ></script>
+<script src="../../js/ProaRegistrado.js" ></script>
 </body>
 </html>
