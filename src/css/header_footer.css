@@ -102,7 +102,7 @@
 }
 @media(max-width: 565px){
     .contenido{
-        margin-top: 65px;
+        margin-top: 75px;
     }
     .encabezado{
         position: fixed;

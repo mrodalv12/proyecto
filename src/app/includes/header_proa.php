@@ -8,12 +8,8 @@ include "datos_usuario.php";
         <a href="../PAS/Inicio_PAS.php" class="logo">
             <img src="../../../img/logoPROA.png" alt="proa" />
         </a>
-    <?php elseif ($thisUser->rol=="Alumno"):?>
-        <a href="../Profesor_Alumno/Inicio_Alumnos.php" class="logo">
-            <img src="../../../img/logoPROA.png" alt="proa" />
-        </a>
-    <?php elseif ($thisUser->rol =="Profesor"):?>
-        <a href="../Profesor_Alumno/Inicio_Profesor.php" class="logo">
+    <?php elseif ($thisUser->rol=="Alumno" || $thisUser->rol=="Profesor"):?>
+        <a href="../Profesor_Alumno/Inicio_Alumno-profesor.php" class="logo">
             <img src="../../../img/logoPROA.png" alt="proa" />
         </a>
     <?php endif; ?>
@@ -24,7 +20,7 @@ include "datos_usuario.php";
             <?php if($thisUser->rol =="PAS"): ?>
                 <li class="enlaces_pas"><a href="../PAS/Solicitudes_PAS.php?esto=boton1pendientes">Solicitudes</a></li>
             <?php elseif($thisUser->rol == "Alumno" || $thisUser->rol == "Profesor"): ?>
-                <li><a href="#">Asignaturas</a></li>
+                <li><a href="../Profesor_Alumno/asignaturas.php">Asignaturas</a></li>
                 <li><a href="#">Calendario</a></li>
                 <li><a href="#">Solicitudes</a></li>
             <?php endif; ?>
@@ -33,7 +29,7 @@ include "datos_usuario.php";
     <nav class="MOVIL_cosas_del_header">
         <ul>
             <?php if($thisUser->rol == "Alumno" || $thisUser->rol == "Profesor"): ?>
-                <li class="enlaces"><a href="#"><img src="../../../img/iconoAsignaturas.png" alt="Asignaruras"></a></li>
+                <li class="enlaces"><a href="../Profesor_Alumno/asignaturas.php"><img src="../../../img/iconoAsignaturas.png" alt="Asignaruras"></a></li>
                 <li class="enlaces"><a href="#"><img src="../../../img/iconoCalendario.png" alt="Calendario"></a></li>
                 <li class="enlaces"><a href="#"><img src="../../../img/iconoSolicitudes.png" alt="Solicitudes"></a></li>
             <?php endif; ?>

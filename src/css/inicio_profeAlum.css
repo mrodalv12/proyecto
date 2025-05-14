@@ -1,0 +1,138 @@
+/* region --- RESET --- */
+* { margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; }
+
+body { min-height: 100dvh; }
+input, button, textarea, select { font: inherit; }
+
+p { text-wrap: pretty; }
+h1, h2, h3, h4, h5, h6 { text-wrap: balance; }
+
+img, video, svg { height: auto; max-width: 100%; }
+
+@media (prefers-reduced-motion: reduce)  {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+        transition: none;
+    }
+}
+
+a { color: inherit; }
+/* endregion */
+/* region --- GENERAL --- */
+html, body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+body {
+    margin: 0;
+    font-family: "Martel Sans", monospace;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex: 1;
+}
+p{
+    font-size: 0.8em;
+}
+h1{
+    font-size: 2.5em;
+}
+/* endregion */
+
+/* region -- saludo --*/
+.saludo{
+    background-image: url("../../img/saludoPASfondo.jpg");
+    color: whitesmoke;
+    background-size: cover;
+    height: 25vh;
+
+}
+
+.saludo h1 {
+    background-color: #4D4A4A90;
+    padding-left: 20px;
+    height: 25vh;
+    align-content: center;
+    border-bottom: 3px solid #4D4A4A;
+    align-items: center;
+}
+
+/* endregion */
+
+/* region --eventos--*/
+
+main>div h2{
+    margin: 20px;
+}
+
+.todos_los_eventos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 0 10px;
+    flex-wrap: wrap;
+}
+.dia_de_la_semana{
+    background-color: lightgray;
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    transition: background-color 0.5s ease;
+    transform: scale(1);
+}
+.dia_de_la_semana:hover{
+    background-color: #D0D3E8;
+    align-self: center;
+    transform: scale(1.03);
+
+}
+.dia_de_la_semana ol{
+    list-style: circle;
+    padding: 20px 0 0;
+    text-align: left;
+}
+.dia_de_la_semana ol li{
+    margin: 5px;
+}
+.dia_de_la_semana ol li a{
+    text-decoration: none;
+}
+.dia_de_la_semana p#no_hay_datos{
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+/* endregion */
+/* region --telefono--*/
+@media (min-width:1080px) {
+    #finde{
+        width: 70%;
+    }
+}
+@media (max-width: 785px) {
+    .dia_de_la_semana{
+        width: 45%;
+    }
+}
+@media (max-width: 430px) {
+    .dia_de_la_semana{
+        width: 90%;
+    }
+}
+
+
+/* endregion */

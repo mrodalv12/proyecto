@@ -1,5 +1,5 @@
 <?php
-include "../includes/funciones_inicio_PAS.php";
+include "../includes/funciones_inicio.php";
 include "../includes/datos_usuario.php";
 
 if ($thisUser->rol != "PAS") {
