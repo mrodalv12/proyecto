@@ -1,6 +1,4 @@
-<!----------------------------------------------------------------------------------------------------------->
 <?php
-include "../includes/funciones_inicio_PAS.php";
 include "../includes/datos_usuario.php";
 
 if ($thisUser->rol != "PAS") {
@@ -118,7 +116,7 @@ if ($thisUser->rol != "PAS") {
                     <ul>
                         <li class="img_del_user_en_solicitudes"><img src="../../../img/iconoUser.png" alt="user"></li>
                         <li><div>
-                            <p>contenido 1</p>
+                                <a href="perfil_solicitud_PAS.php"><p>contenido 1</p></a>
                             <p>Estudiantes</p>
                             <p>Z123456789</p>
                             <p> Asunto: quiero matar a alguien porque esta M*ERDA de css no quiere,
@@ -137,7 +135,7 @@ if ($thisUser->rol != "PAS") {
                     <ul>
                         <li class="img_del_user_en_solicitudes"><img src="../../../img/iconoUser.png" alt="user"></li>
                         <li><div>
-                            <p>contenido 2</p>
+                                <a href="perfil_solicitud_PAS.php"><p>contenido 2</p></a>
                             <p>profesor</p>
                             <p>Z123456789</p>
                             <p> Asunto: quiero matar a alguien porque esta M*ERDA de css no quiere,
@@ -157,7 +155,7 @@ if ($thisUser->rol != "PAS") {
                     <ul>
                         <li class="img_del_user_en_solicitudes"><img src="../../../img/iconoUser.png" alt="user"></li>
                         <li><div>
-                            <p>contenido 3</p>
+                                <a href="perfil_solicitud_PAS.php"><p>contenido 3</p></a>
                             <p>Estudiantes</p>
                             <p>Z123456789</p>
                             <p> Asunto: quiero matar a alguien porque esta M*ERDA de css no quiere,
@@ -177,13 +175,21 @@ if ($thisUser->rol != "PAS") {
                     <ul>
                         <li class="img_del_user_en_solicitudes"><img src="../../../img/iconoUser.png" alt="user"></li>
                         <li><div>
-                            <p>contenido 4</p>
+                                <a href="perfil_solicitud_PAS.php"><p>contenido 4</p></a>
                             <p>profesor</p>
                             <p>Z123456789</p>
                             <p> Asunto: quiero matar a alguien porque esta M*ERDA de css no quiere,
                                 no le da la gana, a ocupar todo el espacio disponible</p>
                             <p> Tema: auxilio por favor saquenme de la carrera</p>
                             <p>Descripcion:<br>NECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
+                                DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
+                                que eso esta bien????? NO, NO, NO LO ESTANECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
+                                DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
+                                que eso esta bien????? NO, NO, NO LO ESTANECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
+                                DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
+                                que eso esta bien????? NO, NO, NO LO ESTANECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
+                                DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
+                                que eso esta bien????? NO, NO, NO LO ESTANECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
                                 DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
                                 que eso esta bien????? NO, NO, NO LO ESTA</p>
                             </div></li>
@@ -197,7 +203,7 @@ if ($thisUser->rol != "PAS") {
                     <ul>
                         <li class="img_del_user_en_solicitudes"><img src="../../../img/iconoUser.png" alt="user"></li>
                         <li><div>
-                                <p>contenido 5</p>
+                                <a href="perfil_solicitud_PAS.php"><p>contenido 5</p></a>
                                 <p>Estudiantes</p>
                                 <p>Z123456789</p>
                                 <p> Asunto: quiero matar a alguien porque esta M*ERDA de css no quiere,
@@ -217,7 +223,7 @@ if ($thisUser->rol != "PAS") {
                     <ul>
                         <li class="img_del_user_en_solicitudes"><img src="../../../img/iconoUser.png" alt="user"></li>
                         <li><div>
-                                <p>contenido 6</p>
+                                <a href="perfil_solicitud_PAS.php"><p>contenido 6</p></a>
                                 <p>Estudiantes</p>
                                 <p>Z123456789</p>
                                 <p> Asunto: quiero matar a alguien porque esta M*ERDA de css no quiere,

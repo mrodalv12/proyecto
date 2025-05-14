@@ -32,9 +32,9 @@ html, body {
 }
 body {
     margin: 0;
-    font-family: "Andale Mono", monospace;
+    font-family: "Martel Sans", monospace;
 }
-.contenido {
+main{
     flex: 1;
 }
 /*-----------------------------------------------------------------------------------------------------*/

@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2fa65155-22b5-4a9b-85ca-5b360c417b0a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/PAS/Directorio_PAS.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/PAS/Solicitudes_PAS.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PAS/Solicitudes_PAS.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/directorioPAS.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Perfil_solicitud_PAS.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/header_footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/header_footer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/solicitudesPAS.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/solicitudesPAS.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/solicitudes_PAS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/solicitudes_PAS.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,6 +119,12 @@
       <workItem from="1746777881533" duration="212000" />
       <workItem from="1746796677157" duration="18955000" />
       <workItem from="1746826480846" duration="21000" />
+      <workItem from="1746870886702" duration="16763000" />
+      <workItem from="1746899251952" duration="723000" />
+      <workItem from="1747030478226" duration="2022000" />
+      <workItem from="1747034696080" duration="1174000" />
+      <workItem from="1747038161038" duration="2321000" />
+      <workItem from="1747233138949" duration="263000" />
     </task>
     <servers />
   </component>

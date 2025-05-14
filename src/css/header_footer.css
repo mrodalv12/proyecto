@@ -8,10 +8,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 5px 10px;
     min-height: 70px;
     box-sizing: border-box;
     font-size: 12px;
