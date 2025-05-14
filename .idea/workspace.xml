@@ -5,39 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fa65155-22b5-4a9b-85ca-5b360c417b0a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/PROA/agregarTareas.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/PROA/editarTareas.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/PROA/listaAlumnos.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/PROA/tareasAlumno.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/PROA/tareasContenido.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/PROA/tareasContenidoProfesor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/PROA/tareasProfesor.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/MOVILmenu-Profesores_y_alumnos.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/agregarTareas.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/editarTareas.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/listaAlumnos.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/tareasAlumno.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/tareasContenido.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/tareasContenidoProfesor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/tareasProfesor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/agregarTareas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/editarTarea.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/pruebaloginPROA.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/tareasContenido.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/tareasContenidoProfesor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/PROA/calendario.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/calendario.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/calendario.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/InicioSesion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/GTI/InicioSesion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/InicioSesionProa.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/GTI/InicioSesionProa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/RegistroGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/GTI/RegistroGTI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/PROA/solicitudes.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PROA/solicitudes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/InicioSesion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/InicioSesion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/RegistroGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/RegistroGTI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/footerPROA.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/footerPROA.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/headerPROA.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/headerPROA.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/obtener_datos_usuario.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/procesar_login.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/usuarios.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/usuarios.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/headeryfooterPROA.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/headeryfooterPROA.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -115,7 +86,7 @@
       <workItem from="1746443307325" duration="529000" />
       <workItem from="1746443927130" duration="20357000" />
       <workItem from="1746540326567" duration="23048000" />
-      <workItem from="1747033476746" duration="51192000" />
+      <workItem from="1747033476746" duration="52464000" />
     </task>
     <servers />
   </component>
