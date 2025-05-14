@@ -1,9 +1,9 @@
 <?php
 session_start();  // Inicia la sesión al comienzo del archivo
 
-if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET["usuario"], $_GET["contraseña"])) {
-    $identificador = $_GET["usuario"]; // Puede ser nombre de usuario o correo
-    $clave = $_GET["contraseña"];
+if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["usuario"], $_POST["contraseña"])) {
+    $identificador = $_POST["usuario"]; // Puede ser nombre de usuario o correo
+    $clave = $_POST["contraseña"];
 
     // Leer usuarios del archivo JSON
     $archivo = "usuarios.json";
@@ -11,6 +11,8 @@ if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET["usuario"], $_GET["contr
         echo "<p>No hay usuarios registrados.</p>";
         exit;
     }
+
+
 
     $datos_json = file_get_contents($archivo);
     $usuarios = json_decode($datos_json, true);

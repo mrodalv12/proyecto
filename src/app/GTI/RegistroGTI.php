@@ -16,7 +16,7 @@
   <main class="main-container">
     <section class="form-box">
       <h2>Crea una cuenta</h2>
-      <form id="registroForm" action="../includes/RegistroGTI.php" method="get">
+      <form id="registroForm" action="../includes/RegistroGTI.php" method="POST">
         <label for="usuario">Nombre de usuario</label>
 
           <!-- El atributo name es lo que se envía al servidor, si no hay, no se envía nada, aunque tenga id -->

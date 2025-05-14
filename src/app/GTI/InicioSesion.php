@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../css/Footer_Header_Noregistrado.css" />
     <link rel="stylesheet" href="../../css/InicioSesion.css" />
 
-    
+
 </head>
 <body>
 
@@ -18,7 +18,7 @@
 <main class="main-content">
     <div class="login-box">
         <h2>Inicia sesión</h2>
-        <form id="loginForm" method="get" action="../includes/InicioSesion.php">
+        <form id="loginForm" method="POST" action="../includes/InicioSesion.php">
             <label for="usuario">Nombre de usuario o correo electrónico</label>
             <input type="text" id="usuario" name="usuario" placeholder="Introduce tu correo electrónico" required />
 
@@ -39,10 +39,10 @@
     </div>
 </main>
 
-    <!-- Footer -->
-    <?php include "../includes/footerGTI.php" ?>
+<!-- Footer -->
+<?php include "../includes/footerGTI.php" ?>
 
-    <!-- Scripts -->
-    <?php include "../includes/InicioSesion.php" ?>
+<!-- Scripts -->
+
 </body>
 </html>

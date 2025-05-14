@@ -5,6 +5,16 @@ session_start();  // Inicia la sesión al comienzo del archivo
 $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
 ?>
 
+<?php
+
+// Si el usuario no está logueado, redirige al login
+if (!isset($_SESSION["usuario"])) {
+    header("Location: ../login.php");
+    exit();
+}
+
+$usuarioLogueado = $_SESSION["usuario"];
+?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -35,7 +45,7 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
 
     <section class="login-section">
       <h2>Inicia sesión en PROA</h2>
-        <form id="loginForm" action="../includes/procesar_login.php" method="GET">
+        <form id="loginForm"  method="GET">
         <label for="rolSeleccionado">Opciones de rol para PROA</label>
             <select id="rolSeleccionado" name="rol" required onchange="completarDatos()">
           <option value="">Selecciona un rol</option>
@@ -59,9 +69,12 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
 <!-- Footer -->
 <?php include "../includes/footerGTI.php" ?>
 
-<?php include "../includes/procesar_login.php" ?>
 
-<script src="../../js/loginPROA.js" ></script>
+<script>
+    const usuarioRegistradoActual = "<?php echo $usuarioLogueado; ?>";
+</script>
+
+<script src="../../js/pruebaloginPROA.js" ></script>
 <script src="../../js/ProaRegistrado.js" ></script>
 </body>
 </html>

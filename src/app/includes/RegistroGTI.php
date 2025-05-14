@@ -1,11 +1,11 @@
 <?php
 // Solo procesar si se recibe el formulario por GET
-if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET["usuario"], $_GET["correo"], $_GET["contraseña"])) {
+if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["usuario"], $_POST["correo"], $_POST["contraseña"])) {
     // Recoger datos del formulario
-    $usuario = $_GET["usuario"];
-    $correo = $_GET["correo"];
-    $contraseña = $_GET["contraseña"];
-    $confirmarContraseña = $_GET["confirmarContraseña"];
+    $usuario = $_POST["usuario"];
+    $correo = $_POST["correo"];
+    $contraseña = $_POST["contraseña"];
+    $confirmarContraseña = $_POST["confirmarContraseña"];
 
     // Comprobar si las contraseñas coinciden
     if ($contraseña !== $confirmarContraseña) {
@@ -15,6 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] === "GET" && isset($_GET["usuario"], $_GET["corre
 
     // Encriptar la contraseña
     $contraseña = password_hash($contraseña, PASSWORD_DEFAULT);
+
 
     // Nuevo usuario en formato array (con datos base)
     $nuevo_usuario = [

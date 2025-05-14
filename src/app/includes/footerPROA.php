@@ -12,7 +12,7 @@
     </nav>
     <div class="logoGTI">
         <p>&copy.2025 GTI Todos los derechos reservados</p>
-        <img src="../../../img/logoGTI.svg" alt="logo GTI">
+        <img src="../../../img/logoGTI.png" alt="logo GTI">
     </div>
 </footer>
 <!--fin de la seccion footer -->

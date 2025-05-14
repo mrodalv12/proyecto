@@ -47,7 +47,6 @@
     <label for="archivo">¿Desea subir un archivo?</label>
     <input type="file" id="archivo" placeholder="Subir archivo">
         </div>
-
         <button onclick="enviarSolicitud()">Enviar solicitud</button>
         <p id="mensaje" class="mensaje"></p>
 </section>
