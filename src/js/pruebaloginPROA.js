@@ -97,13 +97,13 @@ document.getElementById("acceder").addEventListener("click", function (e) {
     // Redirige según el rol
     switch (rol) {
         case "pas":
-            window.location.href = "./app/PAS/Inicio_PAS.php";
+            window.location.href = "./src/app/PAS/Inicio_PAS.php";
             break;
         case "profesor":
-            window.location.href = "./app/Profesor_Alumno/Inicio_Alumno-profesor.php";
+            window.location.href = "./src/app/Profesor_Alumno/Inicio_Alumno-profesor.php";
             break;
         case "alumno":
-            window.location.href = "./app/Profesor_Alumno/Inicio_Alumno-profesor.php";
+            window.location.href = "./src/app/Profesor_Alumno/Inicio_Alumno-profesor.php";
             break;
         default:
             mostrarError("Rol desconocido.");

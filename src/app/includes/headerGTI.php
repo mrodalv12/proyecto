@@ -11,7 +11,7 @@
             <div class="mi-cuenta">
                 <button id="btnCuenta">Mi cuenta ▼</button>
                 <div class="menu-cuenta" id="menuCuenta">
-                    <a href="../includes/cerrarSesion.php">Cerrar sesión</a> <!-- Redirigir a logout.php para cerrar sesión -->
+                    <a href="./src/app/includes/cerrarSesion.php">Cerrar sesión</a> <!-- Redirigir a logout.php para cerrar sesión -->
                 </div>
             </div>
         <?php else: ?>

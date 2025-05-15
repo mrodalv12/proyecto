@@ -6,7 +6,7 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
 
 // Si el usuario no está logueado, redirige al login
 if (!$usuario_logueado) {
-    header("Location: ../InicioSesion.php");
+    header("Location: ./InicioSesion.php");
     exit();
 }
 
@@ -20,24 +20,24 @@ $usuarioLogueado = $_SESSION["usuario"];
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Inicio de sesión PROA</title>
     <?php if ($usuario_logueado): ?>
-        <link rel="preload" href="css/Footer_Header_Registrado.css" as="style" />
-        <link rel="stylesheet" href="css/Footer_Header_Registrado.css" />
-        <link rel="stylesheet" href="css/InicioSesionProa.css" />
+        <link rel="preload" href="./src/css/Footer_Header_Registrado.css" as="style" />
+        <link rel="stylesheet" href="./src/css/Footer_Header_Registrado.css" />
+        <link rel="stylesheet" href="./src/css/InicioSesionProa.css" />
     <?php else: ?>
-        <link rel="preload" href="css/Footer_Header_Noregistrado.css" as="style" />
-        <link rel="stylesheet" href="css/Footer_Header_Noregistrado.css" />
-        <link rel="stylesheet" href="css/InicioSesionProa.css" />
+        <link rel="preload" href="./src/css/Footer_Header_Noregistrado.css" as="style" />
+        <link rel="stylesheet" href="./src/css/Footer_Header_Noregistrado.css" />
+        <link rel="stylesheet" href="./src/css/InicioSesionProa.css" />
     <?php endif; ?>
 </head>
 <body>
 
 
 <!-- Header -->
-<?php include "./app/includes/headerGTI.php" ?>
+<?php include "./src/app/includes/headerGTI.php" ?>
 
 <main class="container">
     <section class="image-section">
-        <img src="/img/Inicio_Sesion_Proa.png" alt="Login PROA" />
+        <img src="./img/Inicio_Sesion_Proa.png" alt="Login PROA" />
     </section>
 
     <section class="login-section">
@@ -66,14 +66,14 @@ $usuarioLogueado = $_SESSION["usuario"];
 </main>
 
 <!-- Footer -->
-<?php include "./app/includes/footerGTI.php" ?>
+<?php include "./src/app/includes/footerGTI.php" ?>
 
 
 <script>
     const usuarioRegistradoActual = "<?php echo $usuarioLogueado; ?>";
 </script>
 
-<script src="js/pruebaloginPROA.js" ></script>
-<script src="js/ProaRegistrado.js" ></script>
+<script src="./src/js/pruebaloginPROA.js" ></script>
+<script src="./src/js/ProaRegistrado.js" ></script>
 </body>
 </html>

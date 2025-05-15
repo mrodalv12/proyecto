@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
-    <link rel="preload" href="css/Footer_Header_Noregistrado.css" as="style" />
-    <link rel="stylesheet" href="css/Footer_Header_Noregistrado.css" />
-    <link rel="stylesheet" href="css/RegistroGTI.css">
+    <link rel="preload" href="./src/css/Footer_Header_Noregistrado.css" as="style" />
+    <link rel="stylesheet" href="./src/css/Footer_Header_Noregistrado.css" />
+    <link rel="stylesheet" href="./src/css/RegistroGTI.css">
 </head>
 <body>
 
 <!-- Header -->
-<?php include "./app/includes/headerGTI.php" ?>
+<?php include "./src/app/includes/headerGTI.php" ?>
 
 
 <main class="main-container">
     <!-- Formulario registro -->
     <section class="form-box">
         <h2>Crea una cuenta</h2>
-        <form id="registroForm" action="app/includes/RegistroGTI.php" method="POST">
+        <form id="registroForm" action="./src/app/includes/RegistroGTI.php" method="POST">
             <label for="usuario">Nombre de usuario</label>
 
             <!-- El atributo name es lo que se envía al servidor, si no hay, no se envía nada, aunque tenga id -->
@@ -51,15 +51,15 @@
 
 
     <section class="image-box">
-        <img src="../img/Inicio_Registro.png" alt="Registro">
+        <img src="./img/Inicio_Registro.png" alt="Registro">
     </section>
 </main>
 
 <!-- Footer -->
-<?php include "./app/includes/footerGTI.php" ?>
+<?php include "./src/app/includes/footerGTI.php" ?>
 
 <!-- Script -->
-<script src="js/RegistroGTI.js"></script>
+<script src="./src/js/RegistroGTI.js"></script>
 
 
 </body>
