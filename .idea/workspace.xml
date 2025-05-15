@@ -5,22 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fa65155-22b5-4a9b-85ca-5b360c417b0a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/js/RegistroGTI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/LandingPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/GTI/RegistroGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/GTI/RegistroGTI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/InicioSesion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/InicioSesion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/RegistroGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/RegistroGTI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/cerrarSesion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/cerrarSesion.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/includes/footerGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/footerGTI.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/includes/headerGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/headerGTI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/usuarios.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/usuarios.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/LandingPage_No registrado.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/LandingPage_No registrado.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/LandingPage_Registrado.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/LandingPage_Registrado.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/RegistroGTI.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/RegistroGTI.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/LandingPage_No registrado.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/LandingPage_No registrado.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/LandingPage_Registrado.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/LandingPage_Registrado.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/GTI/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,24 +42,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "nerva",
-    "last_opened_file_path": "C:/Users/minim/Documents/UNI1/PROYECTO/proyecto",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;nerva&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/minim/Documents/UNI1/PROYECTO/proyecto&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\minim\Documents\UNI1\PROYECTO\proyecto\src\app\GTI" />
       <recent name="C:\Users\minim\Documents\UNI1\PROYECTO\proyecto\src" />
       <recent name="C:\Users\minim\Documents\UNI1\PROYECTO\proyecto\src\app\PROA" />
       <recent name="C:\Users\minim\Documents\UNI1\PROYECTO\proyecto\src\app\includes" />

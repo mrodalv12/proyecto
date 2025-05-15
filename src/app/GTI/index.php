@@ -14,20 +14,20 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
 
     <!-- Dependiendo de si está logueado o no -->
     <?php if ($usuario_logueado): ?>
-        <link rel="preload" href="css/Footer_Header_Registrado.css" as="style" />
-        <link rel="stylesheet" href="css/Footer_Header_Registrado.css" />
-        <link rel="stylesheet" href="css/LandingPage_Registrado.css" />
+        <link rel="preload" href="../../css/Footer_Header_Registrado.css" as="style" />
+        <link rel="stylesheet" href="../../css/Footer_Header_Registrado.css" />
+        <link rel="stylesheet" href="../../css/LandingPage_Registrado.css" />
     <?php else: ?>
-        <link rel="preload" href="css/Footer_Header_Noregistrado.css" as="style" />
-        <link rel="stylesheet" href="css/Footer_Header_Noregistrado.css" />
-        <link rel="stylesheet" href="css/LandingPage_No registrado.css" />
+        <link rel="preload" href="../../css/Footer_Header_Noregistrado.css" as="style" />
+        <link rel="stylesheet" href="../../css/Footer_Header_Noregistrado.css" />
+        <link rel="stylesheet" href="../../css/LandingPage_No%20registrado.css" />
     <?php endif; ?>
 
 </head>
 <body>
 
 <!-- Header -->
-<?php include "app/includes/headerGTI.php" ?>
+<?php include "../includes/headerGTI.php" ?>
 
 <main>
 
@@ -42,7 +42,7 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
             <p>Bienvenido a tu plataforma. ¡Accede a tus recursos y empieza a aprender!</p>
         <?php else: ?>
             <!-- Contenido para los que no están logueados -->
-            <a href="app/GTI/RegistroGTI.php" class="registro">¡Regístrate para probarla!</a>
+            <a href="RegistroGTI.php" class="registro">¡Regístrate para probarla!</a>
         <?php endif; ?>
     </div>
 </section>
@@ -75,13 +75,13 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
 </main>
 
 <!-- Footer -->
-<?php include "app/includes/footerGTI.php" ?>
+<?php include "../includes/footerGTI.php" ?>
 
 <!-- Scripts -->
 <?php if ($usuario_logueado): ?>
-<script src="js/LandingPage_Registrado.js"></script>
+<script src="../../js/LandingPage_Registrado.js"></script>
 <?php else: ?>
-    <script src="js/LandingPage_No registrado.js"></script>
+    <script src="../../js/LandingPage_No%20registrado.js"></script>
 <?php endif; ?>
 
 </body>
