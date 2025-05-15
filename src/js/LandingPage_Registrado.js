@@ -1,16 +1,25 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const btn = document.getElementById("btnCuenta");
-  const menu = document.getElementById("menuCuenta");
+function enviarFormulario(event) {
+  event.preventDefault();
 
-  btn.addEventListener("click", () => {
-    const visible = menu.style.display === "block";
-    menu.style.display = visible ? "none" : "block";
-  });
+  const correo = document.getElementById("correo").value.trim();
+  const asunto = document.getElementById("asunto").value.trim();
+  const descripcion = document.getElementById("mensaje").value.trim();
 
-  // Ocultar el menú si haces clic fuera de él
-  document.addEventListener("click", function (e) {
-    if (!btn.contains(e.target) && !menu.contains(e.target)) {
-      menu.style.display = "none";
-    }
-  });
-});
+  const mensajeDiv = document.getElementById("mensajeAviso");
+
+  //Comprueba si está todo completado o no
+  if (correo !== "" && asunto !== "" && descripcion !== "") {
+    mensajeDiv.textContent = "✅ La consulta se ha enviado con éxito.";
+    mensajeDiv.className = "mensaje exito visible";
+  } else {
+    mensajeDiv.textContent = "❌ No se ha podido enviar la consulta.";
+    mensajeDiv.className = "mensaje error visible";
+  }
+
+  // Ocultar después de 3 segundos
+  setTimeout(() => {
+    mensajeDiv.classList.remove("visible");
+  }, 3000);
+
+  return false;
+}

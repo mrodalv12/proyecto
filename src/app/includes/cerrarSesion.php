@@ -14,6 +14,6 @@ if (ini_get("session.use_cookies")) {
 session_destroy();  // Destruye la sesión
 
 // Redirigir a la página de inicio
-header("Location: ../GTI/LandingPage.php");
+header("Location: ../GTI/index.php");
 exit();
 ?>

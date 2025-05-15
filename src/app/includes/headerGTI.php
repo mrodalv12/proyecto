@@ -1,10 +1,10 @@
 <header class="header">
-    <a href="../GTI/LandingPage.php" class="logo">
+    <a href="../../index.php" class="logo">
         <span class="g">g</span><span class="ti">ti</span>
     </a>
     <nav class="nav">
-        <a href="../GTI/LandingPage.php#contacto">Contacto</a>
-        <a href="../GTI/PROA.php">PROA</a>
+        <a href="/src/index.php#contacto">Contacto</a>
+        <a href="/app/GTI/PROA.php">PROA</a>
 
         <?php if (isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"])): ?>
             <!-- Si el usuario está logueado -->

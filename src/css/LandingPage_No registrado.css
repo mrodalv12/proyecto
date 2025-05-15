@@ -1,5 +1,3 @@
-
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,6 +11,7 @@ body {
 
 }
 
+/* Fondo y texto */
   .hero {
     background: url('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5') no-repeat center center/cover;
     padding: 15.7em 2em;
@@ -47,9 +46,10 @@ body {
     cursor: pointer;
   }
 
+  /* Botón registro (CTA) */
   .registro {
     display: inline-block;
-    background-color: #e6007e; /* color fucsia GTI */
+    background-color: #e6007e;
     color: white;
     padding: 12px 24px;
     border-radius: 8px;
@@ -63,6 +63,8 @@ body {
     background-color: #c3006b;
   }
 
+
+  /* Contacto */
   .contacto {
     display: flex;
     justify-content: space-between;
@@ -86,7 +88,7 @@ body {
     margin-bottom: 20px;
     font-size: 2em;
     font-weight: bold;
-    margin-left: 90px; /* 🔹 Esto lo mueve hacia la derecha */
+    margin-left: 90px;
     text-align: left;
   }
   
@@ -107,7 +109,7 @@ body {
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
-    margin-left: 140px; /* 🔹 Esto lo mueve hacia la derecha */
+    margin-left: 140px;
   }
 
   .formulario label {
@@ -125,8 +127,40 @@ body {
     scroll-behavior: smooth;
   }
   }
-  @media()
-/*
+
+  /* Mensaje contacto*/
+.mensaje {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  max-width: 300px;
+  padding: 15px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+}
+
+.mensaje.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mensaje.exito {
+  background-color: #41a358;
+}
+
+.mensaje.error {
+  background-color: #dc5360;
+}
+
+ /* @media()
+
 @media (max-width: 565px) {
 
   .hero {

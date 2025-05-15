@@ -12,22 +12,26 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GTI - Plataforma PROA</title>
 
+    <!-- Dependiendo de si está logueado o no -->
     <?php if ($usuario_logueado): ?>
-        <link rel="preload" href="../../css/Footer_Header_Registrado.css" as="style" />
-        <link rel="stylesheet" href="../../css/Footer_Header_Registrado.css" />
-        <link rel="stylesheet" href="../../css/LandingPage_Registrado.css" />
+        <link rel="preload" href="css/Footer_Header_Registrado.css" as="style" />
+        <link rel="stylesheet" href="css/Footer_Header_Registrado.css" />
+        <link rel="stylesheet" href="css/LandingPage_Registrado.css" />
     <?php else: ?>
-        <link rel="preload" href="../../css/Footer_Header_Noregistrado.css" as="style" />
-        <link rel="stylesheet" href="../../css/Footer_Header_Noregistrado.css" />
-        <link rel="stylesheet" href="../../css/LandingPage_No registrado.css" />
+        <link rel="preload" href="css/Footer_Header_Noregistrado.css" as="style" />
+        <link rel="stylesheet" href="css/Footer_Header_Noregistrado.css" />
+        <link rel="stylesheet" href="css/LandingPage_No registrado.css" />
     <?php endif; ?>
 
 </head>
 <body>
 
 <!-- Header -->
-<?php include "../includes/headerGTI.php" ?>
+<?php include "app/includes/headerGTI.php" ?>
 
+<main>
+
+    <!-- Fondo y contenido de texto y CTA-->
 <section class="hero" id="proa">
     <div class="hero-content">
         <h1>GTI lanza PROA: la nueva plataforma educativa</h1>
@@ -38,25 +42,27 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
             <p>Bienvenido a tu plataforma. ¡Accede a tus recursos y empieza a aprender!</p>
         <?php else: ?>
             <!-- Contenido para los que no están logueados -->
-            <a href="RegistroGTI.php" class="registro">¡Regístrate para probarla!</a>
+            <a href="app/GTI/RegistroGTI.php" class="registro">¡Regístrate para probarla!</a>
         <?php endif; ?>
     </div>
 </section>
 
-
+<!-- Formulario contacto -->
 <section class="contacto" id="contacto">
     <div class="formulario">
         <h2>¡Contáctanos!</h2>
         <form onsubmit="return enviarFormulario(event)">
 
             <label for="correo">Correo:</label>
-            <input type="email" id="correo" placeholder="Introduce tu correo electrónico" required />
+            <input type="email" id="correo" placeholder="Introduce tu correo electrónico" />
+
 
             <label for="asunto">Asunto:</label>
-            <input type="text" id="asunto" placeholder="Introduce el asunto a tratar" required />
+            <input type="text" id="asunto" placeholder="Introduce el asunto a tratar" />
+
 
             <label for="mensaje">Descripción:</label>
-            <textarea id="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+            <textarea id="mensaje" placeholder="Escribe tu mensaje"></textarea>
 
             <button type="submit">Enviar</button>
         </form>
@@ -65,15 +71,17 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
         <img src="/img/Contacto.png" alt="Contacto">
     </div>
 </section>
+    <div id="mensajeAviso" class="mensaje oculto"></div>
+</main>
 
 <!-- Footer -->
-<?php include "../includes/footerGTI.php"?>
+<?php include "app/includes/footerGTI.php" ?>
 
 <!-- Scripts -->
 <?php if ($usuario_logueado): ?>
-<script src="../../js/LandingPage_Registrado.js"></script>
+<script src="js/LandingPage_Registrado.js"></script>
 <?php else: ?>
-    <script src="../../js/LandingPage_No registrado.js"></script>
+    <script src="js/LandingPage_No registrado.js"></script>
 <?php endif; ?>
 
 </body>

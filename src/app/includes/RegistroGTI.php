@@ -41,10 +41,12 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["usuario"], $_POST["co
     // Verificar si el usuario ya existe
     foreach ($usuarios as $u) {
         if ($u["usuario"] === $usuario) {
-            echo "<p>El nombre de usuario ya está registrado.</p>";
+            $_SESSION['errorRegistro'] = "El nombre de usuario ya está registrado.";
+            header("Location: ../GTI/RegistroGTI.php");  // página con el formulario
             exit;
         }
     }
+
 
     // Función para obtener un usuario aleatorio
     function obtenerUsuarioAleatorio($array) {
