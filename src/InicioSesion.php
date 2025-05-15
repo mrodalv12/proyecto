@@ -4,21 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GTI - Plataforma PROA</title>
-    <link rel="preload" href="../css/Footer_Header_Noregistrado.css" as="style" />
-    <link rel="stylesheet" href="../css/Footer_Header_Noregistrado.css" />
-    <link rel="stylesheet" href="../css/InicioSesion.css" />
+    <link rel="preload" href="css/Footer_Header_Noregistrado.css" as="style" />
+    <link rel="stylesheet" href="css/Footer_Header_Noregistrado.css" />
+    <link rel="stylesheet" href="css/InicioSesion.css" />
 
 
 </head>
 <body>
 
 <!-- Header -->
-<?php include "./includes/headerGTI.php" ?>
+<?php include "./app/includes/headerGTI.php" ?>
 
 <main class="main-content">
     <div class="login-box">
         <h2>Inicia sesión</h2>
-        <form id="loginForm" method="POST" action="./includes/InicioSesion.php">
+        <form id="loginForm" method="POST" action="app/includes/InicioSesion.php">
             <label for="usuario">Nombre de usuario o correo electrónico</label>
             <input type="text" id="usuario" name="usuario" placeholder="Introduce tu correo electrónico" required />
 
@@ -40,7 +40,7 @@
 </main>
 
 <!-- Footer -->
-<?php include "./includes/footerGTI.php" ?>
+<?php include "./app/includes/footerGTI.php" ?>
 
 
 </body>

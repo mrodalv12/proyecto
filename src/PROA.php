@@ -13,19 +13,19 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
     <title>PROA - GTI</title>
 
     <?php if ($usuario_logueado): ?>
-        <link rel="preload" href="../css/Footer_Header_Registrado.css" as="style" />
-        <link rel="stylesheet" href="../css/Footer_Header_Registrado.css" />
-        <link rel="stylesheet" href="../css/PROA_registrado.css">
+        <link rel="preload" href="css/Footer_Header_Registrado.css" as="style" />
+        <link rel="stylesheet" href="css/Footer_Header_Registrado.css" />
+        <link rel="stylesheet" href="css/PROA_registrado.css">
     <?php else: ?>
-        <link rel="preload" href="../css/Footer_Header_Noregistrado.css" as="style" />
-        <link rel="stylesheet" href="../css/Footer_Header_Noregistrado.css" />
-        <link rel="stylesheet" href="../css/PROA_No registrado.css">
+        <link rel="preload" href="css/Footer_Header_Noregistrado.css" as="style" />
+        <link rel="stylesheet" href="css/Footer_Header_Noregistrado.css" />
+        <link rel="stylesheet" href="css/PROA_No registrado.css">
     <?php endif; ?>
 </head>
 <body>
 
 <!-- Header -->
-<?php include "./includes/headerGTI.php" ?>
+<?php include "./app/includes/headerGTI.php" ?>
 
 <main>
     <section class="info">
@@ -41,16 +41,16 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
     </section>
 
     <section class="imagen">
-        <img src="../../img/CALENDARIO_MES.png" alt="Ejemplo Calendario PROA">
+        <img src="../img/CALENDARIO_MES.png" alt="Ejemplo Calendario PROA">
     </section>
 </main>
 
 <!-- Footer -->
-<?php include "./includes/footerGTI.php"?>
+<?php include "./app/includes/footerGTI.php" ?>
 
 
 <?php if ($usuario_logueado): ?>
-    <script src="../js/ProaRegistrado.js"></script>
+    <script src="js/ProaRegistrado.js"></script>
 <?php endif; ?>
 </body>
 </html>

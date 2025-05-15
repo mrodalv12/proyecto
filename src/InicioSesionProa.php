@@ -20,20 +20,20 @@ $usuarioLogueado = $_SESSION["usuario"];
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Inicio de sesión PROA</title>
     <?php if ($usuario_logueado): ?>
-        <link rel="preload" href="../css/Footer_Header_Registrado.css" as="style" />
-        <link rel="stylesheet" href="../css/Footer_Header_Registrado.css" />
-        <link rel="stylesheet" href="../css/InicioSesionProa.css" />
+        <link rel="preload" href="css/Footer_Header_Registrado.css" as="style" />
+        <link rel="stylesheet" href="css/Footer_Header_Registrado.css" />
+        <link rel="stylesheet" href="css/InicioSesionProa.css" />
     <?php else: ?>
-        <link rel="preload" href="../css/Footer_Header_Noregistrado.css" as="style" />
-        <link rel="stylesheet" href="../css/Footer_Header_Noregistrado.css" />
-        <link rel="stylesheet" href="../css/InicioSesionProa.css" />
+        <link rel="preload" href="css/Footer_Header_Noregistrado.css" as="style" />
+        <link rel="stylesheet" href="css/Footer_Header_Noregistrado.css" />
+        <link rel="stylesheet" href="css/InicioSesionProa.css" />
     <?php endif; ?>
 </head>
 <body>
 
 
 <!-- Header -->
-<?php include "./includes/headerGTI.php" ?>
+<?php include "./app/includes/headerGTI.php" ?>
 
 <main class="container">
     <section class="image-section">
@@ -66,14 +66,14 @@ $usuarioLogueado = $_SESSION["usuario"];
 </main>
 
 <!-- Footer -->
-<?php include "./includes/footerGTI.php" ?>
+<?php include "./app/includes/footerGTI.php" ?>
 
 
 <script>
     const usuarioRegistradoActual = "<?php echo $usuarioLogueado; ?>";
 </script>
 
-<script src="../js/pruebaloginPROA.js" ></script>
-<script src="../js/ProaRegistrado.js" ></script>
+<script src="js/pruebaloginPROA.js" ></script>
+<script src="js/ProaRegistrado.js" ></script>
 </body>
 </html>

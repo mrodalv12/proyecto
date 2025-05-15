@@ -14,20 +14,20 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
 
     <!-- Dependiendo de si está logueado o no -->
     <?php if ($usuario_logueado): ?>
-        <link rel="preload" href="../css/Footer_Header_Registrado.css" as="style" />
-        <link rel="stylesheet" href="../css/Footer_Header_Registrado.css" />
-        <link rel="stylesheet" href="../css/LandingPage_Registrado.css" />
+        <link rel="preload" href="css/Footer_Header_Registrado.css" as="style" />
+        <link rel="stylesheet" href="css/Footer_Header_Registrado.css" />
+        <link rel="stylesheet" href="css/LandingPage_Registrado.css" />
     <?php else: ?>
-        <link rel="preload" href="../css/Footer_Header_Noregistrado.css" as="style" />
-        <link rel="stylesheet" href="../css/Footer_Header_Noregistrado.css" />
-        <link rel="stylesheet" href="../css/LandingPage_No%20registrado.css" />
+        <link rel="preload" href="css/Footer_Header_Noregistrado.css" as="style" />
+        <link rel="stylesheet" href="css/Footer_Header_Noregistrado.css" />
+        <link rel="stylesheet" href="css/LandingPage_No registrado.css" />
     <?php endif; ?>
 
 </head>
 <body>
 
 <!-- Header -->
-<?php include "./includes/headerGTI.php" ?>
+<?php include "./app/includes/headerGTI.php" ?>
 
 <main>
 
@@ -68,20 +68,20 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
             </form>
         </div>
         <div class="imagen-contacto">
-            <img src="../../img/Contacto.png" alt="Contacto">
+            <img src="../img/Contacto.png" alt="Contacto">
         </div>
     </section>
     <div id="mensajeAviso" class="mensaje oculto"></div>
 </main>
 
 <!-- Footer -->
-<?php include "./includes/footerGTI.php" ?>
+<?php include "./app/includes/footerGTI.php" ?>
 
 <!-- Scripts -->
 <?php if ($usuario_logueado): ?>
-    <script src="../js/LandingPage_Registrado.js"></script>
+    <script src="js/LandingPage_Registrado.js"></script>
 <?php else: ?>
-    <script src="../js/LandingPage_No%20registrado.js"></script>
+    <script src="js/LandingPage_No registrado.js"></script>
 <?php endif; ?>
 
 </body>
