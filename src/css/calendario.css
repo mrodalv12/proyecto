@@ -25,6 +25,10 @@ html{
 
 }
 
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
 
 
 body {
@@ -164,3 +168,67 @@ button {
     position: absolute;
     background-color: rgba(0,0,0,0.8);
 }
+
+@media (max-width: 768px) {
+    #container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    #header {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    #weekdays {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #weekdays div {
+        width: calc(100% / 3); /* 3 columnas por fila */
+        text-align: center;
+    }
+
+    .day {
+        width: calc(100% / 3 - 10px); /* 3 columnas + margen */
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    #weekdays div {
+        width: 50%; /* 2 columnas */
+    }
+
+    .day {
+        width: calc(50% - 10px); /* 2 columnas + margen */
+        height: 90px;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    #newEventModal, #deleteEventModal {
+        width: 90%;
+        left: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    #container {
+        transform: scale(0.8);     /* Reduce tamaño a 80% */
+        transform-origin: top center;
+    }
+}
+
+@media (max-width: 480px) {
+    #container {
+        transform: scale(0.6);     /* Reduce tamaño a 60% */
+        transform-origin: top center;
+    }
+}
+
