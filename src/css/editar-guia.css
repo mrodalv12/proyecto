@@ -1,3 +1,11 @@
+/*Importación de la tipografía Martel Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Space+Mono&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Martel Sans";
+}
+
 main {
     margin: 20px 100px;
 }

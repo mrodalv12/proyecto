@@ -6,51 +6,14 @@
     <title>PROA</title>
     <link rel="stylesheet" href="css/header_footer.css"/>
     <link rel="stylesheet" href="css/editar-guia.css"/>
+    <link rel="stylesheet" href="css/solo_footer.css">
     <script src="js/editar-guia.js"></script>
 </head>
 
 
 <body>
     <!--Header-->
-    <header class="header">
-        <!-- Logo -->
-        <a href="#" class="logo_proa">
-            <img src="../img/logo_proa.svg" alt="Logo de PROA" />
-        </a>
-
-        <!-- Menú de navegación -->
-        <nav class="links_del_header">
-            <ul>
-                <!--Añadir rutas de destino-->
-                <li><a href="#">Asignaturas</a></li>
-                <li><a href="#">Calendario</a></li>
-                <li><a href="#">Solicitudes</a></li>
-
-                <li class="nombre_de_usuario">
-                    Usuario
-                    <ul class="datos_usuario">
-                        <li>
-                            <strong>Nombre:</strong> Jesús
-                            <!--Falta el código que autocompleta el nombre-->
-                        </li>
-                        <li>
-                            <strong>Correo:</strong> jesus@upv.edu.es
-                            <!--Falta el código que autocompleta el correo-->
-                        </li>
-                        <li>
-                            <strong>Rol:</strong> Profesor
-                            <!--Falta el código que autocompleta el rol-->
-                        </li>
-                        <hr>
-                        <li><a href="#" id="cerrar_sesion">Cerrar sesión</a></li>
-                    </ul>
-                </li>
-
-                <li><a href="#"><img src="../img/campana_notificaciones.svg" alt="Icono notificaciones" class="notificaciones"/></a></li>
-            </ul>
-        </nav>
-    </header>
-    <!--Fin del header-->
+    <?php include 'app/header_proa.php' ?>
 
     <!--Formulario de edición-->
     <main class="contenido">

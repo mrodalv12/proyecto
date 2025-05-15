@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
             mensajeDiv.classList.add("oculto");
 
             if (tipo === "exito") {
-                window.location.href = "index_profesor.html";
+                window.location.href = "index_profesor.php";
             }
         }, 2000);
     }
@@ -81,6 +81,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     botonCancelar.addEventListener("click", () => {
-        window.location.href = "index_profesor.html";
+        window.location.href = "index_profesor.php";
     });
 });
