@@ -4,7 +4,7 @@
 /* region--- HEADER --- */
 body {
     margin: 0;
-    font-family: "Martel Sans";
+    font-family: "Martel Sans", "Arial", serif;
 }
 
 .header {
@@ -55,8 +55,7 @@ body {
     color: black;
 }
 
-.nombre_de_usuario
-.datos_usuario {
+.nombre_de_usuario .datos_usuario {
     display: none;
     position: absolute;
 
@@ -96,11 +95,11 @@ hr {
 
 /*Hacer el media query de móvil, header*/
 @media (max-width:500px){
-    .encabezado{
+    .header {
         font-size: 10px;
     }
-    .cosas_del_header ul {
-        gap:10px;
+    .links_del_header ul {
+        gap: 10px;
     }
     .nombre_de_usuario .user {
         left: -70px;
@@ -110,13 +109,17 @@ hr {
 
 /*region --- FOOTER ---*/
 
-footer{
+footer {
     position: relative;
     background-color: #4D4A4A;
     color: white;
-    font-size: 8px;
+    /*font-size: 5px;*/
     padding: 10px;
     text-align: center;
+}
+
+footer p {
+    font-size: 10px;
 }
 
 footer img{
@@ -138,4 +141,125 @@ footer img{
 
 .cositas{
     height: 30px;
+}
+
+/* Menú hamburguesa */
+.menu-hamburguesa {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.menu-hamburguesa .bar {
+    width: 25px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.links_del_header {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.links_del_header ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+/* Para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Mostrar el menú */
+    .menu-hamburguesa {
+        display: flex;
+    }
+
+    /* Ocultar los links */
+    .links_del_header {
+        display: none;
+        width: 100%;
+        background-color: #4D4A4A;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        padding: 10px;
+    }
+
+    /* Hacer visibles los links del menú cuando se activa el menú hamburguesa */
+    .links_del_header.active {
+        display: block;
+    }
+
+    .logo_proa {
+        width: 100px;
+    }
+
+    .header {
+        /*padding: 0px 15px;*/
+    }
+
+    /* Estilo para los links cuando el menú hamburguesa está activo */
+    .links_del_header.active ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .links_del_header ul li {
+        margin: 10px 0;
+    }
+
+    footer p{
+        font-size: 10px;
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    footer img {
+        right: 10px;
+        width: 25px;
+    }
+
+    .links_del_header ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .links_del_header.active {
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: #4D4A4A;
+        padding: 10px 0;
+        text-align: center;
+        z-index: 1000;
+        width: 100%;
+    }
+    .links_del_header li {
+        margin: 10px 0;
+    }
+
+    .nombre_de_usuario .datos_usuario {
+        width: auto !important;
+        min-width: 200px !important;   /* ancho mínimo para que no quede peque */
+        max-width: 80vw !important;    /* que no pase del 90% de la pantalla */
+        left: -25vw !important;           /* un poquito de margen a la izquierda */
+        right: auto !important;
+        padding: 20px;
+        white-space: normal !important;
+        text-align: left;
+    }
 }

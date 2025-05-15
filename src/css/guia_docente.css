@@ -1,9 +1,29 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.titulo-volver {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.titulo-volver h1 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.volver img {
+    width: 24px;
+    height: auto;
+}
+
 
 .intro_asig {
-    margin: auto 170px;
+    margin: 50px 170px;
     gap: 50px;
     justify-content: space-between;
-    margin-bottom: 50px; /* MÁS ESPACIO ABAJO */
 }
 
 .intro_asig > p {
@@ -11,8 +31,8 @@
 }
 
 .desplegables {
-    margin:  auto 170px;
-    margin-top: 50px; /* MÁS ESPACIO ARRIBA */
+    margin:  50px 170px;
+
 }
 
 h1{
@@ -26,28 +46,21 @@ h2 {
 
 p {
     font-size: 15px;
+    max-width: 1500px;
 }
 
 button {
     color: white;
     border: none;
-    border-radius: 20px;
-    width: 313px;
-    height: 86px;
+    border-radius: 10px;
+    width: 150px;
+    height: 50px;
     padding: 10px;
     font-size: 18px;
 }
 
 .boton_tareas {
     background-color: #C46575;
-}
-
-.boton_calificaciones {
-    background-color: #7280B9;
-}
-
-.boton_guia_docente {
-    background-color: #5A9E5D;
 }
 
 .botones {
@@ -132,6 +145,33 @@ ul {
     padding-left: 20px; /* Añade sangría en las listas */
 }
 
+li {
+    font-size: 15px;
+}
+
+.bibliografia {
+    list-style: none;
+    padding-left: 0;
+}
+
+.bibliografia li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.icono-biblio::before {
+    content: "📚"; /* Libro disponible */
+    margin-right: 8px;
+}
+
+.icono-no-biblio::before {
+    content: "❌"; /* Libro NO disponible */
+    margin-right: 8px;
+    color: red;
+}
+
+
 /*Unidades didácticas*/
 
 .table {
@@ -153,4 +193,116 @@ td {
     font-size: 14px;
     border: 1px solid #4D4A4A;
     /*padding: 8px; */
+}
+
+/*Las columnas de teoría y práctica centradas*/
+table td:nth-child(2),
+table td:nth-child(3) {
+    text-align: center;
+}
+
+
+/*SOLO PROFESOR*/
+.titulo-guia {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* esto centra horizontalmente */
+    gap: 10px;
+}
+
+textarea{
+    font-family: "Martel Sans";
+}
+
+
+.icono-editar {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+/* Para móvil */
+@media (max-width: 768px) {
+
+    .especificaciones_asign {
+        grid-template-columns: 1fr; /* solo una columna */
+        gap: 20px;
+    }
+
+    .intro_asig {
+        margin: 30px 20px;
+        gap: 30px;
+    }
+
+    .desplegables {
+        margin: 30px 20px;
+    }
+
+    .contenedor_bibliografia {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contenedor_bibliografia > div {
+        width: 100%;
+    }
+
+    /* Ajustes en botones */
+    button {
+        width: 100%;
+        font-size: 16px;
+        padding: 15px 0;
+    }
+
+    .botones {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Desplegables de acordeón */
+    details {
+        width: 100%;
+    }
+
+    /* Profesores */
+    .contenedor_profesores {
+        gap: 40px;
+    }
+
+    .profesor {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Tabla en unidades didácticas */
+    .table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .titulo-volver img {
+        width: 18px;  /* Ajusta el tamaño del logo a 18px */
+        height: auto;
+    }
+
+    details {
+        width: 100%;
+        margin: 10px auto;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .desplegables {
+        margin: 20px;
+    }
+
+    .boton_tareas {
+        width: 100px;
+    }
+
 }

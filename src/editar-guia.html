@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROA</title>
+    <link rel="stylesheet" href="css/header_footer.css"/>
+    <link rel="stylesheet" href="css/editar-guia.css"/>
+    <script src="js/editar-guia.js"></script>
+</head>
+
+
+<body>
+    <!--Header-->
+    <header class="header">
+        <!-- Logo -->
+        <a href="#" class="logo_proa">
+            <img src="../img/logo_proa.svg" alt="Logo de PROA" />
+        </a>
+
+        <!-- Menú de navegación -->
+        <nav class="links_del_header">
+            <ul>
+                <!--Añadir rutas de destino-->
+                <li><a href="#">Asignaturas</a></li>
+                <li><a href="#">Calendario</a></li>
+                <li><a href="#">Solicitudes</a></li>
+
+                <li class="nombre_de_usuario">
+                    Usuario
+                    <ul class="datos_usuario">
+                        <li>
+                            <strong>Nombre:</strong> Jesús
+                            <!--Falta el código que autocompleta el nombre-->
+                        </li>
+                        <li>
+                            <strong>Correo:</strong> jesus@upv.edu.es
+                            <!--Falta el código que autocompleta el correo-->
+                        </li>
+                        <li>
+                            <strong>Rol:</strong> Profesor
+                            <!--Falta el código que autocompleta el rol-->
+                        </li>
+                        <hr>
+                        <li><a href="#" id="cerrar_sesion">Cerrar sesión</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#"><img src="../img/campana_notificaciones.svg" alt="Icono notificaciones" class="notificaciones"/></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Fin del header-->
+
+    <!--Formulario de edición-->
+    <main class="contenido">
+
+        <!--Título-->
+        <h1>Editar Guía Docente - Física</h1>
+
+        <!-- Descripción de la asignatura -->
+        <section>
+            <h2>Descripción de la asignatura</h2>
+            <textarea rows="5" placeholder="Escribe aquí la descripción de la asignatura"></textarea>
+        </section>
+
+        <!-- Evaluación -->
+        <section>
+            <h2>Evaluaciónes</h2>
+            <h3>Evaluación Ordinaria</h3>
+            <textarea rows="5" placeholder="Escribe aquí la evaluación ordinaria..."></textarea>
+
+            <h3>Evaluación Extraordinaria</h3>
+            <textarea rows="5" placeholder="Escribe aquí la evaluación extraordinaria..."></textarea>
+        </section>
+
+        <!-- Bibliografía -->
+        <section>
+            <h2>Bibliografía</h2>
+
+            <h3>Bibliografía Obligatoria</h3>
+            <div id="lista-obligatoria"></div>
+            <button type="button" onclick="añadirLibro('obligatoria')">Añadir libro obligatorio</button>
+
+            <h3>Bibliografía Adicional</h3>
+            <div id="lista-adicional"></div>
+            <button type="button" onclick="añadirLibro('adicional')">Añadir libro adicional</button>
+        </section>
+
+
+        <!-- Unidades Didácticas -->
+        <section>
+            <h2>Unidades Didácticas</h2>
+            <table id="tabla-unidades">
+                <thead>
+                <tr><th>Unidad</th><th>Teoría</th><th>Práctica</th><th></th></tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="text" value="1. Cinemática: el arte de describir el movimiento"></td>
+                    <td><input type="text" value="2h"></td>
+                    <td><input type="text" value="3h"></td>
+                    <td><button type="button" onclick="eliminarFila(this)">Eliminar</button></td>
+                </tr>
+                </tbody>
+            </table>
+            <button type="button" onclick="añadirFila()">Añadir unidad</button>
+        </section>
+
+        <!--Botón para guardar cambios y cancelar-->
+        <div class="botones-abajo">
+            <button id="guardar" class="boton_guardar">Guardar </button>
+            <button id="cancelar" class="boton_cancelar">Cancelar</button>
+        </div>
+
+
+        <div id="mensaje" class="mensaje oculto"></div>
+
+    </main>
+
+
+    <!--Footer-->
+    <footer role="contentinfo">
+        <p>© 2025 PROA. Todos los derechos reservados.</p>
+        <a><img src="../img/logo_gti.svg" alt="Logo de GTI"></a>
+    </footer>
+    <!--Fin del footer-->
+    <script src="js/editar-guia.js"></script>
+</body>

@@ -6,6 +6,7 @@
     <title>PROA</title>
     <link rel="stylesheet" href="css/header_footer.css"/>
     <link rel="stylesheet" href="css/guia_docente.css"/>
+    <script src="js/menu-hamburguesa.js"></script>
 </head>
 
 
@@ -48,20 +49,34 @@
                 <li><a href="#"><img src="../img/campana_notificaciones.svg" alt="Icono notificaciones" class="notificaciones"/></a></li>
             </ul>
         </nav>
+
+        <!--Menú hamburguesa para móvil-->
+        <div class="menu-hamburguesa" id="menu-hamburguesa" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </header>
     <!--Fin del header-->
 
-    <!--?-->
-    <?php include "../includes/datos_usuario.php"; ?>
-
     <!--Introducción de la asignatura-->
     <div class="intro_asig">
-        <h1>Física</h1>
+        <!--Nombre de la asignatura y flecha para volver a las demás asignaturas-->
+        <div class="titulo-volver">
+            <h1>Física</h1>
+            <a href="#" class="tareas">
+                <button class="boton_tareas">Tareas</button>
+            </a>
+        </div>
+
+        <!--Descripción de la asignatura-->
         <p>
-            Lorem ipsum dolor sit amet consectetur. Nibh amet arcu feugiat tempor adipiscing interdum placerat eget nisl. Consequat proin sit a tempor diam rhoncus ac quam. Amet massa velit convallis odio. Tellus egestas nascetur id integer imperdiet placerat porttitor. Amet id faucibus massa sem quis. Tristique purus sodales purus commodo eget diam mattis et tortor. Sed bibendum aliquam felis dignissim massa dignissim eget.
+            La asignatura de Física nos ayuda a entender cómo funciona mundo que nos rodea. A través de ella estudiamos conceptos como el movimiento, la energía, la fuerza, la electricidad o el sonido. Todo eso que parece invisible, pero que está presente en nuestro día a día, se explica con leyes y fórmulas que nos permiten predecir lo que va a pasar y resolver problemas reales.
             <br><br>
-            Lorem ipsum dolor sit amet consectetur. Nibh amet arcu feugiat tempor adipiscing interdum placerat eget nisl. Consequat proin sit a tempor diam rhoncus ac quam. Amet massa velit convallis odio. Tellus egestas nascetur id integer imperdiet placerat porttitor. Amet id faucibus massa sem quis. Tristique purus sodales purus commodo eget diam mattis et tortor. Sed bibendum aliquam felis dignissim massa dignissim eget.</p>
+            Además, en Física no solo se aprenden teorías: también se hacen experimentos, se observa, se mide y se analizan resultados. Es una materia que estimula el pensamiento lógico, la curiosidad y el deseo de descubrir. Aunque a veces puede parecer difícil, poco a poco te das cuenta de que todo encaja como un gran rompecabezas.
         </p>
+
+        <!--Especificaciones de la asignatura-->
         <ul class="especificaciones_asign">
             <li><strong>Centro:</strong> Escuela Superior Politécnica de Gandía</li>
             <li><strong>Departamento:</strong> Dpt. de Ingeniería Electrónica</li>
@@ -70,27 +85,13 @@
             <li><strong>Créditos:</strong> 6</li>
             <li><strong>Duración:</strong> Semestral</li>
         </ul>
-
-        <!--Botones-->
-        <div class="botones">
-            <a href="#">
-                <button class="boton_tareas">Tareas</button>
-            </a>
-            <a href="#">
-                <button class="boton_calificaciones">Calificaciones</button>
-            </a>
-            <a href="#guia_docente">
-                <button class="boton_guia_docente">Guía docente</button>
-            </a>
-
-        </div>
     </div>
 
     <!--Línea de separación-->
     <hr>
 
     <div class="desplegables" id="guia_docente">
-        <h2>GUÍA DOCENTE: Física</h2>
+        <h2 class="titulo-guia">Guía Docente</h2>
 
         <!--Desplegables de acordeón-->
 
@@ -102,20 +103,20 @@
                 <!--Profesor 1-->
                 <div class="profesor">
                     <img src="https://placehold.co/150x200" alt="Foto del profesor">
-                    <div class="datos_profesor">
+                    <div>
                         <strong>Nombre Apellido Apellido</strong><br>
                         email@gmail.com<br>
-                        Despacho número
+                        Despacho 000
                     </div>
                 </div>
 
                 <!--Profesor 2-->
                 <div class="profesor">
                     <img src="https://placehold.co/150x200" alt="Foto del profesor">
-                    <div    >
+                    <div>
                         <strong>Nombre Apellido Apellido</strong><br>
                         email@gmail.com<br>
-                        Despacho número
+                        Despacho 000
                     </div>
                 </div>
             </div>
@@ -142,20 +143,20 @@
                 <!-- Sección de libros obligatorios -->
                 <div>
                     <h2 class="bibliografia-titulo">OBLIGATORIA</h2>
-                    <ul>
-                        <li>Nombre del libro. Autor. Fecha. Edición. ISBN</li>
-                        <li>Nombre del libro. Autor. Fecha. Edición. ISBN</li>
-                        <li>Nombre del libro. Autor. Fecha. Edición. ISBN</li>
+                    <ul class="bibliografia">
+                        <li><span class="icono-biblio"></span>Física: Principios con Aplicaciones. Douglas C. Giancoli. 2013. 7ª Edición. ISBN 978-0321625922</li>
+                        <li><span class="icono-no-biblio"></span>Física para Científicos e Ingenieros. Raymond A. Serway, John W. Jewett. 2013. 9ª Edición. ISBN 978-1133947271</li>
+                        <li><span class="icono-biblio"></span>Introducción a la Electrodinámica. David J. Griffiths. 2017. 4ª Edición. ISBN 978-1108420419</li>
                     </ul>
                 </div>
 
                 <!-- Sección de libros adicionales -->
                 <div>
                     <h2 class="bibliografia-titulo">ADICIONAL</h2>
-                    <ul>
-                        <li>Nombre del libro. Autor. Fecha. Edición. ISBN</li>
-                        <li>Nombre del libro. Autor. Fecha. Edición. ISBN</li>
-                        <li>Nombre del libro. Autor. Fecha. Edición. ISBN</li>
+                    <ul class="bibliografia">
+                        <li><span class="icono-biblio"></span>Mecánica. Hans Ohanian. 2007. 5ª Edición. ISBN 978-0393925122</li>
+                        <li><span class="icono-no-biblio"></span>Fundamentos de Física. David Halliday, Robert Resnick, Jearl Walker. 2014. 10ª Edición. ISBN 978-1118230718</li>
+                        <li><span class="icono-no-biblio"></span>Física Universitaria. Hugh D. Young, Roger A. Freedman. 2011. 13ª Edición. ISBN 978-0321731302</li>
                     </ul>
                 </div>
             </div>
@@ -175,32 +176,32 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <td>1. Operaciones Básicas</td>
-                    <td>3h</td>
-                    <td>3h</td>
-                </tr>
-                <tr>
-                    <td>2. Fracciones y Decimales</td>
-                    <td>3h</td>
+                    <td>1. Cinemática: el arte de describir el movimiento</td>
+                    <td>2h</td>
                     <td>3h</td>
                 </tr>
                 <tr>
-                    <td>3. Álgebra Elemental</td>
-                    <td>4h</td>
+                    <td>2. Dinámica: fuerzas que mueven el mundo</td>
+                    <td>3h</td>
                     <td>4h</td>
                 </tr>
                 <tr>
-                    <td>4. Álgebra Elemental</td>
+                    <td>3. Energía y trabajo: cómo se transforma y conserva la energía</td>
+                    <td>5h</td>
+                    <td>4h</td>
+                </tr>
+                <tr>
+                    <td>4. Ondas y sonido: vibraciones que viajan</td>
+                    <td>3h</td>
+                    <td>2h</td>
+                </tr>
+                <tr>
+                    <td>5. Electricidad y magnetismo: cargados de poder</td>
                     <td>3h</td>
                     <td>3h</td>
                 </tr>
                 <tr>
-                    <td>5. Álgebra Elemental</td>
-                    <td>3h</td>
-                    <td>3h</td>
-                </tr>
-                <tr>
-                    <td>6. Álgebra Elemental</td>
+                    <td>6. Óptica y luz: explorando el comportamiento de la luz</td>
                     <td>4h</td>
                     <td>4h</td>
                 </tr>
