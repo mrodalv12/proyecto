@@ -61,9 +61,9 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
             <button type="submit">Enviar</button>
         </form>
     </div>
-    <section class="imagen-contacto">
+    <div class="imagen-contacto">
         <img src="/img/Contacto.png" alt="Contacto">
-    </section>
+    </div>
 </section>
 
 <!-- Footer -->

@@ -1,20 +1,38 @@
 [
     {
         "id": "04-1320191",
-        "correo": "minimv06@gmail.com",
-        "contrase\u00f1a": "$2y$12$\/lWRTXrA2m6yw9B\/RgW.B.qzClQU5mP82ffVPmy1zNF9t5jSNJLwG",
-        "usuario": "Minerva"
+        "correo": "dapasa@har.upv.es",
+        "contraseña": "$2y$12$Wc9sbNbkvV1y9NCOYjWaSuYUtaW1btOPJpSX\/t5M59l5rZtJiGW06",
+        "usuario": "Daniel"
     },
     {
-        "id": "64-6055365",
-        "correo": "minimv06@gmail.com",
-        "contrase\u00f1a": "$2y$12$\/lWRTXrA2m6yw9B\/RgW.B.qzClQU5mP82ffVPmy1zNF9t5jSNJLwG",
-        "usuario": "Minerva"
+        "id": "60-4525956",
+        "correo": "dapasa@har.upv.es",
+        "contraseña": "$2y$12$Wc9sbNbkvV1y9NCOYjWaSuYUtaW1btOPJpSX\/t5M59l5rZtJiGW06",
+        "usuario": "Daniel"
     },
     {
         "id": "88-1316390",
-        "correo": "minimv06@gmail.com",
-        "contrase\u00f1a": "$2y$12$\/lWRTXrA2m6yw9B\/RgW.B.qzClQU5mP82ffVPmy1zNF9t5jSNJLwG",
-        "usuario": "Minerva"
+        "correo": "dapasa@har.upv.es",
+        "contraseña": "$2y$12$Wc9sbNbkvV1y9NCOYjWaSuYUtaW1btOPJpSX\/t5M59l5rZtJiGW06",
+        "usuario": "Daniel"
+    },
+    {
+        "id": "01-9218611",
+        "correo": "jogilo@upvnet.upv.es",
+        "contraseña": "$2y$12$CxioNE3TjB..pIt5Z3PetOZth77tyDBAZoB53nMjUfXRh.qtRjTIq",
+        "usuario": "José Luis"
+    },
+    {
+        "id": "64-6055365",
+        "correo": "jogilo@upvnet.upv.es",
+        "contraseña": "$2y$12$CxioNE3TjB..pIt5Z3PetOZth77tyDBAZoB53nMjUfXRh.qtRjTIq",
+        "usuario": "José Luis"
+    },
+    {
+        "id": "88-1316390",
+        "correo": "jogilo@upvnet.upv.es",
+        "contraseña": "$2y$12$CxioNE3TjB..pIt5Z3PetOZth77tyDBAZoB53nMjUfXRh.qtRjTIq",
+        "usuario": "José Luis"
     }
 ]

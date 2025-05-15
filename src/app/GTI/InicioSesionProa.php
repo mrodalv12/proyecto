@@ -60,7 +60,9 @@ $usuarioLogueado = $_SESSION["usuario"];
         <label for="contraseña">Contraseña</label>
         <input type="password" id="contraseña" name="contraseña" placeholder="Introduce tu contraseña" required autocomplete="current-password"/>
 
-        <button type="submit">Acceder</button>
+        <button>
+            <a id="acceder" href="#" class="boton-acceder">Acceder</a>
+        </button>
         <div id="mensajeError" class="error"></div>
       </form>
     </section>

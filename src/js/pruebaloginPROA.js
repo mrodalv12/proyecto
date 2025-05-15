@@ -16,12 +16,13 @@ const usuariosProa = {
 
 // Asignaciones de usuarios PROA a usuarios registrados
 const asignacionesProa = {
-    Minerva: {
+    Daniel: {
         pas: "88-1316390",
         profesor: "60-4525956",
         alumno: "01-9218611"
     },
-    nerva: {
+
+    "José Luis": {
         pas: "91-1970980",
         profesor: "64-6055365",
         alumno: "04-1320191"
@@ -64,3 +65,48 @@ function mostrarError(mensaje) {
 function ocultarError() {
     document.getElementById("mensajeError").textContent = "";
 }
+
+
+document.getElementById("acceder").addEventListener("click", function (e) {
+    e.preventDefault(); // Evita que el enlace navegue automáticamente
+
+    const rol = document.getElementById("rolSeleccionado").value;
+    const correo = document.getElementById("correo").value.trim();
+    const contraseña = document.getElementById("contraseña").value.trim();
+
+    if (!rol || !correo || !contraseña) {
+        mostrarError("Por favor completa todos los campos.");
+        return;
+    }
+
+    const usuarios = usuariosProa[rol];
+    if (!usuarios) {
+        mostrarError("Rol no válido.");
+        return;
+    }
+
+    const usuarioValido = usuarios.find(u => u.correo === correo && u.contraseña === contraseña);
+
+    if (!usuarioValido) {
+        mostrarError("Credenciales incorrectas.");
+        return;
+    }
+
+    ocultarError();
+
+    // Redirige según el rol
+    switch (rol) {
+        case "pas":
+            window.location.href = "../PROA/Inicio_PAS.php";
+            break;
+        case "profesor":
+            window.location.href = "../PROA/tareasContenidoProfesor.php";
+            break;
+        case "alumno":
+            window.location.href = "../PROA/tareasProfesor.php";
+            break;
+        default:
+            mostrarError("Rol desconocido.");
+    }
+});
+

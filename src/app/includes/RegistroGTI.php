@@ -1,5 +1,5 @@
 <?php
-// Solo procesar si se recibe el formulario por GET
+// Solo procesar si se recibe el formulario por POST
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["usuario"], $_POST["correo"], $_POST["contraseña"])) {
     // Recoger datos del formulario
     $usuario = $_POST["usuario"];
@@ -14,29 +14,19 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["usuario"], $_POST["co
     }
 
     // Encriptar la contraseña
-    $contraseña = password_hash($contraseña, PASSWORD_DEFAULT);
+    $contraseñaHash = password_hash($contraseña, PASSWORD_DEFAULT);
 
-
-    // Nuevo usuario en formato array (con datos base)
-    $nuevo_usuario = [
-        "usuario" => $usuario,
-        "correo" => $correo,
-        "contraseña" => $contraseña
-    ];
-
-    // Cargar usuarios predefinidos desde el archivo JSON
+    // Archivo con usuarios predefinidos
     $archivoUsuarios = 'usuarioProa.json';
-    if (file_exists($archivoUsuarios)) {
-        $usuarios_predefinidos = json_decode(file_get_contents($archivoUsuarios), true);
-    } else {
+    if (!file_exists($archivoUsuarios)) {
         echo "<p>Error: No se encuentra el archivo de usuarios predefinidos.</p>";
         exit;
     }
 
-    // Asegurarse de que los arrays de 'alumno', 'profesor' y 'pas' existan
-    if (!isset($usuarios_predefinidos['alumno']) || !is_array($usuarios_predefinidos['alumno']) ||
-        !isset($usuarios_predefinidos['profesor']) || !is_array($usuarios_predefinidos['profesor']) ||
-        !isset($usuarios_predefinidos['pas']) || !is_array($usuarios_predefinidos['pas'])) {
+    $usuarios_predefinidos = json_decode(file_get_contents($archivoUsuarios), true);
+
+    // Validar estructura de usuarios predefinidos
+    if (!isset($usuarios_predefinidos['alumno'], $usuarios_predefinidos['profesor'], $usuarios_predefinidos['pas'])) {
         echo "<p>Error: Los usuarios predefinidos no están definidos correctamente.</p>";
         exit;
     }
@@ -44,10 +34,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["usuario"], $_POST["co
     // Leer usuarios existentes o crear array vacío
     $archivo = "usuarios.json";
     $usuarios = file_exists($archivo) ? json_decode(file_get_contents($archivo), true) : [];
-
-    // Verifica si json_decode devuelve null (por si el JSON está mal formado)
-    if ($usuarios === null) {
-        $usuarios = [];  // Si es null, inicializa como un array vacío
+    if (!is_array($usuarios)) {
+        $usuarios = [];
     }
 
     // Verificar si el usuario ya existe
@@ -58,42 +46,34 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["usuario"], $_POST["co
         }
     }
 
-    // Función para obtener un usuario aleatorio de un array
-    function obtenerUsuarioAleatorio($usuarios) {
-        return $usuarios[array_rand($usuarios)];
+    // Función para obtener un usuario aleatorio
+    function obtenerUsuarioAleatorio($array) {
+        return $array[array_rand($array)];
     }
 
-    // Asignar un alumno, un profesor y un pas aleatorio
-    $alumno = obtenerUsuarioAleatorio($usuarios_predefinidos['alumno']);
+    // Obtener uno de cada rol
+    $alumno  = obtenerUsuarioAleatorio($usuarios_predefinidos['alumno']);
     $profesor = obtenerUsuarioAleatorio($usuarios_predefinidos['profesor']);
-    $pas = obtenerUsuarioAleatorio($usuarios_predefinidos['pas']);
+    $pas      = obtenerUsuarioAleatorio($usuarios_predefinidos['pas']);
 
-    // Crear copias con datos del nuevo usuario
-    $registro_alumno = $alumno;
-    $registro_alumno["usuario"] = $usuario;
-    $registro_alumno["correo"] = $correo;
-    $registro_alumno["contraseña"] = $contraseña;
+    // Preparar entradas completas
+    foreach ([$alumno, $profesor, $pas] as $usuarioBase) {
+        $registro = $usuarioBase;
+        $registro["usuario"] = $usuario;
+        $registro["correo"] = $correo;
+        $registro["contraseña"] = $contraseñaHash;
 
-    $registro_profesor = $profesor;
-    $registro_profesor["usuario"] = $usuario;
-    $registro_profesor["correo"] = $correo;
-    $registro_profesor["contraseña"] = $contraseña;
+        // Eliminar la contraseña en texto plano si existe
+        unset($registro["password"]);
 
-    $registro_pas = $pas;
-    $registro_pas["usuario"] = $usuario;
-    $registro_pas["correo"] = $correo;
-    $registro_pas["contraseña"] = $contraseña;
+        $usuarios[] = $registro;
+    }
 
-// Agregar al archivo
-    $usuarios[] = $registro_alumno;
-    $usuarios[] = $registro_profesor;
-    $usuarios[] = $registro_pas;
+    // Guardar el archivo actualizado
+    file_put_contents($archivo, json_encode($usuarios, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 
-    // Guardar la lista actualizada de usuarios en el archivo JSON
-    file_put_contents($archivo, json_encode($usuarios, JSON_PRETTY_PRINT));
-
-    // Confirmación y redirección
+    // Redirigir al login
     header("Location: ../GTI/InicioSesion.php");
-    exit; // Asegura que no se siga ejecutando el código después de la redirección
+    exit;
 }
 ?>

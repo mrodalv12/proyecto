@@ -1,4 +1,5 @@
 
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -61,16 +62,6 @@ body {
   .registro:hover {
     background-color: #c3006b;
   }
-  
-  .imagen-contacto {
-    flex: 1;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    min-height: 100%;
-    min-height: 400px; /* puedes ajustar */
-    margin-top: 30px;
-  }
 
   .contacto {
     display: flex;
@@ -78,6 +69,10 @@ body {
     padding: 5em 2em;
     background-color: #8e0f5c;
     color: white;
+    img{
+      position: fixed;
+      width: 590px;
+      height: 355px;
   }
 
   
@@ -125,12 +120,73 @@ body {
     width: 100%;
     max-width: 500px;
   }
-  
-  .imagen-contacto {
-    flex: 1;
-  }
 
   html {
     scroll-behavior: smooth;
   }
-  
+  }
+  @media()
+/*
+@media (max-width: 565px) {
+
+  .hero {
+    padding: 8em 1em;
+  }
+
+  .hero-content {
+    padding: 1em;
+  }
+  .contacto .imagen-contacto img{
+    display: none;
+  }
+  .hero h1 {
+    font-size: 1.5em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .hero button {
+    width: 100%;
+    padding: 1em;
+    font-size: 1em;
+  }
+
+  .contacto {
+    display: flex;
+    flex-direction: column;
+    padding: 3em 1em;
+    overflow-x: hidden;
+    .imagen-contacto{
+      display: none;
+    }
+
+  }
+
+  .formulario {
+    margin: 0;
+    padding: 0;
+    background-color: #58bae4;
+  }
+
+  .formulario h2 {
+    font-size: 1.5em;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  form button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .registro {
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 1em;
+    font-size: 1em;
+  }
+
+}*/
