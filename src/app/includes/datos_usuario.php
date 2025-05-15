@@ -9,7 +9,7 @@ $profesor = (object) $user3;
 
 $todos_users = [$pas, $alumno, $profesor];
 //-------------------------------------------------------------------------------------------------------------------
-$thisUser = $todos_users[2]; //para entrar a diferentes usuarios, cambiar el numero de casilla.
+$thisUser = $todos_users[0]; //para entrar a diferentes usuarios, cambiar el numero de casilla.
 //-------------------------------------------------------------------------------------------------------------------
 
 ?>
