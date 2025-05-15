@@ -111,3 +111,28 @@ body {
 .mensaje.error {
   background-color: #d55d5d;
 }
+
+/* Responsive para pantallas de hasta 565px */
+@media (max-width: 565px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .form-box {
+    padding: 2rem 1rem;
+    width: 100%;
+  }
+
+  .image-box {
+    display: none; /* Oculta la imagen en móviles */
+  }
+
+  .form-box form {
+    max-width: 100%;
+  }
+
+  .login-link {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+}

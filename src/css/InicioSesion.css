@@ -12,7 +12,7 @@
     
     .main-content {
       display: flex;
-      min-height: 72.9vh;
+      min-height: 78.9vh;
     }
     
     .login-box {
@@ -85,4 +85,40 @@
       height: 100%;
       object-fit: cover;
     }
-    
+
+/* responsive en 565*/
+@media (max-width: 565px) {
+  .main-content {
+    flex-direction: column;
+    min-height: 50vh;
+  }
+
+  .login-box {
+    padding: 2rem 1.5rem;
+    text-align: center;
+    flex: none;
+    height: 100vh;
+  }
+
+  .login-box form {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .login-box input {
+    font-size: 1rem;
+  }
+
+  .login-box button {
+    width: 100%;
+  }
+
+  .register {
+    font-size: 0.85rem;
+    margin-top: 2rem;
+  }
+
+  .image-box {
+    display: none;
+  }
+}

@@ -55,3 +55,39 @@
     border-radius: 10px;
     margin-right: 50px;
   }
+
+@media (max-width: 565px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .info {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .info h1,
+  .info p {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .demo {
+    margin-left: 0;
+  }
+
+  .imagen {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .imagen img {
+    width: 90%;
+    margin: 0;
+  }
+}

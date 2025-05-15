@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fa65155-22b5-4a9b-85ca-5b360c417b0a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/app/includes/footerGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/footerGTI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/headerGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/headerGTI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/GTI/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/InicioSesionProa.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/GTI/InicioSesionProa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/Footer_Header_Noregistrado.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Footer_Header_Noregistrado.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/Footer_Header_Registrado.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Footer_Header_Registrado.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/InicioSesion.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/InicioSesion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/InicioSesionProa.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/InicioSesionProa.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/PROA_No registrado.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/PROA_No registrado.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/PROA_registrado.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/PROA_registrado.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/RegistroGTI.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/RegistroGTI.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

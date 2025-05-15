@@ -121,3 +121,84 @@
     margin-top: 0.3em;
   }
 
+/* responsive */
+@media (max-width: 565px) {
+  /* HEADER */
+  .header {
+    flex-direction: row;
+    flex-wrap: wrap; /* por si falta espacio */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 1rem;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+    flex-shrink: 0; /* evita que el logo se haga pequeñito */
+    margin-bottom: 0.5rem;
+  }
+
+  .nav {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: -33px;
+  }
+
+  .nav a {
+    font-size: 0.85rem;
+    margin: 0;
+    white-space: nowrap; /* evita que se corten en varias líneas */
+  }
+
+  .mi-cuenta {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .mi-cuenta button {
+    width: 100%;
+    text-align: left;
+    font-size: 0.85rem;
+    background: none;
+    border: none;
+    color: #8e0f5c;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .menu-cuenta {
+    background: #f0f0f0;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 1.5rem 1rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-info,
+  .footer-logo-block {
+    width: 100%;
+    text-align: left;
+  }
+
+  .footer-logo {
+    font-size: 1.5rem;
+  }
+
+  .footer-copy {
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+  }
+}

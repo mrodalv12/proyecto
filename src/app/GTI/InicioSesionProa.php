@@ -3,12 +3,9 @@ session_start();  // Inicia la sesión al comienzo del archivo
 
 // Verifica si el usuario está logueado
 $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
-?>
-
-<?php
 
 // Si el usuario no está logueado, redirige al login
-if (!isset($_SESSION["usuario"])) {
+if (!$usuario_logueado) {
     header("Location: ../InicioSesion.php");
     exit();
 }
