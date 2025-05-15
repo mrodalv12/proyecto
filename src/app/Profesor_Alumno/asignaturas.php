@@ -1,11 +1,6 @@
 <?php
 include "../includes/funciones_inicio.php";
 include "../includes/datos_usuario.php";
-
-if ($thisUser->rol != "Alumno" && $thisUser->rol != "Profesor") {
-    echo "Acceso denegado. No tienes permisos para ver esta página.";
-    exit();
-}
 ?>
 <!doctype html>
 <html lang="es">

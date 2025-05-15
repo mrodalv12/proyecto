@@ -23,18 +23,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["usuario"], $_POST["co
         $coincideUsuario = $u["usuario"] === $identificador;
         $coincideCorreo = $u["correo"] === $identificador;
 
-        // Dentro del bucle donde se verifica el usuario y la contraseña:
-        if (($coincideUsuario || $coincideCorreo) && password_verify($clave, $u["contraseña"])) {
-            // Guarda el usuario en la sesión
-            $_SESSION["usuario"] = $u["usuario"];  // O el campo que desees guardar en la sesión
-            $usuario_encontrado = true;
-            break;
+        if (($coincideUsuario || $coincideCorreo)) {
+            if (password_verify($clave, $u["contraseña"])) {
+                $_SESSION["usuario"] = $u["usuario"];
+                $usuario_encontrado = true;
+                break;
+            }
         }
     }
 
     if ($usuario_encontrado) {
         // Redirigir al usuario a la landing page después de un inicio de sesión exitoso
-        header("Location: ./index.php");  // Cambia esto por la ruta correcta de tu landing page
+        header("Location: ../GTI/index.php");  // Cambia esto por la ruta correcta de tu landing page
         exit;  // Terminar la ejecución del script después de la redirección
     } else {
         echo "<p>Usuario o contraseña incorrectos.</p>";

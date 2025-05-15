@@ -75,7 +75,7 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
 </main>
 
 <!-- Footer -->
-<?php include "./src/app/includes/footerGTI.php" ?>
+<?php include "./src/app/includes/footerGTI.php"?>
 
 <!-- Scripts -->
 <?php if ($usuario_logueado): ?>

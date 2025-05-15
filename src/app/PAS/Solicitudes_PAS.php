@@ -113,14 +113,13 @@ include "../includes/datos_usuario.php";
                         <li class="img_del_user_en_solicitudes"><img src="../../../img/iconoUser.png" alt="user"></li>
                         <li><div>
                                 <a href="perfil_solicitud_PAS.php"><p>contenido 1</p></a>
-                            <p>Estudiantes</p>
+                            <p>Estudiante</p>
                             <p>Z123456789</p>
-                            <p> Asunto: quiero matar a alguien porque esta M*ERDA de css no quiere,
-                                no le da la gana, a ocupar todo el espacio disponible</p>
-                            <p> Tema: auxilio por favor saquenme de la carrera</p>
-                            <p>Descripcion:<br>NECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
-                                DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
-                                que eso esta bien????? NO, NO, NO LO ESTA</p>
+                            <p> Asunto: Lorem ipsum dolor sit amet, cmagna aliqua.</p>
+                            <p> Tema: Lorem ipsum dolor sit amet, clabore et dolore magna aliqua.</p>
+                            <p>Descripcion:<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sed do eiusmod tempor incididunt ut labore et dolore magn
+                                a aliqua.</p>
                             </div></li>
                     </ul>
                     <div class="boton">
@@ -132,14 +131,13 @@ include "../includes/datos_usuario.php";
                         <li class="img_del_user_en_solicitudes"><img src="../../../img/iconoUser.png" alt="user"></li>
                         <li><div>
                                 <a href="perfil_solicitud_PAS.php"><p>contenido 2</p></a>
-                            <p>profesor</p>
+                            <p>estudiante</p>
                             <p>Z123456789</p>
-                            <p> Asunto: quiero matar a alguien porque esta M*ERDA de css no quiere,
-                                no le da la gana, a ocupar todo el espacio disponible</p>
-                            <p> Tema: auxilio por favor saquenme de la carrera</p>
-                            <p>Descripcion:<br>NECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
-                                DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
-                                que eso esta bien????? NO, NO, NO LO ESTA</p>
+                            <p> Asunto:Lorem ipsum dolor sit amet, cmagna aliqua.</p>
+                            <p> Tema: Lorem ipsum dolor sit amet, clabore et dolore magna aliqua.</p>
+                            <p>Descripcion:<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sed do eiusmod tempor incididunt ut labore et dolore magn
+                                a aliqua.</p>
                             </div></li>
                     </ul>
                     <div class="boton">
@@ -152,14 +150,15 @@ include "../includes/datos_usuario.php";
                         <li class="img_del_user_en_solicitudes"><img src="../../../img/iconoUser.png" alt="user"></li>
                         <li><div>
                                 <a href="perfil_solicitud_PAS.php"><p>contenido 3</p></a>
-                            <p>Estudiantes</p>
+                            <p>Estudiante</p>
                             <p>Z123456789</p>
-                            <p> Asunto: quiero matar a alguien porque esta M*ERDA de css no quiere,
-                                no le da la gana, a ocupar todo el espacio disponible</p>
-                            <p> Tema: auxilio por favor saquenme de la carrera</p>
-                            <p>Descripcion:<br>NECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
-                                DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
-                                que eso esta bien????? NO, NO, NO LO ESTA</p>
+                            <p> Asunto: Lorem ipsum dolor sit amet.</p>
+                            <p> Tema:Lorem ipsum dolor sit amet, consectetur adip..</p>
+                            <p>Descripcion:<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sed do eiusmod tempor incididunt ut labore et dolore magn
+                                a aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sed do eiusmod tempor incididunt ut labore et dolore magn
+                                a aliqua.</p>
                             </div></li>
                     </ul>
                     <div class="boton">
@@ -172,14 +171,17 @@ include "../includes/datos_usuario.php";
                         <li class="img_del_user_en_solicitudes"><img src="../../../img/iconoUser.png" alt="user"></li>
                         <li><div>
                                 <a href="perfil_solicitud_PAS.php"><p>contenido 4</p></a>
-                            <p>profesor</p>
+                            <p>estudiante</p>
                             <p>Z123456789</p>
-                            <p> Asunto: quiero matar a alguien porque esta M*ERDA de css no quiere,
-                                no le da la gana, a ocupar todo el espacio disponible</p>
-                            <p> Tema: auxilio por favor saquenme de la carrera</p>
-                            <p>Descripcion:<br>NECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
-                                DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
-                                que eso esta bien????? </p>
+                            <p> Asunto: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sed do eiusmod tempor incididunt ut labore et dolore magn
+                                a aliqua.</p>
+                            <p> Tema:Lorem ipsum dolor sit amet, </p>
+                            <p>Descripcion:<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Sed do eiusmod tempor incididunt ut labore et dolore magn
+                                a aliquamet, consectetur adipiscing elit.
+                                Sed do eiusmod tempor incididunt ut labore et dolore magn
+                                a aliqua. </p>
                             </div></li>
                     </ul>
                     <div class="boton">
@@ -192,14 +194,17 @@ include "../includes/datos_usuario.php";
                         <li class="img_del_user_en_solicitudes"><img src="../../../img/iconoUser.png" alt="user"></li>
                         <li><div>
                                 <a href="perfil_solicitud_PAS.php"><p>contenido 5</p></a>
-                                <p>Estudiantes</p>
+                                <p>Estudiante</p>
                                 <p>Z123456789</p>
-                                <p> Asunto: quiero matar a alguien porque esta M*ERDA de css no quiere,
-                                    no le da la gana, a ocupar todo el espacio disponible</p>
-                                <p> Tema: auxilio por favor saquenme de la carrera</p>
-                                <p>Descripcion:<br>NECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
-                                    DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
-                                    que eso esta bien????? NO, NO, NO LO ESTA</p>
+                                <p> Asunto: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Sed do eiusmod tempor incididu.</p>
+                                <p> Tema: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Sed do eiusmod.</p>
+                                <p>Descripcion:<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Sed do eiusmod tempor incididunt ut labore et dolore magn
+                                    a aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Sed do eiusmod tempor incididunt ut labore et dolore magn
+                                    a aliqua.</p>
                             </div></li>
                     </ul>
                     <div class="boton">
@@ -214,12 +219,16 @@ include "../includes/datos_usuario.php";
                                 <a href="perfil_solicitud_PAS.php"><p>contenido 6</p></a>
                                 <p>Estudiantes</p>
                                 <p>Z123456789</p>
-                                <p> Asunto: quiero matar a alguien porque esta M*ERDA de css no quiere,
-                                    no le da la gana, a ocupar todo el espacio disponible</p>
-                                <p> Tema: auxilio por favor saquenme de la carrera</p>
-                                <p>Descripcion:<br>NECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
-                                    DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
-                                    que eso esta bien????? NO, NO, NO LO ESTA</p>
+                                <p> Asunto: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    re et dolore magn
+                                    a aliqua.</p>
+                                <p> Tema:Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Sed do eiusm.</p>
+                                <p>Descripcion:<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Sed do eiusmod tempor incididunt ut labore et dolore magn
+                                    a aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Sed do eiusmod tempor incididunt ut labore et dolore magn
+                                    a aliqua.Lore.</p>
                             </div></li>
                     </ul>
                     <div class="boton">
@@ -234,11 +243,15 @@ include "../includes/datos_usuario.php";
                                 <a href="perfil_solicitud_PAS.php"><p>contenido 7</p></a>
                                 <p>Estudiantes</p>
                                 <p>Z123456789</p>
-                                <p> Asunto: esto es una solicitud realizada</p>
-                                <p> Tema: auxilio por favor saquenme de la carrera</p>
-                                <p>Descripcion:<br>NECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
-                                    DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
-                                    que eso esta bien????? NO, NO, NO LO ESTA</p>
+                                <p> Asunto: Lorem ipsum dolor sit abore et dolore magn
+                                    a aliqua.</p>
+                                <p> Tema: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Sed do eius.</p>
+                                <p>Descripcion:<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Sed do eiusmod tempor incididunt ut labore et dolore magn
+                                    a aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Sed do eiusmod tempor incididunt ut labore et dolore magn
+                                    a aliqua.</p>
                             </div></li>
                     </ul>
                 </div>
@@ -249,11 +262,14 @@ include "../includes/datos_usuario.php";
                                 <a href="perfil_solicitud_PAS.php"><p>contenido 8</p></a>
                                 <p>Estudiantes</p>
                                 <p>Z123456789</p>
-                                <p> Asunto: esta es la segunda solicitud realizada</p>
-                                <p> Tema: auxilio por favor saquenme de la carrera</p>
-                                <p>Descripcion:<br>NECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
-                                    DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
-                                    que eso esta bien????? NO, NO, NO LO ESTA</p>
+                                <p> Asunto: Lorem ipsum dolor sit amet, a.</p>
+                                <p> Tema: Lorem ipsum dolor sit ameore et dolore magn
+                                    a aliqua.</p>
+                                <p>Descripcion:<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Sed do eiusmod tempor incididunt ut labore et dolore magn
+                                    a aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Sed do eiusmod tempor incididunt ut labore et dolore magn
+                                    a aliqua.</p>
                             </div></li>
                     </ul>
                 </div>
@@ -264,11 +280,14 @@ include "../includes/datos_usuario.php";
                                 <a href="perfil_solicitud_PAS.php"><p>contenido 9</p></a>
                                 <p>Estudiantes</p>
                                 <p>Z123456789</p>
-                                <p> Asunto: esta es una solicitud de papelera</p>
-                                <p> Tema: auxilio por favor saquenme de la carrera</p>
-                                <p>Descripcion:<br>NECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
-                                    DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
-                                    que eso esta bien????? NO, NO, NO LO ESTA</p>
+                                <p> Asunto: Lorem ipsum dolor sit am.</p>
+                                <p> Tema: Lorem ipsum dolor sit amet, conore magn
+                                    a aliqua.</p>
+                                <p>Descripcion:<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Sed do eiusmod tempor incididunt ut labore et dolore magn
+                                    a aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Sed do eiusmod tempor incididunt ut labore et dolore magn
+                                    a aliqua.</p>
                             </div></li>
                     </ul>
                     <div class="boton">
