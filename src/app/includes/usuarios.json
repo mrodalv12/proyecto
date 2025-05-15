@@ -1,74 +1,20 @@
 [
     {
-        "usuario": "Minerva",
+        "id": "04-1320191",
         "correo": "minimv06@gmail.com",
-        "contrase\u00f1a": "$2y$12$zMZEs0dLYhCUNX3l40pI\/.B72a39jr1OzLGaXmmB\/pDGDB\/4BnMym",
-        "dni": "04-1320191",
-        "nombre": "Merline",
-        "apellido1": "Kirdsch",
-        "apellido2": "Kampshell",
-        "email": "m.kirkam@epsg.upv.es",
-        "password": "1320191",
-        "rol": "alumno"
+        "contrase\u00f1a": "$2y$12$\/lWRTXrA2m6yw9B\/RgW.B.qzClQU5mP82ffVPmy1zNF9t5jSNJLwG",
+        "usuario": "Minerva"
     },
     {
-        "usuario": "Minerva",
+        "id": "64-6055365",
         "correo": "minimv06@gmail.com",
-        "contrase\u00f1a": "$2y$12$zMZEs0dLYhCUNX3l40pI\/.B72a39jr1OzLGaXmmB\/pDGDB\/4BnMym",
-        "dni": "64-6738133",
-        "nombre": "Eolande",
-        "apellido1": "Merriton",
-        "apellido2": "Mizzi",
-        "email": "e.mermiz@upv.es",
-        "password": "6738133",
-        "rol": "profesor"
+        "contrase\u00f1a": "$2y$12$\/lWRTXrA2m6yw9B\/RgW.B.qzClQU5mP82ffVPmy1zNF9t5jSNJLwG",
+        "usuario": "Minerva"
     },
     {
-        "usuario": "Minerva",
+        "id": "88-1316390",
         "correo": "minimv06@gmail.com",
-        "contrase\u00f1a": "$2y$12$zMZEs0dLYhCUNX3l40pI\/.B72a39jr1OzLGaXmmB\/pDGDB\/4BnMym",
-        "dni": "91-1970980",
-        "nombre": "Brooke",
-        "apellido1": "Malimoe",
-        "apellido2": "Thomerson",
-        "email": "b.maltho@upv.es",
-        "password": "1970980",
-        "rol": "pas"
-    },
-    {
-        "usuario": "nerva",
-        "correo": "mmarvid1@upv.edu.es",
-        "contrase\u00f1a": "$2y$12$9\/3Z\/1w2FFVwG7KA7IakBugH4xZa9UzyBn.NnkCzhaIAQOE9vRo4y",
-        "dni": "04-1320191",
-        "nombre": "Merline",
-        "apellido1": "Kirdsch",
-        "apellido2": "Kampshell",
-        "email": "m.kirkam@epsg.upv.es",
-        "password": "1320191",
-        "rol": "alumno"
-    },
-    {
-        "usuario": "nerva",
-        "correo": "mmarvid1@upv.edu.es",
-        "contrase\u00f1a": "$2y$12$9\/3Z\/1w2FFVwG7KA7IakBugH4xZa9UzyBn.NnkCzhaIAQOE9vRo4y",
-        "dni": "64-6738133",
-        "nombre": "Eolande",
-        "apellido1": "Merriton",
-        "apellido2": "Mizzi",
-        "email": "e.mermiz@upv.es",
-        "password": "6738133",
-        "rol": "profesor"
-    },
-    {
-        "usuario": "nerva",
-        "correo": "mmarvid1@upv.edu.es",
-        "contrase\u00f1a": "$2y$12$9\/3Z\/1w2FFVwG7KA7IakBugH4xZa9UzyBn.NnkCzhaIAQOE9vRo4y",
-        "dni": "88-1316390",
-        "nombre": "Ondrea",
-        "apellido1": "Brezlaw",
-        "apellido2": "Sherwill",
-        "email": "o.breshe@upv.es",
-        "password": "1316390",
-        "rol": "pas"
+        "contrase\u00f1a": "$2y$12$\/lWRTXrA2m6yw9B\/RgW.B.qzClQU5mP82ffVPmy1zNF9t5jSNJLwG",
+        "usuario": "Minerva"
     }
 ]

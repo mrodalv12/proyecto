@@ -1,30 +1,30 @@
 // Simulación del JSON de usuarios PROA
 const usuariosProa = {
     pas: [
-        { id: "pas1", correo: "pas1@proa.com", contraseña: "pass123" },
-        { id: "pas2", correo: "pas2@proa.com", contraseña: "pass456" },
+        { id: "88-1316390", correo: "o.breshe@upv.es", contraseña: "1316390" },
+        { id: "91-1970980", correo: "b.maltho@upv.es", contraseña: "1970980" },
     ],
     profesor: [
-        { id: "prof1", correo: "prof1@proa.com", contraseña: "prof123" },
-        { id: "prof2", correo: "prof2@proa.com", contraseña: "prof456" },
+        { id: "60-4525956", correo: "k.poumai@upv.es", contraseña: "4525956" },
+        { id: "64-6055365", correo: "l.prista@upv.es", contraseña: "6055365" },
     ],
     alumno: [
-        { id: "alum1", correo: "alum1@proa.com", contraseña: "alum123" },
-        { id: "alum2", correo: "alum2@proa.com", contraseña: "alum456" },
+        { id: "01-9218611", correo: "l.simdre@epsg.upv.es", contraseña: "9218611" },
+        { id: "04-1320191", correo: "m.kirkam@epsg.upv.es", contraseña: "1320191" },
     ],
 };
 
 // Asignaciones de usuarios PROA a usuarios registrados
 const asignacionesProa = {
     Minerva: {
-        pas: "pas1",
-        profesor: "prof1",
-        alumno: "alum1"
+        pas: "88-1316390",
+        profesor: "60-4525956",
+        alumno: "01-9218611"
     },
     nerva: {
-        pas: "pas2",
-        profesor: "prof2",
-        alumno: "alum2"
+        pas: "91-1970980",
+        profesor: "64-6055365",
+        alumno: "04-1320191"
     }
 };
 

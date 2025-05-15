@@ -42,7 +42,6 @@
 <!-- Footer -->
 <?php include "../includes/footerGTI.php" ?>
 
-<!-- Scripts -->
 
 </body>
 </html>

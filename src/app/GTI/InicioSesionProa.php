@@ -9,7 +9,7 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
 
 // Si el usuario no está logueado, redirige al login
 if (!isset($_SESSION["usuario"])) {
-    header("Location: ../login.php");
+    header("Location: ../InicioSesion.php");
     exit();
 }
 
@@ -45,7 +45,7 @@ $usuarioLogueado = $_SESSION["usuario"];
 
     <section class="login-section">
       <h2>Inicia sesión en PROA</h2>
-        <form id="loginForm"  method="GET">
+        <form id="loginForm"  method="POST">
         <label for="rolSeleccionado">Opciones de rol para PROA</label>
             <select id="rolSeleccionado" name="rol" required onchange="completarDatos()">
           <option value="">Selecciona un rol</option>

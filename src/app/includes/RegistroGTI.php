@@ -68,10 +68,26 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["usuario"], $_POST["co
     $profesor = obtenerUsuarioAleatorio($usuarios_predefinidos['profesor']);
     $pas = obtenerUsuarioAleatorio($usuarios_predefinidos['pas']);
 
-    // Crear registros para el nuevo usuario con los roles correspondientes
-    $usuarios[] = array_merge($nuevo_usuario, $alumno); // Asigna un alumno
-    $usuarios[] = array_merge($nuevo_usuario, $profesor); // Asigna un profesor
-    $usuarios[] = array_merge($nuevo_usuario, $pas); // Asigna un pas
+    // Crear copias con datos del nuevo usuario
+    $registro_alumno = $alumno;
+    $registro_alumno["usuario"] = $usuario;
+    $registro_alumno["correo"] = $correo;
+    $registro_alumno["contraseña"] = $contraseña;
+
+    $registro_profesor = $profesor;
+    $registro_profesor["usuario"] = $usuario;
+    $registro_profesor["correo"] = $correo;
+    $registro_profesor["contraseña"] = $contraseña;
+
+    $registro_pas = $pas;
+    $registro_pas["usuario"] = $usuario;
+    $registro_pas["correo"] = $correo;
+    $registro_pas["contraseña"] = $contraseña;
+
+// Agregar al archivo
+    $usuarios[] = $registro_alumno;
+    $usuarios[] = $registro_profesor;
+    $usuarios[] = $registro_pas;
 
     // Guardar la lista actualizada de usuarios en el archivo JSON
     file_put_contents($archivo, json_encode($usuarios, JSON_PRETTY_PRINT));
