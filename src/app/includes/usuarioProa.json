@@ -1,0 +1,14 @@
+{
+  "pas": [
+    { "id": "88-1316390", "correo": "o.breshe@upv.es", "contraseña": "1316390" },
+    { "id": "91-1970980", "correo": "b.maltho@upv.es", "contraseña": "1970980" }
+  ],
+  "profesor": [
+    { "id": "60-4525956", "correo": "k.poumai@upv.es", "contraseña": "4525956" },
+    { "id": "64-6055365", "correo": "l.prista@upv.es", "contraseña": "6055365" }
+  ],
+  "alumno": [
+    { "id": "01-9218611", "correo": "l.simdre@epsg.upv.es", "contraseña": "9218611" },
+    { "id": "04-1320191", "correo": "m.kirkam@epsg.upv.es", "contraseña": "1320191" }
+  ]
+}

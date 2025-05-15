@@ -2,10 +2,6 @@
 <?php
 include "../includes/datos_usuario.php";
 
-if ($thisUser->rol != "PAS") {
-    echo "Acceso denegado. No tienes permisos para ver esta página.";
-    exit();
-}
 ?>
 <!----------------------------------------------------------------------------------------------------------->
 <!doctype html>
@@ -20,7 +16,7 @@ if ($thisUser->rol != "PAS") {
 </head>
 <body>
 <!-- encabezado-->
-<?php include "../includes/header_proa.php" ?>
+<?php include "../includes/header_proa_pas.php" ?>
 <!-- fin del encabezado-->
 <main>
     <div class="titulos">

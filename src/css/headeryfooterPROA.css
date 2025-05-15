@@ -1,15 +1,7 @@
 
 /* region--- ENCABEZADO --- */
-body {
-    padding-top: 80px; /* Ajusta según la altura real del header */
-}
+
 .encabezado {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 100;
     background-color: #4D4A4A;
     color: aliceblue;
     display: flex;
@@ -110,7 +102,7 @@ body {
 }
 @media(max-width: 565px){
     .contenido{
-        margin-top: 75px;
+        margin-top: 65px;
     }
     .encabezado{
         position: fixed;

@@ -26,7 +26,7 @@ $profesor2 = (object) $user6;
 
 $todos_users = [$pas1, $pas2, $alumno1, $alumno2, $profesor1, $profesor2];
 //-------------------------------------------------------------------------------------------------------------------
-$thisUser = $todos_users[0]; //para entrar a diferentes usuarios, cambiar el numero de casilla.
+$thisUser = $todos_users[5]; //para entrar a diferentes usuarios, cambiar el numero de casilla.
 //-------------------------------------------------------------------------------------------------------------------
 
 ?>
