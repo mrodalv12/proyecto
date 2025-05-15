@@ -16,12 +16,12 @@ $user4 = ['dni' => "04-1320191",'username' => "Merline", 'userlastname1' => "Kir
     'userlastname2' => "Kampshell", 'password' => "1320191", 'rol' => "Alumno"];
 $alumno2 = (object) $user4;
 
-$user5 = ['dni' => "60-4525956",'username' => "Kevan", 'userlastname1' => "Pounds",'correo'=> "m.kirkam@epsg.upv.es",
-    'userlastname2' => "Kampshell", 'password' => "1320191", 'rol' => "Alumno"];
+$user5 = ['dni' => "60-4525956",'username' => "Kevan", 'userlastname1' => "Pounds",'correo'=> "k.poumai@upv.es",
+    'userlastname2' => "Mainston", 'password' => "4525956", 'rol' => "Profesor"];
 $profesor1 = (object) $user5;
 
-$user6 = ['dni' => "64-6055365",'username' => "Luelle", 'userlastname1' => "Pridmore",'correo'=> "m.kirkam@epsg.upv.es",
-    'userlastname2' => "Kampshell", 'password' => "1320191", 'rol' => "Alumno"];
+$user6 = ['dni' => "64-6055365",'username' => "Luelle", 'userlastname1' => "Pridmore",'correo'=> "l.prista@upv.es",
+    'userlastname2' => "Starsmeare", 'password' => "6055365", 'rol' => "Profesor"];
 $profesor2 = (object) $user6;
 
 $todos_users = [$pas1, $pas2, $alumno1, $alumno2, $profesor1, $profesor2];

@@ -183,15 +183,7 @@ if ($thisUser->rol != "PAS") {
                             <p> Tema: auxilio por favor saquenme de la carrera</p>
                             <p>Descripcion:<br>NECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
                                 DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
-                                que eso esta bien????? NO, NO, NO LO ESTANECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
-                                DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
-                                que eso esta bien????? NO, NO, NO LO ESTANECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
-                                DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
-                                que eso esta bien????? NO, NO, NO LO ESTANECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
-                                DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
-                                que eso esta bien????? NO, NO, NO LO ESTANECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
-                                DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
-                                que eso esta bien????? NO, NO, NO LO ESTA</p>
+                                que eso esta bien????? </p>
                             </div></li>
                     </ul>
                     <div class="boton">
@@ -296,6 +288,13 @@ if ($thisUser->rol != "PAS") {
         </div>
         <!--fin de vista de contenido-->
     </main>
+
+    <nav class="MOVIL_bandeja">
+        <a id="boton1pendientes" onclick="activarEstilo(this); mostrarContenido('solicitud_pendiente_')"><div class="iconobandeja"><img src="../../../img/iconoBandejadeEntradaMovil.png" alt="pendientes"></div></a>
+        <a id="boton2hechas" onclick="activarEstilo(this); mostrarContenido('solicitud_hecha_')"><div class="iconobandeja"><img src="../../../img/iconoBandejaHechasMovil.png" alt="hechas"></div></a>
+        <a id="boton3papelera" onclick="activarEstilo(this); mostrarContenido('solicitud_rechazada_')"><div class="iconobandeja"><img src="../../../img/iconoPapeleraSolicitudesMovil.png" alt="rechazadas"></div></a>
+    </nav>
+
     <!-- footer-->
     <?php include "../includes/footer_proa.php" ?>
     <!-- fin del footer-->

@@ -68,18 +68,6 @@ if ($thisUser->rol != "Alumno" && $thisUser->rol != "Profesor") {
     </main>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 <footer>
     <?php include "../includes/footer_proa.php"?>
 </footer>

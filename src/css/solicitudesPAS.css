@@ -239,7 +239,53 @@ main>a{
 .item-columna2.activo {
     display: block;
 }
+
+/*movil solicitudes pas*/
+nav.MOVIL_bandeja{
+    display: none;
+}
+
+
 @media(max-width: 560px){
+    nav.MOVIL_bandeja{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 15px;
+        a{
+            display: flex;
+            border: 1px solid #4D4A4A;
+            border-radius: 5px;
+            width: 30%;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 30px;
+                height: 30px;
+
+            }
+        };
+        a.activo{
+            background-color: #DB98A1;
+            img{
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+    .todas_las_solicitudes{
+        justify-content: space-around;
+        margin-bottom: 0;
+        
+    }
+    .todas_las_solicitudes .bandeja_columna1{
+        display: none;
+    }
+    .todas_las_solicitudes .columna_2{
+        border-left: 0;
+    }
+    main{
+        margin-bottom: 10px;
+    }
 
 }
 
