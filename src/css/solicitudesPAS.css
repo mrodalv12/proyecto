@@ -145,6 +145,7 @@ main>a{
 }
 .item-columna3.activo2 {
     display: flex;
+    justify-content: flex-end;
 }
 
 .item-columna3.activo2{
@@ -185,11 +186,12 @@ main>a{
 .solicitudes_vista_del_contenido .item-columna3 ul li.img_del_user_en_solicitudes{
     width: 200px;
 }
-.solicitudes_vista_del_contenido .item-columna3 div.boton{
+.solicitudes_vista_del_contenido .item-columna3 .boton{
     display: flex;
     align-items: flex-end;
     align-content: flex-end;
     justify-content: flex-end;
+
 }
 .solicitudes_vista_del_contenido .item-columna3>div.boton a{
     border: 1px solid #4D4A4A;
@@ -237,4 +239,11 @@ main>a{
 .item-columna2.activo {
     display: block;
 }
+@media(max-width: 560px){
+
+}
+
+
+
+
 /* fin de lo mas basico*/

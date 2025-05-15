@@ -72,12 +72,15 @@ if ($thisUser->rol != "PAS") {
                    <div class="item_asignatura"><p>asignatura 6</p></div>
                </div>
            </div>
+            <button id="btn-editar">Modificar</button>
         </div>
     </div>
+
+    <div id="mensaje" class="mensaje oculto"></div>
 </main>
 <!-- footer-->
 <?php include "../includes/footer_proa.php" ?>
 <!-- fin del footer-->
-<script src="../../js/solicitudes_PAS.js"></script>
+<script src="../../js/perfilSolicitudesPAS.js"></script>
 </body>
 </html>

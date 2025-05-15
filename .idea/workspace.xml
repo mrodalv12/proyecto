@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2fa65155-22b5-4a9b-85ca-5b360c417b0a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/PAS/perfil_solicitud_PAS.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PAS/perfil_solicitud_PAS.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/datos_usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/datos_usuario.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/Perfil_solicitud_PAS.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Perfil_solicitud_PAS.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +122,7 @@
       <workItem from="1747038161038" duration="2321000" />
       <workItem from="1747233138949" duration="21097000" />
       <workItem from="1747262892621" duration="1797000" />
-      <workItem from="1747289760309" duration="6335000" />
+      <workItem from="1747289760309" duration="8233000" />
     </task>
     <servers />
   </component>

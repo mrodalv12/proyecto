@@ -239,6 +239,54 @@ if ($thisUser->rol != "PAS") {
                         <a>rechazada</a>
                     </div>
                 </div>
+                <div class="item-columna3" id="solicitud_desplegada_hecha_contenido_7">
+                    <ul>
+                        <li class="img_del_user_en_solicitudes"><img src="../../../img/iconoUser.png" alt="user"></li>
+                        <li><div>
+                                <a href="perfil_solicitud_PAS.php"><p>contenido 7</p></a>
+                                <p>Estudiantes</p>
+                                <p>Z123456789</p>
+                                <p> Asunto: esto es una solicitud realizada</p>
+                                <p> Tema: auxilio por favor saquenme de la carrera</p>
+                                <p>Descripcion:<br>NECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
+                                    DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
+                                    que eso esta bien????? NO, NO, NO LO ESTA</p>
+                            </div></li>
+                    </ul>
+                </div>
+                <div class="item-columna3" id="solicitud_desplegada_hecha_contenido_8">
+                    <ul>
+                        <li class="img_del_user_en_solicitudes"><img src="../../../img/iconoUser.png" alt="user"></li>
+                        <li><div>
+                                <a href="perfil_solicitud_PAS.php"><p>contenido 8</p></a>
+                                <p>Estudiantes</p>
+                                <p>Z123456789</p>
+                                <p> Asunto: esta es la segunda solicitud realizada</p>
+                                <p> Tema: auxilio por favor saquenme de la carrera</p>
+                                <p>Descripcion:<br>NECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
+                                    DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
+                                    que eso esta bien????? NO, NO, NO LO ESTA</p>
+                            </div></li>
+                    </ul>
+                </div>
+                <div class="item-columna3" id="solicitud_desplegada_rechazada_contenido_9">
+                    <ul>
+                        <li class="img_del_user_en_solicitudes"><img src="../../../img/iconoUser.png" alt="user"></li>
+                        <li><div>
+                                <a href="perfil_solicitud_PAS.php"><p>contenido 9</p></a>
+                                <p>Estudiantes</p>
+                                <p>Z123456789</p>
+                                <p> Asunto: esta es una solicitud de papelera</p>
+                                <p> Tema: auxilio por favor saquenme de la carrera</p>
+                                <p>Descripcion:<br>NECESITAS MAS PINCHE DESCRIPCION QUE UN ESTUPIDO BOTON TIENE LA MUY CARA
+                                    DE OCUPAR EL 50% DE LA ALTURA DISPONIBLE!!!, tu crees
+                                    que eso esta bien????? NO, NO, NO LO ESTA</p>
+                            </div></li>
+                    </ul>
+                    <div class="boton">
+                        <a>devolver</a>
+                    </div>
+                </div>
                 <!--sin contenido seleccionado-->
                 <div class="sin_contenido" id="sin_contenido_desplegado">
                     <img src="../../../img/iconoNoHaySolicitudesSeleccionadas.png" alt="icono sin solicitudes"></li>
