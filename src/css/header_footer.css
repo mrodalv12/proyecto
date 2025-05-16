@@ -1,7 +1,7 @@
 
 /* region--- ENCABEZADO --- */
 body {
-    padding-top: 80px; /* Ajusta según la altura real del header */
+    padding-top: 70px; /* Ajusta según la altura real del header */
 }
 .encabezado {
     position: fixed;

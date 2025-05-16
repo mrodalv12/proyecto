@@ -111,3 +111,12 @@ footer {
     padding: 1rem;
     font-size: 0.9rem;
 }
+
+@media(max-width: 565px){
+    .tasks-container th{
+        font-size: 12px;
+    }
+    .tasks-container td{
+        font-size: 12px;
+    }
+}

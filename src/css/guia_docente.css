@@ -1,8 +1,36 @@
+
+
 /*Importación de la tipografía Martel Sans*/
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Space+Mono&display=swap');
+/* region --- RESET --- */
+* { margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; }
+
+body { min-height: 100dvh; }
+input, button, textarea, select { font: inherit; }
+
+p { text-wrap: pretty; }
+h1, h2, h3, h4, h5, h6 { text-wrap: balance; }
+
+img, video, svg { height: auto; max-width: 100%; }
+
+@media (prefers-reduced-motion: reduce)  {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+        transition: none;
+    }
+}
+
+a { color: inherit; }
+/* endregion */
+
 section.contenido {
     flex: 1;
 }
+
 
 html, body {
     margin: 0;
@@ -110,11 +138,14 @@ button {
 
 /*Desplegables de acordeón*/
 details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border: 1px solid #aaa;
     border-radius: 4px;
     margin: 10px 0;
     padding: 10px;
-    width: 1155px;
+    width: 99%;
 }
 
 summary {
@@ -130,6 +161,7 @@ details[open] {
 /*Profesores*/
 .contenedor_profesores {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 100px;
 }
@@ -251,6 +283,10 @@ textarea{
 
 /* Para móvil */
 @media (max-width: 768px) {
+    .contenido{
+        margin-top: 0;
+        padding-top: 0;
+    }
 
     .especificaciones_asign {
         grid-template-columns: 1fr; /* solo una columna */

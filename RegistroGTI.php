@@ -33,7 +33,7 @@
             <!-- Introduce la contraseña -->
             <input type="password" id="contraseña" name="contraseña" placeholder="Introduce una contraseña" >
 
-            <label for="confirmarContraseña">Contraseña</label>
+            <label for="confirmarContraseña">Confirmar Contraseña</label>
             <!-- Vuelve a introducir la contraseña -->
             <input type="password" id="confirmarContraseña" name="confirmarContraseña" placeholder="Introduce una contraseña" >
 

@@ -135,3 +135,81 @@ html {
 .mensaje.error {
     background-color: #dc5360; /* rojo */
 }
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 6em 1em;
+    }
+
+    .hero-content {
+        padding: 1em;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .hero button,
+    .registro {
+        width: 100%;
+        padding: 1em;
+        font-size: 1em;
+        border-radius: 8px;
+        display: block;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        padding: 2em 1em;
+        gap: 2em;
+    }
+
+    .imagen-contacto {
+        display: none;
+    }
+
+
+    .formulario {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .formulario h2 {
+        font-size: 1.5em;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    form input,
+    form textarea {
+        font-size: 1em;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        word-wrap: break-word;
+    }
+
+    form button {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        box-sizing: border-box;
+    }
+
+    .formulario label {
+        font-size: 1em;
+        text-align: left;
+    }
+}

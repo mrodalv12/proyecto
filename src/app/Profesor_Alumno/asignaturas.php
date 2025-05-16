@@ -27,25 +27,10 @@ include "../includes/datos_usuario.php";
                 <button type="submit" id="iconoBuscar"><img src="../../../img/iconoBuscar.png" alt="icono_de_busqueda"></button>
         </div>
         <div class="espacio_de_asignaturas">
-            <?php if ($thisUser->rol == "Alumno"):?>
                 <div class="item_asignatura"><a href="guiaDocenteAlumno.php"><p>Algebra y geometria matricial</p></a></div>
                 <div class="item_asignatura"><a href="guiaDocenteAlumno.php"><p>Electronica basica</p></a></div>
                 <div class="item_asignatura"><a href="guiaDocenteAlumno.php"><p>Fundamentos fisicos</p></a></div>
                 <div class="item_asignatura"><a href="guiaDocenteAlumno.php"><p>Diseño e interfaz de usuario</p></a></div>
-            <?php elseif ($thisUser->rol == "Profesor"):?>
-                <div class="item_asignatura"><a href="guiaDocenteprofesor.php"><p>Algebra y geometria matricial</p></a></div>
-                <div class="item_asignatura"><a href="guiaDocenteprofesor.php"><p>Proyecto, diseño y programacion web</p></a></div>
-                <div class="item_asignatura"><a href="guiaDocenteprofesor.php"><p>asignatura</p></a></div>
-                <div class="item_asignatura"><a href="guiaDocenteprofesor.php"><p>Diseño e interfaz de experiencia de usuario</p></a></div>
-                <div class="item_asignatura"><a href="guiaDocenteprofesor.php"><p>asignatura</p></a></div>
-                <div class="item_asignatura"><a href="guiaDocenteprofesor.php"><p>programacion 2</p></a></div>
-                <div class="item_asignatura"><a href="guiaDocenteprofesor.php"><p>asignatura</p></a></div>
-                <div class="item_asignatura"><a href="guiaDocenteprofesor.php"><p>Redes y servicios telematicos</p></a></div>
-                <div class="item_asignatura"><a href="guiaDocenteprofesor.php"><p>asignatura</p></a></div>
-                <div class="item_asignatura"><a href="guiaDocenteprofesor.php"><p>programacion 2</p></a></div>
-                <div class="item_asignatura"><a href="guiaDocenteprofesor.php"><p>asignatura</p></a></div>
-                <div class="item_asignatura"><a href="guiaDocenteprofesor.php"><p>Redes y servicios telematicos</p></a></div>
-            <?php endif; ?>
         </div>
     </main>
 <!--footer-->

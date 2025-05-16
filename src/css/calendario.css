@@ -1,28 +1,14 @@
 html{
-
-
     --body-color:#FFFCFF ;
-
     --header-color:#d36c6c;
-
     --header-button:#92a1d1;
-
     --color-weekdays: #247BA0;
-
     --box-shadow: #CBD4C2;
-
     --hover: #e8faed;
-
     --current-day:#e8f4fa;
-
     --event-color: #58bae4;
-
     --modal-event: #e8f4fa;
-
-
     --color-day:white;
-
-
 }
 
 
@@ -163,4 +149,73 @@ button {
     height: 100vh;
     position: absolute;
     background-color: rgba(0,0,0,0.8);
+}
+
+@media (max-width: 600px) {
+    #container {
+        width: 100%;
+        padding: 1em;
+        box-sizing: border-box;
+    }
+
+    #header {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        text-align: center;
+    }
+
+    #weekdays div,
+    .day {
+        width: calc(100% / 7 - 4px); /* 7 columnas */
+        font-size: 0.7em;
+        padding: 5px;
+        height: 70px;
+    }
+
+    #newEventModal,
+    #deleteEventModal {
+        width: 90%;
+        left: 5%;
+    }
+
+    main {
+        padding: 1em;
+    }
+    #newEventModal,
+    #deleteEventModal {
+        width: 90%;
+        left: 5%;
+        top: 20vh;
+        padding: 1em;
+        font-size: 1em;
+        box-sizing: border-box;
+    }
+
+    #eventTitleInput {
+        font-size: 1em;
+        padding: 0.8em;
+    }
+
+    #newEventModal h2,
+    #deleteEventModal h2 {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    #eventText {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    #saveButton,
+    #cancelButton,
+    #deleteButton,
+    #closeButton {
+        width: 100%;
+        padding: 0.8em;
+        font-size: 1em;
+        margin-top: 0.5em;
+        box-sizing: border-box;
+    }
 }
