@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2fa65155-22b5-4a9b-85ca-5b360c417b0a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/js/pruebaloginPROA.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/pruebaloginPROA.js" afterDir="false" />
-    </list>
+    <list default="true" id="2fa65155-22b5-4a9b-85ca-5b360c417b0a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,7 +125,7 @@
       <workItem from="1747262892621" duration="1797000" />
       <workItem from="1747289760309" duration="8233000" />
       <workItem from="1747307108653" duration="21941000" />
-      <workItem from="1747338440800" duration="17551000" />
+      <workItem from="1747338440800" duration="17820000" />
     </task>
     <servers />
   </component>

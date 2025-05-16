@@ -22,7 +22,7 @@
 
 <main>
     <div class="container">
-        <h2>TAREAS</h2>
+        <a href="tareasProfesor.php"><h2>TAREAS</h2></a>
         <h3>Agregar tarea</h3>
 
         <label>Título:
