@@ -22,7 +22,7 @@
     <!--Nombre de la asignatura y flecha para volver a las demás asignaturas-->
     <div class="titulo-volver">
         <h1>Física</h1>
-        <a href="#" class="tareas">
+        <a href="../Profesor_Alumno/tareasAlumno.php" class="tareas">
             <button class="boton_tareas">Tareas</button>
         </a>
     </div>
