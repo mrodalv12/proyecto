@@ -100,10 +100,10 @@ document.getElementById("acceder").addEventListener("click", function (e) {
             window.location.href = "./src/app/PAS/Inicio_PAS.php";
             break;
         case "profesor":
-            window.location.href = "../app/Profesor_Alumno/Inicio_Alumno.php";
+            window.location.href = "./src/app/Profesor_Alumno/Inicio_profesor.php";
             break;
         case "alumno":
-            window.location.href = "../app/Profesor_Alumno/Inicio_Alumno.php";
+            window.location.href = "./src/app/Profesor_Alumno/Inicio_Alumno.php";
             break;
         default:
             mostrarError("Rol desconocido.");
