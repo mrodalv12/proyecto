@@ -1,0 +1,182 @@
+
+<!----------------------------------------------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROA</title>
+    <link rel="stylesheet" href="../../css/header_footer.css"/>
+    <link rel="stylesheet" href="../../css/guia_docente.css"/>
+    <link rel="stylesheet" href="../../css/MOVILmenu-Profesores_y_alumnos.css">
+</head>
+
+
+<body>
+<!--Header-->
+<?php include '../includes/header_proa.php' ?>
+
+<!--Introducción de la asignatura-->
+<section class="contenido">
+<div class="intro_asig">
+    <!--Nombre de la asignatura y flecha para volver a las demás asignaturas-->
+    <div class="titulo-volver">
+        <h1>Física</h1>
+        <a href="../Profesor_Alumno/tareasProfesor.php" class="tareas">
+            <button class="boton_tareas">Tareas</button>
+        </a>
+    </div>
+
+    <!--Descripción de la asignatura-->
+    <p>
+        La asignatura de Física nos ayuda a entender cómo funciona mundo que nos rodea. A través de ella estudiamos conceptos como el movimiento, la energía, la fuerza, la electricidad o el sonido. Todo eso que parece invisible, pero que está presente en nuestro día a día, se explica con leyes y fórmulas que nos permiten predecir lo que va a pasar y resolver problemas reales.
+        <br><br>
+        Además, en Física no solo se aprenden teorías: también se hacen experimentos, se observa, se mide y se analizan resultados. Es una materia que estimula el pensamiento lógico, la curiosidad y el deseo de descubrir. Aunque a veces puede parecer difícil, poco a poco te das cuenta de que todo encaja como un gran rompecabezas.
+    </p>
+
+    <!--Especificaciones de la asignatura-->
+    <ul class="especificaciones_asign">
+        <li><strong>Centro:</strong> Escuela Superior Politécnica de Gandía</li>
+        <li><strong>Departamento:</strong> Dpt. de Ingeniería Electrónica</li>
+        <li><strong>Titulación:</strong> Grado en Tecnologías Interactivas</li>
+        <li><strong>Lengua de docencia:</strong> Castellano</li>
+        <li><strong>Créditos:</strong> 6</li>
+        <li><strong>Duración:</strong> Semestral</li>
+    </ul>
+
+</div>
+
+<!--Línea de separación-->
+<hr>
+
+<div class="desplegables" id="guia_docente">
+    <div class="titulo-guia">
+        <h2 class="titulo-guia">Guía Docente</h2>
+        <a href="editar-guia.php" class="icono-editar" >✏️</a>
+    </div>
+
+    <!--Desplegables de acordeón-->
+
+    <!--Profesores-->
+    <details>
+        <summary>Profesores</summary>
+        <div class="contenedor_profesores">
+
+            <!--Profesor 1-->
+            <div class="profesor">
+                <img src="https://placehold.co/150x200" alt="Foto del profesor">
+                <div>
+                    <strong>Nombre Apellido Apellido</strong><br>
+                    email@gmail.com<br>
+                    Despacho 000
+                </div>
+            </div>
+
+            <!--Profesor 2-->
+            <div class="profesor">
+                <img src="https://placehold.co/150x200" alt="Foto del profesor">
+                <div>
+                    <strong>Nombre Apellido Apellido</strong><br>
+                    email@gmail.com<br>
+                    Despacho 000
+                </div>
+            </div>
+        </div>
+    </details>
+
+    <!--Evaluación-->
+    <details>
+        <summary>Evaluación</summary>
+
+        <div class="contenedor_evaluacion">
+            <h2>ORDINARIA</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Nibh amet arcu feugiat tempor adipiscing interdum placerat eget nisl. Consequat proin sit a tempor diam rhoncus ac quam. Amet massa velit convallis odio. Tellus egestas nascetur id integer imperdiet placerat porttitor. Amet id faucibus massa sem quis. Tristique purus sodales purus commodo eget diam mattis et tortor. Sed bibendum aliquam felis dignissim massa dignissim eget.</p></p>
+
+            <h2>EXTRAORDINARIA</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Nibh amet arcu feugiat tempor adipiscing interdum placerat eget nisl. Consequat proin sit a tempor diam rhoncus ac quam. Amet massa velit convallis odio. Tellus egestas nascetur id integer imperdiet placerat porttitor. Amet id faucibus massa sem quis. Tristique purus sodales purus commodo eget diam mattis et tortor. Sed bibendum aliquam felis dignissim massa dignissim eget.</p></p>
+        </div>
+    </details>
+
+    <!--Bibliografía-->
+    <details>
+        <summary>Bibliografía</summary>
+
+        <div class="contenedor_bibliografia">
+            <!-- Sección de libros obligatorios -->
+            <div>
+                <h2 class="bibliografia-titulo">OBLIGATORIA</h2>
+                <ul class="bibliografia">
+                    <li><span class="icono-biblio"></span>Física: Principios con Aplicaciones. Douglas C. Giancoli. 2013. 7ª Edición. ISBN 978-0321625922</li>
+                    <li><span class="icono-no-biblio"></span>Física para Científicos e Ingenieros. Raymond A. Serway, John W. Jewett. 2013. 9ª Edición. ISBN 978-1133947271</li>
+                    <li><span class="icono-biblio"></span>Introducción a la Electrodinámica. David J. Griffiths. 2017. 4ª Edición. ISBN 978-1108420419</li>
+                </ul>
+            </div>
+
+            <!-- Sección de libros adicionales -->
+            <div>
+                <h2 class="bibliografia-titulo">ADICIONAL</h2>
+                <ul class="bibliografia">
+                    <li><span class="icono-biblio"></span>Mecánica. Hans Ohanian. 2007. 5ª Edición. ISBN 978-0393925122</li>
+                    <li><span class="icono-no-biblio"></span>Fundamentos de Física. David Halliday, Robert Resnick, Jearl Walker. 2014. 10ª Edición. ISBN 978-1118230718</li>
+                    <li><span class="icono-no-biblio"></span>Física Universitaria. Hugh D. Young, Roger A. Freedman. 2011. 13ª Edición. ISBN 978-0321731302</li>
+                </ul>
+            </div>
+        </div>
+
+    </details>
+
+    <!--Unidades didácticas y distribución-->
+    <details>
+        <summary>Unidades didácticas y distribución</summary>
+        <table class="tabla">
+            <thead>
+            <tr>
+                <th>Unidad</th>
+                <th>Teoría</th>
+                <th>Práctica</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1. Cinemática: el arte de describir el movimiento</td>
+                <td>2h</td>
+                <td>3h</td>
+            </tr>
+            <tr>
+                <td>2. Dinámica: fuerzas que mueven el mundo</td>
+                <td>3h</td>
+                <td>4h</td>
+            </tr>
+            <tr>
+                <td>3. Energía y trabajo: cómo se transforma y conserva la energía</td>
+                <td>5h</td>
+                <td>4h</td>
+            </tr>
+            <tr>
+                <td>4. Ondas y sonido: vibraciones que viajan</td>
+                <td>3h</td>
+                <td>2h</td>
+            </tr>
+            <tr>
+                <td>5. Electricidad y magnetismo: cargados de poder</td>
+                <td>3h</td>
+                <td>3h</td>
+            </tr>
+            <tr>
+                <td>6. Óptica y luz: explorando el comportamiento de la luz</td>
+                <td>4h</td>
+                <td>4h</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </details>
+</div>
+</section>
+<!--Footer-->
+<footer role="contentinfo">
+    <?php include '../includes/footer_proa.php'?>
+</footer>
+<!--Fin del footer-->
+</body>
