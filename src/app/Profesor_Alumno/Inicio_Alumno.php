@@ -1,7 +1,6 @@
 <?php
 include "../includes/funciones_inicio.php";
 include "../includes/datos_usuario.php";
-
 ?>
 <!----------------------------------------------------------------------------------------------------------->
 <!doctype html>
@@ -10,7 +9,8 @@ include "../includes/datos_usuario.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PROA</title>
-    <link rel="stylesheet" href="../../css/inicio_profeAlum.css">
+    <link rel="preload" href="../../css/inicio_profeAlum.css" as="style" />
+    <link rel="stylesheet" href="../../css/otro.css">
     <link rel="stylesheet" href="../../css/header_footer.css">
     <link rel="stylesheet" href="../../css/MOVILmenu-Profesores_y_alumnos.css">
 </head>
