@@ -17,17 +17,22 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
         <link rel="preload" href="./src/css/Footer_Header_Registrado.css" as="style" />
         <link rel="stylesheet" href="./src/css/Footer_Header_Registrado.css" />
         <link rel="stylesheet" href="./src/css/LandingPage_Registrado.css" />
+        <link rel="stylesheet" href="src/css/variablesGTI.css" />
     <?php else: ?>
         <link rel="preload" href="./src/css/Footer_Header_Noregistrado.css" as="style" />
         <link rel="stylesheet" href="./src/css/Footer_Header_Noregistrado.css" />
         <link rel="stylesheet" href="./src/css/LandingPage_No registrado.css" />
+        <link rel="stylesheet" href="src/css/variablesGTI.css" />
     <?php endif; ?>
 
 </head>
 <body>
 
 <!-- Header -->
-<?php include "./src/app/includes/headerGTI.php" ?>
+<header>
+    <?php include "./src/app/includes/headerGTI.php" ?>
+</header>
+
 
 <main>
 
@@ -67,15 +72,18 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
                 <button type="submit">Enviar</button>
             </form>
         </div>
-        <div class="imagen-contacto">
-            <img src="img/Contacto.png" alt="Contacto">
-        </div>
+<!--        <div class="imagen-contacto">-->
+<!--            <img src="img/Contacto.png" alt="Contacto">-->
+<!--        </div>-->
     </section>
     <div id="mensajeAviso" class="mensaje oculto"></div>
 </main>
 
 <!-- Footer -->
-<?php include "./src/app/includes/footerGTI.php"?>
+<footer>
+    <?php include "./src/app/includes/footerGTI.php"?>
+</footer>
+
 
 <!-- Scripts -->
 <?php if ($usuario_logueado): ?>

@@ -1,5 +1,13 @@
 
 /*----- Header -----*/
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    margin-bottom: 0;
+}
 
 .header {
     display: flex;
@@ -58,7 +66,10 @@ nav a:hover::after {
 
 footer {
     background: #eee;
-    padding: 30px;
+    padding: 10px 30px 10px;
+    p{
+        font-size: var(--tamano_fuente_p_footer);
+    }
 }
 
 .footer-container {

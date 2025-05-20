@@ -1,0 +1,30 @@
+:root{
+    --color_del_fondo_claro: #f5f5f5;
+    --color_del_fondo_oscuro: #8e0f5c;
+    --color_de_letra: #333;
+    --color_boton_oscuro: #e6007e;
+    --color_boton_oscuro_hover: #c3006b;
+    --color_letra_fondoOscuro: #fff;
+    --color_exito: #41a358;
+    --color_error: #dc5360;
+    --fuente_resaltada: bold;
+    --tipografia_de_la_pagina: "Martel Sans";
+    --tamano_fuente_h1: 2em;
+    --tamano_fuente_h2: 1.8em;
+    --tamano_fuente_p: 16px;
+    --tamano_fuente_h1_MOVIL: 1.5em;
+    --tamano_fuente_h2_MOVIL: 1.3em;
+    --tamano_fuente_p_MOVIL: 14px;
+    --tamano_fuente_p_pequeño: 12px;
+    --sombra_boton: 0 4px 10px rgba(0, 0, 0, 0.2);
+    --sombra_mensaje: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --border_radius_general: 10px;
+    --tamano_completo_header: 67px;
+    --tamano_completo_header_MOVIL: 59px;
+    --tamano_completo_footer: 114px;
+    --padding_botones: 12px 24px;
+    --padding_grande: 64px;
+    --padding_mediano: 32px;
+    --padding_pequeno: 16px;
+
+}
