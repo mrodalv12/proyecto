@@ -1,5 +1,5 @@
 
-/*----- Header -----*/
+/* region ----- Header -----*/
 header {
     top: 0;
     left: 0;
@@ -49,7 +49,6 @@ nav a::after {
     background-color: #8e0f5c;
     left: 0;
     bottom: -4px; /* puedes ajustar si quieres la línea más pegada o separada */
-    transition: width 0.3s ease;
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.3s ease;
@@ -59,16 +58,14 @@ nav a:hover::after {
     width: 100%;
     transform: scaleX(1);
 }
-
-
-
-/*----- Footer -----*/
+/* endregion */
+/* region ----- Footer -----*/
 
 footer {
     background: #eee;
     padding: 10px 30px 10px;
     p{
-        font-size: var(--tamano_fuente_p_footer);
+        font-size: var(--tamano_fuente_p_pequeño);
     }
 }
 
@@ -131,8 +128,9 @@ footer {
     color: #555;
     margin-top: 0.3em;
 }
+/* endregion */
 
-/* responsive */
+/* region responsive */
 @media (max-width: 565px) {
     /* HEADER */
     .header {
@@ -213,3 +211,4 @@ footer {
         margin-top: 0.5rem;
     }
 }
+/* endregion */

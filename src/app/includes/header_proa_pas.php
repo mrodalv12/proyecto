@@ -22,7 +22,7 @@ include "datos_usuario.php";
                     <li>usuario</li>
                     <li>correo</li>
                     <li>rol</li>
-                    <li><a href="../../../InicioSesionProa.php">Cerrar sesión</a></li>
+                    <li><a href="../../InicioSesionProa.php">Cerrar sesión</a></li>
                 </ul>
             </li>
             <li><a href="#"><img src="../../../img/iconoCampana.png" alt="campanita" class="notificaciones"/></a></li>
