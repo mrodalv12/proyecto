@@ -1,3 +1,5 @@
+<!--ignoren los enlaces resaltados en amarillo, eso es asi-->
+
 <header class="header">
     <a href="index.php" class="logo">
         <span class="g">g</span><span class="ti">ti</span>

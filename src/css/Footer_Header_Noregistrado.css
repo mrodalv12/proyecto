@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 17px 32px;
     background-color: white;
 }
 
@@ -58,7 +58,7 @@ nav a:hover::after {
 
 footer {
     background: #eee;
-    padding: 2em;
+    padding: 30px;
 }
 
 .footer-container {

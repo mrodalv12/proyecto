@@ -1,83 +1,119 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Martel Sans', sans-serif;
+/* region --- RESET --- */
+* { margin: 0; padding: 0; }
+*, *::before, *::after { box-sizing: border-box; }
+
+body { min-height: 100dvh; }
+input, button, textarea, select { font: inherit; }
+
+p { text-wrap: pretty; }
+h1, h2, h3, h4, h5, h6 { text-wrap: balance; }
+
+img, video, svg { height: auto; max-width: 100%; }
+
+@media (prefers-reduced-motion: reduce)  {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+        transition: none;
+    }
 }
+
+a { color: inherit; }
+/* endregion */
+/* region --- GENERAL --- */
+/*variables*/
+:root{
+    --color_del_fondo_claro: #f5f5f5;
+    --color_del_fondo_oscuro: #8e0f5c;
+    --color_de_letra: #333;
+    --color_boton_oscuro: #e6007e;
+    --color_boton_oscuro_hover: #c3006b;
+    --color_letra_fondoOscuro: #fff;
+    --pesodefuente_para_botones: bold;
+    --tipografia_de_la_pagina: "Martel Sans";
+    --tamano_fuente_h1: 2em;
+    --tamano_fuente_p: 17px;
+    --sombra_boton: 0 4px 10px rgba(0, 0, 0, 0.2);
+    --border_radius_general: 10px;
+    --tamano_completo_header: 67px;
+    --padding_botones: 12px 24px;
+    --padding_grande: 32px;
+    --padding_pequeno: 16px;
+}
+/*fin de las variables*/
 
 body {
-    background-color: #f5f5f5;
-    color: #333;
-
+    background-color: var(--color_del_fondo_claro);
+    color: var(--color_de_letra);
+    font-family: var(--tipografia_de_la_pagina), sans-serif;
 }
+/* endregion */
 
-/* Fondo y texto */
+/* region ---Primera seccion de landing---*/
+/* contenido del main */
 .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: url('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5') no-repeat center center/cover;
-    padding: 15.7em 2em;
+    height: calc(100vh - var(--tamano_completo_header));
     text-align: center;
-    color: white;
+    color: var(--color_letra_fondoOscuro);
+    box-sizing: border-box;
 }
 
-.hero-content {
+.hero>div.hero-content {
+    width: 50%;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 2em;
-    border-radius: 10px;
-    display: inline-block;
+    padding: var(--padding_grande);
+    border-radius: var(--border_radius_general);
+
 }
 
 .hero h1 {
-    font-size: 2em;
-    color: #fff;
+    font-size: var(--tamano_fuente_h1);
+    color: var(--color_letra_fondoOscuro);
 }
 
 .hero p {
-    margin: 1em 0;
-    font-size: 1.1em;
+    margin: 16px 0;
+    font-size: var(--tamano_fuente_p);
 }
 
-.hero button {
-    background-color: #8e0f5c;
-    color: white;
-    border: none;
-    padding: 0.8em 2em;
-    border-radius: 5px;
-    font-size: 1em;
-    cursor: pointer;
-}
+/* Boton registro (CTA) */
 
-/* BotÃ³n registro (CTA) */
 .registro {
     display: inline-block;
-    background-color: #e6007e;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 8px;
+    background-color: var(--color_boton_oscuro);
+    color: var(--color_letra_fondoOscuro);
+    padding: var(--padding_botones);
+    border-radius: var(--border_radius_general);
     text-decoration: none;
-    font-weight: bold;
+    font-weight: var(--pesodefuente_para_botones);
     transition: background-color 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--sombra_boton);
 }
 
 .registro:hover {
-    background-color: #c3006b;
+    background-color: var(--color_boton_oscuro_hover);
 }
-
-
+/* endregion */
+/* region ---segunda seccion de landing (contacto)---*/
 /* Contacto */
 .contacto {
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    padding: 5em 2em;
-    background-color: #8e0f5c;
-    color: white;
+    height: 100vh;
+    background-color: var(--color_del_fondo_oscuro);
+    color: var(--color_letra_fondoOscuro);
     img{
-        position: fixed;
         width: 590px;
         height: 355px;
     }
-
-
     .formulario {
         flex: 0.5;
         margin-right: 10em;
@@ -127,9 +163,10 @@ body {
         scroll-behavior: smooth;
     }
 }
-
+/* endregion */
+/* region ---mensaje de contacto---*/
 /* Mensaje contacto*/
-.mensaje {
+.mensaje{
     position: fixed;
     top: 20px;
     right: 20px;
@@ -158,7 +195,9 @@ body {
 .mensaje.error {
     background-color: #dc5360;
 }
+/* endregion */
 
+/* region ---@media---*/
 @media (max-width: 600px) {
 
     .hero {
@@ -237,3 +276,4 @@ body {
         text-align: left;
     }
 }
+/* endregion */
