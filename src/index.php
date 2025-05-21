@@ -11,27 +11,16 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GTI - Plataforma PROA</title>
-
-    <!-- Dependiendo de si está logueado o no -->
-    <?php if ($usuario_logueado): ?>
-        <link rel="preload" href="css/Footer_Header_Registrado.css" as="style" />
-        <link rel="stylesheet" href="css/Footer_Header_Registrado.css" />
-        <link rel="stylesheet" href="css/LandingPage_Registrado.css" />
-        <link rel="stylesheet" href="css/variablesGTI.css" />
-    <?php else: ?>
-        <link rel="preload" href="css/Footer_Header_Noregistrado.css" as="style" />
-        <link rel="stylesheet" href="css/Footer_Header_Noregistrado.css" />
-        <link rel="stylesheet" href="css/LandingPage_No registrado.css" />
-        <link rel="stylesheet" href="css/variablesGTI.css" />
-    <?php endif; ?>
-
+    <link rel="preload" href="css/Footer_Header_GTI.css" as="style" />
+    <link rel="stylesheet" href="css/Footer_Header_GTI.css" />
+    <link rel="stylesheet" href="css/LandingPage.css" />
+    <link rel="stylesheet" href="css/variablesGTI.css" />
 </head>
 <body>
 
 <!-- Header -->
-<header>
-    <?php include "./app/includes/headerGTI.php" ?>
-</header>
+<?php include "./app/includes/headerGTI.php" ?>
+<!-- fin del header -->
 
 
 <main>
@@ -72,17 +61,13 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
                 <button type="submit">Enviar</button>
             </form>
         </div>
-<!--        <div class="imagen-contacto">-->
-<!--            <img src="img/Contacto.png" alt="Contacto">-->
-<!--        </div>-->
     </section>
     <div id="mensajeAviso" class="mensaje oculto"></div>
 </main>
 
 <!-- Footer -->
-<footer>
-    <?php include "./app/includes/footerGTI.php" ?>
-</footer>
+<?php include "./app/includes/footerGTI.php" ?>
+<!-- fin del footer -->
 
 
 <!-- Scripts -->

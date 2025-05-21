@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GTI - Plataforma PROA</title>
-    <link rel="preload" href="./css/Footer_Header_Noregistrado.css" as="style" />
-    <link rel="stylesheet" href="./css/Footer_Header_Noregistrado.css" />
+    <link rel="preload" href="./css/Footer_Header_GTI.css" as="style" />
+    <link rel="stylesheet" href="./css/Footer_Header_GTI.css" />
     <link rel="stylesheet" href="./css/InicioSesion.css" />
+    <link rel="stylesheet" href="css/variablesGTI.css" />
 
 
 </head>
