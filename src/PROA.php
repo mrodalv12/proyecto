@@ -20,29 +20,37 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
 
 <!-- Header -->
 <?php include "./app/includes/headerGTI.php" ?>
-
+<!-- fin del Header -->
 <main>
+    <!-- esta es la zona de informacion de la pagina -->
     <section class="info">
+        <!-- este es el texto -->
         <h1>PROA</h1>
         <img src="../img/CALENDARIO_MES.png" alt="Ejemplo Calendario PROA">
         <p>PROA ya está disponible... ¡al alcance de un clic!<br>
             Descubre una nueva forma de trabajar, más ágil, clara y adaptada a las necesidades de hoy.<br>
             Diseñada pensando en ti: fácil de usar, accesible desde cualquier dispositivo y lista para ayudarte a dar el siguiente paso.</p>
+        <!-- fin del texto -->
+        <!-- este es el boton para probar proa -->
         <?php if ($usuario_logueado): ?>
+            <!-- si estas logueado en GTI, te lleva al login de proa -->
             <a href="InicioSesionProa.php"><div class="demo">¡Prueba la demo ya! </div></a>
         <?php else: ?>
+            <!-- si NO estas logueado en GTI, te lleva al registro de GTI -->
             <a href="RegistroGTI.php"><div class="demo">¡Regístrate para probar la demo!</div></a>
         <?php endif; ?>
+        <!-- fin de boton para probar proa -->
     </section>
-
+    <!-- esta es una imagen de muestra de proa -->
     <section class="imagen">
         <img src="../img/CALENDARIO_MES.png" alt="Ejemplo Calendario PROA">
     </section>
+    <!-- este es el final de la imagen de muestra -->
 </main>
 
 <!-- Footer -->
 <?php include "./app/includes/footerGTI.php" ?>
-
+<!--fin del Footer -->
 
 <?php if ($usuario_logueado): ?>
     <script src="js/ProaRegistrado.js"></script>

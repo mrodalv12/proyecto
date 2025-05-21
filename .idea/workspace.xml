@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fa65155-22b5-4a9b-85ca-5b360c417b0a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InicioSesion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/InicioSesion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InicioSesionProa.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/InicioSesionProa.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PROA.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PROA.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RegistroGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegistroGTI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/InicioSesion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/InicioSesion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/footerGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/footerGTI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/headerGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/headerGTI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/usuarios.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/usuarios.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/Footer_Header_Noregistrado.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/Footer_Header_Registrado.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Footer_Header_GTI.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/LandingPage_No registrado.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/LandingPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/LandingPage_Registrado.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/PROA_registrado.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/PROA_registrado.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/variablesGTI.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/variablesGTI.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/ProaRegistrado.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/ProaRegistrado.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/pruebaloginPROA.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/pruebaloginPROA.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +135,7 @@
       <workItem from="1747809750678" duration="460000" />
       <workItem from="1747820046343" duration="2824000" />
       <workItem from="1747827221469" duration="414000" />
-      <workItem from="1747843890975" duration="13992000" />
+      <workItem from="1747843890975" duration="14563000" />
     </task>
     <servers />
   </component>
