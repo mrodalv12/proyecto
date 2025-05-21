@@ -97,7 +97,7 @@ main{
     position: relative;
     scroll-margin-top: var(--tamano_completo_header);
     height: calc(100vh - var(--tamano_completo_header));
-    background: url("../../img/Contacto.png") no-repeat center center / cover;
+    background: url("../../../proyecto/img/Contacto.png") no-repeat center center / cover;
     color: var(--color_letra_fondoOscuro);
 
     > * {
@@ -153,8 +153,7 @@ main{
 
     .formulario label {
         display: block;
-        margin-top: 5px;
-        margin-bottom: 5px;
+        margin: 5px 0;
         font-weight: normal;
         color: #ffffff;
         text-align: left;

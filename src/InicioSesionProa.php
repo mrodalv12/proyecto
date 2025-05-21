@@ -19,23 +19,16 @@ $usuarioLogueado = $_SESSION["usuario"];
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Inicio de sesión PROA</title>
-    <?php if ($usuario_logueado): ?>
-        <link rel="preload" href="css/Footer_Header_GTI.css" as="style" />
-        <link rel="stylesheet" href="css/Footer_Header_GTI.css" />
-        <link rel="stylesheet" href="css/InicioSesionProa.css" />
-        <link rel="stylesheet" href="css/variablesGTI.css" />
-    <?php else: ?>
-        <link rel="preload" href="css/Footer_Header_GTI.css" as="style" />
-        <link rel="stylesheet" href="css/Footer_Header_GTI.css" />
-        <link rel="stylesheet" href="css/InicioSesionProa.css" />
-        <link rel="stylesheet" href="css/variablesGTI.css" />
-    <?php endif; ?>
+    <link rel="preload" href="css/Footer_Header_GTI.css" as="style" />
+    <link rel="stylesheet" href="css/Footer_Header_GTI.css" />
+    <link rel="stylesheet" href="css/InicioSesionProa.css" />
+    <link rel="stylesheet" href="css/variablesGTI.css" />
+   ]
 </head>
 <body>
-
-
 <!-- Header -->
 <?php include "./app/includes/headerGTI.php" ?>
+<!-- fin del Header -->
 
 <main class="container">
     <section class="image-section">
@@ -69,7 +62,7 @@ $usuarioLogueado = $_SESSION["usuario"];
 
 <!-- Footer -->
 <?php include "./app/includes/footerGTI.php" ?>
-
+<!-- fin del Footer -->
 
 <script>
     const usuarioRegistradoActual = "<?php echo $usuarioLogueado; ?>";
