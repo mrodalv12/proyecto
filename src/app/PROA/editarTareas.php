@@ -6,23 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tareas PROA</title>
 
-    <link rel="preload" href="../../css/headeryfooterPROA.css" as="style" />
-    <link rel="stylesheet" href="../../css/headeryfooterPROA.css" />
-    <link rel="preload" href="../../css/MOVILmenu-Profesores_y_alumnos.css" as="style" />
-    <link rel="stylesheet" href="../../css/MOVILmenu-Profesores_y_alumnos.css" />
-    <link rel="stylesheet" href="../../css/editarTareas.css" />
+    <link rel="preload" href="../../../../../../Documents/UNI1/PROYECTO/proyecto/src/css/headeryfooterPROA.css" as="style" />
+    <link rel="stylesheet" href="../../../../../../Documents/UNI1/PROYECTO/proyecto/src/css/headeryfooterPROA.css" />
+    <link rel="preload" href="../../../../../../Documents/UNI1/PROYECTO/proyecto/src/css/MOVILmenu-Profesores_y_alumnos.css" as="style" />
+    <link rel="stylesheet" href="../../../../../../Documents/UNI1/PROYECTO/proyecto/src/css/MOVILmenu-Profesores_y_alumnos.css" />
+    <link rel="stylesheet" href="../../../../../../Documents/UNI1/PROYECTO/proyecto/src/css/PROA/editarTareas.css" />
 
 <body>
 
 
 
 <!-- Header -->
-<?php include "../includes/headerPROA.php" ?>
+<header>
+    <?php include "../includes/header_proa.php" ?>
+</header>
 
 
 <main>
     <div class="container">
-        <h2>TAREAS</h2>
+        <h2><a href="tareasProfesor.php">TAREAS</a></h2>
         <h3>Editar tarea</h3>
 
         <label>Título:
@@ -58,7 +60,9 @@
 </body>
 
 <!-- Footer -->
-<?php include "../includes/footerPROA.php" ?>
+<footer>
+    <?php include "../includes/footer_proa.php" ?>
+</footer>
 
 <script src="../../js/editarTarea.js"></script>
 </html>

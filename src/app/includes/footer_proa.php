@@ -1,0 +1,18 @@
+<?php include "../includes/datos_usuario.php"; ?>
+
+<!--seccion footer-->
+<footer class="pie_de_pagina" role="contentinfo">
+        <nav class="texto">
+            <h3>Contacto</h3>
+            <ul>
+                <li><a href="#">facebook</a></li>
+                <li><a href="#">youtube</a></li>
+                <li><a href="#">X</a></li>
+            </ul>
+        </nav>
+    <div class="logoGTI">
+        <p>&copy.2025 GTI Todos los derechos reservados</p>
+        <a href="../../../index.php"><img src="../../../../../../Documents/UNI1/PROYECTO/proyecto/img/logoGTI.png" alt="logo GTI"></a>
+    </div>
+</footer>
+<!--fin de la seccion footer -->

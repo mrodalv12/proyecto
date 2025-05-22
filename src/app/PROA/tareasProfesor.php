@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tareas PROA</title>
 
-    <link rel="stylesheet" href="../../css/headeryfooterPROA.css" />
-    <link rel="stylesheet" href="../../css/MOVILmenu-Profesores_y_alumnos.css" />
-    <link rel="stylesheet" href="../../css/tareasProfesor.css" />
+    <link rel="stylesheet" href="../../../../../../Documents/UNI1/PROYECTO/proyecto/src/css/headeryfooterPROA.css" />
+    <link rel="stylesheet" href="../../../../../../Documents/UNI1/PROYECTO/proyecto/src/css/MOVILmenu-Profesores_y_alumnos.css" />
+    <link rel="stylesheet" href="../../../../../../Documents/UNI1/PROYECTO/proyecto/src/css/tareasProfesor.css" />
     <link rel="stylesheet" href="../../css/popupEliminar.css" /> <!-- Nueva hoja de estilo -->
 
 </head>
 <body>
 
 <!-- Header -->
-<?php include "../includes/headerPROA.php" ?>
+<?php include "../includes/header_proa.php" ?>
 
 <main>
     <section class="tasks-profesor">
@@ -39,7 +39,7 @@
                 <td class="resaltada"><a href="listaAlumnos.php" class="action-btn">Ver entregas</a></td>
                 <td class="resaltadaEditar"><a href="editarTareas.php" class="edit-btn">Editar tarea</a></td>
                 <td class="resaltadaEliminar">
-                    <button class="erase-btn"><img src="../../../img/Papelera.png" alt="Eliminar"></button>
+                    <button class="erase-btn"><img src="../../../../../../Documents/UNI1/PROYECTO/proyecto/img/Papelera.png" alt="Eliminar"></button>
                 </td>
             </tr>
 
@@ -49,14 +49,15 @@
                 <td class="resaltada"><a href="listaAlumnos.php" class="action-btn">Ver entregas</a></td>
                 <td class="resaltadaEditar"><a href="editarTareas.php" class="edit-btn">Editar tarea</a></td>
                 <td class="resaltadaEliminar">
-                    <button class="erase-btn"><img src="../../../img/Papelera.png" alt="Eliminar"></button>
+                    <button class="erase-btn"><img src="../../../../../../Documents/UNI1/PROYECTO/proyecto/img/Papelera.png" alt="Eliminar"></button>
                 </td>
             </tr>
             <!-- Puedes repetir más filas -->
             </tbody>
         </table>
+        <!-- Boton para agregar una nueva tarea -->
+        <button class="add-btn"><a href="agregarTareas.php">Agregar Tarea</a></button>
 
-        <button class="add-btn"><a href="agregarTareas.php">Agregar</a></button>
     </section>
 
     <!-- POPUP DE CONFIRMACIÓN -->
@@ -76,7 +77,7 @@
 </main>
 
 <!-- Footer -->
-<?php include "../includes/footerPROA.php" ?>
+<?php include "../includes/footer_proa.php" ?>
 
 <script src="../../js/tareasProfesor.js"></script> <!-- Archivo JS nuevo -->
 

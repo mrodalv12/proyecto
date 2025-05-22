@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solicitudes - PROA</title>
 
-        <link rel="preload" href="../../css/headeryfooterPROA.css" as="style" />
-        <link rel="stylesheet" href="../../css/headeryfooterPROA.css" />
-        <link rel="stylesheet" href="../../css/solicitudes.css" />
+        <link rel="preload" href="../../../../../../Documents/UNI1/PROYECTO/proyecto/src/css/headeryfooterPROA.css" as="style" />
+        <link rel="stylesheet" href="../../../../../../Documents/UNI1/PROYECTO/proyecto/src/css/headeryfooterPROA.css" />
+        <link rel="stylesheet" href="../../../../../../Documents/UNI1/PROYECTO/proyecto/src/css/PROA/solicitudes_alumnoProfesor.css" />
+    <link rel="stylesheet" href="../../../../../../Documents/UNI1/PROYECTO/proyecto/src/css/MOVILmenu-Profesores_y_alumnos.css">
 
 
 </head>
 <body>
 
 <!-- Header -->
-<?php include "../includes/headerPROA.php" ?>
+<?php include "../includes/header_proa.php" ?>
 
 
 <main>
@@ -55,7 +56,7 @@
 
 
 <!-- Footer -->
-<?php include "../includes/footerPROA.php" ?>
+<?php include "../includes/footer_proa.php" ?>
 
 <!-- Scripts -->
 <script src="../../js/enviarSolicitud.js" defer></script>

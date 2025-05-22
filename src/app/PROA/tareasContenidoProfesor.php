@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Entregar Tareas</title>
-    <link rel="preload" href="../../css/headeryfooterPROA.css" as="style" />
-    <link rel="stylesheet" href="../../css/headeryfooterPROA.css" />
-    <link rel="stylesheet" href="../../css/tareasContenidoProfesor.css" />
+    <link rel="preload" href="../../../../../../Documents/UNI1/PROYECTO/proyecto/src/css/headeryfooterPROA.css" as="style" />
+    <link rel="stylesheet" href="../../../../../../Documents/UNI1/PROYECTO/proyecto/src/css/headeryfooterPROA.css" />
+    <link rel="stylesheet" href="../../../../../../Documents/UNI1/PROYECTO/proyecto/src/css/tareasContenidoProfesor.css" />
+    <link rel="stylesheet" href="../../../../../../Documents/UNI1/PROYECTO/proyecto/src/css/MOVILmenu-Profesores_y_alumnos.css" />
 </head>
 <body>
 
 <!-- Header -->
-<?php include "../includes/headerPROA.php" ?>
+<?php include "../includes/header_proa.php" ?>
 
 <main class="main">
-    <h1>TAREAS</h1>
+    <h1><a href="tareasProfesor.php">TAREAS</a></h1>
     <h2>Título de la tarea</h2>
 
     <div class="info-box">
@@ -50,14 +51,7 @@
             <a href="Tarea.pdf" download class="btn-descargar" title="Descargar">⬇ Descargar</a>
         </div>
 
-        <!-- Calificación -->
-        <div class="acciones">
-            <div class="calificacion">
-                <span class="label">CALIFICACIÓN:</span>
-                <input type="number" id="nota" min="0" max="10" class="nota-input">
-            </div>
-            <button class="btn-guardar" onclick="guardarCalificacion()">Guardar cambios</button>
-        </div>
+
     </div>
 
 <!-- Mensaje -->
@@ -65,7 +59,7 @@
 </main>
 
 <!-- Footer -->
-<?php include "../includes/footerPROA.php" ?>
+<?php include "../includes/footer_proa.php" ?>
 
 <script src="../../js/tareasContenidoProfesor.js"></script>
 </body>

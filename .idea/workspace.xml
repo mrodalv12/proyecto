@@ -5,10 +5,104 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fa65155-22b5-4a9b-85ca-5b360c417b0a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/PROA/Inicio_Alumno.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/PROA/Inicio_profesor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/PROA/PAS/Inicio_PAS.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/PROA/PAS/Solicitudes_PAS.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/PROA/PAS/perfil_solicitud_PAS.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/PROA/asignaturas.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/PROA/asignaturas_profe.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/PROA/editar-guia.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/PROA/guiaDocenteAlumno.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/PROA/guiaDocenteprofesor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/handlers/PROA_profesor/agregarTareas.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/handlers/cerrarSesion.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/handlers/guardarCosultaContacto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/handlers/inicio-sesion.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/includes/MySQL.inc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/includes/PHPMailer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/includes/PeticionREST.inc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/includes/SMTP.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/includes/footer_proa.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/includes/funciones_inicio.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/includes/mensajeError.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/includes/mensajeExito.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/includes/obtenerDatosRol.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/includes/validarInicioSesion.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/PROA/Perfil_solicitud_PAS.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/PROA/asignaturas.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/PROA/editar-guia.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/PROA/guia_docente.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/PROA/inicioPAS.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/PROA/inicio_profeAlum.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/PROA/solicitudesPAS.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/PROA/solicitudes_alumnoProfesor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/PROA/agregarTareas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/RegistroGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/RegistroGTI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/usuarios.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/usuarios.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bbdd/estructura.spl" beforeDir="false" afterPath="$PROJECT_DIR$/bbdd/estructura.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/CALENDARIO MES.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Contacto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Inicio_Registro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Inicio_Sesion_Proa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Papelera.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Rectangle 92.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/campana de notificaciones.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logoGTI.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logoPROA.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/InicioSesion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/InicioSesionGTI.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/InicioSesionProa.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/InicioSesionProa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/PROA.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PROA.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/RegistroGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegistroGTI.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/GTI/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/PROA/agregarTareas.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PROA/agregarTareas.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/PROA/calendario.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PROA/calendario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/PROA/editarTareas.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PROA/editarTareas.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/PROA/listaAlumnos.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PROA/listaAlumnos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/PROA/solicitudes.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PROA/solicitudes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/PROA/tareasAlumno.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PROA/tareasAlumno.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/PROA/tareasContenido.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PROA/tareasContenido.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/PROA/tareasContenidoProfesor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PROA/tareasContenidoProfesor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/PROA/tareasProfesor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/PROA/tareasProfesor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/includes/InicioSesion.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/includes/RegistroGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/registro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/includes/cerrarSesion.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/includes/datos_usuario.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/includes/footerGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/footerGTI.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/includes/footerPROA.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/includes/headerGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/headerGTI.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/includes/usuarioProa.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/includes/usuarios.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/enviarConsultaContacto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/Footer_Header_Noregistrado.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Footer_Header_Noregistrado.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/Footer_Header_Registrado.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Footer_Header_Registrado.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/InicioSesion.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/InicioSesion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/InicioSesionProa.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/InicioSesionProa.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/LandingPage_No registrado.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/LandingPage_No registrado.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/LandingPage_Registrado.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/LandingPage_Registrado.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/MOVILmenu-Profesores_y_alumnos.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/PROA/MOVILmenu-Profesores_y_alumnos.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/PROA_No registrado.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/PROA_No registrado.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/PROA_registrado.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/PROA_registrado.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/RegistroGTI.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/RegistroGTI.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/agregarTareas.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/PROA/agregarTareas.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/calendario.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/calendario.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/editarTareas.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/PROA/editarTareas.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/headeryfooterPROA.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/PROA/headeryfooterPROA.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/listaAlumnos.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/PROA/listaAlumnos.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/tareasAlumno.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/PROA/tareasAlumno.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/tareasContenido.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/PROA/tareasContenido.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/tareasContenidoProfesor.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/PROA/tareasContenidoProfesor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/tareasProfesor.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/PROA/tareasProfesor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/LandingPage_No registrado.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/LandingPage_Registrado.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/ProaRegistrado.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/botonMicuenta.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/RegistroGTI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/agregarTareas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/editarTarea.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/PROA/editarTarea.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/enviarSolicitud.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/PROA/enviarSolicitud.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/pruebaloginPROA.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/pruebaloginPROA.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/tareasContenido.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/PROA/tareasContenido.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/tareasContenidoProfesor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/PROA/tareasContenidoProfesor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/tareasProfesor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/PROA/tareasProfesor.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,28 +137,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;nerva&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/minim/Documents/UNI1/PROYECTO/proyecto&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "nerva",
+    "last_opened_file_path": "C:/Users/minim/Downloads/proyecto-develop",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "mariadb"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\minim\Documents\UNI1\PROYECTO\proyecto\src\app\GTI" />
-      <recent name="C:\Users\minim\Documents\UNI1\PROYECTO\proyecto\src" />
-      <recent name="C:\Users\minim\Documents\UNI1\PROYECTO\proyecto\src\app\PROA" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\minim\Documents\UNI1\PROYECTO\proyecto\src\app\includes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\minim\Documents\UNI1\PROYECTO\proyecto\src\app\includes" />
+      <recent name="C:\Users\minim\Documents\UNI1\PROYECTO\proyecto\src\app\PROA\PAS" />
+      <recent name="C:\Users\minim\Documents\UNI1\PROYECTO\proyecto\src\app\PROA" />
+      <recent name="C:\Users\minim\Documents\UNI1\PROYECTO\proyecto\src\css" />
+      <recent name="C:\Users\minim\Documents\UNI1\PROYECTO\proyecto\src\css\PROA" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -90,6 +194,10 @@
       <workItem from="1746443927130" duration="20357000" />
       <workItem from="1746540326567" duration="23048000" />
       <workItem from="1747033476746" duration="73813000" />
+      <workItem from="1747638262997" duration="1214000" />
+      <workItem from="1747674817513" duration="2402000" />
+      <workItem from="1747683465725" duration="29842000" />
+      <workItem from="1747840778087" duration="14219000" />
     </task>
     <servers />
   </component>

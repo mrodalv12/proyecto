@@ -1,34 +1,16 @@
 html{
-
-
     --body-color:#FFFCFF ;
-
     --header-color:#d36c6c;
-
     --header-button:#92a1d1;
-
     --color-weekdays: #247BA0;
-
     --box-shadow: #CBD4C2;
-
     --hover: #e8faed;
-
     --current-day:#e8f4fa;
-
     --event-color: #58bae4;
-
     --modal-event: #e8f4fa;
-
-
     --color-day:white;
-
-
 }
 
-html, body {
-    width: 100%;
-    overflow-x: hidden;
-}
 
 
 body {
@@ -169,66 +151,71 @@ button {
     background-color: rgba(0,0,0,0.8);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     #container {
         width: 100%;
-        padding: 1rem;
+        padding: 1em;
+        box-sizing: border-box;
     }
 
     #header {
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        gap: 1em;
         text-align: center;
     }
 
-    #weekdays {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    #weekdays div {
-        width: calc(100% / 3); /* 3 columnas por fila */
-        text-align: center;
-    }
-
+    #weekdays div,
     .day {
-        width: calc(100% / 3 - 10px); /* 3 columnas + margen */
-        height: 100px;
-    }
-}
-
-@media (max-width: 480px) {
-    #weekdays div {
-        width: 50%; /* 2 columnas */
+        width: calc(100% / 7 - 4px); /* 7 columnas */
+        font-size: 0.7em;
+        padding: 5px;
+        height: 70px;
     }
 
-    .day {
-        width: calc(50% - 10px); /* 2 columnas + margen */
-        height: 90px;
-    }
-
-    main {
-        padding: 1rem;
-    }
-
-    #newEventModal, #deleteEventModal {
+    #newEventModal,
+    #deleteEventModal {
         width: 90%;
         left: 5%;
     }
-}
 
-@media (max-width: 768px) {
-    #container {
-        transform: scale(0.8);     /* Reduce tamaño a 80% */
-        transform-origin: top center;
+    main {
+        padding: 1em;
+    }
+    #newEventModal,
+    #deleteEventModal {
+        width: 90%;
+        left: 5%;
+        top: 20vh;
+        padding: 1em;
+        font-size: 1em;
+        box-sizing: border-box;
+    }
+
+    #eventTitleInput {
+        font-size: 1em;
+        padding: 0.8em;
+    }
+
+    #newEventModal h2,
+    #deleteEventModal h2 {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    #eventText {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    #saveButton,
+    #cancelButton,
+    #deleteButton,
+    #closeButton {
+        width: 100%;
+        padding: 0.8em;
+        font-size: 1em;
+        margin-top: 0.5em;
+        box-sizing: border-box;
     }
 }
-
-@media (max-width: 480px) {
-    #container {
-        transform: scale(0.6);     /* Reduce tamaño a 60% */
-        transform-origin: top center;
-    }
-}
-

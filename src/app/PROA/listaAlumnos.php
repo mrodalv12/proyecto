@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Entregar Tareas</title>
-    <link rel="preload" href="../../css/headeryfooterPROA.css" as="style" />
-    <link rel="stylesheet" href="../../css/headeryfooterPROA.css" />
-    <link rel="stylesheet" href="../../css/listaAlumnos.css" />
+    <link rel="preload" href="../../../../../../Documents/UNI1/PROYECTO/proyecto/src/css/headeryfooterPROA.css" as="style" />
+    <link rel="stylesheet" href="../../../../../../Documents/UNI1/PROYECTO/proyecto/src/css/headeryfooterPROA.css" />
+    <link rel="stylesheet" href="../../../../../../Documents/UNI1/PROYECTO/proyecto/src/css/listaAlumnos.css" />
+    <link rel="stylesheet" href="../../../../../../Documents/UNI1/PROYECTO/proyecto/src/css/MOVILmenu-Profesores_y_alumnos.css">
 </head>
 <body>
 
 <!-- Header -->
-<?php include "../includes/headerPROA.php" ?>
+<?php include "../includes/header_proa.php" ?>
 
 <main>
     <section class="tablaAlumnos">
-    <h1>TAREAS</h1>
+        <h1><a href="tareasProfesor.php">TAREAS</a></h1>
     <h2>Tareas entregadas</h2>
 
     <table>
@@ -30,7 +31,7 @@
         <tr>
             <td>Alumno 1</td>
             <td>7/10</td>
-            <td><a href="tareasContenidoProfesor.php">Entregado</a></td>
+            <td class="tarea-entregada"><a href="tareasContenidoProfesor.php">Entregado</a></td>
         </tr>
         <tr>
             <td>Alumno 2</td>
@@ -40,29 +41,29 @@
         <tr>
             <td>Alumno 3</td>
             <td>-/10</td>
-            <td><a href="tareasContenidoProfesor.php">Entregado</a></td>
+            <td class="tarea-entregada"><a href="tareasContenidoProfesor.php">Entregado</a></td>
         </tr>
         <tr>
             <td>Alumno 4</td>
             <td>-/10</td>
-            <td><a href="tareasContenidoProfesor.php">Entregado</a></td>
+            <td class="tarea-entregada"><a href="tareasContenidoProfesor.php">Entregado</a></td>
         </tr>
         <tr>
             <td>Alumno 5</td>
             <td>-/10</td>
-            <td><a href="tareasContenidoProfesor.php">Entregado</a></td>
+            <td class="tarea-entregada"><a href="tareasContenidoProfesor.php">Entregado</a></td>
         </tr>
         <tr>
             <td>Alumno 6</td>
             <td>-/10</td>
-            <td><a href="tareasContenidoProfesor.php">Entregado</a></td>
+            <td class="tarea-entregada"><a href="tareasContenidoProfesor.php">Entregado</a></td>
         </tr>
         </tbody>
     </table>
     </section>
 </main>
 
-<?php include "../includes/footerPROA.php" ?>
+<?php include "../includes/footer_proa.php" ?>
 
 
 </body>

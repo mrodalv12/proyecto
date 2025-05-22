@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Entregar Tareas</title>
-    <link rel="preload" href="../../css/headeryfooterPROA.css" as="style" />
-    <link rel="stylesheet" href="../../css/headeryfooterPROA.css" />
-    <link rel="stylesheet" href="../../css/tareasContenido.css" />
+    <link rel="preload" href="../../../../../../Documents/UNI1/PROYECTO/proyecto/src/css/headeryfooterPROA.css" as="style" />
+    <link rel="stylesheet" href="../../../../../../Documents/UNI1/PROYECTO/proyecto/src/css/headeryfooterPROA.css" />
+    <link rel="stylesheet" href="../../../../../../Documents/UNI1/PROYECTO/proyecto/src/css/tareasContenido.css" />
+    <link rel="stylesheet" href="../../../../../../Documents/UNI1/PROYECTO/proyecto/src/css/MOVILmenu-Profesores_y_alumnos.css" />
 </head>
 <body>
 
 <!-- Header -->
-<?php include "../includes/headerPROA.php" ?>
+<header>
+<?php include "../includes/header_proa.php" ?>
+</header>
 
 <div class="container">
-    <h1>TAREAS</h1>
+    <h1><a href="tareasAlumno.php">TAREAS</a></h1>
     <h2>Título de la tarea</h2>
 
     <div class="info-box">
@@ -59,7 +62,7 @@
 </div>
 
 <!-- Footer -->
-<?php include "../includes/footerPROA.php" ?>
+<?php include "../includes/footer_proa.php" ?>
 
 <script src="../../js/tareasContenido.js"></script>
 </body>

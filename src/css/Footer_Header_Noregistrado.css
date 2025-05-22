@@ -1,39 +1,39 @@
 
 /*----- Header -----*/
 
-  .header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     background-color: white;
-  }
-  
-  .logo {
+}
+
+.logo {
     text-decoration: none;
     color: inherit;
     font-size: 1.8rem;
     font-weight: bold;
-  }
-  
-  .logo .g {
+}
+
+.logo .g {
     color: black;
-  }
-  
-  .logo .ti {
+}
+
+.logo .ti {
     color: #87005a;
-  }
-  
-  nav a {
+}
+
+nav a {
     position: relative;
     margin-left: 2em;
     margin-right: 2em;
     text-decoration: none;
     color: #8e0f5c;
     font-weight: 500;
-  }
-  
-  nav a::after {
+}
+
+nav a::after {
     content: '';
     position: absolute;
     width: 0;
@@ -45,160 +45,160 @@
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.3s ease;
-  }
-  
-  nav a:hover::after {
+}
+
+nav a:hover::after {
     width: 100%;
     transform: scaleX(1);
-  }
-  
+}
 
 
-  /*----- Footer -----*/
 
-  footer {
+/*----- Footer -----*/
+
+footer {
     background: #eee;
     padding: 2em;
-  }
-  
-  .footer-container {
+}
+
+.footer-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 2em;
-  }
-  
-  .footer-info {
+}
+
+.footer-info {
     color: #555;
     font-size: 0.9em;
     text-align: left;
     flex: 1;
-  }
-  
-  .footer-info p {
+}
+
+.footer-info p {
     margin-bottom: 0.5em;
-  }
-  
-  .footer-info a {
+}
+
+.footer-info a {
     color: #8e0f5c;
     text-decoration: none;
-  }
-  
-  .footer-logo-block {
+}
+
+.footer-logo-block {
     text-align: right;
-  }
-  
-  .logo {
+}
+
+.logo {
     text-decoration: none;
     color: inherit;
     font-size: 1.8rem;
     font-weight: bold;
-  }
-  
-  .logo .g {
+}
+
+.logo .g {
     color: black;
-  }
-  
-  .logo .ti {
+}
+
+.logo .ti {
     color: #87005a;
-  }
-  
-  .footer-logo {
+}
+
+.footer-logo {
     text-decoration: none;
     color: inherit;
     font-size: 1.8rem;
     font-weight: bold;
-  }
-  
-  .footer-logo span {
+}
+
+.footer-logo span {
     color: #8e0f5c;
-  }
-  
-  .footer-copy {
+}
+
+.footer-copy {
     font-size: 0.8em;
     color: #555;
     margin-top: 0.3em;
-  }
+}
 
 /* responsive */
 @media (max-width: 565px) {
-  /* HEADER */
-  .header {
-    flex-direction: row;
-    flex-wrap: wrap; /* por si falta espacio */
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.8rem 1rem;
-  }
+    /* HEADER */
+    .header {
+        flex-direction: row;
+        flex-wrap: wrap; /* por si falta espacio */
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.8rem 1rem;
+    }
 
-  .logo {
-    font-size: 1.4rem;
-    flex-shrink: 0; /* evita que el logo se haga pequeñito */
-    margin-bottom: 0.5rem;
-  }
+    .logo {
+        font-size: 1.4rem;
+        flex-shrink: 0; /* evita que el logo se haga pequeñito */
+        margin-bottom: 0.5rem;
+    }
 
-  .nav {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: nowrap;
-    align-items: center;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 100%;
-    margin-top: -33px;
-  }
+    .nav {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: nowrap;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+        margin-top: -33px;
+    }
 
-  .nav a {
-    font-size: 0.85rem;
-    margin: 0;
-    white-space: nowrap; /* evita que se corten en varias líneas */
-  }
+    .nav a {
+        font-size: 0.85rem;
+        margin: 0;
+        white-space: nowrap; /* evita que se corten en varias líneas */
+    }
 
-  .mi-cuenta {
-    width: 100%;
-    margin-top: 0.5rem;
-  }
+    .mi-cuenta {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
 
-  .mi-cuenta button {
-    width: 100%;
-    text-align: left;
-    font-size: 0.85rem;
-    background: none;
-    border: none;
-    color: #8e0f5c;
-    cursor: pointer;
-    padding: 0;
-  }
+    .mi-cuenta button {
+        width: 100%;
+        text-align: left;
+        font-size: 0.85rem;
+        background: none;
+        border: none;
+        color: #8e0f5c;
+        cursor: pointer;
+        padding: 0;
+    }
 
-  .menu-cuenta {
-    background: #f0f0f0;
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-  }
+    .menu-cuenta {
+        background: #f0f0f0;
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+    }
 
-  /* FOOTER */
-  footer {
-    padding: 1.5rem 1rem;
-  }
+    /* FOOTER */
+    footer {
+        padding: 1.5rem 1rem;
+    }
 
-  .footer-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-  .footer-info,
-  .footer-logo-block {
-    width: 100%;
-    text-align: left;
-  }
+    .footer-info,
+    .footer-logo-block {
+        width: 100%;
+        text-align: left;
+    }
 
-  .footer-logo {
-    font-size: 1.5rem;
-  }
+    .footer-logo {
+        font-size: 1.5rem;
+    }
 
-  .footer-copy {
-    font-size: 0.75rem;
-    margin-top: 0.5rem;
-  }
+    .footer-copy {
+        font-size: 0.75rem;
+        margin-top: 0.5rem;
+    }
 }
