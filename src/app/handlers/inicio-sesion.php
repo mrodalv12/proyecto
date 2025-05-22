@@ -51,5 +51,5 @@ $_SESSION['usuario'] = [
 $stmt->close();
 
 // Redirigir a landing page
-header('Location: /proyecto/src/index.php');
+header('Location: http://localhost/proyecto/src/index.php');
 exit();

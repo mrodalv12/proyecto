@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fa65155-22b5-4a9b-85ca-5b360c417b0a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/511ba6f9-93ac-454e-ab78-3d79f6cf2b2e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/511ba6f9-93ac-454e-ab78-3d79f6cf2b2e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InicioSesionGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/InicioSesionGTI.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/handlers/inicio-sesion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/handlers/inicio-sesion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/pruebaloginPROA.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/pruebaloginPROA.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
