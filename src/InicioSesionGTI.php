@@ -17,7 +17,7 @@
 <main class="main-content">
     <div class="login-box">
         <?php include 'app/includes/mensajeExito.php'; ?>
-        <h2>Inicia sesión</h2>
+        <h1>Inicia sesión</h1>
         <form id="loginForm" method="POST" action="app/handlers/inicio-sesion.php">
             <label for="email">Correo electrónico</label>
             <input type="text" id="email" name="email" placeholder="Introduce tu correo electrónico" required />

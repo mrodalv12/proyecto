@@ -24,7 +24,7 @@ if ($stmt->num_rows === 0) {
     // No existe usuario con ese email
     $_SESSION['error'] = 'usuario_no_encontrado';
     $stmt->close();
-    header('Location: /proyecto/src/InicioSesionGTI.php');
+    header('Location: /proyecto/src/PROA.php');
     exit();
 }
 

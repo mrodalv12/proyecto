@@ -3,6 +3,12 @@ session_start();  // Inicia la sesión al comienzo del archivo
 
 // Verifica si el usuario está logueado
 $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
+
+if ($usuario_logueado) {
+    echo "Usuario logueado: " . $_SESSION["usuario"]["nombre"];
+} else {
+    echo "Usuario NO logueado.";
+}
 ?>
 
 <!DOCTYPE html>
@@ -50,10 +56,8 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
             <label for="correo">Correo:</label>
             <input type="email" id="correo" name="correo" placeholder="Introduce tu correo electrónico" />
 
-
             <label for="asunto">Asunto:</label>
             <input type="text" id="asunto" name="asunto" placeholder="Introduce el asunto a tratar" />
-
 
             <label for="mensaje">Descripción:</label>
             <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea>

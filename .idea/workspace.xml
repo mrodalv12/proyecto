@@ -5,76 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fa65155-22b5-4a9b-85ca-5b360c417b0a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/511ba6f9-93ac-454e-ab78-3d79f6cf2b2e.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/511ba6f9-93ac-454e-ab78-3d79f6cf2b2e/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/511ba6f9-93ac-454e-ab78-3d79f6cf2b2e/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/511ba6f9-93ac-454e-ab78-3d79f6cf2b2e/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/511ba6f9-93ac-454e-ab78-3d79f6cf2b2e/storage_v2/_src_/schema/test.kkQ2AA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/InicioSesionGTI.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/handlers/PROA_profesor/agregarTareas.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/handlers/cerrarSesion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/handlers/guardarCosultaContacto.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/handlers/inicio-sesion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/includes/MySQL.inc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/includes/PHPMailer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/includes/PeticionREST.inc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/includes/SMTP.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/includes/mensajeError.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/includes/mensajeExito.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/includes/obtenerDatosRol.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/includes/registro.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/includes/validarInicioSesion.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/Footer_Header_Noregistrado.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/Footer_Header_Registrado.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/LandingPage_No registrado.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/LandingPage_Registrado.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/PROA/MOVILmenu-Profesores_y_alumnos.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/PROA/Perfil_solicitud_PAS.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/PROA/agregarTareas.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/PROA/asignaturas.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/PROA/editar-guia.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/PROA/editarTareas.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/PROA/guia_docente.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/PROA/headeryfooterPROA.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/PROA/inicioPAS.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/PROA/inicio_profeAlum.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/PROA/listaAlumnos.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/PROA/solicitudesPAS.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/PROA/solicitudes_alumnoProfesor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/PROA/tareasAlumno.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/PROA/tareasContenido.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/PROA/tareasContenidoProfesor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/PROA/tareasProfesor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/PROA_No registrado.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/PROA_registrado.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/css/solicitudes.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/PROA/agregarTareas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/PROA/editarTarea.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/PROA/enviarSolicitud.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/PROA/tareasContenido.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/PROA/tareasContenidoProfesor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/PROA/tareasProfesor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/botonMicuenta.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/js/enviarConsultaContacto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/511ba6f9-93ac-454e-ab78-3d79f6cf2b2e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/511ba6f9-93ac-454e-ab78-3d79f6cf2b2e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bbdd/estructura.spl" beforeDir="false" afterPath="$PROJECT_DIR$/bbdd/estructura.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InicioSesion.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InicioSesionProa.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/InicioSesionProa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PROA.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PROA.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RegistroGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegistroGTI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/InicioSesion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/InicioSesion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/RegistroGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/RegistroGTI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/footerGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/footerGTI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/headerGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/headerGTI.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InicioSesionGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/InicioSesionGTI.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/handlers/inicio-sesion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/handlers/inicio-sesion.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/LandingPage_No registrado.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/LandingPage_Registrado.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/RegistroGTI.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/pruebaloginPROA.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/pruebaloginPROA.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +58,7 @@
     "PHP Script.Solicitudes_PAS.php.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Merging prueba",
+    "git-widget-placeholder": "prueba",
     "last_opened_file_path": "/Applications/XAMPP/xamppfiles/htdocs/proyecto",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
