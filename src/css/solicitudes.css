@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Martel Sans', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+main {
+    margin-bottom:5px;
+    padding: 20px;
+    height:78.8dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario {
+    background-color: #ffffff;
+    padding: 50px;
+    max-width: 700px;
+    margin: auto;
+    box-shadow: 0 0  10px rgba(0,0,0,0.1);
+}
+
+.contenedor-formulario h1 {
+    display: flex;
+    align-content: normal;
+
+}
+
+.encolumna {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.encolumna label{
+    font-weight: bold;
+    flex: 0 0 120px;
+}
+label{
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input[type=text], select, textarea {
+    width: 500px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select{
+    width: 200px;
+}
+
+textarea{
+    width: 600px;
+}
+
+button{
+    margin-top: 20px;
+    margin-left: 450px;
+    padding: 10px 30px;
+    background-color: #7280B9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #616B96;
+}
+
+.mensaje{
+    font-weight: bold;
+}
+
+.mensaje.error{
+    color:red;
+}
+
+.mensaje.exito{
+    color: green;
+}

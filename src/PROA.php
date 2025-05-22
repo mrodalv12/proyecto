@@ -52,8 +52,8 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
 <?php include "./app/includes/footerGTI.php" ?>
 <!--fin del Footer -->
 
-<?php if ($usuario_logueado): ?>
-    <script src="js/ProaRegistrado.js"></script>
-<?php endif; ?>
+    <?php if ($usuario_logueado): ?>
+  <script src="js/botonMicuenta.js"></script>
+    <?php endif; ?>
 </body>
 </html>

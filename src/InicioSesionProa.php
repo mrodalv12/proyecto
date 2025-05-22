@@ -6,7 +6,7 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
 
 // Si el usuario no está logueado, redirige al login
 if (!$usuario_logueado) {
-    header("Location: ./InicioSesion.php");
+    header("Location: ../inicio-sesion.php");
     exit();
 }
 
@@ -27,18 +27,17 @@ $usuarioLogueado = $_SESSION["usuario"];
 </head>
 <body>
 <!-- Header -->
-<?php include "./app/includes/headerGTI.php" ?>
-<!-- fin del Header -->
+<?php include "app/includes/headerGTI.php" ?>
 
-<main class="container">
+  <main class="container">
     <section class="image-section">
         <img src="../img/Inicio_Sesion_Proa.png" alt="Login PROA" />
     </section>
 
     <section class="login-section">
-        <h2>Inicia sesión en PROA</h2>
-        <form id="loginForm"  method="POST">
-            <label for="rolSeleccionado">Opciones de rol para PROA</label>
+      <h2>Inicia sesión en PROA</h2>
+        <form id="loginForm" action="app/includes/validarInicioSesion.php" method="POST">
+        <label for="rolSeleccionado">Opciones de rol para PROA</label>
             <select id="rolSeleccionado" name="rol" required onchange="completarDatos()">
                 <option value="">Selecciona un rol</option>
                 <option value="pas">Personal de Administración y Servicios</option>
@@ -61,14 +60,9 @@ $usuarioLogueado = $_SESSION["usuario"];
 </main>
 
 <!-- Footer -->
-<?php include "./app/includes/footerGTI.php" ?>
-<!-- fin del Footer -->
-
-<script>
-    const usuarioRegistradoActual = "<?php echo $usuarioLogueado; ?>";
-</script>
+<?php include "app/includes/footerGTI.php" ?>
 
 <script src="js/pruebaloginPROA.js" ></script>
-<script src="js/ProaRegistrado.js" ></script>
+<script src="js/botonMicuenta.js" ></script>
 </body>
 </html>

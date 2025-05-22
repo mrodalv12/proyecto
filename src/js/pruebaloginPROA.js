@@ -1,74 +1,43 @@
-// Simulación del JSON de usuarios PROA
-const usuariosProa = {
-    pas: [
-        { id: "88-1316390", correo: "o.breshe@upv.es", contraseña: "1316390" },
-        { id: "91-1970980", correo: "b.maltho@upv.es", contraseña: "1970980" },
-    ],
-    profesor: [
-        { id: "60-4525956", correo: "k.poumai@upv.es", contraseña: "4525956" },
-        { id: "64-6055365", correo: "l.prista@upv.es", contraseña: "6055365" },
-    ],
-    alumno: [
-        { id: "01-9218611", correo: "l.simdre@epsg.upv.es", contraseña: "9218611" },
-        { id: "04-1320191", correo: "m.kirkam@epsg.upv.es", contraseña: "1320191" },
-    ],
-};
-
-// Asignaciones de usuarios PROA a usuarios registrados
-const asignacionesProa = {
-    Daniel: {
-        pas: "88-1316390",
-        profesor: "60-4525956",
-        alumno: "01-9218611"
-    },
-
-    "José Luis": {
-        pas: "91-1970980",
-        profesor: "64-6055365",
-        alumno: "04-1320191"
-    }
-};
-
 // Función para completar los datos del formulario según el rol
 function completarDatos() {
     const rol = document.getElementById("rolSeleccionado").value;
     const inputCorreo = document.getElementById("correo");
     const inputContraseña = document.getElementById("contraseña");
+    const mensajeError = document.getElementById("mensajeError");
 
-    const asignaciones = asignacionesProa[usuarioRegistradoActual];
-    if (!asignaciones) {
-        mostrarError("No tienes usuarios PROA asignados.");
+    if (!rol) {
+        inputCorreo.value = "";
+        inputContraseña.value = "";
+        mensajeError.textContent = "";
         return;
     }
 
-    const idAsignado = asignaciones[rol];
-    if (!idAsignado) {
-        mostrarError("No tienes este rol asignado.");
-        return;
-    }
-
-    const usuario = usuariosProa[rol].find(u => u.id === idAsignado);
-    if (usuario) {
-        inputCorreo.value = usuario.correo;
-        inputContraseña.value = usuario.contraseña;
-        ocultarError();
-    } else {
-        mostrarError("Usuario PROA no encontrado.");
-    }
+    fetch(`/proyecto/app/includes/obtenerDatosRol.php?rol=${rol}`)
+        .then(response => {
+            if (!response.ok) throw new Error("Error en la petición");
+            return response.json();
+        })
+        .then(data => {
+            if (data.error) {
+                mensajeError.textContent = data.error;
+                inputCorreo.value = "";
+                inputContraseña.value = "";
+            } else {
+                mensajeError.textContent = "";
+                inputCorreo.value = data.correo;
+                inputContraseña.value = data.contraseña;
+            }
+        })
+        .catch(error => {
+            mensajeError.textContent = "No se pudieron cargar los datos del rol.";
+            inputCorreo.value = "";
+            inputContraseña.value = "";
+            console.error(error);
+        });
 }
 
-function mostrarError(mensaje) {
-    const divError = document.getElementById("mensajeError");
-    divError.textContent = mensaje;
-}
-
-function ocultarError() {
-    document.getElementById("mensajeError").textContent = "";
-}
-
-
-document.getElementById("acceder").addEventListener("click", function (e) {
-    e.preventDefault(); // Evita que el enlace navegue automáticamente
+document.getElementById("acceder").addEventListener("click", function(e) {
+    e.preventDefault();
 
     const rol = document.getElementById("rolSeleccionado").value;
     const correo = document.getElementById("correo").value.trim();
@@ -79,31 +48,17 @@ document.getElementById("acceder").addEventListener("click", function (e) {
         return;
     }
 
-    const usuarios = usuariosProa[rol];
-    if (!usuarios) {
-        mostrarError("Rol no válido.");
-        return;
-    }
 
-    const usuarioValido = usuarios.find(u => u.correo === correo && u.contraseña === contraseña);
-
-    if (!usuarioValido) {
-        mostrarError("Credenciales incorrectas.");
-        return;
-    }
-
-    ocultarError();
-
-    // Redirige según el rol
+    // Si todo está bien, redirige según el rol:
     switch (rol) {
         case "pas":
-            window.location.href = "./app/PAS/Inicio_PAS.php";
+            window.location.href = "app/PROA/PAS/Inicio_PAS.php";
             break;
         case "profesor":
-            window.location.href = "./app/Profesor_Alumno/Inicio_profesor.php";
+            window.location.href = "app/PROA/Inicio_Alumno.php";
             break;
         case "alumno":
-            window.location.href = "./app/Profesor_Alumno/Inicio_Alumno.php";
+            window.location.href = "app/PROA/Inicio_profesor.php";
             break;
         default:
             mostrarError("Rol desconocido.");

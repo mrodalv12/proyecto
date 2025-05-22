@@ -75,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["usuario"], $_POST["co
     file_put_contents($archivo, json_encode($usuarios, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 
     // Redirigir al login
-    header("Location: ./InicioSesion.php");
+    header("Location: ./InicioSesionGTI.php");
     exit;
 }
 ?>
