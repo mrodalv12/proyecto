@@ -6,7 +6,7 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
 
 // Si el usuario no está logueado, redirige al login
 if (!$usuario_logueado) {
-    header("Location: ../inicio-sesion.php");
+    header("Location: ./InicioSesionGTI.php");
     exit();
 }
 
@@ -35,7 +35,7 @@ $usuarioLogueado = $_SESSION["usuario"];
     </section>
 
     <section class="login-section">
-      <h2>Inicia sesión en PROA</h2>
+      <h1>Inicia sesión en PROA</h1>
         <form id="loginForm" action="app/includes/validarInicioSesion.php" method="POST">
         <label for="rolSeleccionado">Opciones de rol para PROA</label>
             <select id="rolSeleccionado" name="rol" required onchange="completarDatos()">
@@ -61,6 +61,7 @@ $usuarioLogueado = $_SESSION["usuario"];
 
 <!-- Footer -->
 <?php include "app/includes/footerGTI.php" ?>
+<!-- fin del Footer -->
 
 <script src="js/pruebaloginPROA.js" ></script>
 <script src="js/botonMicuenta.js" ></script>
