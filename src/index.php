@@ -45,7 +45,7 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
     <section class="contacto" id="contacto">
         <div class="formulario">
             <h2>¡Contáctanos!</h2>
-            <form onsubmit="return enviarFormulario(event)">
+            <form action="#" onsubmit="return enviarFormulario(event)">
 
                 <label for="correo">Correo:</label>
                 <input type="email" id="correo" placeholder="Introduce tu correo electrónico" />
