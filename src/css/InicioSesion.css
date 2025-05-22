@@ -38,6 +38,7 @@ body {
 /* region --- LOGIN ---*/
 .main-content {
     display: flex;
+    padding-top: var(--tamano_completo_header);
     height: 100vh;
 }
 
@@ -143,9 +144,6 @@ body {
 
     }
 
-    .login-box h2{
-        font-size: var(--tamano_fuente_h1_MOVIL);
-    }
     .login-box label{
         font-size: var(--tamano_fuente_p_MOVIL);
     }

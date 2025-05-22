@@ -7,9 +7,12 @@
     <list default="true" id="2fa65155-22b5-4a9b-85ca-5b360c417b0a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/InicioSesion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/InicioSesion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/InicioSesionProa.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/InicioSesionProa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PROA.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PROA.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RegistroGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegistroGTI.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/includes/InicioSesion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/InicioSesion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/includes/usuarios.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/usuarios.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/InicioSesion.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/InicioSesion.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/LandingPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/LandingPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/RegistroGTI.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/RegistroGTI.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,6 +144,8 @@
       <workItem from="1747827221469" duration="414000" />
       <workItem from="1747843890975" duration="14658000" />
       <workItem from="1747864652260" duration="6197000" />
+      <workItem from="1747889394127" duration="1407000" />
+      <workItem from="1747894619400" duration="6002000" />
     </task>
     <servers />
   </component>

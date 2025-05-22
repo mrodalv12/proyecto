@@ -18,7 +18,7 @@
 <main class="main-container">
     <!-- Formulario registro -->
     <section class="form-box">
-        <h2>Crea una cuenta</h2>
+        <h1>Registrate</h1>
         <form id="registroForm" action="app/includes/RegistroGTI.php" method="POST">
             <label for="usuario">Nombre de usuario</label>
 
@@ -48,19 +48,13 @@
         <!-- Enlace para ir al login -->
         <p class="login-link">¿Ya tienes una cuenta? <a href="InicioSesion.php">¡Inicia sesión!</a></p>
     </section>
-
-
-
-    <section class="image-box">
-        <img src="../img/Inicio_Registro.png" alt="Registro">
-    </section>
 </main>
 
 <!-- Footer -->
 <?php include "./app/includes/footerGTI.php" ?>
 
 <!-- Script -->
-<script src="js/RegistroGTI.js"></script>
+<script src="./js/RegistroGTI.js"></script>
 
 
 </body>

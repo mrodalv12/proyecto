@@ -22,7 +22,7 @@
     <div class="login-box">
         <h1>Inicia sesión</h1>
         <!--imputs y titulos-->
-        <form id="loginForm" method="POST" action="./app/includes/InicioSesion.php">
+        <form id="loginForm" method="POST" action="../../proyecto/src/app/includes/InicioSesion.php">
             <!--nombre de usuario o correo-->
             <label for="usuario">Nombre de usuario o correo electrónico</label>
             <input type="text" id="usuario" name="usuario" placeholder="Introduce tu correo electrónico" required />

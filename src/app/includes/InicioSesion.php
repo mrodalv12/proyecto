@@ -32,12 +32,15 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["usuario"], $_POST["co
         }
     }
 
+
     if ($usuario_encontrado) {
         // Redirigir al usuario a la landing page después de un inicio de sesión exitoso
         header("Location: ../../index.php");  // Cambia esto por la ruta correcta de tu landing page
         exit;  // Terminar la ejecución del script después de la redirección
     } else {
         echo "<p>Usuario o contraseña incorrectos.</p>";
+        echo $identificador;
+        echo $clave;
     }
 } else {
     echo "<p>Acceso no permitido</p>";
