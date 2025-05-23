@@ -26,7 +26,7 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
     <section class="info">
         <!-- este es el texto -->
         <h1>PROA</h1>
-        <img src="../../proyecto/img/CALENDARIO_MES.png" alt="Ejemplo Calendario PROA">
+        <img src="../img/CALENDARIO_MES.png" alt="Ejemplo Calendario PROA">
         <p>PROA ya está disponible... ¡al alcance de un clic!<br>
             Descubre una nueva forma de trabajar, más ágil, clara y adaptada a las necesidades de hoy.<br>
             Diseñada pensando en ti: fácil de usar, accesible desde cualquier dispositivo y lista para ayudarte a dar el siguiente paso.</p>
@@ -43,7 +43,7 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
     </section>
     <!-- esta es una imagen de muestra de proa -->
     <section class="imagen">
-        <img src="../../proyecto/img/CALENDARIO_MES.png" alt="Ejemplo Calendario PROA">
+        <img src="../img/CALENDARIO_MES.png" alt="Ejemplo Calendario PROA">
     </section>
     <!-- este es el final de la imagen de muestra -->
 </main>
