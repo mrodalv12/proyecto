@@ -150,6 +150,9 @@ main{
         font-weight: var(--fuente_resaltada);
         cursor: pointer;
     }
+    form button:hover {
+        background-color: var(--color_boton_oscuro_hover);
+    }
 
     .formulario label {
         display: block;
@@ -172,9 +175,9 @@ main{
 /*endregion*/
 /* region ---mensaje de contacto---*/
 /* Mensaje contacto*/
-.mensaje {
+div.mensaje {
     position: fixed;
-    top: var(--espaciado_pequeno);
+    top: calc(var(--espaciado_pequeno) + var(--tamano_completo_header));
     right: var(--espaciado_pequeno);
     max-width: 300px;
     padding: var(--padding_botones);
@@ -185,21 +188,26 @@ main{
     box-shadow: var(--sombra_mensaje);
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.5s ease;
     z-index: 9999;
 }
 
-.mensaje.visible {
-    opacity: 1;
-    pointer-events: auto;
+.mensaje.oculto{
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
 }
 
-.mensaje.exito {
+.mensaje.mensaje-exito {
     background-color: var(--color_exito);
+    opacity: 1;
+    /*transition: opacity 0.5s ease;*/
 }
 
-.mensaje.error {
+.mensaje.mensaje-error {
     background-color: var(--color_error);
+    opacity: 1;
+    /*transition: opacity 0.5s ease;*/
 }
 /* endregion */
 /* region ---@media---*/

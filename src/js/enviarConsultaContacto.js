@@ -6,10 +6,13 @@ function enviarFormulario(event) {
     const mensaje = document.getElementById('mensaje').value.trim();
     const mensajeAviso = document.getElementById('mensajeAviso');
 
+    // Quitar clases anteriores para asegurar estado limpio
+    mensajeAviso.classList.remove('mensaje-error', 'mensaje-exito', 'oculto');
+
+    // Validación de campos vacíos
     if (!correo || !asunto || !mensaje) {
         mensajeAviso.textContent = 'Por favor, completa todos los campos.';
-        mensajeAviso.classList.remove('oculto');
-        mensajeAviso.classList.add('mensaje-error');
+        mensajeAviso.classList.add('mensaje', 'mensaje-error');
         return false;
     }
 
@@ -36,20 +39,20 @@ function enviarFormulario(event) {
 
             // Mostrar mensaje de éxito
             mensajeAviso.textContent = '¡Consulta enviada correctamente!';
-            mensajeAviso.classList.remove('oculto');
-            mensajeAviso.classList.remove('mensaje-error');
-            mensajeAviso.classList.add('mensaje-exito');
+            mensajeAviso.classList.add('mensaje', 'mensaje-exito');
 
-            // Opcional: ocultar mensaje después de 5 segundos
             setTimeout(() => {
                 mensajeAviso.classList.add('oculto');
-            }, 5000);
+                mensajeAviso.classList.remove('mensaje', 'mensaje-exito');
+            }, 3000);
         })
         .catch(err => {
             mensajeAviso.textContent = 'Ocurrió un error al enviar la consulta.';
-            mensajeAviso.classList.remove('oculto');
-            mensajeAviso.classList.remove('mensaje-exito');
-            mensajeAviso.classList.add('mensaje-error');
+            mensajeAviso.classList.add('mensaje', 'mensaje-error');
+            setTimeout(() => {
+                mensajeAviso.classList.add('oculto');
+                mensajeAviso.classList.remove('mensaje', 'mensaje-error');
+            }, 3000);
             console.error(err);
         });
 
