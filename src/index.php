@@ -3,12 +3,6 @@ session_start();  // Inicia la sesión al comienzo del archivo
 
 // Verifica si el usuario está logueado
 $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
-
-if ($usuario_logueado) {
-    echo "Usuario logueado: " . $_SESSION["usuario"]["nombre"];
-} else {
-    echo "Usuario NO logueado.";
-}
 ?>
 
 <!DOCTYPE html>
