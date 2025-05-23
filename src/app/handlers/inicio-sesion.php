@@ -7,7 +7,7 @@ if (!isset($conn)) die();
 // Validar que se reciban datos
 if (!isset($_POST['email'], $_POST['password']) || empty(trim($_POST['email'])) || empty(trim($_POST['password']))) {
     $_SESSION['error'] = 'campos_vacios';
-    header('Location: ./src/InicioSesionGTI.php');
+    header('Location: ./InicioSesionGTI.php');
     exit();
 }
 
@@ -24,7 +24,7 @@ if ($stmt->num_rows === 0) {
     // No existe usuario con ese email
     $_SESSION['error'] = 'usuario_no_encontrado';
     $stmt->close();
-    header('Location: /proyecto/src/PROA.php');
+    header('Location: ./PROA.php');
     exit();
 }
 
@@ -38,7 +38,7 @@ if ($hash_input !== $hashed_password) {
     // Contraseña incorrecta
     $_SESSION['error'] = 'contrasena_incorrecta';
     $stmt->close();
-    header('Location: ./proyecto/src/InicioSesionGTI.php');
+    header('Location: ./InicioSesionGTI.php');
     exit();
 }
 
@@ -51,5 +51,5 @@ $_SESSION['usuario'] = [
 $stmt->close();
 
 // Redirigir a landing page
-header('Location: http://localhost/proyecto/src/index.php');
+header('Location: ./index.php');
 exit();
