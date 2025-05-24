@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solicitudes - PROA</title>
 
-        <link rel="preload" href="../../css/headeryfooterPROA.css" as="style" />
-        <link rel="stylesheet" href="../../css/headeryfooterPROA.css" />
-        <link rel="stylesheet" href="../../css/solicitudes_alumnoProfesor.css" />
-    <link rel="stylesheet" href="../../css/MOVILmenu-Profesores_y_alumnos.css">
+        <link rel="preload" href="../../css/header_footerPROA.css" as="style" />
+        <link rel="stylesheet" href="../../css/header_footerPROA.css" />
+        <link rel="stylesheet" href="../../css/Alumno_Profesor/solicitudes_alumnoProfesor.css" />
+    <link rel="stylesheet" href="../../css/Alumno_Profesor/MOVILmenu-Profesores_y_alumnos.css">
 
 
 </head>
 <body>
 
 <!-- Header -->
-<?php include "../includes/header_proa.php" ?>
+<?php include "../includes/header_proa_profesor.php" ?>
 
 
 <main>

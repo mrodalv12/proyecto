@@ -11,16 +11,17 @@ include "../includes/datos_usuario.php";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PROA</title>
-    <link rel="stylesheet" href="../../css/header_footer.css"/>
-    <link rel="stylesheet" href="../../css/editar-guia.css"/>
-    <link rel="stylesheet" href="../../css/MOVILmenu-Profesores_y_alumnos.css">
+    <link rel="stylesheet" href="../../css/header_footerPROA.css"/>
+    <link rel="stylesheet" href="../../css/Alumno_Profesor/editar-guia.css"/>
+    <link rel="stylesheet" href="../../css/variablesPROA.css">
+    <link rel="stylesheet" href="../../css/Alumno_Profesor/MOVILmenu-Profesores_y_alumnos.css">
     <script src="../../js/editar_guia.js"></script>
 </head>
 
 
 <body>
 <!--Header-->
-<?php include '../includes/header_proa.php' ?>
+<?php include '../includes/header_proa_profesor.php' ?>
 
 <!--Formulario de edición-->
 <main class="contenido">

@@ -9,9 +9,9 @@ include "../includes/datos_usuario.php";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>PROA</title>
-    <link rel="preload" href="../../css/solicitudesPAS.css" as="style" />
-    <link rel="stylesheet" href="../../css/solicitudesPAS.css">
-    <link rel="stylesheet" href="../../css/header_footer.css">
+    <link rel="preload" href="../../css/PAS/solicitudesPAS.css" as="style" />
+    <link rel="stylesheet" href="../../css/PAS/solicitudesPAS.css">
+    <link rel="stylesheet" href="../../css/header_footerPROA.css">
 </head>
 <body>
     <!-- encabezado-->

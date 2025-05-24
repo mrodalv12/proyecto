@@ -11,9 +11,9 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROA - GTI</title>
-    <link rel="preload" href="css/Footer_Header_GTI.css" as="style" />
-    <link rel="stylesheet" href="css/Footer_Header_GTI.css" />
-    <link rel="stylesheet" href="css/PROA_producto.css">
+    <link rel="preload" href="css/GTI/Footer_Header_GTI.css" as="style" />
+    <link rel="stylesheet" href="css/GTI/Footer_Header_GTI.css" />
+    <link rel="stylesheet" href="css/GTI/PROA_producto.css">
     <link rel="stylesheet" href="css/variablesGTI.css" />
 </head>
 <body>

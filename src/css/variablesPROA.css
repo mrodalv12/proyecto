@@ -1,0 +1,18 @@
+:root{
+    --tipografia_de_la_pagina: "Martel Sans";
+    --fuente_resaltada: bold;
+    --border_radius_general: 10px;
+    --tamano_fuente_h1: 2em;
+    --tamano_fuente_h2: 1.8em;
+    --tamano_fuente_h3: 1.4em;
+    --tamano_fuente_p: 16px;
+    --tamano_fuente_h1_MOVIL: 1.5em;
+    --tamano_fuente_h2_MOVIL: 1.3em;
+    --tamano_fuente_p_MOVIL: 14px;
+    --tamano_fuente_p_pequeño: 12px;
+    --espaciado_grande: 64px;
+    --espaciado_mediano: 32px;
+    --espaciado_pequeno: 16px;
+    --espaciado_superpequeno: 8px;
+}
+

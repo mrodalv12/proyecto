@@ -49,7 +49,7 @@ h1{
 
 /* region -- saludo --*/
 .saludo{
-    background-image: url("../../img/saludoPASfondo.jpg");
+    background-image: url("../../../img/saludoPASfondo.jpg");
     color: whitesmoke;
     background-size: cover;
     height: 25vh;

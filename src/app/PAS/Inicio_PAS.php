@@ -10,9 +10,9 @@ include "../includes/datos_usuario.php";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>PROA</title>
-    <link rel="preload" href="../../css/inicioPAS.css" as="style" />
-    <link rel="stylesheet" href="../../css/inicioPAS.css">
-    <link rel="stylesheet" href="../../css/header_footer.css">
+    <link rel="preload" href="../../css/PAS/inicioPAS.css" as="style" />
+    <link rel="stylesheet" href="../../css/PAS/inicioPAS.css">
+    <link rel="stylesheet" href="../../css/header_footerPROA.css">
 </head>
 <body>
 <!--encabezado-->

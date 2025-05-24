@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tareas PROA</title>
-
-    <link rel="stylesheet" href="../../css/headeryfooterPROA.css" />
-    <link rel="stylesheet" href="../../css/MOVILmenu-Profesores_y_alumnos.css" />
-    <link rel="stylesheet" href="../../css/tareasProfesor.css" />
+    <link rel="stylesheet" href="../../css/header_footerPROA.css" />
+    <link rel="stylesheet" href="../../css/Alumno_Profesor/MOVILmenu-Profesores_y_alumnos.css" />
+    <link rel="stylesheet" href="../../css/variablesPROA.css">
+    <link rel="stylesheet" href="../../css/Alumno_Profesor/tareasProfesor.css" />
     <link rel="stylesheet" href="../../css/popupEliminar.css" /> <!-- Nueva hoja de estilo -->
 
 </head>
 <body>
 
 <!-- Header -->
-<?php include "../includes/header_proa.php" ?>
+<?php include "../includes/header_proa_profesor.php" ?>
 
 <main>
     <section class="tasks-profesor">
@@ -29,7 +29,6 @@
                 <th>Fecha de entrega</th>
                 <th>Entregas</th>
                 <th>Editar</th>
-                <th>Eliminar</th>
             </tr>
             </thead>
             <tbody>
@@ -38,9 +37,6 @@
                 <td>5 jun 2025</td>
                 <td class="resaltada"><a href="listaAlumnos.php" class="action-btn">Ver entregas</a></td>
                 <td class="resaltadaEditar"><a href="editarTareas.php" class="edit-btn">Editar tarea</a></td>
-                <td class="resaltadaEliminar">
-                    <button class="erase-btn"><img src="../../../img/Papelera.png" alt="Eliminar"></button>
-                </td>
             </tr>
 
             <tr>
@@ -48,32 +44,14 @@
                 <td>5 jun 2025</td>
                 <td class="resaltada"><a href="listaAlumnos.php" class="action-btn">Ver entregas</a></td>
                 <td class="resaltadaEditar"><a href="editarTareas.php" class="edit-btn">Editar tarea</a></td>
-                <td class="resaltadaEliminar">
-                    <button class="erase-btn"><img src="../../../img/Papelera.png" alt="Eliminar"></button>
-                </td>
             </tr>
             <!-- Puedes repetir más filas -->
             </tbody>
         </table>
         <!-- Boton para agregar una nueva tarea -->
         <button class="add-btn"><a href="agregarTareas.php">Agregar Tarea</a></button>
-
+        <!-- fin de boton para agregar una nueva tarea -->
     </section>
-
-    <!-- POPUP DE CONFIRMACIÓN -->
-    <div class="popup-overlay" id="popup">
-        <div class="popup-box">
-            <p>¿Estás seguro de que deseas eliminar esta tarea?</p>
-            <div class="popup-actions">
-                <button onclick="confirmarEliminacion()">Aceptar</button>
-                <button onclick="cerrarPopup()">Cancelar</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- MENSAJE DE ÉXITO -->
-    <div id="mensaje" class="alert success"></div>
-
 </main>
 
 <!-- Footer -->

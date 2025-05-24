@@ -8,13 +8,14 @@ include "../includes/datos_usuario.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PROA</title>
-    <link rel="stylesheet" href="../../css/asignaturas.css">
-    <link rel="stylesheet" href="../../css/header_footer.css">
-    <link rel="stylesheet" href="../../css/MOVILmenu-Profesores_y_alumnos.css">
+    <link rel="stylesheet" href="../../css/Alumno_Profesor/asignaturas.css">
+    <link rel="stylesheet" href="../../css/variablesPROA.css">
+    <link rel="stylesheet" href="../../css/header_footerPROA.css">
+    <link rel="stylesheet" href="../../css/Alumno_Profesor/MOVILmenu-Profesores_y_alumnos.css">
 </head>
 <body>
 <!--encabezado-->
-<?php include "../includes/header_proa.php" ?>
+<?php include "../includes/header_proa_profesor.php" ?>
 <!--fin del encabezado-->
 
     <main>

@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../css/headeryfooterPROA.css" />
-    <link rel="stylesheet" href="../../css/MOVILmenu-Profesores_y_alumnos.css" />
+    <link rel="stylesheet" href="../../css/header_footerPROA.css" />
+    <link rel="stylesheet" href="../../css/variablesPROA.css">
+    <link rel="stylesheet" href="../../css/Alumno_Profesor/MOVILmenu-Profesores_y_alumnos.css" />
     <!-- archivos style -->
-    <link href="../../css/calendario.css" rel="stylesheet">
+    <link href="../../css/Alumno_Profesor/calendario.css" rel="stylesheet">
     <title>Calendario</title>
 </head>
 
 <body>
 
 <!-- Header -->
-<?php include "../includes/header_proa.php" ?>
+<?php include "../includes/header_proa_profesor.php" ?>
 
 <main>
     <div id="container">

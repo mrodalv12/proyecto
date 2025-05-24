@@ -33,7 +33,7 @@ body {
     font-family: "Martel Sans", monospace;
 }
 
-main {
+section {
     display: flex;
     flex-direction: column;
     align-content: space-between;
@@ -49,7 +49,7 @@ h1{
 
 /* region -- saludo --*/
 .saludo{
-    background-image: url("../../img/saludoPASfondo.jpg");
+    background-image: url("../../../img/saludoPASfondo.jpg");
     color: whitesmoke;
     background-size: cover;
     height: 25vh;
@@ -69,7 +69,7 @@ h1{
 
 /* region --eventos--*/
 
-main>div h2{
+section>div h2{
     margin: 20px;
 }
 
@@ -129,7 +129,7 @@ main>div h2{
     }
 }
 @media (max-width: 565px){
-    main.contenido {
+    section.contenido {
         margin-top:0;
     }
 }

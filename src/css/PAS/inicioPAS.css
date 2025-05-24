@@ -51,7 +51,7 @@ h1{
 
 /* region --- Saludo ---*/
 .saludo {
-    background-image: url("../../img/saludoPASfondo.jpg");
+    background-image: url("../../../img/saludoPASfondo.jpg");
     background-size: cover;
     justify-content: center;
     align-content: center;

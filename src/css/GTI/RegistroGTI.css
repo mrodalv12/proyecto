@@ -45,7 +45,7 @@ body {
 /* caracteristicas del fondo*/
 .form-box {
     flex: 1;
-    background: url("../../img/Inicio_Registro.png") no-repeat center center / cover;
+    background: url("../../../img/Inicio_Registro.png") no-repeat center center / cover;
     color: var(--color_letra_fondoOscuro);
     display: flex;
     flex-direction: column;

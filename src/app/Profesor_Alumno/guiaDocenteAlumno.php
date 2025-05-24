@@ -7,15 +7,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PROA</title>
-    <link rel="stylesheet" href="../../css/header_footer.css"/>
-    <link rel="stylesheet" href="../../css/guia_docente.css"/>
-    <link rel="stylesheet" href="../../css/MOVILmenu-Profesores_y_alumnos.css">
+    <link rel="stylesheet" href="../../css/header_footerPROA.css"/>
+    <link rel="stylesheet" href="../../css/variablesPROA.css">
+    <link rel="stylesheet" href="../../css/Alumno_Profesor/guia_docente.css"/>
+    <link rel="stylesheet" href="../../css/Alumno_Profesor/MOVILmenu-Profesores_y_alumnos.css">
 </head>
 
 
 <body>
 <!--Header-->
-<?php include '../includes/header_proa.php' ?>
+<?php include '../includes/header_proa_profesor.php' ?>
 
 <!--Introducción de la asignatura-->
 <div class="intro_asig">

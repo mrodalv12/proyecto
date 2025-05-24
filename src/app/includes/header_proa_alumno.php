@@ -11,15 +11,15 @@ include "datos_usuario.php";
     <!-- Menú de navegación -->
     <nav class="cosas_del_header">
         <ul>
-            <li><a href="../Profesor_Alumno/asignaturas.php">Asignaturas</a></li>
-            <li><a href="../Profesor_Alumno/calendario.php">Calendario</a></li>
+            <li><a href="../Profesor_Alumno/asignaturas_Alumno.php">Asignaturas</a></li>
+<!--            <li><a href="../Profesor_Alumno/calendario.php">Calendario</a></li>-->
             <li><a href="../Profesor_Alumno/solicitudes.php">Solicitudes</a></li>
         </ul>
     </nav>
     <nav class="MOVIL_cosas_del_header">
         <ul>
-            <li class="enlaces"><a href="../Profesor_Alumno/asignaturas.php"><img src="../../../img/iconoAsignaturas.png" alt="Asignaruras"></a></li>
-            <li class="enlaces"><a href="../Profesor_Alumno/calendario.php"><img src="../../../img/iconoCalendario.png" alt="Calendario"></a></li>
+            <li class="enlaces"><a href="../Profesor_Alumno/asignaturas_Alumno.php"><img src="../../../img/iconoAsignaturas.png" alt="Asignaruras"></a></li>
+<!--            <li class="enlaces"><a href="../Profesor_Alumno/calendario.php"><img src="../../../img/iconoCalendario.png" alt="Calendario"></a></li>-->
             <li class="enlaces"><a href="../Profesor_Alumno/solicitudes.php"><img src="../../../img/iconoSolicitudes.png" alt="Solicitudes"></a></li>
         </ul>
     </nav>
