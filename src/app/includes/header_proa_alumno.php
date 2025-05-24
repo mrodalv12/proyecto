@@ -1,6 +1,6 @@
 <?php
-include "datos_usuario.php";
-?>
+//include "datos_usuario.php";
+//?>
 <!----------------------------------------------------------------------------------------------------------->
 <header class="encabezado">
     <!-- Logo -->
@@ -13,14 +13,14 @@ include "datos_usuario.php";
         <ul>
             <li><a href="../Profesor_Alumno/asignaturas_Alumno.php">Asignaturas</a></li>
 <!--            <li><a href="../Profesor_Alumno/calendario.php">Calendario</a></li>-->
-            <li><a href="../Profesor_Alumno/solicitudes.php">Solicitudes</a></li>
+            <li><a href="../Profesor_Alumno/solicitudes_alumno.php">Solicitudes</a></li>
         </ul>
     </nav>
     <nav class="MOVIL_cosas_del_header">
         <ul>
             <li class="enlaces"><a href="../Profesor_Alumno/asignaturas_Alumno.php"><img src="../../../img/iconoAsignaturas.png" alt="Asignaruras"></a></li>
 <!--            <li class="enlaces"><a href="../Profesor_Alumno/calendario.php"><img src="../../../img/iconoCalendario.png" alt="Calendario"></a></li>-->
-            <li class="enlaces"><a href="../Profesor_Alumno/solicitudes.php"><img src="../../../img/iconoSolicitudes.png" alt="Solicitudes"></a></li>
+            <li class="enlaces"><a href="../Profesor_Alumno/solicitudes_profesor.php"><img src="../../../img/iconoSolicitudes.png" alt="Solicitudes"></a></li>
         </ul>
     </nav>
     <div class="perfil_notificaciones_pas">

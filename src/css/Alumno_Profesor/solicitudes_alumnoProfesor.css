@@ -10,7 +10,7 @@ body {
     color: #333;
 }
 
-main {
+body>section {
     margin-bottom:5px;
     padding: 20px;
     min-height:78.8dvh;

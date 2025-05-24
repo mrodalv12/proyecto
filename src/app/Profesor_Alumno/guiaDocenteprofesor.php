@@ -21,12 +21,9 @@
 <!--Detalles de la Asignatura-->
 <section class="contenido">
     <div class="intro_asig">
-        <!--Nombre de la asignatura y tareas-->
+        <!--Nombre de la asignatura -->
         <div class="titulo-volver">
             <a href="guiaDocenteprofesor.php"><h1>Física</h1></a>
-            <a href="../Profesor_Alumno/tareasProfesor.php" class="tareas">
-                <button class="boton_tareas">Tareas</button>
-            </a>
         </div>
         <!--Fin de nombre de asignaturas-->
         <!--Descripción de la asignatura-->
@@ -55,6 +52,14 @@
             <li><strong>Duración:</strong> Semestral</li>
         </ul>
         <!--fin de especificaciones de la asignatura-->
+        <div class="botones">
+            <a href="../Profesor_Alumno/tareasProfesor.php" class="tareas">
+                <button class="boton_tareas">Tareas</button>
+            </a>
+            <a href="solicitudes_profesor.php" class="tareas">
+                <button class="boton_solicitudes">Solicitudes</button>
+            </a>
+        </div>
     </div>
 
     <hr> <!--Línea de separación-->
