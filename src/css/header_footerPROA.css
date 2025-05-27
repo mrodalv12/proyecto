@@ -63,11 +63,11 @@ body {
 
 
 /* SUBMENÚ DEL USUARIO -----------------------------------------------------*/
-.perfil_notificaciones_pas .nombre_de_usuario {
+.perfil_notificaciones .nombre_de_usuario {
     position: relative;
 }
 
-.perfil_notificaciones_pas ul {
+.perfil_notificaciones ul {
     display: flex;
     list-style: none;
     align-items: center;
@@ -76,7 +76,7 @@ body {
     gap:20px;
 }
 
-.perfil_notificaciones_pas .nombre_de_usuario ul{
+.perfil_notificaciones .nombre_de_usuario ul{
     display: none;
     position: absolute;
     top: 110%;
@@ -89,7 +89,7 @@ body {
     list-style: none;
 }
 
-.perfil_notificaciones_pas .nombre_de_usuario:hover ul {
+.perfil_notificaciones .nombre_de_usuario:hover ul {
     display: block;
 }
 

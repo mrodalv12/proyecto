@@ -5,19 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fa65155-22b5-4a9b-85ca-5b360c417b0a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/solicitudes_profesor.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/Inicio_Alumno.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/Inicio_Alumno.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/asignaturas_Alumno.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/asignaturas_Alumno.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/agregarTareas.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/agregarTareas.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/calendario.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/calendario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/editar-guia.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/editar-guia.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/editarTareas.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/editarTareas.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/guiaDocenteAlumno.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/guiaDocenteAlumno.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/guiaDocenteprofesor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/guiaDocenteprofesor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/solicitudes.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/tareasAlumno.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/tareasAlumno.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/tareasContenido.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/tareasContenido.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/includes/header_proa_alumno.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/header_proa_alumno.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/includes/header_proa_pas.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/header_proa_pas.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/includes/header_proa_profesor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/header_proa_profesor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/Alumno_Profesor/otro.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/Alumno_Profesor/solicitudes_alumnoProfesor.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Alumno_Profesor/solicitudes_alumnoProfesor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/header_footerPROA.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/header_footerPROA.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,7 +155,8 @@
       <workItem from="1747998173250" duration="63000" />
       <workItem from="1748007561519" duration="310000" />
       <workItem from="1748007878440" duration="10157000" />
-      <workItem from="1748068804656" duration="7779000" />
+      <workItem from="1748068804656" duration="8181000" />
+      <workItem from="1748338641449" duration="1490000" />
     </task>
     <servers />
   </component>

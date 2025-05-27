@@ -17,7 +17,7 @@
 
 
     <!-- Header -->
-    <?php include "../includes/header_proa_profesor.php" ?>
+    <?php include "../includes/header_proa_alumno.php" ?>
 
 
 

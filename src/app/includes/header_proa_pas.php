@@ -14,7 +14,7 @@ include "datos_usuario.php";
                 <li class="enlaces_pas"><a href="../PAS/Solicitudes_PAS.php?esto=boton1pendientes">Solicitudes</a></li>
         </ul>
     </nav>
-    <div class="perfil_notificaciones_pas">
+    <div class="perfil_notificaciones">
         <ul>
             <li class="nombre_de_usuario">
                 <a href="#">User</a>

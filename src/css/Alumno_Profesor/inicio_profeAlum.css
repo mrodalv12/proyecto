@@ -30,7 +30,7 @@ html, body {
 }
 body {
     margin: 0;
-    font-family: "Martel Sans", monospace;
+    font-family: var(--tipografia_de_la_pagina), monospace;
 }
 
 section {
@@ -40,79 +40,79 @@ section {
     flex: 1;
 }
 p{
-    font-size: 0.8em;
+    font-size: var(--tamano_fuente_p);
 }
 h1{
-    font-size: 2.5em;
+    font-size: var(--tamano_fuente_h1);
 }
 /* endregion */
 
 /* region -- saludo --*/
-.saludo{
-    background-image: url("../../../img/saludoPASfondo.jpg");
-    color: whitesmoke;
-    background-size: cover;
-    height: 25vh;
-
-}
 
 .saludo h1 {
-    background-color: #4D4A4A90;
-    padding-left: 20px;
-    height: 25vh;
+    padding-left: var(--espaciado_mediano);
+    height: 15vh;
     align-content: center;
-    border-bottom: 3px solid #4D4A4A;
     align-items: center;
 }
 
 /* endregion */
-
 /* region --eventos--*/
-
-section>div h2{
-    margin: 20px;
-}
 
 .todos_los_eventos{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-    padding: 0 0 10px;
-    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 0 var(--espaciado_pequeno) var(--espaciado_superpequeno);
 }
 .dia_de_la_semana{
-    background-color: lightgray;
-    width: 250px;
-    height: 150px;
-    border-radius: 10px;
-    border: 1px solid black;
+    border-radius: var(--border_radius_general);
+    border: var(--borde_fino_azul);
     text-align: center;
-    padding: 20px;
-    margin: 10px;
-    transition: background-color 0.5s ease;
-    transform: scale(1);
+    display: flex;
+    flex-direction: column;
+    height: 65vh;
+    margin: var(--espaciado_superpequeno);
+    flex: 1 1 0;
+    align-content: space-between;
+    transition: background-color 0.5s ease; /*para el hover*/
+    transform: scale(1); /*para el hover*/
 }
 .dia_de_la_semana:hover{
-    background-color: #D0D3E8;
+    background-color: var(--color_hover_azul);
     align-self: center;
     transform: scale(1.03);
+}
+.dia_de_la_semana>div.dia{
+    background-color: var(--color_proa);
+    padding: var(--espaciado_pequeno) var(--espaciado_superpequeno);
+    border-radius: var(--border_radius_general) var(--border_radius_general) 0 0;
+    p{
+        color: var(--color_blancoProa);
+    }
 
 }
 .dia_de_la_semana ol{
-    list-style: circle;
-    padding: 20px 0 0;
+    padding: var(--espaciado_superpequeno) 0;
+    list-style: none;
     text-align: left;
 }
 .dia_de_la_semana ol li{
-    margin: 5px;
+    margin: var(--espaciado_superpequeno);
+    background-color: var(--color_proa2);
+    border-radius: var(--border_radius_general);
+    padding: var(--espaciado_pequeno);
 }
 .dia_de_la_semana ol li a{
     text-decoration: none;
 }
-.dia_de_la_semana p#no_hay_datos{
+.dia_de_la_semana div#no_hay_datos{
+    flex: 1;
+    display: flex;
     justify-content: center;
-    margin-top: 30px;
+    align-items: center;
+    padding: var(--espaciado_superpequeno);
 }
 
 

@@ -20,7 +20,7 @@
 <header>
     <?php include "../includes/header_proa_profesor.php" ?>
 </header>
-
+<!-- fin de Header -->
 
 <main>
     <div class="container">
@@ -63,6 +63,6 @@
 <footer>
     <?php include "../includes/footer_proa.php" ?>
 </footer>
-
+<!-- fin de Footer -->
 <script src="../../js/editarTarea.js"></script>
 </html>

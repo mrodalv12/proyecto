@@ -22,6 +22,7 @@ include "../includes/datos_usuario.php";
 <body>
 <!--Header-->
 <?php include '../includes/header_proa_profesor.php' ?>
+<!--fin de Header-->
 
 <!--Formulario de edición-->
 <main class="contenido">
@@ -95,5 +96,6 @@ include "../includes/datos_usuario.php";
     <?php include '../includes/footer_proa.php' ?>
 </footer>
 <!--Fin del footer-->
+
 <script src="../../js/editar_guia.js"></script>
 </body>

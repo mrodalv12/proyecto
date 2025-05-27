@@ -16,6 +16,7 @@
 <header>
 <?php include "../includes/header_proa_alumno.php" ?>
 </header>
+<!-- fin del Header -->
 
 <div class="container">
     <h1><a href="tareasAlumno.php">TAREAS</a></h1>

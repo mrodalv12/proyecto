@@ -4,24 +4,22 @@ include "datos_usuario.php";
 <!----------------------------------------------------------------------------------------------------------->
 <header class="encabezado">
     <!-- Logo -->
-        <a href="../Profesor_Alumno/Inicio_profesor.php" class="logo">
-            <img src="../../../img/logoPROA.png" alt="proa" />
-        </a>
+    <a href="../Profesor_Alumno/Inicio_profesor.php" class="logo">
+        <img src="../../../img/logoPROA.png" alt="proa" />
+    </a>
     <!----------------------------------------------------------------------------------------------------------->
     <!-- Menú de navegación -->
     <nav class="cosas_del_header">
         <ul>
-                <li><a href="../Profesor_Alumno/asignaturas_profe.php">Asignaturas</a></li>
-<!--                <li><a href="../Profesor_Alumno/calendario.php">Calendario</a></li>-->
+            <li><a href="../Profesor_Alumno/asignaturas_profe.php">Asignaturas</a></li>
         </ul>
     </nav>
     <nav class="MOVIL_cosas_del_header">
         <ul>
-                <li class="enlaces"><a href="../Profesor_Alumno/asignaturas_profe.php"><img src="../../../img/iconoAsignaturas.png" alt="Asignaruras"></a></li>
-<!--                <li class="enlaces"><a href="../Profesor_Alumno/calendario.php"><img src="../../../img/iconoCalendario.png" alt="Calendario"></a></li>-->
+            <li class="enlaces"><a href="../Profesor_Alumno/asignaturas_profe.php"><img src="../../../img/iconoAsignaturas.png" alt="Asignaruras"></a></li>
         </ul>
     </nav>
-    <div class="perfil_notificaciones_pas">
+    <div class="perfil_notificaciones">
         <ul>
             <li class="nombre_de_usuario">
                 <a href="#">User</a>

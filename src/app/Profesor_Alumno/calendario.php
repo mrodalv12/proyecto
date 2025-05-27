@@ -16,6 +16,10 @@
 
 <!-- Header -->
 <?php include "../includes/header_proa_profesor.php" ?>
+<!--esto tenemos que o eliminar este archivo o hacer dos
+uno para alumno y otro para profesor-->
+<!--fin del header-->
+
 
 <main>
     <div id="container">

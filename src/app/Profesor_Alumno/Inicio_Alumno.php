@@ -28,7 +28,7 @@ include "../includes/datos_usuario.php";
         <h1>
             <?php
             $hola = buenas();
-            echo "¡¡ $hola < usuario > !!";
+            echo "¡$hola < usuario > !";
             ?></h1>
     </div>
     <!--fin del saludo-->
@@ -37,35 +37,45 @@ include "../includes/datos_usuario.php";
         <div class="todos_los_eventos">
             <!--Lunes-->
             <div class="dia_de_la_semana" id="lunes">
-                <h3>Lunes</h3>
+                <div class="dia">
+                    <p>Lunes</p>
+                </div>
                 <ol>
-                    <li><a href="#"><p>tarea1</p></a></li>
+                    <li><a href="#"><p>tarea1: prototipo de ux y noseque mas</p></a></li>
                     <li><a href="#"><p>tarea2</p></a></li>
                 </ol>
             </div>
             <!--Fin de lunes-->
             <!--Martes-->
             <div class="dia_de_la_semana" id="martes">
-                <h3>Martes</h3>
-                <p id="no_hay_datos">no hay<br>datos</p>
+                <div class="dia">
+                    <p>Martes</p>
+                </div>
+                <div id="no_hay_datos"><p>no hay<br>datos</p></div>
             </div>
             <!--Fin de martes-->
             <!--miercoles-->
             <div class="dia_de_la_semana" id="miercoles">
-                <h3>Miercoles</h3>
-                <p id="no_hay_datos">no hay<br>datos</p>
+                <div class="dia">
+                    <p>Miercoles</p>
+                </div>
+                <div id="no_hay_datos"><p>no hay<br>datos</p></div>
             </div>
             <!--fin de miercoles-->
             <!--jueves-->
             <div class="dia_de_la_semana" id="jueves">
-                <h3>jueves</h3>
-                <p id="no_hay_datos">no hay<br>datos</p>
+                <div class="dia">
+                    <p>jueves</p>
+                </div>
+                <div id="no_hay_datos"><p>no hay<br>datos</p></div>
             </div>
             <!--fin de jueves-->
             <!--viernes-->
             <div class="dia_de_la_semana" id="viernes">
-                <h3>Viernes</h3>
-                <p id="no_hay_datos">no hay<br>datos</p>
+                <div class="dia">
+                    <p>Viernes</p>
+                </div>
+                <div id="no_hay_datos"><p>no hay<br>datos</p></div>
             </div>
             <!--fin de viernes-->
         </div>

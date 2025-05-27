@@ -1,11 +1,18 @@
 :root{
+    --color_proa: #7280B9;
+    --color_proa2: #BEC7E8;
+    --color_hover_azul: #D0D3E8;
+    --color_blancoProa: #ffffff;
     --tipografia_de_la_pagina: "Martel Sans";
     --fuente_resaltada: bold;
     --border_radius_general: 10px;
-    --tamano_fuente_h1: 2em;
-    --tamano_fuente_h2: 1.8em;
-    --tamano_fuente_h3: 1.4em;
-    --tamano_fuente_p: 16px;
+    --borde_fino_azul: 1px solid #7280B9;
+    --altura_header: 70px;
+    --altura_footer: 75px;
+    --tamano_fuente_h1: 1.8em;
+    --tamano_fuente_h2: 1.4em;
+    --tamano_fuente_h3: 1.2em;
+    --tamano_fuente_p: 14px;
     --tamano_fuente_h1_MOVIL: 1.5em;
     --tamano_fuente_h2_MOVIL: 1.3em;
     --tamano_fuente_p_MOVIL: 14px;

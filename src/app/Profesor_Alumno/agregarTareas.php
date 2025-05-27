@@ -18,7 +18,7 @@
 
 <!-- Header -->
 <?php include "../includes/header_proa_profesor.php" ?>
-
+<!-- fin del Header -->
 
 <main>
     <div class="container">
@@ -60,6 +60,7 @@
 
 <!-- Footer -->
 <?php include "../includes/footer_proa.php" ?>
+<!-- fin del footer  -->
 
 <script src="../../js/agregarTareas.js"></script>
 </html>

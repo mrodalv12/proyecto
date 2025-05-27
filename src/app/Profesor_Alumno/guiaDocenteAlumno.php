@@ -17,6 +17,7 @@
 <body>
 <!--Header-->
 <?php include '../includes/header_proa_alumno.php' ?>
+<!--fin de Header-->
 
 <!--Detalles de la Asignatura-->
 <section class="contenido">
