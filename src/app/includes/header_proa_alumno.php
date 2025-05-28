@@ -1,6 +1,6 @@
 <?php
-include "datos_usuario.php";
-?>
+session_start();
+//?>
 <!----------------------------------------------------------------------------------------------------------->
 <header class="encabezado">
     <!-- Logo -->
@@ -12,24 +12,24 @@ include "datos_usuario.php";
     <nav class="cosas_del_header">
         <ul>
             <li><a href="../Profesor_Alumno/asignaturas_Alumno.php">Asignaturas</a></li>
-            <li><a href="../Profesor_Alumno/solicitudes_alumno.php">Solicitudes</a></li>
+            <!--            <li><a href="../Profesor_Alumno/calendario.php">Calendario</a></li>-->
         </ul>
     </nav>
     <nav class="MOVIL_cosas_del_header">
         <ul>
             <li class="enlaces"><a href="../Profesor_Alumno/asignaturas_Alumno.php"><img src="../../../img/iconoAsignaturas.png" alt="Asignaruras"></a></li>
-            <li class="enlaces"><a href="../Profesor_Alumno/solicitudes_alumno.php"><img src="../../../img/iconoSolicitudes.png" alt="Solicitudes"></a></li>
+            <!--            <li class="enlaces"><a href="../Profesor_Alumno/calendario.php"><img src="../../../img/iconoCalendario.png" alt="Calendario"></a></li>-->
         </ul>
     </nav>
-    <div class="perfil_notificaciones">
+    <div class="perfil_notificaciones_pas">
         <ul>
             <li class="nombre_de_usuario">
-                <a href="#">User</a>
+                <a href="#"><?php echo htmlspecialchars($_SESSION['usuario_proa']['Nombre']); ?></a>
                 <ul>
-                    <li>usuario</li>
-                    <li>correo</li>
-                    <li>rol</li>
-                    <li><a href="#">Cerrar sesión</a></li>
+                    <li><?php echo htmlspecialchars($_SESSION['usuario_proa']['Nombre']); ?></li>
+                    <li><?php echo htmlspecialchars($_SESSION['usuario_proa']['Correo']); ?></li>
+                    <li><?php echo htmlspecialchars($_SESSION['usuario_proa']['Rol']); ?></li>
+                    <li><a href="../includes/cerrarSesion.php">Cerrar sesión</a></li>
                 </ul>
             </li>
             <li><a href="#"><img src="../../../img/iconoCampana.png" alt="campanita" class="notificaciones"/></a></li>
@@ -39,3 +39,4 @@ include "datos_usuario.php";
     <!----------------------------------------------------------------------------------------------------------->
 </header>
 <!----------------------------------------------------------------------------------------------------------->
+<!------>

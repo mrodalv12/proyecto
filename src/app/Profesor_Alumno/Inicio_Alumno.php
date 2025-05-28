@@ -13,7 +13,6 @@ include "../includes/datos_usuario.php";
     <link rel="stylesheet" href="../../css/variablesPROA.css">
     <link rel="stylesheet" href="../../css/Alumno_Profesor/inicio_profeAlum.css">
     <link rel="stylesheet" href="../../css/header_footerPROA.css">
-    <link rel="stylesheet" href="../../css/Alumno_Profesor/MOVILmenu-Profesores_y_alumnos.css">
 </head>
 <body>
 <!--este es el header-->
@@ -91,4 +90,3 @@ include "../includes/datos_usuario.php";
 
 </body>
 </html>
-

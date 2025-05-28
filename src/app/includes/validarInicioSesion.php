@@ -1,79 +1,58 @@
 <?php
 session_start();
-require_once '../includes/MySQL.inc';  // Ajusta ruta si es necesario
+require_once '../includes/MySQL.inc';
 
-if (!isset($conn)) die();
+if (!isset($conn)) die('Error de conexión a la base de datos.');
 
-// Validar que se reciban datos del formulario
-if (!isset($_POST['rol'], $_POST['correo'], $_POST['contraseña']) ||
-    empty(trim($_POST['rol'])) || empty(trim($_POST['correo'])) || empty(trim($_POST['contraseña']))) {
+// Validar que se reciban todos los datos del formulario
+if (
+    !isset($_POST['correo'], $_POST['contraseña']) ||
+    empty(trim($_POST['correo'])) ||
+    empty(trim($_POST['contraseña']))
+) {
     $_SESSION['error'] = 'campos_vacios';
-    header('Location: ../InicioSesionProa.php');
+    header('Location: ../../InicioSesionProa.php');
     exit();
 }
 
-$rol = trim($_POST['rol']);
 $correo = trim($_POST['correo']);
 $password = trim($_POST['contraseña']);
 
-// Validar que el rol sea válido
-$roles_validos = ['pas', 'profesor', 'alumno'];
-if (!in_array($rol, $roles_validos)) {
-    $_SESSION['error'] = 'rol_invalido';
-    header('Location: ../InicioSesionProa.php');
-    exit();
-}
-
-// Primero obtenemos el id_cliente del usuario a partir del correo y rol
-$stmt = $conn->prepare("SELECT id_cliente, Contraseña FROM usuarios_proa WHERE Correo = ? AND rol = ?");
-$stmt->bind_param("ss", $correo, $rol);
+// Consulta todos los datos del usuario por correo
+$stmt = $conn->prepare("SELECT * FROM usuarios_proa WHERE Correo = ?");
+$stmt->bind_param("s", $correo);
 $stmt->execute();
-$stmt->store_result();
+$result = $stmt->get_result();
 
-if ($stmt->num_rows === 0) {
-    // No existe usuario con ese correo y rol
+if ($result->num_rows === 0) {
     $_SESSION['error'] = 'usuario_no_encontrado';
     $stmt->close();
-    header('Location: ../InicioSesionProa.php');
+    header('Location: ../../InicioSesionProa.php');
     exit();
 }
 
-$stmt->bind_result($idCliente, $hashed_password);
-$stmt->fetch();
+$usuario = $result->fetch_assoc();
 
-// Aquí asumimos que la contraseña en la base de datos está hasheada con SHA256 o como tú uses
+// Comparar el hash de la contraseña introducida con el almacenado
 $hash_input = hash('sha256', $password);
 
-if ($hash_input !== $hashed_password) {
+if ($hash_input !== $usuario['Contraseña']) {
     $_SESSION['error'] = 'contrasena_incorrecta';
     $stmt->close();
-    header('Location: /proyecto/InicioSesionProa.php');
+    header('Location: ../../InicioSesionProa.php');
     exit();
 }
 
-// Guardar datos en sesión, puedes guardar idCliente, correo, rol, etc.
-$_SESSION['usuario_proa'] = [
-    'id_cliente' => $idCliente,
-    'correo' => $correo,
-    'rol' => $rol
-];
+// Autenticación correcta: guardar todos los datos del usuario en la sesión
+$_SESSION['usuario_proa'] = $usuario;
 
 $stmt->close();
 
-// Redirigir según el rol
-switch ($rol) {
-    case 'pas':
-        header('Location: ../PROA/Inicio_PAS.php');
-        break;
-    case 'profesor':
-        header('Location: ../PROA/tareasContenidoProfesor.php');
-        break;
-    case 'alumno':
-        header('Location: ../PROA/tareasProfesor.php');
-        break;
-    default:
-        // Por si acaso
-        header('Location: ../InicioSesionProa.php');
-        break;
+// Redirección tras login exitoso
+if ($usuario['Rol'] === 'Profesor') {
+    header('Location: ../Profesor_Alumno/Inicio_Profesor.php');
+} else {
+    header('Location: ../Profesor_Alumno/Inicio_Alumno.php');
 }
 exit();
+?>

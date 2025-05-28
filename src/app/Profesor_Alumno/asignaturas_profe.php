@@ -1,104 +1,84 @@
-<?php
-include "../includes/funciones_inicio.php";
-include "../includes/datos_usuario.php";
-?>
+<?php require 'asignaturas_controlador.php'; ?>
 <!doctype html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PROA</title>
+    <title>PROA - Asignaturas</title>
     <link rel="stylesheet" href="../../css/Alumno_Profesor/asignaturas.css">
     <link rel="stylesheet" href="../../css/header_footerPROA.css">
     <link rel="stylesheet" href="../../css/variablesPROA.css">
-    <link rel="stylesheet" href="../../css/Alumno_Profesor/MOVILmenu-Profesores_y_alumnos.css">
-
 </head>
 <body>
-<!--encabezado-->
-<?php include "../includes/header_proa_profesor.php" ?>
-<!--fin del encabezado-->
+
+<?php include "../includes/header_proa_profesor.php"; ?>
 
 <section class="contenido">
-    <!--parte de mas arriba-->
     <div class="parte_de_arriba">
-    <!--titulo-->
-    <h1>Asignaturas</h1>
-    <!--fin de titulo-->
-    <!--buscador-->
-        <div>
-            <form class="buscador">
-                <button type="submit"><img src="../../../img/iconoBuscar.png" alt="lupa"></button>
-                <input type="search" placeholder="Nombre de la asignatura...">
-                <button type="reset"><img src="../../../img/iconoborrarX.svg" alt="X"></button>
-            </form>
-        </div>
-    <!--fin de buscador-->
+        <h1>Asignaturas</h1>
+
+        <!-- Buscador -->
+        <form class="buscador" method="GET">
+            <button type="submit"><img src="../../../img/iconoBuscar.png" alt="Buscar"></button>
+            <input type="search" name="busqueda" placeholder="Nombre de la asignatura..." value="<?= htmlspecialchars($busqueda) ?>">
+            <button type="reset" onclick="window.location.href='<?= $_SERVER['PHP_SELF'] ?>'"><img src="../../../img/iconoborrarX.svg" alt="Borrar"></button>
+        </form>
     </div>
-    <!--fin de parte de mas arriba-->
-    <!--filtros y tabla-->
+
     <div class="parte_de_abajo">
-        <!--filtros-->
+        <!-- Filtros -->
         <aside>
-            <img src="#" alt="imagen_filtrar">
-            <h2>Filtrar</h2>
-            <!--filtro por curso-->
-            <div class="curso">
-                <h3>Curso:</h3>
-                <ul>
-                    <li><label><input type="checkbox" name="curso" value="1">1º</label></li>
-                    <li><label><input type="checkbox" name="curso" value="2">2º</label></li>
-                    <li><label><input type="checkbox" name="curso" value="3">3º</label></li>
-                    <li><label><input type="checkbox" name="curso" value="4">4º</label></li>
-                </ul>
+            <div>
+                <img src="../../../img/iconofiltrar.svg" alt="imagen_filtrar">
+                <h2>Filtrar</h2>
             </div>
-            <!--fin de filtro por curso-->
-            <!--filtro por semestre-->
-            <div class="semestre">
-                <h3>Semestre:</h3>
-                <ul>
-                    <li><label><input type="checkbox" name="curso" value="a">A</label></li>
-                    <li><label><input type="checkbox" name="curso" value="b">B</label></li>
-                </ul>
-            </div>
-            <!--fin de filtro por semestre-->
+            <form method="GET">
+                <!-- Filtro por curso -->
+                <div class="curso">
+                    <h3>Curso:</h3>
+                    <ul>
+                        <?php for ($i = 1; $i <= 4; $i++): ?>
+                            <li><label>
+                                    <input type="checkbox" name="curso[]" value="<?= $i ?>" <?= in_array((string)$i, $cursos) ? 'checked' : '' ?>><?= $i ?>º
+                                </label></li>
+                        <?php endfor; ?>
+                    </ul>
+                </div>
+
+                <!-- Filtro por semestre -->
+                <div class="semestre">
+                    <h3>Semestre:</h3>
+                    <ul>
+                        <?php foreach (['A', 'B'] as $sem): ?>
+                            <li><label>
+                                    <input type="checkbox" name="semestre[]" value="<?= $sem ?>" <?= in_array($sem, $semestres) ? 'checked' : '' ?>><?= $sem ?>
+                                </label></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+
+                <input type="hidden" name="busqueda" value="<?= htmlspecialchars($busqueda) ?>">
+                <button type="submit">Aplicar Filtros</button>
+            </form>
         </aside>
-        <!--fin de filtros-->
-        <!--tabla de asignaturas-->
+
+        <!-- Tabla de asignaturas -->
         <main>
             <table>
                 <tr>
-                    <th class="nom_column">Nombre</th>
-                    <th class="curs_column">Curso</th>
-                    <th class="semes_column">Semestre</th>
+                    <th class="nom_column"><p>Nombre</p></th>
+                    <th class="curs_column"><p>Curso</p></th>
+                    <th class="semes_column"><p>Semestre</p></th>
                 </tr>
-                <tr>
-                    <td class="nom_column"><a href="guiaDocenteprofesor.php">asignatura</a></td>
-                    <td class="curs_column">1</td>
-                    <td class="semes_column">B</td>
-                </tr>
-                <tr>
-                    <td class="nom_column"><a href="guiaDocenteprofesor.php">asignatura</a></td>
-                    <td class="curs_column">1</td>
-                    <td class="semes_column">B</td>
-                </tr>
-                <tr>
-                    <td class="nom_column"><a href="guiaDocenteprofesor.php">asignatura</a></td>
-                    <td class="curs_column">1</td>
-                    <td class="semes_column">B</td>
-                </tr>
-                <tr>
-                    <td class="nom_column"><a href="guiaDocenteprofesor.php">asignatura</a></td>
-                    <td class="curs_column">1</td>
-                    <td class="semes_column">B</td>
-                </tr>
+
+                <?= $tablaAsignaturas ?>
+
             </table>
         </main>
     </div>
 </section>
-<!--footer-->
-<?php include "../includes/footer_proa.php" ?>
-<!--fin del footer-->
+
+<?php include "../includes/footer_proa.php"; ?>
 <script src="../../js/asignaturas.js"></script>
 </body>
 </html>

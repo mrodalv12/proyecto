@@ -30,27 +30,28 @@ html, body {
 }
 body {
     margin: 0;
-    font-family: var(--tipografia_de_la_pagina), monospace;
+    font-family: "Martel Sans", monospace;
 }
 
-section {
+main {
     display: flex;
-    flex-direction: column;
     align-content: space-between;
     flex: 1;
 }
+
 p{
     font-size: var(--tamano_fuente_p);
 }
 h1{
     font-size: var(--tamano_fuente_h1);
 }
+
 /* endregion */
 
 /* region -- saludo --*/
 
 .saludo h1 {
-    padding-left: var(--espaciado_mediano);
+    padding: var(--espaciado_mediano) var(--espaciado_mediano);
     height: 15vh;
     align-content: center;
     align-items: center;
@@ -60,6 +61,7 @@ h1{
 /* region --eventos--*/
 
 .todos_los_eventos{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -76,14 +78,8 @@ h1{
     margin: var(--espaciado_superpequeno);
     flex: 1 1 0;
     align-content: space-between;
-    transition: background-color 0.5s ease; /*para el hover*/
-    transform: scale(1); /*para el hover*/
 }
-.dia_de_la_semana:hover{
-    background-color: var(--color_hover_azul);
-    align-self: center;
-    transform: scale(1.03);
-}
+
 .dia_de_la_semana>div.dia{
     background-color: var(--color_proa);
     padding: var(--espaciado_pequeno) var(--espaciado_superpequeno);
@@ -97,12 +93,20 @@ h1{
     padding: var(--espaciado_superpequeno) 0;
     list-style: none;
     text-align: left;
+    overflow-y: scroll;
 }
 .dia_de_la_semana ol li{
     margin: var(--espaciado_superpequeno);
     background-color: var(--color_proa2);
     border-radius: var(--border_radius_general);
     padding: var(--espaciado_pequeno);
+    transition: background-color 0.5s ease; /*para el hover*/
+    transform: scale(1); /*para el hover*/
+}
+.dia_de_la_semana ol li:hover{
+    background-color: var(--color_hover_azul);
+    align-self: center;
+    transform: scale(1.02);
 }
 .dia_de_la_semana ol li a{
     text-decoration: none;
@@ -118,24 +122,36 @@ h1{
 
 /* endregion */
 /* region --telefono--*/
-@media (min-width:1080px) {
-    #finde{
-        width: 70%;
-    }
-}
 @media (max-width: 785px) {
-    .dia_de_la_semana{
-        width: 45%;
+    .contenido {
+        width: 100%;
     }
-}
-@media (max-width: 565px){
-    section.contenido {
-        margin-top:0;
+
+    .saludo {
+        height: 15vh;
     }
-}
-@media (max-width: 430px) {
-    .dia_de_la_semana{
+
+    .todos_los_eventos {
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dia_de_la_semana {
         width: 90%;
+        height: auto !important; /* <-- Esto sí anula el 65vh */
+        min-height: auto;
+        justify-content: center;
+    }
+
+    .dia_de_la_semana ol {
+        overflow-y: visible !important; /* <-- Esto sí fuerza que se muestre completo */
+    }
+}
+@media (max-width: 550px) {
+    .saludo {
+        height: 20vh;
     }
 }
 
