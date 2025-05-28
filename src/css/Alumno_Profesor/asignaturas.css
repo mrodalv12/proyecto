@@ -61,6 +61,11 @@ h3{
     display: flex;
     justify-content: space-between;
 }
+
+.parte_de_arriba .buscador input[type="search"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
 .parte_de_arriba .buscador button {
     background: none;
     border: none;
@@ -188,10 +193,11 @@ h3{
     }
 
     .parte_de_arriba form {
-        width: 100% !important;
+        width: 85vw;
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin-top: var(--espaciado_mediano);
         gap: var(--espaciado_superpequeno); /* o el que uses */
     }
 
@@ -207,7 +213,7 @@ h3{
         display: none;
     }
     .parte_de_abajo aside form>button{
-        margin-top: var(--espaciado_pequeno);
+        margin-top: var(--espaciado_superpequeno);
         margin-left: 0;
     }
 

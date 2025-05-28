@@ -28,7 +28,7 @@
     <div class="parte_de_abajo">
         <!-- Filtros -->
         <aside>
-            <div>
+            <div class="titulo_filtrar">
                 <img src="../../../img/iconofiltrar.svg" alt="imagen_filtrar">
                 <h2>Filtrar</h2>
             </div>
@@ -39,7 +39,7 @@
                     <ul>
                         <?php for ($i = 1; $i <= 4; $i++): ?>
                             <li><label>
-                                    <input type="checkbox" name="curso[]" value="<?= $i ?>" <?= in_array((string)$i, $cursos) ? 'checked' : '' ?>><?= $i ?>º
+                                    <input type="checkbox" name="curso[]" value="<?= $i ?>" <?= in_array((string)$i, $cursos) ? 'checked' : '' ?>><?= $i ?>
                                 </label></li>
                         <?php endfor; ?>
                     </ul>
@@ -56,6 +56,25 @@
                         <?php endforeach; ?>
                     </ul>
                 </div>
+                <!--esto es para el filtro en modo telefono-->
+                <div class="filtros-responsive">
+                    <label for="curso-select">Curso:</label>
+                    <select name="curso[]" id="curso-select" required>
+                        <option value="" selected>Curso</option>
+                        <?php for ($i = 1; $i <= 4; $i++): ?>
+                            <option value=" <?= $i ?>" <?= in_array((string)$i, $cursos) ? 'checked' : '' ?>><?= $i ?></option>
+                        <?php endfor; ?>
+                    </select>
+
+                    <label for="semestre-select">Semestre:</label>
+                    <select name="semestre[]" id="semestre-select" required>
+                        <option value="" selected>Semestre</option>
+                        <?php foreach (['A', 'B'] as $sem): ?>
+                            <option value="<?= $sem ?>" <?= in_array($sem, $semestres) ? 'checked' : '' ?>><?= $sem ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
+                <!--fin del filtro en modo telefono-->
 
                 <input type="hidden" name="busqueda" value="<?= htmlspecialchars($busqueda) ?>">
                 <button type="submit">Aplicar Filtros</button>
