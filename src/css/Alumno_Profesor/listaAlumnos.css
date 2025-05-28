@@ -24,91 +24,90 @@ img, video, svg { height: auto; max-width: 100%; }
 
 a { color: inherit; }
 /* endregion */
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* region --- GENERAL --- */
 html, body {
     margin: 0;
     display: flex;
     flex-direction: column;
-
-    background-color: #fff;
-    color: #333;
 }
-
-body{
+body *{
     margin: 0;
-    font-family: "Martel Sans", sans-serif;
+    font-family: var(--tipografia_de_la_pagina), monospace;
 }
+h1 {
+    font-size: var(--tamano_fuente_h1);
+}
+h2{
+    font-size: var(--tamano_fuente_h2);
+}
+h3{
+    font-size: var(--tamano_fuente_h3);
+}
+/* endregion */
 
 main {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra horizontalmente los elementos hijos */
+    align-items: center;
     flex: 1;
-    padding: 2rem;
+    padding: var(--espaciado_mediano);
 }
 
 .tablaAlumnos{
     text-align: center;
     width: 100%;
     max-width: 1500px;
-    margin-top: 4rem;
+    margin-top: var(--espaciado_pequeno);
 }
 
 .tablaAlumnos h1 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--espaciado_superpequeno);
 }
 
 .tablaAlumnos h2 {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: var(--espaciado_grande);
+}
+
+table tr td{
+    font-size: var(--tamano_fuente_p);
+}
+
+.tablaAlumnos h1,
+.tablaAlumnos h2{
+    text-align: left;
+    color: var(--color_proa_3);
 }
 
 table {
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
-    border-radius: 10px;
+    border-radius: var(--border_radius_general);
     border-collapse: separate;
     border-spacing: 0;
-    border: 2px solid #ccc;
+    border: var(--borde_fino_negro);
     overflow: hidden;
 }
 th, td {
-    border: 2px solid #ccc;
-    padding: 1rem;
+    border: var(--borde_fino_negro);
+    padding: var(--espaciado_pequeno);
     text-align: center;
 }
 
 th {
-    background-color: #f5cfd3;
-    padding: 1rem;
+    background-color: var(--color_proa2);
+    padding: var(--espaciado_pequeno);
+    color: var(--color_proa_3);
 }
 
 td {
-    padding: 1rem;
-    border-bottom: 1px solid #ccc;
+    padding: var(--espaciado_pequeno);
+    border-bottom: var(--borde_fino_negro);
 }
-
+.tarea-entregada{
+    color: var(--color_proa_3);
+}
 .no-entregado {
-    color: red;
+    color: black;
 }
 
-.tablaAlumnos a{
-    text-decoration: none;
-}
-
-.footer {
-    background-color: #2b2b2b;
-    color: #ccc;
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
-}

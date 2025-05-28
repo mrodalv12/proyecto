@@ -44,11 +44,9 @@ include './mostrarProfesorGuiaDocente.php';
 <section class="contenido">
     <div class="intro_asig">
         <!--Nombre de la asignatura -->
-        <div class="titulo-volver">
+        <div class="titulo-volver normal">
             <h1><?= htmlspecialchars($asignatura['Nombre']) ?></h1>
-            <a href="../Profesor_Alumno/tareasAlumno.php" class="tareas">
-                <button class="boton_tareas">Tareas</button>
-            </a>
+            <a href="../Profesor_Alumno/tareasAlumno.php" class="tareas boton_tareas normal">Tareas</a>
         </div>
 
         <!--Descripción de la asignatura-->
@@ -64,7 +62,9 @@ include './mostrarProfesorGuiaDocente.php';
             <li><strong>Cuatrimestre:</strong> <?= htmlspecialchars($asignatura['Cuatrimestre']) ?></li>
         </ul>
         <!--fin de especificaciones de la asignatura-->
-
+        <div class="titulo-volver movil">
+            <a href="../Profesor_Alumno/tareasProfesor.php" class="tareas boton_tareas movil">Tareas</a>
+        </div>
     </div>
 
     <hr> <!--Línea de separación-->

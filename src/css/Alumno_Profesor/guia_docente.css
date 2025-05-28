@@ -1,7 +1,6 @@
-
-
-/*Importación de la tipografía Martel Sans*/
+/* region Importación de tipografia*/
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Space+Mono&display=swap');
+/* endregion */
 /* region --- RESET --- */
 * { margin: 0; padding: 0; }
 *, *::before, *::after { box-sizing: border-box; }
@@ -26,11 +25,10 @@ img, video, svg { height: auto; max-width: 100%; }
 
 a { color: inherit; }
 /* endregion */
-
+/* region --GENERAL--*/
 section.contenido {
     flex: 1;
 }
-
 
 html, body {
     margin: 0;
@@ -39,123 +37,111 @@ html, body {
 }
 body {
     margin: 0;
-    font-family: "Martel Sans", monospace;
+    font-family: var(--tipografia_de_la_pagina), monospace;
 }
 
-main {
-    flex: 1;
-    padding: 10px 20px;
-}
 p{
-    font-size: 0.8em;
+    font-size: var(--tamano_fuente_p);
 }
 h1{
-    font-size: 2.7em;
+    font-size: var(--tamano_fuente_h1);
+}
+h2{
+    font-size: var(--tamano_fuente_h2);
+}
+h3{
+    font-size: var(--tamano_fuente_h3);
 }
 
 html {
     scroll-behavior: smooth;
 }
+/* endregion */
 
-
-
-.titulo-volver {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
-}
-
-.titulo-volver h1 {
-    font-size: 30px;
-    margin: 0;
-}
-
-.volver img {
-    width: 24px;
-    height: auto;
-}
-
-
+/* region -- DETALLES DE ASIGNATURA-- */
 .intro_asig {
-    margin: 50px 170px;
-    gap: 50px;
-    justify-content: space-between;
-}
-
-.intro_asig > p {
-    margin-bottom: 50px;
-}
-
-.desplegables {
-    margin:  50px 170px;
-
-}
-
-h1{
-    margin-top: 50px;
-    font-size: 30px;
-}
-
-h2 {
-    font-size: 20px;
-}
-
-p {
-    font-size: 15px;
-    max-width: 1500px;
-}
-
-button {
-    color: white;
-    border: none;
-    border-radius: 10px;
-    width: 150px;
-    height: 50px;
-    padding: 10px;
-    font-size: 18px;
-}
-
-.boton_tareas {
-    background-color: #C46575;
-}
-
-.botones {
-    display: flex;
-    justify-content: space-between;
-}
-
-.especificaciones_asign {
-    font-size: 14px;
-
-    list-style: none; /* Quita los puntitos */
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    gap: 10px; /* Espacio entre elementos */
-    padding: 0;
-    margin-bottom: 50px;
-}
-
-/*Desplegables de acordeón*/
-details {
     display: flex;
     flex-direction: column;
+    margin: var(--espaciado_pequeno) var(--espaciado_grande) var(--espaciado_pequeno);
+}
+
+/* este es el titulo de la asignatura*/
+.titulo-volver {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: var(--espaciado_pequeno) 0 var(--espaciado_mediano);
+}
+
+.titulo-volver a {
+    margin: 0;
+    text-decoration: none;
+}
+.titulo-volver.movil {
+    display: none;
+}
+.titulo-volver .boton_tareas.movil{
+    display: none;
+}
+
+.intro_asig ul{
+    margin-top: var(--espaciado_mediano);
+}
+
+/* esto es el boton de tareas */
+
+.tareas.boton_tareas{
+    display: flex;
     justify-content: center;
-    border: 1px solid #aaa;
-    border-radius: 4px;
-    margin: 10px 0;
-    padding: 10px;
-    width: 99%;
+    align-items: center;
+    background-color: var(--color_proa);
+    color: var(--color_blancoProa);
+    border: none;
+    border-radius: var(--border_radius_general);
+    width: var(--tamano_w_botones);
+    height: var(--tamano_h_botones);
+    font-size: var(--tamano_fuente_botones);
+}
+
+
+.desplegables {
+    margin:  var(--espaciado_mediano) var(--espaciado_grande);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.especificaciones_asign {
+    font-size: var(--tamano_fuente_p);
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: var(--espaciado_pequeno); /* Espacio entre elementos */
+    padding: 0;
+    margin-bottom: var(--espaciado_pequeno);
+}
+
+/* endregion */
+/* region --Desplegables de acordeón--*/
+details {
+    border: var(--borde_fino_azul);
+    border-radius: var(--border_radius_general);
+    margin: var(--espaciado_superpequeno) 0;
+    padding: var(--espaciado_superpequeno);
+    width: 80%;
+    max-width: 700px;
 }
 
 summary {
-    font-weight: bold;
+    font-weight: var(--fuente_resaltada);
     cursor: pointer;
-    padding: 5px;
+    padding: var(--espaciado_superpequeno);
 }
 
 details[open] {
-    padding-left: 20px;
+    padding-left: var(--espaciado_pequeno);
 }
 
 /*Profesores*/
@@ -168,121 +154,28 @@ details[open] {
 
 .profesor {
     display: flex;
-    padding: 10px;
-    border-radius: 5px;
-    width: 400px;
-    margin-right: 20px;
+    padding: var(--espaciado_superpequeno);
+    border-radius: var(--border_radius_general);
+    flex: 1 1 0;
+    margin-right: var(--espaciado_pequeno);
     align-items: center;
 }
 .profesor img {
-    border-radius: 5px;
-    margin-right: 20px;
+    border-radius: var(--border_radius_general);
+    margin-right: var(--espaciado_pequeno);
 }
 
-/*Evaluación*/
-.contenedor_evaluacion {
-    padding: 20px;
+/* endregion */
+
+/* region  Para móvil */
+@media(min-width: 1200px){
+    section.contenido{
+        max-width: 1200px;
+        margin: auto;
+    }
 }
 
-/*Bibliografía*/
-.contenedor_bibliografia {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px; /* Espacio entre las dos columnas */
-    padding: 20px;
-}
-
-.contenedor_bibliografia > div {
-    width: 48%;
-}
-
-.bibliografia-titulo {
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-
-ul {
-    padding-left: 20px; /* Añade sangría en las listas */
-}
-
-li {
-    font-size: 15px;
-}
-
-.bibliografia {
-    list-style: none;
-    padding-left: 0;
-}
-
-.bibliografia li {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.icono-biblio::before {
-    content: "📚"; /* Libro disponible */
-    margin-right: 8px;
-}
-
-.icono-no-biblio::before {
-    content: "❌"; /* Libro NO disponible */
-    margin-right: 8px;
-    color: red;
-}
-
-
-/*Unidades didácticas*/
-
-.table {
-    margin-top: 20px;
-}
-
-th, td {
-    padding: 10px 30px;
-    border-radius: 5px;
-}
-
-th {
-    font-weight: bold;
-    background-color: #4D4A4A;
-    color: white;
-}
-
-td {
-    font-size: 14px;
-    border: 1px solid #4D4A4A;
-    /*padding: 8px; */
-}
-
-/*Las columnas de teoría y práctica centradas*/
-table td:nth-child(2),
-table td:nth-child(3) {
-    text-align: center;
-}
-
-
-/*SOLO PROFESOR*/
-.titulo-guia {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* esto centra horizontalmente */
-    gap: 10px;
-}
-
-textarea{
-    font-family: "Martel Sans";
-}
-
-
-.icono-editar {
-    font-size: 20px;
-    text-decoration: none;
-}
-
-
-/* Para móvil */
-@media (max-width: 768px) {
+@media (max-width: 720px) {
     .contenido{
         margin-top: 0;
         padding-top: 0;
@@ -290,38 +183,27 @@ textarea{
 
     .especificaciones_asign {
         grid-template-columns: 1fr; /* solo una columna */
-        gap: 20px;
+        gap: var(--espaciado_pequeno);
     }
 
     .intro_asig {
-        margin: 30px 20px;
-        gap: 30px;
+        margin: var(--espaciado_mediano) var(--espaciado_pequeno);;
+        gap: var(--espaciado_pequeno);
+        padding: 0 var(--espaciado_mediano);
+    }
+    .titulo-volver{
+        margin: var(--espaciado_pequeno) var(--espaciado_superpequeno);
+        justify-content: space-between;
+        padding: 0;
+
     }
 
     .desplegables {
-        margin: 30px 20px;
-    }
-
-    .contenedor_bibliografia {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .contenedor_bibliografia > div {
-        width: 100%;
+        margin: var(--espaciado_mediano) var(--espaciado_pequeno);
     }
 
     /* Ajustes en botones */
-    button {
-        width: 100%;
-        font-size: 16px;
-        padding: 15px 0;
-    }
 
-    .botones {
-        flex-direction: column;
-        gap: 10px;
-    }
 
     /* Desplegables de acordeón */
     details {
@@ -330,7 +212,7 @@ textarea{
 
     /* Profesores */
     .contenedor_profesores {
-        gap: 40px;
+        gap: var(--espaciado_mediano);
     }
 
     .profesor {
@@ -339,34 +221,34 @@ textarea{
         align-items: flex-start;
     }
 
-    /* Tabla en unidades didácticas */
-    .table {
-        width: 100%;
-    }
-
-    th, td {
-        padding: 8px 12px;
-        font-size: 12px;
-    }
-
-    .titulo-volver img {
-        width: 18px;  /* Ajusta el tamaño del logo a 18px */
-        height: auto;
-    }
-
     details {
         width: 100%;
-        margin: 10px auto;
-        padding: 10px;
+        margin: var(--espaciado_superpequeno) auto;
+        padding: var(--espaciado_superpequeno);
         box-sizing: border-box;
     }
 
     .desplegables {
-        margin: 20px;
+        margin: var(--espaciado_pequeno);
     }
 
-    .boton_tareas {
-        width: 100px;
+
+}
+@media(max-width: 500px) {
+    .titulo-volver .boton_tareas.normal {
+        display: none;
+    }
+    .titulo-volver.movil{
+        display: flex;
+        justify-content: center;
+    }
+    .titulo-volver .boton_tareas.movil{
+        display: flex;
+        width: 90%;
+        font-size: var(--tamano_fuente_botones);
+        justify-content: center;
     }
 
 }
+
+/* endregion */

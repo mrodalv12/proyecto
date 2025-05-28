@@ -1,4 +1,5 @@
 :root{
+    --color_proa_3: #4D5FAA;
     --color_proa: #7280B9;
     --color_proa2: #BEC7E8;
     --color_hover_azul: #D0D3E8;
@@ -7,6 +8,7 @@
     --fuente_resaltada: bold;
     --border_radius_general: 10px;
     --borde_fino_azul: 1px solid var(--color_proa);
+    --borde_fino_negro: 0.1px solid #a3a3a3;
     --borde_fino_blanco: 1px solid var(--color_blancoProa);
     --altura_header: 70px;
     --altura_footer: 75px;
@@ -18,6 +20,9 @@
     --tamano_fuente_h2_MOVIL: 1.3em;
     --tamano_fuente_p_MOVIL: 14px;
     --tamano_fuente_p_pequeño: 12px;
+    --tamano_fuente_botones: 18px;
+    --tamano_w_botones: 150px;
+    --tamano_h_botones: 50px;
     --tamano_iconos: 15px;
     --espaciado_grande: 64px;
     --espaciado_mediano: 32px;

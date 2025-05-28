@@ -14,16 +14,22 @@
 <!-- Header -->
 <?php include "../includes/header_proa_profesor.php" ?>
 <?php include "ver_tareas.php" ?>
+<!-- fin del Header -->
+
+<!-- contenido del main -->
 <main>
     <section class="tasks-profesor">
+        <!-- titulos de la pagina -->
         <h1>TAREAS</h1>
         <h2>
             <a href="#">
                 <?php echo htmlspecialchars($_SESSION['asignatura']['Nombre'] ?? 'Asignatura'); ?>
             </a>
         </h2>
-
+        <!-- fin de titulos de la pagina -->
+        <!-- inicio de tablas -->
         <table>
+            <!-- fila de titulos de la tabla -->
             <thead>
             <tr>
                 <th>Título</th>
@@ -32,6 +38,7 @@
                 <th>Editar</th>
             </tr>
             </thead>
+            <!-- fin de fila de titulos de la tabla -->
             <tbody>
             <?php if ($result->num_rows > 0): ?>
                 <?php while ($tarea = $result->fetch_assoc()): ?>
@@ -60,6 +67,7 @@
             <?php endif; ?>
             </tbody>
         </table>
+        <!-- fin de tablas -->
 
         <!-- Botón para agregar una nueva tarea -->
         <button class="add-btn"><a href="agregarTareas.php">Agregar Tarea</a></button>
@@ -68,6 +76,7 @@
 
 <!-- Footer -->
 <?php include "../includes/footer_proa.php" ?>
+<!-- fin de footer -->
 
 <script src="../../js/tareasProfesor.js"></script>
 

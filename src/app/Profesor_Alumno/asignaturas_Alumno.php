@@ -93,9 +93,9 @@ require 'asignaturas_controladorAlumno.php';
         <main>
             <table>
                 <tr>
-                    <th class="nom_column">Nombre</th>
-                    <th class="curs_column">Curso</th>
-                    <th class="semes_column">Semestre</th>
+                    <th class="nom_column"><p>Nombre</p></th>
+                    <th class="curs_column"><p>Curso</p></th>
+                    <th class="semes_column"><p>Semestre</p></th>
                 </tr>
                 <?= $tablaAsignaturas ?>
             </table>

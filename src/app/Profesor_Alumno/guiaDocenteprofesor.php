@@ -37,16 +37,23 @@ include './mostrarProfesorGuiaDocente.php';
     <link rel="stylesheet" href="../../css/Alumno_Profesor/guia_docente.css"/>
 </head>
 <body>
+
+<!--este es el header-->
 <?php include '../includes/header_proa_profesor.php' ?>
 <?php $_SESSION['asignatura'] = $asignatura?>
+<!--fin del header-->
+
+<!--este es el contenido-->
 <section class="contenido">
+    <!--este es la descripcion de la asignatura-->
     <div class="intro_asig">
-        <div class="titulo-volver">
-            <h1><?= htmlspecialchars($asignatura['Nombre']) ?></h1>
-            <a href="../Profesor_Alumno/tareasProfesor.php" class="tareas">
-                <button class="boton_tareas">Tareas</button>
-            </a>
+        <!--este es el titulo-->
+        <div class="titulo-volver normal">
+            <a href="asignaturas_profe.php"><h1><?= htmlspecialchars($asignatura['Nombre']) ?></h1></a>
+            <a href="../Profesor_Alumno/tareasProfesor.php" class="tareas boton_tareas normal">Tareas</a>
         </div>
+        <!--fin del titulo-->
+        <!--este es el inicio de las especificaciones de la materia-->
         <p><?= nl2br(htmlspecialchars($asignatura['Descripción'])) ?></p>
         <ul class="especificaciones_asign">
             <li><strong>Centro:</strong> <?= htmlspecialchars($asignatura['Centro']) ?></li>
@@ -56,10 +63,15 @@ include './mostrarProfesorGuiaDocente.php';
             <li><strong>Créditos:</strong> <?= htmlspecialchars($asignatura['Créditos']) ?></li>
             <li><strong>Cuatrimestre:</strong> <?= htmlspecialchars($asignatura['Cuatrimestre']) ?></li>
         </ul>
+        <!--fin de especificaciones de la materia-->
+        <div class="titulo-volver movil">
+            <a href="../Profesor_Alumno/tareasProfesor.php" class="tareas boton_tareas movil">Tareas</a>
+        </div>
     </div>
+    <!--fin de descripcion de la asignatura-->
 
-    <hr>
-
+    <!--esta es una linea de separacion--> <hr> <!--fin de linea de separacion-->
+    <!--este es el inicio de los desplegables-->
     <div class="desplegables" id="guia_docente">
         <div class="titulo-guia">
             <h2 class="titulo-guia">Guía Docente</h2>
@@ -80,10 +92,14 @@ include './mostrarProfesorGuiaDocente.php';
             </div>
         </details>
     </div>
+    <!--esta es el fin de los desplegables-->
 </section>
+<!--este es el fin del contenido-->
 
+<!--este es el inicio del footer-->
 <footer role="contentinfo">
     <?php include '../includes/footer_proa.php' ?>
 </footer>
+<!--fin del footer-->
 </body>
 </html>
