@@ -80,7 +80,8 @@ h3{
 .parte_de_arriba .buscador input {
     border: none;
     background: none;
-    width: 90%;
+    width: 100%;
+    padding-right: var(--espaciado_superpequeno);
 }
 /* endregion */
 
@@ -133,7 +134,14 @@ h3{
     background: var(--color_proa);
     font-size: var(--tamano_fuente_p);
     border: none;
+    transition: background-color 0.5s ease;
+    transform: scale(1);
 }
+.parte_de_abajo aside form>button:hover{
+    background-color: var(--color_proa_3);
+    transform: scale(1.03);
+}
+
 
 .parte_de_abajo main{
     flex: 1.5;

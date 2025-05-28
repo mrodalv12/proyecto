@@ -49,100 +49,82 @@ h3{
 main {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra horizontalmente los elementos hijos */
+    align-items: center;
     flex: 1;
-    padding: 2rem;
+    padding: var(--espaciado_pequeno);
 }
 
 .tasks-profesor{
-    text-align: center;
+    text-align: left;
     width: 100%;
-    max-width: 1500px;
-    margin-top: 4rem;
-}
-
-.tasks-profesor a{
-    text-decoration: none;
+    max-width: 1000px;
+    margin-top: var(--espaciado_mediano);
 }
 
 h1 {
-    font-size: 28px;
-    margin-bottom: 5px;
+    margin-bottom: var(--espaciado_superpequeno);
+    color: var(--color_proa);
 }
 
 h2 {
-    font-size: 20px;
-    color: #555;
-    margin-bottom: 20px;
+    margin-bottom: var(--espaciado_pequeno);
     text-transform: uppercase;
+    color: var(--color_proa);
 }
 
 
 .add-btn {
     display: flex;
-    justify-self: flex-end;
-    background-color: #e56c75;
-    border: 2px solid #8a8787;
-    padding: 10px 40px;
-    margin-top: 20px;
+    margin-left: auto;
+    align-items: center; /* CENTRA verticalmente */
+    justify-content: center; /* CENTRA horizontalmente */
+    background-color: var(--color_proa);
+    border: var(--borde_fino_negro);
+    padding: var(--espaciado_superpequeno) var(--espaciado_mediano);
+    margin-top: var(--espaciado_pequeno);
     cursor: pointer;
-    border-radius: 25px;
+    color: var(--color_blancoProa);
+    border-radius: var(--border_radius_general);
+    height: var(--tamano_h_botones);
+    transition: background-color 0.5s ease;
+    transform: scale(1);
 
-
+}
+.add-btn a{
+    text-decoration: none;
 }
 
 .add-btn:hover {
-    background-color: #a34c52;
+    background-color: var(--color_proa_3);
+    transform: scale(1.03);
 }
 
 table {
     width: 100%;
-    max-width: 1500px;
+    max-width: 1000px;
     margin: 0 auto;
-
-    border-radius: 10px;
+    border-radius: var(--border_radius_general);
     border-collapse: separate;
     border-spacing: 0;
-    border: 2px solid #ccc;
+    border: var(--borde_fino_negro);
     overflow: hidden;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
 th, td {
-    border: 2px solid #ddd;
-    padding: 15px;
+    border: var(--borde_fino_negro);
+    padding: var(--espaciado_pequeno);
     text-align: center;
 }
 
-.resaltada {
-    border: 2px solid #ffffff;
-    background-color: #e56c75;
-}
-
-.resaltadaEditar{
-    border: 2px solid #ffffff;
-    background-color: #cc4b5c;
-}
-
-.resaltada a{
-    color: white;
-    text-decoration: none;
-}
-
+.resaltada a,
 .resaltadaEditar a{
-    color: white;
-    text-decoration: none;
-}
-
-.resaltadaEliminar{
-    width: 100px;
-}
-.resaltadaEliminar img{
-    width: 40%;
+    color: var(--color_proa_3);
 }
 
 thead {
-    background-color: #f2f2f2;
+    background-color: var(--color_proa2);
+    color: var(--color_proa_3);
 }
 
 /* popupEliminar.css */

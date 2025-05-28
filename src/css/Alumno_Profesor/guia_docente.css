@@ -102,8 +102,13 @@ html {
     width: var(--tamano_w_botones);
     height: var(--tamano_h_botones);
     font-size: var(--tamano_fuente_botones);
+    transition: background-color 0.5s ease;
+    transform: scale(1);
 }
-
+.tareas.boton_tareas:hover{
+    background-color: var(--color_proa_3);
+    transform: scale(1.03);
+}
 
 .desplegables {
     margin:  var(--espaciado_mediano) var(--espaciado_grande);

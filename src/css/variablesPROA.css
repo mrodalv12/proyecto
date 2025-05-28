@@ -4,6 +4,10 @@
     --color_proa2: #BEC7E8;
     --color_hover_azul: #D0D3E8;
     --color_blancoProa: #ffffff;
+    --color_error_fondo: #f8d7da;
+    --color_error_texto: #721c24;
+    --color_exito_fondo: #d4edda;
+    --color_exito_texto: #155724;
     --tipografia_de_la_pagina: "Martel Sans";
     --fuente_resaltada: bold;
     --border_radius_general: 10px;

@@ -13,7 +13,7 @@
 <body>
 
 <!-- Header -->
-<?php include "../includes/header_proa_profesor.php" ?>
+<?php include "../includes/header_proa_alumno.php" ?>
 <?php include "ver_tareas_alumno.php"; ?>
 
 <main>

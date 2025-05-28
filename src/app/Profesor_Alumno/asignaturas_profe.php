@@ -21,7 +21,6 @@
         <form class="buscador" method="GET">
             <button type="submit"><img src="../../../img/iconoBuscar.png" alt="Buscar"></button>
             <input type="search" name="busqueda" placeholder="Nombre de la asignatura..." value="<?= htmlspecialchars($busqueda) ?>">
-            <button type="reset" onclick="window.location.href='<?= $_SERVER['PHP_SELF'] ?>'"><img src="../../../img/iconoborrarX.svg" alt="Borrar"></button>
         </form>
     </div>
 

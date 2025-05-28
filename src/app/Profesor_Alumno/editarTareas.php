@@ -47,13 +47,15 @@
             <label>Instrucciones:
                 <textarea name="instrucciones" required><?php echo htmlspecialchars($tarea['Instrucciones']); ?></textarea>
             </label>
+            <div class="botones">
+                <button type="submit" class="botonbueno">Guardar cambios</button>
 
-            <button type="submit">Guardar cambios</button>
+                <!-- Botón eliminar -->
+                <button type="submit" name="eliminar" value="1" class="botonmalo" onclick="return confirm('¿Estás seguro de que quieres eliminar esta tarea?');">
+                    Eliminar tarea
+                </button>
+            </div>
 
-            <!-- Botón eliminar -->
-            <button type="submit" name="eliminar" value="1" onclick="return confirm('¿Estás seguro de que quieres eliminar esta tarea?');">
-                Eliminar tarea
-            </button>
         </form>
 
     </div>

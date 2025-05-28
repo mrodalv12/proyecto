@@ -48,67 +48,63 @@ h3{
 main {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra horizontalmente los elementos hijos */
+    align-items: center;
     flex: 1;
-    padding: 2rem;
+    padding: var(--espaciado_mediano);
 }
 
 .tasks-container {
-    text-align: center;
+    text-align: left;
     width: 100%;
-    max-width: 1500px;
-    margin-top: 4rem;
+    max-width: 1000px;
+    margin-top: var(--espaciado_mediano);
 }
 
 .tasks-container h1 {
-    font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    color: var(--color_proa);
 }
 
 .tasks-container h2 {
-    font-size: 1.2rem;
-    color: #000;
     margin-bottom: 2rem;
+    color: var(--color_proa);
 }
 
 .task-link {
     text-decoration: none;
-    color: inherit; /* mantiene el color del texto del <td> */
-    font-weight: bold;
+    font-weight: var(--fuente_resaltada);
 }
 
 .task-link:hover {
-    text-decoration: underline; /* opcional: subrayado al pasar el cursor */
+    text-decoration: underline;
 }
 
 table {
     width: 100%;
-    max-width: 1500px;
+    max-width: 1000px;
     margin: 0 auto;
-    border-radius: 10px;
+    border-radius: var(--border_radius_general);
     border-collapse: separate;
     border-spacing: 0;
-    border: 2px solid #ccc;
+    border: var(--borde_fino_negro);
     overflow: hidden;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
-thead tr {
-    background-color: #f3cdd1;
-}
-
 th, td {
-    border: 2px solid #a6a6a6;
-    padding: 1rem;
+    border: var(--borde_fino_negro);
+    padding: var(--espaciado_pequeno);
     text-align: center;
 }
 
-footer {
-    background-color: #2f2f2f;
-    color: #ccc;
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
+.resaltada a,
+.resaltadaEditar a{
+    color: var(--color_proa_3);
+}
+
+thead {
+    background-color: var(--color_proa2);
+    color: var(--color_proa_3);
 }
 
 @media(max-width: 565px){

@@ -49,49 +49,70 @@ h3{
 main {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra horizontalmente los elementos hijos */
+    align-items: center;
     flex: 1;
-    padding: 2rem;
-}
-
-.container {
-    background: #fff;
-    padding: 2em;
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: var(--espaciado_pequeno);
 }
 
 h2, h3 {
-    text-align: center;
+    text-align: left;
+    color: var(--color_proa);
 }
 
 label {
     display: block;
-    margin-top: 1em;
+    margin-top: var(--espaciado_pequeno);
 }
 
 input, textarea, select, button {
     width: 100%;
-    padding: 0.5em;
-    margin-top: 0.5em;
+    padding: var(--espaciado_superpequeno);
+    margin-top: var(--espaciado_superpequeno);
+}
+.container form div button,.container form div a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--tamano_w_botones);
+    height: var(--tamano_h_botones);
+    border-radius: var(--border_radius_general);
+    font-size: var(--tamano_fuente_p);
+    border: none;
 }
 
+.container form .masbotones{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.container form .masbotones button{
+    background: #76AE77;
+    margin: 0 var(--espaciado_superpequeno);
+    color: var(--color_blancoProa);
+}
+.container form .masbotones a{
+    background: #D07F8B;
+    color: var(--color_blancoProa);
+    text-decoration: none;
+}
+
+
 .alert {
-    margin-top: 1em;
-    padding: 1em;
+    margin-top: var(--espaciado_pequeno);
+    padding: var(--espaciado_pequeno);
     display: none;
 }
 
 .success {
-    background-color: #d4edda;
-    color: #155724;
+    background-color: var(--color_exito_fondo);
+    color: var(--color_exito_texto);
     display: block;
 }
 
 .error {
-    background-color: #f8d7da;
-    color: #721c24;
+    background-color: var(--color_error_fondo);
+    color: var(--color_error_texto);
     display: block;
 }

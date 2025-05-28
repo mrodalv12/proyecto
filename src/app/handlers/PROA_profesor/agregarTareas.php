@@ -1,37 +1,38 @@
 <?php
+require_once '../includes/MySQL.inc'; // Conexión a la base de datos
 
-// Conexión a la base de datos
-$host = "localhost";       // Cambia si tu host es diferente
-$usuario = "root";         // Cambia según tu usuario de base de datos
-$contrasena = "";          // Cambia según tu contraseña
-$base_datos = "test";  // Reemplaza con el nombre real de tu BD
-
-$conn = new mysqli($host, $usuario, $contrasena, $base_datos);
-
-// Verifica la conexión
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
+// Comprobar conexión
+if (!isset($conn)) {
+    die('Error de conexión a la base de datos.');
 }
 
-// Recibir y decodificar datos JSON
-$datos = json_decode(file_get_contents("php://input"), true);
-
-// Validación básica
-if (!isset($datos['titulo']) || !isset($datos['fecha']) ) {
-    echo json_encode(["mensaje" => "Faltan campos obligatorios."]);
-    exit;
+// Comprobar que la asignatura está en sesión
+if (!isset($_SESSION['asignatura']['id_asignatura'])) {
+    die('No se ha seleccionado ninguna asignatura.');
 }
 
-// Preparar y ejecutar la consulta
-$stmt = $conn->prepare("INSERT INTO tareas (Titulo, fecha_cierre, Instrucciones, Descripcion) VALUES (?, ?, ?, ?)");
-$stmt->bind_param("ssss", $datos['titulo'], $datos['fecha'], $datos['instrucciones'], $datos['descripcion']);
+$id_asignatura = $_SESSION['asignatura']['id_asignatura'];
+$mensaje = '';
 
-if ($stmt->execute()) {
-    echo json_encode(["mensaje" => "Tarea guardada con éxito."]);
-} else {
-    echo json_encode(["mensaje" => "Error al guardar la tarea."]);
+// Procesar el formulario cuando se envía
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $titulo = trim($_POST['titulo']);
+    $fecha = $_POST['fecha'];
+    $descripcion = trim($_POST['descripcion']);
+    $instrucciones = trim($_POST['instrucciones']);
+
+    if ($titulo && $fecha && $descripcion && $instrucciones) {
+        $stmt = $conn->prepare("INSERT INTO tareas (Titulo, fecha_cierre, Descripcion, Instrucciones, id_asignatura) VALUES (?, ?, ?, ?, ?)");
+        $stmt->bind_param("ssssi", $titulo, $fecha, $descripcion, $instrucciones, $id_asignatura);
+
+        if ($stmt->execute()) {
+        header("Location: ../Profesor_Alumno/agregarTareas.php?tarea=ok");
+        exit;
+        } else {
+            $mensaje = "Error al agregar la tarea.";
+        }
+    } else {
+        $mensaje = "Todos los campos son obligatorios.";
+    }
 }
-
-$stmt->close();
-$conn->close();
 ?>

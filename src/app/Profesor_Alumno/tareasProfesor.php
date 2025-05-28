@@ -70,7 +70,7 @@
         <!-- fin de tablas -->
 
         <!-- Botón para agregar una nueva tarea -->
-        <button class="add-btn"><a href="agregarTareas.php">Agregar Tarea</a></button>
+        <button class="add-btn"><a href="agregarTareas.php">Nueva Tarea</a></button>
     </section>
 </main>
 

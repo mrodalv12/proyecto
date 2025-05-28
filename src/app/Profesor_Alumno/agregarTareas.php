@@ -40,8 +40,10 @@
             <label>Instrucciones:
                 <textarea name="instrucciones" required></textarea>
             </label>
-
-            <button type="submit">Agregar tarea</button>
+            <div class="masbotones">
+                <button type="submit">Agregar tarea</button>
+                <a href="tareasProfesor.php">Cancelar</a>
+            </div>
         </form>
     </div>
 </main>
