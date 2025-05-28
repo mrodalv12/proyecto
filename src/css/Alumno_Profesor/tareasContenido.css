@@ -24,14 +24,28 @@ img, video, svg { height: auto; max-width: 100%; }
 
 a { color: inherit; }
 /* endregion */
+/* region --- GENERAL --- */
+html, body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+body *{
+    margin: 0;
+    font-family: var(--tipografia_de_la_pagina), monospace;
+}
+h1 {
+    font-size: var(--tamano_fuente_h1);
+}
+h2{
+    font-size: var(--tamano_fuente_h2);
+}
+h3{
+    font-size: var(--tamano_fuente_h3);
+}
+/* endregion */
 
 /* ========== General ========== */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
 
 .container {
     max-width: 800px;

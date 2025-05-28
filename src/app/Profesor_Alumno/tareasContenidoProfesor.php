@@ -21,10 +21,10 @@
     <h2><?= htmlspecialchars($tarea['Titulo']) ?></h2>
 
     <div class="info-box">
-        <p>Fecha de entrega: <?= htmlspecialchars($tarea['fecha_cierre']) ?></p>
-        <p>Descripción de la tarea: <?= nl2br(htmlspecialchars($tarea['Descripcion'])) ?></p>
-        <p>Estado: No entregado</p>
-        <p>Instrucciones:<?= nl2br(htmlspecialchars($tarea['Instrucciones'])) ?></p>
+        <p><span>Fecha de entrega:</span> <?= htmlspecialchars($tarea['fecha_cierre']) ?></p>
+        <p><span>Descripción de la tarea:</span>  <?= nl2br(htmlspecialchars($tarea['Descripcion'])) ?></p>
+        <p><span>Estado: No entregado</span> </p>
+        <p><span>Instrucciones:</span> <?= nl2br(htmlspecialchars($tarea['Instrucciones'])) ?></p>
     </div>
 
 
@@ -45,7 +45,8 @@
     <p id="mensaje" class="mensaje"></p>
 </main>
 
+<!--es es un footer-->
 <?php include "../includes/footer_proa.php" ?>
-
+<!--fin del footer-->
 </body>
 </html>
