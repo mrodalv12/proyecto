@@ -1,7 +1,5 @@
 <?php
 include "../includes/funciones_inicio.php";
-include "../includes/datos_usuario.php";
-
 ?>
 <!----------------------------------------------------------------------------------------------------------->
 <!doctype html>

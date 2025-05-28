@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../../css/header_footerPROA.css" />
     <link rel="stylesheet" href="../../css/variablesPROA.css">
     <link rel="stylesheet" href="../../css/Alumno_Profesor/listaAlumnos.css" />
-    <link rel="stylesheet" href="../../css/Alumno_Profesor/MOVILmenu-Profesores_y_alumnos.css">
 </head>
 <body>
 
@@ -18,49 +17,49 @@
 <main>
     <section class="tablaAlumnos">
         <h1><a href="tareasProfesor.php">TAREAS</a></h1>
-    <h2>Tareas entregadas</h2>
+        <h2>Tareas entregadas</h2>
 
-    <table>
-        <thead>
-        <tr>
-            <th>Alumnos</th>
-            <th>Calificación</th>
-            <th>Estado</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>Alumno 1</td>
-            <td>7/10</td>
-            <td class="tarea-entregada"><a href="tareasContenidoProfesor.php">Entregado</a></td>
-        </tr>
-        <tr>
-            <td>Alumno 2</td>
-            <td>-/10</td>
-            <td class="no-entregado">No entregado</td>
-        </tr>
-        <tr>
-            <td>Alumno 3</td>
-            <td>-/10</td>
-            <td class="tarea-entregada"><a href="tareasContenidoProfesor.php">Entregado</a></td>
-        </tr>
-        <tr>
-            <td>Alumno 4</td>
-            <td>-/10</td>
-            <td class="tarea-entregada"><a href="tareasContenidoProfesor.php">Entregado</a></td>
-        </tr>
-        <tr>
-            <td>Alumno 5</td>
-            <td>-/10</td>
-            <td class="tarea-entregada"><a href="tareasContenidoProfesor.php">Entregado</a></td>
-        </tr>
-        <tr>
-            <td>Alumno 6</td>
-            <td>-/10</td>
-            <td class="tarea-entregada"><a href="tareasContenidoProfesor.php">Entregado</a></td>
-        </tr>
-        </tbody>
-    </table>
+        <table>
+            <thead>
+            <tr>
+                <th>Alumnos</th>
+                <th>Calificación</th>
+                <th>Estado</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Alumno 1</td>
+                <td>7/10</td>
+                <td class="tarea-entregada"><a href="tareasContenidoProfesor.php">Entregado</a></td>
+            </tr>
+            <tr>
+                <td>Alumno 2</td>
+                <td>-/10</td>
+                <td class="no-entregado">No entregado</td>
+            </tr>
+            <tr>
+                <td>Alumno 3</td>
+                <td>-/10</td>
+                <td class="tarea-entregada"><a href="tareasContenidoProfesor.php">Entregado</a></td>
+            </tr>
+            <tr>
+                <td>Alumno 4</td>
+                <td>-/10</td>
+                <td class="tarea-entregada"><a href="tareasContenidoProfesor.php">Entregado</a></td>
+            </tr>
+            <tr>
+                <td>Alumno 5</td>
+                <td>-/10</td>
+                <td class="tarea-entregada"><a href="tareasContenidoProfesor.php">Entregado</a></td>
+            </tr>
+            <tr>
+                <td>Alumno 6</td>
+                <td>-/10</td>
+                <td class="tarea-entregada"><a href="tareasContenidoProfesor.php">Entregado</a></td>
+            </tr>
+            </tbody>
+        </table>
     </section>
 </main>
 

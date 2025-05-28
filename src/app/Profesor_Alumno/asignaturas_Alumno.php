@@ -36,9 +36,10 @@ require 'asignaturas_controladorAlumno.php';
     <div class="parte_de_abajo">
         <!--filtros-->
         <aside>
-            <img src="#" alt="imagen_filtrar">
-            <h2>Filtrar</h2>
-
+            <div class="titulo_filtrar">
+                <img src="../../../img/iconofiltrar.svg" alt="imagen_filtrar">
+                <h2>Filtrar</h2>
+            </div>
             <form method="GET">
                 <!-- Filtro por curso -->
                 <div class="curso">
@@ -63,6 +64,25 @@ require 'asignaturas_controladorAlumno.php';
                         <?php endforeach; ?>
                     </ul>
                 </div>
+                <!--esto es para el filtro en modo telefono-->
+                <div class="filtros-responsive">
+                    <label for="curso-select">Curso:</label>
+                    <select name="curso[]" id="curso-select" required>
+                        <option value="" selected>Curso</option>
+                        <?php for ($i = 1; $i <= 4; $i++): ?>
+                            <option value="<?= $i ?>" <?= in_array((string)$i, $cursos) ? 'selected' : '' ?>><?= $i ?>º</option>
+                        <?php endfor; ?>
+                    </select>
+
+                    <label for="semestre-select">Semestre:</label>
+                    <select name="semestre[]" id="semestre-select" required>
+                        <option value="" selected>Semestre</option>
+                        <?php foreach (['A', 'B'] as $sem): ?>
+                            <option value="<?= $sem ?>" <?= in_array($sem, $semestres) ? 'selected' : '' ?>><?= $sem ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                </div>
+                <!--fin del filtro en modo telefono-->
 
                 <input type="hidden" name="busqueda" value="<?= htmlspecialchars($busqueda) ?>">
                 <button type="submit">Aplicar Filtros</button>

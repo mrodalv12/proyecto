@@ -9,58 +9,43 @@
     <link rel="preload" href="../../css/header_footerPROA.css" as="style" />
     <link rel="stylesheet" href="../../css/header_footerPROA.css" />
     <link rel="stylesheet" href="../../css/variablesPROA.css">
-    <link rel="stylesheet" href="../../css/Alumno_Profesor/MOVILmenu-Profesores_y_alumnos.css" />
     <link rel="stylesheet" href="../../css/Alumno_Profesor/agregarTareas.css" />
-
 <body>
-
-
-
 <!-- Header -->
-<?php include "../includes/header_proa_profesor.php" ?>
-<!-- fin del Header -->
+<?php include "../includes/header_proa_profesor.php"; ?>
+<?php include "../handlers/PROA_profesor/agregarTareas.php"; ?>
 
 <main>
     <div class="container">
         <a href="tareasProfesor.php"><h2>TAREAS</h2></a>
         <h3>Agregar tarea</h3>
 
-        <label>Título:
-            <input type="text" id="titulo">
-        </label>
+        <?php if ($mensaje): ?>
+            <div class="alert"><?= htmlspecialchars($mensaje) ?></div>
+        <?php endif; ?>
 
-        <label>Fecha de entrega:
-            <input type="date" id="fecha">
-        </label>
+        <form method="POST" action="">
+            <label>Título:
+                <input type="text" name="titulo" required>
+            </label>
 
-        <label>Número de reenvíos:
-            <select id="reenvios">
-                <option value="">Seleccione</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-            </select>
-        </label>
+            <label>Fecha de entrega:
+                <input type="date" name="fecha" required>
+            </label>
 
-        <label>Descripción:
-            <textarea id="descripcion"></textarea>
-        </label>
+            <label>Descripción:
+                <textarea name="descripcion" required></textarea>
+            </label>
 
-        <label>Instrucciones:
-            <textarea id="instrucciones"></textarea>
-        </label>
+            <label>Instrucciones:
+                <textarea name="instrucciones" required></textarea>
+            </label>
 
-        <button onclick="agregarTarea()">Agregar tarea</button>
-        <div class="alert" id="mensaje"></div>
+            <button type="submit">Agregar tarea</button>
+        </form>
     </div>
-
-
 </main>
 
+<?php include "../includes/footer_proa.php"; ?>
 </body>
-
-<!-- Footer -->
-<?php include "../includes/footer_proa.php" ?>
-<!-- fin del footer  -->
-
-<script src="../../js/agregarTareas.js"></script>
 </html>

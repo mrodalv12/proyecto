@@ -9,9 +9,7 @@
     <link rel="preload" href="../../css/header_footerPROA.css" as="style" />
     <link rel="stylesheet" href="../../css/header_footerPROA.css" />
     <link rel="stylesheet" href="../../css/variablesPROA.css">
-    <link rel="stylesheet" href="../../css/Alumno_Profesor/MOVILmenu-Profesores_y_alumnos.css" />
     <link rel="stylesheet" href="../../css/Alumno_Profesor/editarTareas.css" />
-
 <body>
 
 
@@ -20,49 +18,50 @@
 <header>
     <?php include "../includes/header_proa_profesor.php" ?>
 </header>
-<!-- fin de Header -->
 
+<?php include "../handlers/PROA_profesor/editarTareas.php" ?>
+<?php include "../handlers/PROA_profesor/eliminarTareas.php" ?>
 <main>
     <div class="container">
         <h2><a href="tareasProfesor.php">TAREAS</a></h2>
         <h3>Editar tarea</h3>
 
-        <label>Título:
-            <input type="text" id="titulo" value="Título tarea 1">
-        </label>
+        <?php if (isset($mensaje)): ?>
+            <div class="alert" style="color: green;"><?php echo $mensaje; ?></div>
+        <?php endif; ?>
 
-        <label>Fecha de entrega:
-            <input type="date" id="fecha" value="2025-06-05">
-        </label>
+        <form method="POST" action="">
+            <input type="hidden" name="id_tarea" value="<?php echo $tarea['id_tarea']; ?>">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" value="<?php echo htmlspecialchars($tarea['Titulo']); ?>" required>
 
-        <label>Número de reenvíos:
-            <select id="reenvios">
-                <option value="">Seleccione</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-            </select>
-        </label>
 
-        <label>Descripción:
-            <textarea id="descripcion">Texto de ejemplo para edición...</textarea>
-        </label>
+            <label>Fecha de entrega: </label>
+            <input type="date" name="fecha" value="<?php echo $tarea['fecha_cierre']; ?>" required>
 
-        <label>Instrucciones:
-            <textarea id="instrucciones">Texto de ejemplo para edición...</textarea>
-        </label>
 
-        <button onclick="guardarCambios()">Guardar cambios</button>
-        <div class="alert" id="mensaje"></div>
+            <label>Descripción:  </label>
+            <textarea name="descripcion" required><?php echo htmlspecialchars($tarea['Descripcion']); ?></textarea>
+
+
+            <label>Instrucciones:
+                <textarea name="instrucciones" required><?php echo htmlspecialchars($tarea['Instrucciones']); ?></textarea>
+            </label>
+
+            <button type="submit">Guardar cambios</button>
+
+            <!-- Botón eliminar -->
+            <button type="submit" name="eliminar" value="1" onclick="return confirm('¿Estás seguro de que quieres eliminar esta tarea?');">
+                Eliminar tarea
+            </button>
+        </form>
+
     </div>
-
 </main>
 
-</body>
-
-<!-- Footer -->
 <footer>
-    <?php include "../includes/footer_proa.php" ?>
+    <?php include "../includes/footer_proa.php"; ?>
 </footer>
-<!-- fin de Footer -->
-<script src="../../js/editarTarea.js"></script>
+
+</body>
 </html>

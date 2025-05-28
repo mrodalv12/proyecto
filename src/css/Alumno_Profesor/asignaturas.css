@@ -96,6 +96,10 @@ h3{
     padding: var(--espaciado_superpequeno);
     margin: 0 var(--espaciado_pequeno) 0 0 ;
 }
+.parte_de_abajo aside .filtros-responsive{
+    display: none;
+}
+
 .parte_de_abajo aside>div>*{
     margin: 0 var(--espaciado_pequeno) var(--espaciado_pequeno) 0;
 }
@@ -119,9 +123,11 @@ h3{
 .parte_de_abajo aside form>button{
     border-radius: var(--border_radius_general);
     padding: var(--espaciado_superpequeno);
-    margin: var(--espaciado_pequeno);
+    margin: var(--espaciado_grande) var(--espaciado_pequeno) var(--espaciado_pequeno) ;
     color: var(--color_blancoProa);
     background: var(--color_proa);
+    font-size: var(--tamano_fuente_p);
+    border: none;
 }
 
 .parte_de_abajo main{
@@ -146,6 +152,7 @@ h3{
 .parte_de_abajo main table td {
     border: var(--borde_fino_azul);
     padding: var(--espaciado_superpequeno);
+    font-size: var(--tamano_fuente_p);
 }
 
 /* Bordes redondeados solo en las esquinas externas */
@@ -162,4 +169,77 @@ h3{
     border-bottom-right-radius: var(--border_radius_general);
 }
 
+/* endregion */
+
+/* region --MEDIA--*/
+
+@media (max-width: 700px) {
+
+    .contenido {
+        width: 100%;
+    }
+
+    .parte_de_arriba {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .parte_de_arriba form {
+        width: 100% !important;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: var(--espaciado_superpequeno); /* o el que uses */
+    }
+
+    .parte_de_arriba .buscador input {
+        width: 100%;
+        flex: 1;
+    }
+    .parte_de_arriba, .parte_de_abajo{
+        flex-direction: column;
+    }
+
+    .parte_de_abajo .titulo_filtrar{
+        display: none;
+    }
+    .parte_de_abajo aside form>button{
+        margin-top: var(--espaciado_pequeno);
+        margin-left: 0;
+    }
+
+
+
+    /*==========================
+        estos son solo filtros
+    ===========================*/
+    aside .curso,
+    aside .semestre {
+        display: none; /* Oculta checkboxes en móviles */
+    }
+
+    .filtros-responsive {
+        display: flex !important; /* Muestra select en móviles */
+    }
+    .filtros-responsive label{
+        display: none;
+    }
+
+    .filtros-responsive select {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .filtros-responsive select {
+        flex: 1 1 100px;
+        margin: 0 5px;
+        border-radius: var(--border_radius_general);
+        padding: var(--espaciado_superpequeno);
+        font-size: var(--tamano_fuente_p);
+    }
+
+}
 /* endregion */
