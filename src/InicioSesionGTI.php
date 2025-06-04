@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php require_once 'app/includes/MySQL.inc'; ?>
+
+!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
@@ -12,7 +14,7 @@
 <body>
 
 <!-- Header -->
-<?php include "app/includes/headerGTI.php" ?>
+<?php include BASE_PATH . "app/includes/" . 'headerGTI.php' ?>
 
 <main class="main-content">
     <div class="login-box">
@@ -35,7 +37,8 @@
 </main>
 
 <!-- Footer -->
-<?php include "app/includes/footerGTI.php" ?>
+<?php include BASE_PATH . 'app/includes/' . 'footerGTI.php' ?>
+<!-- fin del footer -->
 
 </body>
 </html>

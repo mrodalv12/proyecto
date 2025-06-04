@@ -1,3 +1,4 @@
+<?php require_once 'app/includes/MySQL.inc';?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,7 +13,8 @@
 <body>
 
 <!-- Header -->
-<?php include "app/includes/headerGTI.php" ?>
+<?php include BASE_PATH . "app/includes/" . 'headerGTI.php' ?>
+<!--fin del header -->
 
 
   <main class="main-container">
@@ -50,8 +52,8 @@
   </main>
 
   <!-- Footer -->
-  <?php include "app/includes/footerGTI.php" ?>
-
+<?php include BASE_PATH . 'app/includes/' . 'footerGTI.php' ?>
+<!--fin del footer-->
 
 </body>
 </html>

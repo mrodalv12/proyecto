@@ -5,84 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fa65155-22b5-4a9b-85ca-5b360c417b0a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/511ba6f9-93ac-454e-ab78-3d79f6cf2b2e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/511ba6f9-93ac-454e-ab78-3d79f6cf2b2e.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bbdd/estructura.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/phpGrandioso.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/CALENDARIO_MES.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/CALENDARIO_MES.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Contacto.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/Contacto.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Inicio_Registro.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/Inicio_Registro.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Inicio_Sesion_Proa.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/Inicio_Sesion_Proa.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Papelera.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/Papelera.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/Rectangle 92.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/Rectangle 92.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/iconoAsignaturas.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/iconoAsignaturas.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/iconoBandejaHechasMovil.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/iconoBandejaHechasMovil.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/iconoBandejadeEntradaMovil.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/iconoBandejadeEntradaMovil.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/iconoBuscar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/iconoBuscar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/iconoCalendario.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/iconoCalendario.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/iconoCalificaciones.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/iconoCalificaciones.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/iconoCampana.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/iconoCampana.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/iconoDirectorio.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/iconoDirectorio.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/iconoNoHaySolicitudesSeleccionadas.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/iconoNoHaySolicitudesSeleccionadas.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/iconoPapeleraSolicitudesMovil.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/iconoPapeleraSolicitudesMovil.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/iconoPersona.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/iconoPersona.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/iconoSolicitudAceptada.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/iconoSolicitudAceptada.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/iconoSolicitudes.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/iconoSolicitudes.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/iconoSolicitudes_bandejaDeEntrada.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/iconoSolicitudes_bandejaDeEntrada.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/iconoTareas.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/iconoTareas.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/iconoUser.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/iconoUser.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/iconoborrarX.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/iconoborrarX.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/iconofiltrar.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/iconofiltrar.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logoGTI.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/logoGTI.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logoGTIparaGTI.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/logoGTIparaGTI.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logoPROA.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/logoPROA.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/saludoPASfondo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/saludoPASfondo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InicioSesionGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/InicioSesionGTI.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/InicioSesionProa.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/InicioSesionProa.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PROA.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/PROA.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RegistroGTI.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegistroGTI.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/Inicio_Alumno.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/Inicio_Alumno.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/Inicio_profesor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/Inicio_profesor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/agregarTareas.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/agregarTareas.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/asignaturas_Alumno.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/asignaturas_Alumno.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/asignaturas_controlador.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/asignaturas_controlador.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/asignaturas_profe.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/asignaturas_profe.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/editarTareas.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/editarTareas.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/guiaDocenteAlumno.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/guiaDocenteAlumno.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/listaAlumnos.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/listaAlumnos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/tareasAlumno.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/tareasAlumno.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/tareasContenido.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/tareasContenido.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/tareasContenidoProfesor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/tareasContenidoProfesor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/tareasProfesor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/tareasProfesor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Profesor_Alumno/ver_tareas_alumno.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Profesor_Alumno/ver_tareas_alumno.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/handlers/PROA_profesor/agregarTareas.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/handlers/PROA_profesor/agregarTareas.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/handlers/PROA_profesor/editarTareas.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/handlers/PROA_profesor/editarTareas.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/handlers/PROA_profesor/eliminarTareas.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/handlers/PROA_profesor/eliminarTareas.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/handlers/guardarCosultaContacto.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/handlers/guardarCosultaContacto.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/handlers/inicio-sesion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/handlers/inicio-sesion.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/includes/MySQL.inc" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/MySQL.inc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/RegistroGTI.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/footer_proa.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/footer_proa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/header_proa_alumno.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/header_proa_alumno.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/header_proa_profesor.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/header_proa_profesor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/registro.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/registro.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/includes/validarInicioSesion.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/includes/validarInicioSesion.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/Alumno_Profesor/agregarTareas.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Alumno_Profesor/agregarTareas.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/Alumno_Profesor/editarTareas.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Alumno_Profesor/editarTareas.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/Alumno_Profesor/guia_docente.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Alumno_Profesor/guia_docente.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/Alumno_Profesor/inicio_profeAlum.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Alumno_Profesor/inicio_profeAlum.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/Alumno_Profesor/listaAlumnos.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Alumno_Profesor/listaAlumnos.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/Alumno_Profesor/tareasAlumno.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Alumno_Profesor/tareasAlumno.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/Alumno_Profesor/tareasContenido.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Alumno_Profesor/tareasContenido.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/Alumno_Profesor/tareasContenidoProfesor.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Alumno_Profesor/tareasContenidoProfesor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/Alumno_Profesor/tareasProfesor.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/Alumno_Profesor/tareasProfesor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/GTI/Footer_Header_GTI.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/GTI/Footer_Header_GTI.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/GTI/InicioSesion.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/GTI/InicioSesion.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/GTI/LandingPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/GTI/LandingPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/GTI/RegistroGTI.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/GTI/RegistroGTI.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/header_footerPROA.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/header_footerPROA.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/variablesPROA.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/variablesPROA.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/enviarConsultaContacto.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/enviarConsultaContacto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,7 +174,7 @@
       <workItem from="1748852106769" duration="2861000" />
       <workItem from="1748936330090" duration="1306000" />
       <workItem from="1748943794215" duration="10063000" />
-      <workItem from="1749004786649" duration="736000" />
+      <workItem from="1749004786649" duration="8647000" />
     </task>
     <servers />
   </component>

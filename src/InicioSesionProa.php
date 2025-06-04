@@ -1,6 +1,6 @@
 <?php
 session_start();  // Inicia la sesión al comienzo del archivo
-
+require_once 'app/includes/MySQL.inc';
 // Verifica si el usuario está logueado
 $usuario_logueado = isset($_SESSION["usuario_proa"]) && !empty($_SESSION["usuario_proa"]);
 
@@ -20,7 +20,8 @@ $usuario_logueado = isset($_SESSION["usuario_proa"]) && !empty($_SESSION["usuari
 </head>
 <body>
 <!-- Header -->
-<?php include "app/includes/headerGTI.php" ?>
+<?php include BASE_PATH . "app/includes/" . 'headerGTI.php' ?>
+<!--fin del Header-->
 
 <main class="container">
     <section class="image-section">
@@ -46,7 +47,7 @@ $usuario_logueado = isset($_SESSION["usuario_proa"]) && !empty($_SESSION["usuari
 </main>
 
 <!-- Footer -->
-<?php include "app/includes/footerGTI.php" ?>
+<?php include BASE_PATH . 'app/includes/' . 'footerGTI.php' ?>
 <!-- fin del Footer -->
 
 <script src="js/botonMicuenta.js"></script>

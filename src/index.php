@@ -1,5 +1,6 @@
 <?php
 session_start();  // Inicia la sesión al comienzo del archivo
+require_once 'app/includes/MySQL.inc';
 
 // Verifica si el usuario está logueado
 $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
@@ -19,7 +20,7 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
 <body>
 
 <!-- Header -->
-<?php include "./app/includes/headerGTI.php" ?>
+<?php include BASE_PATH . 'app/includes/' . 'headerGTI.php' ?>
 <!-- fin del header -->
 
 
@@ -36,7 +37,7 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
             <p>Bienvenido a tu plataforma. ¡Accede a tus recursos y empieza a aprender!</p>
         <?php else: ?>
             <!-- Contenido para los que no están logueados -->
-            <a href="RegistroGTI.php" class="registro">¡Regístrate para probarla!</a>
+            <a href= "<?php echo BASE_URL . "RegistroGTI.php"?>" class="registro">¡Regístrate para probarla!</a>
         <?php endif; ?>
     </div>
 </section>
@@ -64,7 +65,7 @@ $usuario_logueado = isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"]);
 </main>
 
 <!-- Footer -->
-<?php include "./app/includes/footerGTI.php" ?>
+<?php include BASE_PATH . 'app/includes/' . 'footerGTI.php' ?>
 <!-- fin del footer -->
 
 
