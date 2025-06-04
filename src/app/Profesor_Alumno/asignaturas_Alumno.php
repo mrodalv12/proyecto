@@ -1,6 +1,5 @@
 <?php
 include "../includes/funciones_inicio.php";
-require 'asignaturas_controladorAlumno.php';
 ?>
 <!doctype html>
 <html lang="es">
@@ -15,6 +14,7 @@ require 'asignaturas_controladorAlumno.php';
 <body>
 <!--encabezado-->
 <?php include "../includes/header_proa_alumno.php" ?>
+<?php require 'asignaturas_controladorAlumno.php'; ?>
 <!--fin del encabezado-->
 
 <section class="contenido">

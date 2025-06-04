@@ -17,16 +17,18 @@
 
 <main>
     <section class="tasks-container">
-        <!-- TÃ­tulo de "Tareas" -->
+        <!-- titulo de "Tareas" -->
         <div class="tituloYvolver">
             <h1>Tareas: <?php echo htmlspecialchars($_SESSION['asignatura']['Nombre'] ?? 'Asignatura'); ?></h1>
-            <button class="btn-volver" onclick="window.location.href='guiaDocenteAlumno.php'"><-- Volver</button>
+            <?php $id_asignatura = $_SESSION['asignatura']['id_asignatura'] ?? null; ?>
+            <button class="btn-volver" onclick="window.location.href='guiaDocenteAlumno.php?id_asignatura=<?= $id_asignatura ?>'"><-- Volver</button>
         </div>
 
         <table>
             <thead>
             <tr>
                 <th>Titulo</th>
+                <th>Fecha de inicio</th>
                 <th>Fecha de cierre</th>
             </tr>
             </thead>
@@ -37,6 +39,12 @@
                         <td><a href="tareasContenido.php?id_tarea=<?= $tarea['id_tarea'] ?>" class="task-link">
                                 <?= htmlspecialchars($tarea['Titulo']) ?>
                             </a></td>
+                        <td>
+                            <?php
+                            $fechaInicio = new DateTime($tarea['fecha_inicio']);
+                            echo $fechaInicio->format('j M Y');
+                            ?>
+                        </td>
                         <td><?= date("j M Y", strtotime($tarea['fecha_cierre'])) ?></td> <!-- Sigue usando 'fecha_entrega' como clave -->
                     </tr>
                 <?php endforeach; ?>

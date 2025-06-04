@@ -19,10 +19,7 @@
 <main class="main">
     <!-- Título de "Tareas" -->
     <div class="tituloYvolver">
-        <h1>Tareas:
-            <!--Aquí va el nombre de la asignatura-->
-            < nombreasignatura>
-        </h1>
+        <h1>Tareas: <?php echo htmlspecialchars($_SESSION['asignatura']['Nombre'] ?? 'Asignatura'); ?></h1>
         <button class="btn-volver" onclick="window.location.href='tareasProfesor.php'"><-- Volver</button>
     </div>
 
@@ -32,9 +29,9 @@
     <!-- Contenedor con la información de la tarea -->
     <div class="container">
         <div class="info-box">
-            <p><span><strong>Fecha de entrega:</strong></span> <?= htmlspecialchars($tarea['fecha_cierre']) ?></p>
+            <p><span><strong>Fecha de inicio:</strong></span> <?= htmlspecialchars($tarea['fecha_inicio']) ?></p>
+            <p><span><strong>Fecha final de entrega:</strong></span> <?= htmlspecialchars($tarea['fecha_cierre']) ?></p>
             <p><span><strong>Descripción de la tarea:</strong></span>  <?= nl2br(htmlspecialchars($tarea['Descripcion'])) ?></p>
-            <p><span><strong>No entregado: </strong></span> </p>
             <p><span><strong>Instrucciones:</strong></span> <?= nl2br(htmlspecialchars($tarea['Instrucciones'])) ?></p>
         </div>
     </div>

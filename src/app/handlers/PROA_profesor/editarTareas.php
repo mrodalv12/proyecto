@@ -24,17 +24,17 @@ $id_tarea = intval($_GET['id_tarea']);
 
 // Si el formulario fue enviado (POST), actualizar la tarea
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $titulo = $_POST['titulo'];
-    $fecha = $_POST['fecha'];
-    $descripcion = $_POST['descripcion'];
-    $instrucciones = $_POST['instrucciones'];
+    $titulo = $_POST['Titulo'];
+    $fecha = $_POST['fecha_cierre'];
+    $descripcion = $_POST['Descripcion'];
+    $instrucciones = $_POST['Instrucciones'];
 
     $stmt = $conn->prepare("UPDATE tareas SET Titulo=?, fecha_cierre=?, Descripcion=?, Instrucciones=? WHERE id_tarea=? AND id_asignatura=?");
     $stmt->bind_param("ssssii", $titulo, $fecha, $descripcion, $instrucciones, $id_tarea, $id_asignatura);
     $stmt->execute();
 
     $mensaje = "Cambios guardados correctamente.";
-    $tipoMensaje = "success"; // ✅ Clase CSS para mensaje de éxito
+    $tipoMensaje = "success"; // Clase CSS para mensaje de éxito
 }
 
 // Cargar la tarea desde la base de datos

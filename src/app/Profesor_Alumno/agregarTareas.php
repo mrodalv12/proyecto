@@ -17,8 +17,8 @@
 
 <main>
     <div class="container">
-        <a href="tareasProfesor.php"><h2>TAREAS</h2></a>
-        <h3>Agregar tarea</h3>
+        <a href="tareasProfesor.php"><h1>TAREAS: <?php echo htmlspecialchars($_SESSION['asignatura']['Nombre'] ?? 'Asignatura'); ?></h1></a>
+        <h2>Agregar tarea</h2>
 
         <?php if ($mensaje): ?>
             <div class="alert <?= (isset($_GET['tarea']) && $_GET['tarea'] === 'ok') ? 'success' : 'error' ?>">

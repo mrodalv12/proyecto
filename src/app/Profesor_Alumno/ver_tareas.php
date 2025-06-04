@@ -13,11 +13,21 @@ if (!isset($_SESSION['asignatura']['id_asignatura'])) {
 
 $idAsignatura = intval($_SESSION['asignatura']['id_asignatura']);
 
-// Consulta para obtener todas las tareas de la asignatura
-$sql = "SELECT id_tarea, Titulo, fecha_cierre FROM tareas WHERE id_asignatura = ?";
+// Definir el orden (por defecto A-Z)
+$order = "ASC";
+if (isset($_GET['orden']) && $_GET['orden'] === 'desc') {
+    $order = "DESC";
+}
+
+// Consulta para obtener todas las tareas de la asignatura con orden
+$sql = "SELECT id_tarea, Titulo, fecha_cierre, fecha_inicio 
+        FROM tareas 
+        WHERE id_asignatura = ? 
+        ORDER BY Titulo $order";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param('i', $idAsignatura);
 $stmt->execute();
 $result = $stmt->get_result();
-
 ?>
+
+

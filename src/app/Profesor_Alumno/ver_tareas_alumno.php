@@ -22,7 +22,7 @@ if ($id_asignatura) {
     $stmt->close();
 
     // Obtener tareas asociadas a esa asignatura
-    $stmt = $conn->prepare("SELECT id_tarea, Titulo, fecha_cierre FROM tareas WHERE id_asignatura = ?");
+    $stmt = $conn->prepare("SELECT id_tarea, Titulo, fecha_cierre, fecha_inicio FROM tareas WHERE id_asignatura = ?");
     $stmt->bind_param("i", $id_asignatura);
     $stmt->execute();
     $result = $stmt->get_result();

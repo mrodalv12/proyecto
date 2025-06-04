@@ -1,4 +1,4 @@
-<?php require 'asignaturas_controlador.php'; ?>
+
 <!doctype html>
 <html lang="es">
 <head>
@@ -12,6 +12,7 @@
 <body>
 
 <?php include "../includes/header_proa_profesor.php"; ?>
+<?php require 'asignaturas_controlador.php'; ?>
 
 <section class="contenido">
     <div class="parte_de_arriba">

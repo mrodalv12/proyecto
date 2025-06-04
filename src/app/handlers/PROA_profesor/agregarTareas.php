@@ -23,10 +23,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $fecha = $_POST['fecha'];
     $descripcion = trim($_POST['descripcion']);
     $instrucciones = trim($_POST['instrucciones']);
+    $fecha_inicio = date('Y-m-d H:i:s'); // Fecha actual
+
 
     if ($titulo && $fecha && $descripcion && $instrucciones) {
-        $stmt = $conn->prepare("INSERT INTO tareas (Titulo, fecha_cierre, Descripcion, Instrucciones, id_asignatura) VALUES (?, ?, ?, ?, ?)");
-        $stmt->bind_param("ssssi", $titulo, $fecha, $descripcion, $instrucciones, $id_asignatura);
+        $stmt = $conn->prepare("INSERT INTO tareas (Titulo, fecha_cierre, Descripcion, Instrucciones, id_asignatura, fecha_inicio) VALUES (?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param("ssssss", $titulo, $fecha, $descripcion, $instrucciones, $id_asignatura, $fecha_inicio);
 
         if ($stmt->execute()) {
             header("Location: ../Profesor_Alumno/agregarTareas.php?tarea=ok");

@@ -55,7 +55,7 @@ main {
     padding: var(--espaciado_mediano);
 }
 
-h2, h3 {
+h1, h2 {
     text-align: left;
     color: var(--color_proa);
 }
