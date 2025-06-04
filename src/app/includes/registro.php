@@ -13,14 +13,14 @@ if (
     empty(trim($_POST['confirmarContraseña']))
 ) {
     $_SESSION['error'] = "campos_vacios";
-    header("Location: ./registro.php");
+    header("Location: " . BASE_URL . "registro.php");
     exit();
 }
 
 // Comprobar que las contraseñas coinciden
 if ($_POST['password'] !== $_POST['confirmarContraseña']) {
     $_SESSION['error'] = "contrasenas_diferentes";
-    header("Location: ./registro.php");
+    header("Location: " . BASE_URL . "registro.php");
     exit();
 }
 
@@ -34,7 +34,7 @@ $stmt->store_result();
 if ($stmt->num_rows > 0) {
     $stmt->close();
     $_SESSION['error'] = "email_registrado";
-    header("Location: ./registro.php");
+    header("Location: " . BASE_URL . "registro.php");
     exit();
 }
 $stmt->close();
@@ -45,7 +45,6 @@ $stmt->bind_param("sss", $_POST['nombre'], $_POST['email'], $_POST['password']);
 $stmt->execute();
 
 
-
-header("Location: ./InicioSesionGTI.php?registro=ok");
+header("Location: " . BASE_URL . "InicioSesionGTI.php?registro=ok");
 exit();
 ?>

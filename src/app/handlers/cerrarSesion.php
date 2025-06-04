@@ -1,12 +1,10 @@
 <?php
+require_once '../includes/MySQL.inc';
+
 session_start();
 
-// Eliminar todas las variables de sesión
 $_SESSION = [];
-
-// Destruir la sesión
 session_destroy();
 
-// Redirigir al inicio con mensaje (opcional)
-header("Location: ../../index.php?logout=ok");
+header("Location: " . BASE_URL . "index.php?logout=ok");
 exit();

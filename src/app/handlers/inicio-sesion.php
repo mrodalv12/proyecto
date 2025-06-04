@@ -1,8 +1,4 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
 session_start();
 require_once '../includes/MySQL.inc';
 
@@ -13,7 +9,7 @@ if (!isset($conn)) {
 // Validar que se reciban datos
 if (!isset($_POST['email'], $_POST['password']) || empty(trim($_POST['email'])) || empty(trim($_POST['password']))) {
     $_SESSION['error'] = 'campos_vacios';
-    header('Location: ../../InicioSesionGTI.php');
+    header("Location: " . BASE_URL . "InicioSesionGTI.php");
     exit();
 }
 
@@ -23,7 +19,7 @@ $password = trim($_POST['password']);
 $stmt = $conn->prepare("SELECT nombre, password FROM usuarios WHERE email = ?");
 if (!$stmt) {
     $_SESSION['error'] = 'error_sql';
-    header('Location: ../../InicioSesionGTI.php');
+    header("Location: " . BASE_URL . "InicioSesionGTI.php");
     exit();
 }
 
@@ -35,7 +31,7 @@ if ($stmt->num_rows === 0) {
     // No existe usuario con ese email
     $_SESSION['error'] = 'usuario_no_encontrado';
     $stmt->close();
-    header('Location: ../../InicioSesionGTI.php');
+    header("Location: " . BASE_URL . "InicioSesionGTI.php");
     exit();
 }
 
@@ -49,7 +45,7 @@ if ($hash_input !== $hashed_password) {
     // Contraseña incorrecta
     $_SESSION['error'] = 'contrasena_incorrecta';
     $stmt->close();
-    header('Location: ../../InicioSesionGTI.php');
+    header("Location: " . BASE_URL . "InicioSesionGTI.php");
     exit();
 }
 
@@ -62,5 +58,5 @@ $_SESSION['usuario'] = [
 $stmt->close();
 
 // Redirigir a landing page
-header('Location: ../../index.php');
+header("Location: " . BASE_URL . "index.php");
 exit();

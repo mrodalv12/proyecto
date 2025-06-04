@@ -3,15 +3,15 @@
 <header class="header">
 
     <!--aqui va el logo-->
-    <a href="index.php" class="logo">
+    <a href="<?php echo BASE_URL . "index.php"?>" class="logo">
         <span class="g">g</span><span class="ti">ti</span>
     </a>
     <!--fin del logo-->
     <!--aqui van los links para moverse entre paginas-->
     <nav class="nav">
         <ul>
-            <li><a href="index.php#contacto">Contacto</a></li>
-            <li><a href="PROA.php">PROA</a></li>
+            <li><a href="<?php echo BASE_URL . "index.php#contacto"?>">Contacto</a></li>
+            <li><a href="<?php echo BASE_URL . "PROA.php" ?>">PROA</a></li>
 
         <?php if (isset($_SESSION["usuario"]) && !empty($_SESSION["usuario"])): ?>
             <!-- Usuario logueado -->
@@ -21,12 +21,12 @@
                 </button>
                 <div class="menu-cuenta" id="menuCuenta">
                     <p><?= htmlspecialchars($_SESSION["usuario"]["email"]) ?></p>
-                    <a href="app/handlers/cerrarSesion.php">Cerrar sesión</a>
+                    <a href="<?php echo BASE_URL . "app/handlers/" . "cerrarSesion.php"?>">Cerrar sesión</a>
                 </div>
             </li>
         <?php else: ?>
             <!-- No logueado -->
-            <li><a href="InicioSesionGTI.php">Inicia sesión</a></li>
+            <li><a href="<?php echo BASE_URL . "InicioSesionGTI.php"?>">Inicia sesión</a></li>
         </ul>
         <?php endif; ?>
     </nav>

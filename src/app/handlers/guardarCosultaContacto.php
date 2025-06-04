@@ -31,7 +31,7 @@ $stmt->bind_param("sss", $correo, $asunto, $mensaje);
 // Ejecutar y verificar
 if (empty($correo) || empty($asunto) || empty($mensaje)) {
     $_SESSION['error'] = 'campos_vacios';
-    header("Location: ../../index.php");
+    header("Location: " . BASE_URL . "index.php");
     exit;
 }
 

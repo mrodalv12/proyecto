@@ -45,6 +45,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['adjunto'])) {
 <div class="container">
     <?php if ($tarea): ?>
     <div class="info-box">
+        <p><span><strong>Fecha de inicio:</strong></span>
+            <?= htmlspecialchars($tarea['fecha_inicio']) ?></p>
         <p><strong>Fecha de entrega:</strong>
             <?= htmlspecialchars($tarea['fecha_cierre']) ?></p>
         <p><strong>Descripción de la tarea:</strong>
@@ -64,13 +66,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['adjunto'])) {
         </form>
     </div>
 
-    <!-- Footer -->
-<?php include "../includes/footer_proa.php" ?>
-
 <?php else: ?>
     <p style="color:red;">Tarea no encontrada o parámetros incorrectos.</p>
 <?php endif; ?>
 
+<!-- Footer -->
+<?php include "../includes/footer_proa.php" ?>
+<!-- fin de Footer -->
 </body>
 </html>
 

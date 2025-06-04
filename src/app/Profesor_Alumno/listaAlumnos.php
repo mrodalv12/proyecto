@@ -17,7 +17,7 @@
 
 <main>
     <section class="tablaAlumnos">
-        <h1><a href="tareasProfesor.php">TAREAS</a></h1>
+        <h1><a href="tareasProfesor.php">TAREAS:<?php echo htmlspecialchars($_SESSION['asignatura']['Nombre'] ?? 'Asignatura'); ?></a></h1>
         <h2>Tareas entregadas</h2>
 
         <table>
@@ -25,6 +25,7 @@
             <tr>
                 <th>Alumnos</th>
                 <th><?= htmlspecialchars($titulo_tarea) ?></th>
+                <th>Fecha de entrega</th>
             </tr>
             </thead>
             <tbody>

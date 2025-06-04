@@ -32,7 +32,7 @@
             <p id="mensajeLogin"></p>
             <?php include 'app/includes/mensajeError.php'; ?>
         </form>
-        <p class="register">¿Todavía no tienes una cuenta? <a href="RegistroGTI.php">¡Regístrate!</a></p>
+        <p class="register">¿Todavía no tienes una cuenta? <a href="<?php echo BASE_URL . "RegistroGTI.php" ?>">¡Regístrate!</a></p>
     </div>
 </main>
 
