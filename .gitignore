@@ -1,0 +1,7 @@
+.idea
+
+adjuntos/*
+!.empty
+
+._DS_Store
+

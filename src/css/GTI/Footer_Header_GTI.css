@@ -81,10 +81,15 @@ nav ul li a:hover::after,
 .mi-cuenta button {
     background: none;
     border: none;
-    color: var(--color_del_fondo_oscuro);;
+    color: var(--color_del_fondo_oscuro);
     cursor: pointer;
     font-size: var(--espaciado_pequeno);
 }
+.mi-cuenta button:hover {
+    background-color: var(--color_hover_fondo);
+    color: var(--color_del_fondo_oscuro);
+}
+
 
 .menu-cuenta {
     display: none;
@@ -96,6 +101,8 @@ nav ul li a:hover::after,
     z-index: 10;
     border-radius: var(--border_radius_general);
     box-shadow: var(--sombra_boton);
+    font-size: 14px;
+    padding: 10px 20px;
 }
 
 .menu-cuenta a {

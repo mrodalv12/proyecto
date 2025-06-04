@@ -5,7 +5,7 @@ session_start();
 <header class="encabezado">
     <!-- Logo -->
     <a href="../Profesor_Alumno/Inicio_profesor.php" class="logo">
-        <img src="../../../img/logoPROA.png" alt="proa" />
+        <img src="../../img/logoPROA.png" alt="proa" />
     </a>
     <!----------------------------------------------------------------------------------------------------------->
     <!-- Menú de navegación -->

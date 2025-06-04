@@ -24,7 +24,7 @@ $usuario_logueado = isset($_SESSION["usuario_proa"]) && !empty($_SESSION["usuari
 
 <main class="container">
     <section class="image-section">
-        <img src="../img/Inicio_Sesion_Proa.png" alt="Login PROA" />
+        <img src="img/Inicio_Sesion_Proa.png" alt="Login PROA" />
     </section>
 
     <section class="login-section">

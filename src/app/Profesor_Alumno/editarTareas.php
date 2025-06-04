@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../css/header_footerPROA.css" />
     <link rel="stylesheet" href="../../css/variablesPROA.css">
     <link rel="stylesheet" href="../../css/Alumno_Profesor/editarTareas.css" />
+</head>
 <body>
 
 
@@ -17,18 +18,22 @@
 <!-- Header -->
 <header>
     <?php include "../includes/header_proa_profesor.php" ?>
+    <?php include "../handlers/PROA_profesor/editarTareas.php" ?>
+    <?php include "../handlers/PROA_profesor/eliminarTareas.php" ?>
 </header>
 
-<?php include "../handlers/PROA_profesor/editarTareas.php" ?>
-<?php include "../handlers/PROA_profesor/eliminarTareas.php" ?>
+
 <main>
     <div class="container">
         <h2><a href="tareasProfesor.php">TAREAS</a></h2>
         <h3>Editar tarea</h3>
 
-        <?php if (isset($mensaje)): ?>
-            <div class="alert" style="color: green;"><?php echo $mensaje; ?></div>
+        <?php if (!empty($mensaje)): ?>
+            <div class="alert <?= $tipoMensaje ?: 'error' ?>">
+                <?= htmlspecialchars($mensaje) ?>
+            </div>
         <?php endif; ?>
+
 
         <form method="POST" action="">
             <input type="hidden" name="id_tarea" value="<?php echo $tarea['id_tarea']; ?>">
@@ -50,19 +55,24 @@
             <div class="botones">
                 <button type="submit" class="botonbueno">Guardar cambios</button>
 
-                <!-- Botón eliminar -->
-                <button type="submit" name="eliminar" value="1" class="botonmalo" onclick="return confirm('¿Estás seguro de que quieres eliminar esta tarea?');">
-                    Eliminar tarea
-                </button>
-            </div>
-
         </form>
+        <!-- Botón eliminar -->
+        <button type="button" class="botonmalo" id="btnEliminar">Eliminar tarea</button>
+    </div>
+    <form method="POST" action="" id="formEliminar" style="display: none;">
+        <input type="hidden" name="eliminar" value="1">
+        <input type="hidden" name="id_tarea" value="<?php echo $tarea['id_tarea']; ?>">
+    </form>
+
 
     </div>
 </main>
 
 <footer>
     <?php include "../includes/footer_proa.php"; ?>
+    <script src="../../js/PROA/ocultarMensajeTareas.js" defer></script>
+    <script src="../../js/PROA/eliminarTarea.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </footer>
 
 </body>

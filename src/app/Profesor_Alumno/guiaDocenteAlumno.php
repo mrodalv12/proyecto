@@ -33,20 +33,23 @@ include './mostrarProfesorGuiaDocente.php';
     <link rel="stylesheet" href="../../css/header_footerPROA.css"/>
     <link rel="stylesheet" href="../../css/variablesPROA.css">
     <link rel="stylesheet" href="../../css/Alumno_Profesor/guia_docente.css"/>
+    <link rel="stylesheet" href="../../css/Alumno_Profesor/MOVILmenu-Profesores_y_alumnos.css">
 </head>
 
 
 <body>
 <!--Header-->
 <?php include '../includes/header_proa_alumno.php' ?>
-
+<?php $_SESSION['asignatura'] = $asignatura?>
 <!--Detalles de la Asignatura-->
 <section class="contenido">
     <div class="intro_asig">
         <!--Nombre de la asignatura -->
-        <div class="titulo-volver normal">
+        <div class="titulo-volver">
             <h1><?= htmlspecialchars($asignatura['Nombre']) ?></h1>
-            <a href="../Profesor_Alumno/tareasAlumno.php" class="tareas boton_tareas normal">Tareas</a>
+            <a href="../Profesor_Alumno/tareasAlumno.php?id_asignatura=<?= $asignatura['id_asignatura'] ?>" class="tareas">
+                <button class="boton_tareas">Tareas</button>
+            </a>
         </div>
 
         <!--Descripción de la asignatura-->
@@ -62,9 +65,7 @@ include './mostrarProfesorGuiaDocente.php';
             <li><strong>Cuatrimestre:</strong> <?= htmlspecialchars($asignatura['Cuatrimestre']) ?></li>
         </ul>
         <!--fin de especificaciones de la asignatura-->
-        <div class="titulo-volver movil">
-            <a href="../Profesor_Alumno/tareasProfesor.php" class="tareas boton_tareas movil">Tareas</a>
-        </div>
+
     </div>
 
     <hr> <!--Línea de separación-->
@@ -107,10 +108,5 @@ include './mostrarProfesorGuiaDocente.php';
 </footer>
 <!--Fin del footer-->
 </body>
-
-
-
-
-
 
 

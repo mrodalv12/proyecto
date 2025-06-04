@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@400;600;700&display=swap');
 :root{
     --color_proa_3: #4D5FAA;
     --color_proa: #7280B9;
@@ -8,10 +9,11 @@
     --color_error_texto: #721c24;
     --color_exito_fondo: #d4edda;
     --color_exito_texto: #155724;
+    --color_footer_header: #4D4A4A;
     --tipografia_de_la_pagina: "Martel Sans";
     --fuente_resaltada: bold;
     --border_radius_general: 10px;
-    --borde_fino_azul: 1px solid var(--color_proa);
+    --borde_fino_azul: 1px solid var(--color_proa2);
     --borde_fino_negro: 0.1px solid #a3a3a3;
     --borde_fino_blanco: 1px solid var(--color_blancoProa);
     --altura_header: 70px;

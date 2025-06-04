@@ -21,7 +21,9 @@
         <h3>Agregar tarea</h3>
 
         <?php if ($mensaje): ?>
-            <div class="alert"><?= htmlspecialchars($mensaje) ?></div>
+            <div class="alert <?= (isset($_GET['tarea']) && $_GET['tarea'] === 'ok') ? 'success' : 'error' ?>">
+                <?= htmlspecialchars($mensaje) ?>
+            </div>
         <?php endif; ?>
 
         <form method="POST" action="">
@@ -49,5 +51,6 @@
 </main>
 
 <?php include "../includes/footer_proa.php"; ?>
+<script src="../../js/PROA/ocultarMensajeTareas.js" defer></script>
 </body>
 </html>

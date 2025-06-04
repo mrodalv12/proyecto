@@ -24,6 +24,8 @@ img, video, svg { height: auto; max-width: 100%; }
 
 a { color: inherit; }
 /* endregion */
+
+
 /* region --- GENERAL --- */
 html, body {
     margin: 0;
@@ -70,15 +72,6 @@ main {
     color: var(--color_proa);
 }
 
-.task-link {
-    text-decoration: none;
-    font-weight: var(--fuente_resaltada);
-}
-
-.task-link:hover {
-    text-decoration: underline;
-}
-
 table {
     width: 100%;
     max-width: 1000px;
@@ -90,22 +83,23 @@ table {
     overflow: hidden;
     box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
-
-th, td {
-    border: var(--borde_fino_negro);
+th {
+    border: var(--borde_fino_blanco);
     padding: var(--espaciado_pequeno);
     text-align: center;
 }
 
-.resaltada a,
-.resaltadaEditar a{
-    color: var(--color_proa_3);
+td {
+    border: var(--borde_fino_azul);
+    padding: var(--espaciado_pequeno);
+    text-align: center;
 }
 
 thead {
-    background-color: var(--color_proa2);
-    color: var(--color_proa_3);
+    background-color: var(--color_proa);
+    color: white;
 }
+
 
 @media(max-width: 565px){
     .tasks-container th{

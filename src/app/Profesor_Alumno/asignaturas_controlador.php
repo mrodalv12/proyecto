@@ -69,7 +69,7 @@ if ($rol === 'Profesor') {
             $cuatrimestre = htmlspecialchars($fila['Cuatrimestre']);
 
             $tablaAsignaturas .= "<tr>
-            <td class='nom_column'><a href='guiaDocenteProfesor.php?id_asignatura={$id_asignatura}'>{$nombre}</a></td>
+            <td class='nom_column'><a href='guiaDocenteprofesor.php?id_asignatura={$id_asignatura}'>{$nombre}</a></td>
             <td class='curs_column'>{$curso}</td>
             <td class='semes_column'>{$cuatrimestre}</td>
         </tr>";

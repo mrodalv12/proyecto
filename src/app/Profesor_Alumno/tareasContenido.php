@@ -1,3 +1,13 @@
+<?php
+session_start();
+include "../Profesor_Alumno/ver_contenido_tareaAlumno.php";
+include "../includes/enviarArchivoAlumno.php";
+$mensaje = null;
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['adjunto'])) {
+    $mensaje = procesarAdjunto();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -16,44 +26,51 @@
     <?php include "../includes/header_proa_alumno.php" ?>
 </header>
 
-<?php include "../Profesor_Alumno/ver_contenido_tareaAlumno.php" ?>
-<div class="container">
-    <h1><a href="tareasAlumno.php">TAREAS</a></h1>
-
-    <?php if ($tarea): ?>
-        <h2><?= htmlspecialchars($tarea['Titulo']) ?></h2>
-
-        <div class="info-box">
-            <p>Fecha de entrega: <?= htmlspecialchars($tarea['fecha_cierre']) ?></p>
-            <p>Descripción de la tarea: <?= nl2br(htmlspecialchars($tarea['Descripcion'])) ?></p>
-            <p>Estado: No entregado</p>
-            <p>Instrucciones:<?= nl2br(htmlspecialchars($tarea['Instrucciones'])) ?></p>
-        </div>
-
-
-        <div class="archivo-section">
-            <div class="upload-decorator" onclick="document.getElementById('archivo-upload').click()">
-                Haz clic o arrastra archivos aquí
-                <input type="file" id="archivo-upload" multiple hidden />
-            </div>
-
-            <div id="archivo-display" class="archivo-display"></div>
-            <p id="contador-archivos" class="contador-archivos"></p>
-
-            <button class="btn-enviar" onclick="enviarArchivos()">Enviar</button>
-            <p id="mensaje-enviado" class="mensaje-enviado">¡Archivos enviados!</p>
-            <p id="mensaje-error" class="mensaje-error">
-                Debes seleccionar al menos un archivo antes de enviar.
-            </p>
-        </div>
-
-    <?php else: ?>
-        <p style="color:red;">Tarea no encontrada o parámetros incorrectos.</p>
-    <?php endif; ?>
+<!-- Título de "Tareas" -->
+<div class="tituloYvolver">
+    <h1>Tareas: <?php echo htmlspecialchars($_SESSION['asignatura']['Nombre'] ?? 'Asignatura'); ?></h1>
+    <button class="btn-volver" onclick="window.location.href='tareasAlumno.php'"><-- Volver</button>
 </div>
 
-<!-- Footer -->
+<!-- Título de la tarea (específica) -->
+<h2><?= htmlspecialchars($tarea['Titulo']) ?></h2>
+
+<?php if (!empty($mensaje)): ?>
+    <div class="mensaje-box <?= (str_contains($mensaje, 'exito') || str_contains($mensaje, 'guardado')) ? 'mensaje-exito' : 'mensaje-error' ?>">
+        <p><?= $mensaje ?></p>
+    </div>
+<?php endif; ?>
+
+<!-- Contenedor con la información de la tarea -->
+<div class="container">
+    <?php if ($tarea): ?>
+    <div class="info-box">
+        <p><strong>Fecha de entrega:</strong>
+            <?= htmlspecialchars($tarea['fecha_cierre']) ?></p>
+        <p><strong>Descripción de la tarea:</strong>
+            <?= nl2br(htmlspecialchars($tarea['Descripcion'])) ?></p>
+        <p><strong>Estado:</strong>
+            No entregado</p>
+        <p><strong>Instrucciones:</strong>
+            <?= nl2br(htmlspecialchars($tarea['Instrucciones'])) ?></p>
+    </div>
+</div>
+    <div class="archivos">
+        <form action="" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="id_tarea" value="<?= htmlspecialchars($tarea['id_tarea']) ?>">
+            <label for="adjunto">Titulo</label>
+            <input type="file" name="adjunto" id="adjunto">
+            <input type="submit" class="btn-enviar" value="enviar">
+        </form>
+    </div>
+
+    <!-- Footer -->
 <?php include "../includes/footer_proa.php" ?>
+
+<?php else: ?>
+    <p style="color:red;">Tarea no encontrada o parámetros incorrectos.</p>
+<?php endif; ?>
 
 </body>
 </html>
+

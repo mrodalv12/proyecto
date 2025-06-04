@@ -13,6 +13,7 @@
 
 <!-- Header -->
 <?php include "../includes/header_proa_profesor.php" ?>
+<?php include "../Profesor_Alumno/ver_listaAlumnos.php" ?>
 
 <main>
     <section class="tablaAlumnos">
@@ -23,41 +24,38 @@
             <thead>
             <tr>
                 <th>Alumnos</th>
-                <th>Calificación</th>
-                <th>Estado</th>
+                <th><?= htmlspecialchars($titulo_tarea) ?></th>
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <td>Alumno 1</td>
-                <td>7/10</td>
-                <td class="tarea-entregada"><a href="tareasContenidoProfesor.php">Entregado</a></td>
-            </tr>
-            <tr>
-                <td>Alumno 2</td>
-                <td>-/10</td>
-                <td class="no-entregado">No entregado</td>
-            </tr>
-            <tr>
-                <td>Alumno 3</td>
-                <td>-/10</td>
-                <td class="tarea-entregada"><a href="tareasContenidoProfesor.php">Entregado</a></td>
-            </tr>
-            <tr>
-                <td>Alumno 4</td>
-                <td>-/10</td>
-                <td class="tarea-entregada"><a href="tareasContenidoProfesor.php">Entregado</a></td>
-            </tr>
-            <tr>
-                <td>Alumno 5</td>
-                <td>-/10</td>
-                <td class="tarea-entregada"><a href="tareasContenidoProfesor.php">Entregado</a></td>
-            </tr>
-            <tr>
-                <td>Alumno 6</td>
-                <td>-/10</td>
-                <td class="tarea-entregada"><a href="tareasContenidoProfesor.php">Entregado</a></td>
-            </tr>
+            <?php while ($entrega = $resultado->fetch_assoc()): ?>
+                <tr>
+                    <td><?= htmlspecialchars($entrega['Nombre']) ?></td>
+                    <td class="tarea-entregada">
+                        <?php
+                        $nombreArchivo = basename($entrega['archivo']);
+
+                        //==========RUTA ARCHIVO WEB =============
+                        $archivo_web = "/proyecto/adjuntos/" . rawurlencode($nombreArchivo); //rutas localhost
+                        //$archivo_web = "/adjuntos/" . urlencode($nombreArchivo); //rutas plesk
+                        //==========FIN DE RUTA ARCHIVO WEB=============
+
+                        $archivo_servidor = $_SERVER['DOCUMENT_ROOT'] . "/adjuntos/" . $nombreArchivo;
+
+                        //------PARA COMPROBAR LAS RUTAS --------
+                        //echo "<p>Ruta web: $archivo_web</p>";
+                        //echo "<p>Ruta servidor: $archivo_servidor</p>";
+                        //------FIN DE COMPROBACION DE RUTAS --------
+                        ?>
+
+                        <?php if (!empty($entrega['archivo']) && file_exists($archivo_servidor)): ?>
+                            <a href="<?= $archivo_web ?>" download>Descargar archivo</a>
+                        <?php else: ?>
+                            <p>no entregado.</p>
+                        <?php endif; ?>
+                    </td>
+                </tr>
+            <?php endwhile; ?>
             </tbody>
         </table>
     </section>

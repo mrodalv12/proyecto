@@ -184,3 +184,22 @@ thead {
     color: #155724;
 }
 
+
+@media(max-width: 565px){
+    h1 {
+        font-size: 18px;
+    }
+    button {
+        font-size: 12px;
+    }
+    .btn-volver{
+    /height: 60px;/
+    font-size: 12px;
+    }
+    .tasks-profesor th{
+        font-size: 12px;
+    }
+    .tasks-profesor td{
+        font-size: 12px;
+    }
+}

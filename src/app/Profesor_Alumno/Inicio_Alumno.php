@@ -26,59 +26,24 @@ include "../includes/funciones_inicio.php";
         <h1>
             <?php
             $hola = buenas();
-            echo "¡$hola < usuario > !";
+            $hey = htmlspecialchars($_SESSION['usuario_proa']['Nombre']);
+            echo "¡$hola $hey !";
             ?></h1>
     </div>
     <!--fin del saludo-->
-    <!--eventos de la semana-->
-    <main>
-        <div class="todos_los_eventos">
-            <!--Lunes-->
-            <div class="dia_de_la_semana" id="lunes">
-                <div class="dia">
-                    <p>Lunes</p>
-                </div>
-                <ol>
-                    <li><a href="#"><p>tarea1: prototipo de ux y noseque mas</p></a></li>
-                    <li><a href="#"><p>tarea2</p></a></li>
-                </ol>
-            </div>
-            <!--Fin de lunes-->
-            <!--Martes-->
-            <div class="dia_de_la_semana" id="martes">
-                <div class="dia">
-                    <p>Martes</p>
-                </div>
-                <div id="no_hay_datos"><p>no hay<br>datos</p></div>
-            </div>
-            <!--Fin de martes-->
-            <!--miercoles-->
-            <div class="dia_de_la_semana" id="miercoles">
-                <div class="dia">
-                    <p>Miercoles</p>
-                </div>
-                <div id="no_hay_datos"><p>no hay<br>datos</p></div>
-            </div>
-            <!--fin de miercoles-->
-            <!--jueves-->
-            <div class="dia_de_la_semana" id="jueves">
-                <div class="dia">
-                    <p>jueves</p>
-                </div>
-                <div id="no_hay_datos"><p>no hay<br>datos</p></div>
-            </div>
-            <!--fin de jueves-->
-            <!--viernes-->
-            <div class="dia_de_la_semana" id="viernes">
-                <div class="dia">
-                    <p>Viernes</p>
-                </div>
-                <div id="no_hay_datos"><p>no hay<br>datos</p></div>
-            </div>
-            <!--fin de viernes-->
-        </div>
-    </main>
-    <!--fin de eventos de la semana-->
+    <div class="bienvenido">
+        <p>
+            <strong>Bienvenido a PROA,</strong> tu plataforma educativa digital.
+            Aquí encontrarás un espacio pensado para facilitar el trabajo diario tanto a profesores como a alumnos. Desde este entorno, podrás acceder de forma rápida a tus asignaturas, tareas y recursos, todo organizado para ayudarte a centrarte en lo importante: aprender y enseñar.
+            <br><br>
+            Si eres alumno, podrás consultar tus clases, ver qué trabajos tienes que entregar, revisar tus notas y estar siempre al día con lo que pasa en cada materia. Si eres profesor, podrás gestionar tus asignaturas, publicar actividades, hacer un seguimiento del progreso de tus estudiantes y mantener una comunicación clara con ellos.
+            <br><br>
+            Estamos trabajando para seguir mejorando PROA. Muy pronto añadiremos nuevas funcionalidades, como un sistema de mensajes interno, avisos personalizados, y más herramientas para que la experiencia de enseñanza y aprendizaje sea aún más completa y cómoda.
+        </p>
+
+        <img src="../../img/bienvenida.svg" alt="Imagen de bienvenida">
+
+    </div>
 </section>
 <!--fin del contenido de la pagina-->
 <!--este es el footer-->

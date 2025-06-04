@@ -24,6 +24,7 @@ img, video, svg { height: auto; max-width: 100%; }
 
 a { color: inherit; }
 /* endregion */
+
 /* region --- GENERAL --- */
 html, body {
     margin: 0;
@@ -48,53 +49,52 @@ h3{
 /* ========== General ========== */
 
 .container {
-    max-width: 800px;
-    margin: 40px auto;
+    max-width: 1000px;
+    margin: 40px 40px;
     padding: 20px;
-    background: white;
+    background: var(--color_proa2);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+.tituloYvolver {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 70px;
+}
+
 h1 {
-    text-align: center;
-    margin-bottom: 0;
+    padding-top: 30px;
+    color: var(--color_proa);
 }
 
 h2 {
-    text-align: center;
-    font-weight: normal;
-    margin-top: 5px;
-    border-bottom: 2px solid #000;
     justify-content: center;
-    padding-bottom: 5px;
+    margin: 10px 70px;
 }
+
+
 
 /* ========== Info de tarea ========== */
 .info-box {
-    border: 1px solid #ccc;
-    padding: 15px;
-    margin: 20px 0;
-    background-color: #fdfdfd;
+    /*padding: 15px;*/
+    /*margin: 0px 10px;*/
 }
 
 .info-box p {
     margin: 8px 0;
 }
 
-/* ========== Instrucciones ========== */
-.instrucciones {
-    background-color: #f5c6cb;
-    border: 1px solid #e6a8ad;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 6px;
+.archivos{
+    margin: auto;
 }
 
 /* ========== Subida de archivos ========== */
 .archivo-section {
-    margin-top: 30px;
     text-align: center;
+    width: 1000px;
+    margin: 0 auto;
 }
 
 input[type="file"] {
@@ -105,28 +105,28 @@ input[type="file"] {
     cursor: pointer;
 }
 
-.archivo-display {
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-}
+/*.archivo-display {*/
+/*    margin-top: 15px;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    gap: 8px;*/
+/*}*/
 
-.archivo-item {
-    background-color: #e6f0ff;
-    padding: 1px 15px;
-    border: 1px solid #99c2ff;
-    border-radius: 8px;
-    font-size: 14px;
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+/*.archivo-item {*/
+/*    background-color: #e6f0ff;*/
+/*    padding: 1px 15px;*/
+/*    border: 1px solid #99c2ff;*/
+/*    border-radius: 8px;*/
+/*    font-size: 14px;*/
+/*    width: fit-content;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    gap: 10px;*/
+/*}*/
 
 
-/* ========== Poner bonito el seleccionar archivos ========== */
+/*!* ========== Poner bonito el seleccionar archivos ========== *!*/
 .upload-decorator {
     background-color: #f0f0f0;
     border: 2px dashed #aaa;
@@ -165,8 +165,19 @@ button:hover {
 }
 
 .btn-enviar {
-    margin-top: 20px;
-    background-color: #e6828b;
+    margin: 16px auto 30px auto; /* arriba 16px, laterales auto, abajo 0 */
+    background-color: var(--color_proa);
+    width: 100px;
+    align-items: center;
+    border-radius: var(--border_radius_general);
+    display: block;
+    padding-bottom: 10px;
+}
+
+.btn-enviar:hover {
+    background-color: white;
+    color: var(--color_proa);
+    border: 2px solid var(--color_proa);
 }
 
 .btn-eliminar {
@@ -197,10 +208,66 @@ button:hover {
     display: none;
 }
 
+.mensaje-box {
+    padding: 1rem;
+    border-radius: 0.75rem;
+    margin: 1rem auto;
+    max-width: 700px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mensaje-exito {
+    background-color: #e0f7e9;
+    color: #2e7d32;
+    border: 1px solid #81c784;
+}
+
+.mensaje-error {
+    background-color: #ffe0e0;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+}
+
+
 @media(max-width: 565px){
     .container{
         margin-top: 0;
         padding-top: 80px;
     }
 
+}
+
+@media(max-width: 565px){
+
+    h1 {
+        font-size: 18px;
+    }
+    button {
+        font-size: 12px;
+    }
+    .btn-volver{
+        height: 70px;
+        font-size: 12px;
+    }
+
+    .tituloYvolver{
+        margin: 10px 20px;
+    }
+    h2 {
+        font-size: 18px;
+        margin: 10px 20px;
+    }
+
+    .container{
+        width: 90%;
+        font-size: 12px;
+    }
+
+    .archivo-section{
+        width: 90%;
+        font-size: 12px;
+    }
 }

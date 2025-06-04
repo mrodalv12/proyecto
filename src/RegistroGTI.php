@@ -19,7 +19,7 @@
       <!-- Formulario registro -->
     <section class="form-box">
         <h1>Registrate</h1>
-        <form id="registroForm" action="app/includes/RegistroGTI.php" method="POST">
+        <form id="registroForm" action="app/includes/registro.php" method="POST">
             <label for="nombre">Nombre de usuario</label>
 
           <!-- El atributo name es lo que se envía al servidor, si no hay, no se envía nada, aunque tenga id -->

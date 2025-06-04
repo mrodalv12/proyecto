@@ -1,6 +1,5 @@
 <?php
 require_once '../includes/MySQL.inc'; // Este archivo debe definir $conn
-
 // Comprobar conexión
 if (!isset($conn)) {
     die('Error de conexión a la base de datos.');

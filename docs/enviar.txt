@@ -1,0 +1,65 @@
+<?php
+function procesarAdjunto(){
+	file_put_contents('debug.txt', print_r($_FILES, true));
+    print_r($_SESSION);
+
+    if (!isset($_SESSION['usuario_proa']) || $_SESSION['usuario_proa']['Rol'] !== 'Alumno') {
+        die("No estás autenticado como alumno.");
+    }
+
+    $id_alumno = $_SESSION['usuario_proa']['id_usuarioproa'];
+
+    if (empty($_FILES['adjunto']) || $_FILES['adjunto']['name'] == "") return 'no se adjunto ningun archivo';
+    $fileUpload = $_FILES['adjunto'];
+
+    $target_dir = "../../adjuntos/";
+    $target_file = $target_dir . basename($fileUpload["name"]);
+    if(file_exists($target_file)) return 'El archivo ya existe';
+
+    $sizeLimit = 1024 * 1024 * 10;
+    if ($fileUpload["size"] > $sizeLimit) return 'el archivo adjunto es demasiado grande ( max 10 MB)';
+
+    $fileType = array('pdf', 'doc', 'docx', 'png');
+    $fileExtension = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
+    if (!in_array($fileExtension, $fileType)) return 'El archivo adjunto debe ser de tipo pdf o word';
+
+    if(!move_uploaded_file($fileUpload["tmp_name"], $target_file)) return 'No se pudo guardar el archivo';
+
+
+    require_once  '../includes/MySQL.inc';
+
+	global $conn;
+
+    if (!isset($conn)) {
+	echo $conn;
+    echo 'Conexión no establecida';
+    return 'error al conectar con la BBDD';
+}
+    define('HOST_URL', 'http://mrodalv.upv.edu.es/');
+	echo 'se conecto a la base de datos';
+
+
+    if (!isset($_POST['id_tarea'])) {
+        return 'Falta el ID de la tarea';
+    }
+
+    $id_tarea = $_POST['id_tarea'];
+    $href = HOST_URL . 'app/Profesor_Alumno/adjuntos/' . basename($fileUpload['name']);
+    $fecha_entrega = date('Y-m-d H:i:s');
+
+    $stmt = $conn->prepare("INSERT INTO entregas (id_tarea, id_alumno, archivo, fecha_entrega) VALUES (?, ?, ?, ?)");
+    $stmt->bind_param("iiss", $id_tarea, $id_alumno, $href, $fecha_entrega);
+    $stmt->execute();
+	if (!$stmt->execute()) {
+    file_put_contents("debugg.txt", "Error al ejecutar SQL: " . $stmt->error . "\n", FILE_APPEND);
+	} else {
+    file_put_contents("debugg.txt", "SQL ejecutado correctamente\n", FILE_APPEND);
+	}
+    $stmt->close();
+
+	echo 'SE HA GUARDADO';
+
+    return "El archivo adjunto <a href=\"$href\" download >se ha guardado con exito</a>";
+}
+
+?>

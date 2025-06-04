@@ -97,7 +97,7 @@ main{
     position: relative;
     scroll-margin-top: var(--tamano_completo_header);
     height: calc(100vh - var(--tamano_completo_header));
-    background: url("../../../img/Contacto.png") no-repeat center center / cover;
+    background: url("../../img/Contacto.png") no-repeat center center / cover;
     color: var(--color_letra_fondoOscuro);
 
     > * {

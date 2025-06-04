@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tareas PROA</title>
-
     <link rel="preload" href="../../css/header_footerPROA.css" as="style" />
     <link rel="stylesheet" href="../../css/header_footerPROA.css" />
     <link rel="stylesheet" href="../../css/variablesPROA.css">
@@ -18,13 +17,16 @@
 
 <main>
     <section class="tasks-container">
-        <h1>TAREAS</h1>
-        <h2><?php echo htmlspecialchars($_SESSION['asignatura']['Nombre'] ?? 'Asignatura'); ?></h2>
+        <!-- TÃ­tulo de "Tareas" -->
+        <div class="tituloYvolver">
+            <h1>Tareas: <?php echo htmlspecialchars($_SESSION['asignatura']['Nombre'] ?? 'Asignatura'); ?></h1>
+            <button class="btn-volver" onclick="window.location.href='guiaDocenteAlumno.php'"><-- Volver</button>
+        </div>
 
         <table>
             <thead>
             <tr>
-                <th>Título</th>
+                <th>Titulo</th>
                 <th>Fecha de cierre</th>
             </tr>
             </thead>
@@ -32,7 +34,7 @@
             <?php if (!empty($tareas)): ?>
                 <?php foreach ($tareas as $tarea): ?>
                     <tr>
-                        <td><a href="tareasContenido.php?id_tarea=<?= $tarea['id_tarea'] ?>&id_asignatura=<?= $_SESSION['asignatura']['id_asignatura'] ?>" class="task-link">
+                        <td><a href="tareasContenido.php?id_tarea=<?= $tarea['id_tarea'] ?>" class="task-link">
                                 <?= htmlspecialchars($tarea['Titulo']) ?>
                             </a></td>
                         <td><?= date("j M Y", strtotime($tarea['fecha_cierre'])) ?></td> <!-- Sigue usando 'fecha_entrega' como clave -->

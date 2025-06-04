@@ -15,24 +15,21 @@ if (!isset($_GET['id_tarea']) || !is_numeric($_GET['id_tarea'])) {
 
 $id_tarea = intval($_GET['id_tarea']);
 
-
-// Solo procesar si hay ID de tarea
+// Procesar eliminación
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST['id_tarea'])) {
     $id_tarea = intval($_POST['id_tarea']);
 
-    // Si se pulsó el botón de eliminar
     if (isset($_POST['eliminar'])) {
         $stmt = $conn->prepare("DELETE FROM tareas WHERE id_tarea = ?");
         $stmt->bind_param("i", $id_tarea);
+
         if ($stmt->execute()) {
-            // Redirigir tras eliminar
             header("Location: ../../app/Profesor_Alumno/tareasProfesor.php");
             exit();
         } else {
             $mensaje = "Error al eliminar la tarea.";
+            $tipoMensaje = "error";
         }
     }
-
-   
 }
 ?>

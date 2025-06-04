@@ -13,6 +13,7 @@ if (!isset($_SESSION['asignatura']['id_asignatura'])) {
 
 $id_asignatura = $_SESSION['asignatura']['id_asignatura'];
 $mensaje = '';
+$tipoMensaje = ''; // NUEVO: Tipo de clase del mensaje ('success' o 'error')
 
 // Verifica que se pasó una tarea por GET
 if (!isset($_GET['id_tarea'])) {
@@ -33,6 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->execute();
 
     $mensaje = "Cambios guardados correctamente.";
+    $tipoMensaje = "success"; // ✅ Clase CSS para mensaje de éxito
 }
 
 // Cargar la tarea desde la base de datos

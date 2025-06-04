@@ -4,13 +4,8 @@ use PHPMailer\PHPMailer\PHPMailer;
 require_once '../includes/PHPMailer.php';
 require_once '../includes/SMTP.php';
 
-// Conexión a la base de datos
-$host = "localhost";       // Cambia si tu host es diferente
-$usuario = "root";         // Cambia según tu usuario de base de datos
-$contrasena = "";          // Cambia según tu contraseña
-$base_datos = "test";  // Reemplaza con el nombre real de tu BD
+require_once '../includes/MySQL.inc';
 
-$conn = new mysqli($host, $usuario, $contrasena, $base_datos);
 
 // Verifica la conexión
 if ($conn->connect_error) {

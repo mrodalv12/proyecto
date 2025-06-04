@@ -1,8 +1,14 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 session_start();
 require_once '../includes/MySQL.inc';
 
-if (!isset($conn)) die();
+if (!isset($conn)) {
+    die('No se pudo establecer conexión con la base de datos.');
+}
 
 // Validar que se reciban datos
 if (!isset($_POST['email'], $_POST['password']) || empty(trim($_POST['email'])) || empty(trim($_POST['password']))) {
@@ -14,8 +20,13 @@ if (!isset($_POST['email'], $_POST['password']) || empty(trim($_POST['email'])) 
 $email = trim($_POST['email']);
 $password = trim($_POST['password']);
 
-// Preparar consulta para verificar usuario
 $stmt = $conn->prepare("SELECT nombre, password FROM usuarios WHERE email = ?");
+if (!$stmt) {
+    $_SESSION['error'] = 'error_sql';
+    header('Location: ../../InicioSesionGTI.php');
+    exit();
+}
+
 $stmt->bind_param("s", $email);
 $stmt->execute();
 $stmt->store_result();

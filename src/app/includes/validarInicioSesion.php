@@ -50,9 +50,12 @@ $stmt->close();
 
 // Redirección tras login exitoso
 if ($usuario['Rol'] === 'Profesor') {
-    header('Location: ../Profesor_Alumno/Inicio_Profesor.php');
+    header('Location: ../Profesor_Alumno/Inicio_profesor.php');
+    //para el plesk el link es /app/Profesor_Alumno/Inicio_profesor.php
+    //para el localhost es ../Profesor_Alumno/Inicio_profesor.php'
 } else {
     header('Location: ../Profesor_Alumno/Inicio_Alumno.php');
-}
+    //para el plesk el link es /app/Profesor_Alumno/Inicio_Alumno.php
+}//para el localhost es ../Profesor_Alumno/Inicio_Alumno.php'
 exit();
 ?>

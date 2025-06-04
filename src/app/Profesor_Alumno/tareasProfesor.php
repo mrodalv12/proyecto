@@ -7,29 +7,24 @@
     <link rel="stylesheet" href="../../css/header_footerPROA.css" />
     <link rel="stylesheet" href="../../css/variablesPROA.css" />
     <link rel="stylesheet" href="../../css/Alumno_Profesor/tareasProfesor.css" />
-    <link rel="stylesheet" href="../../css/popupEliminar.css" />
 </head>
 <body>
 
 <!-- Header -->
 <?php include "../includes/header_proa_profesor.php" ?>
 <?php include "ver_tareas.php" ?>
-<!-- fin del Header -->
-
-<!-- contenido del main -->
 <main>
+
     <section class="tasks-profesor">
-        <!-- titulos de la pagina -->
-        <h1>TAREAS</h1>
-        <h2>
-            <a href="#">
-                <?php echo htmlspecialchars($_SESSION['asignatura']['Nombre'] ?? 'Asignatura'); ?>
-            </a>
-        </h2>
-        <!-- fin de titulos de la pagina -->
-        <!-- inicio de tablas -->
+
+        <!-- Título de "Tareas" -->
+        <div class="tituloYvolver">
+            <h1>Tareas: <?php echo htmlspecialchars($_SESSION['asignatura']['Nombre'] ?? 'Asignatura'); ?></h1>
+            <button class="btn-volver" onclick="window.location.href='#'"><-- Volver</button>
+        </div>
+
+
         <table>
-            <!-- fila de titulos de la tabla -->
             <thead>
             <tr>
                 <th>Título</th>
@@ -38,7 +33,6 @@
                 <th>Editar</th>
             </tr>
             </thead>
-            <!-- fin de fila de titulos de la tabla -->
             <tbody>
             <?php if ($result->num_rows > 0): ?>
                 <?php while ($tarea = $result->fetch_assoc()): ?>
@@ -67,16 +61,14 @@
             <?php endif; ?>
             </tbody>
         </table>
-        <!-- fin de tablas -->
 
         <!-- Botón para agregar una nueva tarea -->
-        <button class="add-btn"><a href="agregarTareas.php">Nueva Tarea</a></button>
+        <button class="add-btn"><a href="agregarTareas.php">Agregar Tarea</a></button>
     </section>
 </main>
 
 <!-- Footer -->
 <?php include "../includes/footer_proa.php" ?>
-<!-- fin de footer -->
 
 <script src="../../js/tareasProfesor.js"></script>
 

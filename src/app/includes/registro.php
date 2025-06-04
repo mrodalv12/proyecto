@@ -13,14 +13,14 @@ if (
     empty(trim($_POST['confirmarContraseña']))
 ) {
     $_SESSION['error'] = "campos_vacios";
-    header("Location: /proyecto-majolink/src/RegistroGTI.php");
+    header("Location: ./registro.php");
     exit();
 }
 
 // Comprobar que las contraseñas coinciden
 if ($_POST['password'] !== $_POST['confirmarContraseña']) {
     $_SESSION['error'] = "contrasenas_diferentes";
-    header("Location: /proyecto-majolink/src/RegistroGTI.php");
+    header("Location: ./registro.php");
     exit();
 }
 
@@ -34,7 +34,7 @@ $stmt->store_result();
 if ($stmt->num_rows > 0) {
     $stmt->close();
     $_SESSION['error'] = "email_registrado";
-    header("Location: /proyecto-majolink/src/RegistroGTI.php");
+    header("Location: ./registro.php");
     exit();
 }
 $stmt->close();
@@ -46,6 +46,6 @@ $stmt->execute();
 
 
 
-header("Location: /proyecto-majolink/src/InicioSesionGTI.php?registro=ok");
+header("Location: ./InicioSesionGTI.php?registro=ok");
 exit();
 ?>

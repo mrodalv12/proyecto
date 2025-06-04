@@ -17,16 +17,27 @@
 <?php include "./ver_contenido_tareaProfesor.php" ?>
 
 <main class="main">
-    <h1><a href="tareasProfesor.php">TAREAS</a></h1>
-    <h2><?= htmlspecialchars($tarea['Titulo']) ?></h2>
-
-    <div class="info-box">
-        <p><span>Fecha de entrega:</span> <?= htmlspecialchars($tarea['fecha_cierre']) ?></p>
-        <p><span>Descripción de la tarea:</span>  <?= nl2br(htmlspecialchars($tarea['Descripcion'])) ?></p>
-        <p><span>Estado: No entregado</span> </p>
-        <p><span>Instrucciones:</span> <?= nl2br(htmlspecialchars($tarea['Instrucciones'])) ?></p>
+    <!-- Título de "Tareas" -->
+    <div class="tituloYvolver">
+        <h1>Tareas:
+            <!--Aquí va el nombre de la asignatura-->
+            < nombreasignatura>
+        </h1>
+        <button class="btn-volver" onclick="window.location.href='tareasProfesor.php'"><-- Volver</button>
     </div>
 
+    <!-- Título de la tarea (específica) -->
+    <h2><?= htmlspecialchars($tarea['Titulo']) ?></h2>
+
+    <!-- Contenedor con la información de la tarea -->
+    <div class="container">
+        <div class="info-box">
+            <p><span><strong>Fecha de entrega:</strong></span> <?= htmlspecialchars($tarea['fecha_cierre']) ?></p>
+            <p><span><strong>Descripción de la tarea:</strong></span>  <?= nl2br(htmlspecialchars($tarea['Descripcion'])) ?></p>
+            <p><span><strong>No entregado: </strong></span> </p>
+            <p><span><strong>Instrucciones:</strong></span> <?= nl2br(htmlspecialchars($tarea['Instrucciones'])) ?></p>
+        </div>
+    </div>
 
     <div class="contenedor-derecho">
         <?php if (!empty($tarea['archivo'])): ?>
@@ -43,10 +54,9 @@
     </div>
 
     <p id="mensaje" class="mensaje"></p>
-</main>
 
-<!--es es un footer-->
-<?php include "../includes/footer_proa.php" ?>
-<!--fin del footer-->
+    <!--es es un footer-->
+    <?php include "../includes/footer_proa.php" ?>
+    <!--fin del footer-->
 </body>
 </html>

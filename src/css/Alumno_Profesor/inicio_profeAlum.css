@@ -22,6 +22,7 @@ img, video, svg { height: auto; max-width: 100%; }
 
 a { color: inherit; }
 /* endregion */
+
 /* region --- GENERAL --- */
 html, body {
     margin: 0;
@@ -30,7 +31,7 @@ html, body {
 }
 body {
     margin: 0;
-    font-family: "Martel Sans", monospace;
+    font-family: var(--tipografia_de_la_pagina), monospace;
 }
 
 main {
@@ -58,6 +59,83 @@ h1{
 }
 
 /* endregion */
+
+/* region --bienvenido--*/
+.bienvenido{
+    /*padding-top: var(--espaciado_mediano);*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.bienvenido p{
+    display: block;
+    padding: var(--espaciado_mediano) var(--espaciado_grande);
+    width: 50%;
+}
+
+.bienvenido img{
+    width: 50%;
+    box-sizing: border-box;
+    top: -150px;
+    position: relative;
+}
+
+
+/* endregion */
+
+/* region --Móvil--*/
+@media (max-width: 785px) {
+    .contenido {
+        width: 100%;
+    }
+
+    .saludo {
+        height: 15vh;
+    }
+
+    .todos_los_eventos {
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dia_de_la_semana {
+        width: 90%;
+        height: auto !important; /* <-- Esto sí anula el 65vh */
+        min-height: auto;
+        justify-content: center;
+    }
+
+    .dia_de_la_semana ol {
+        overflow-y: visible !important; /* <-- Esto sí fuerza que se muestre completo */
+    }
+}
+@media (max-width: 550px) {
+    .saludo {
+        height: 20vh;
+    }
+    .bienvenido {
+        flex-direction: column;
+        padding: 10px 30px;
+        width: 100%;
+    }
+
+    .bienvenido p {
+        width: 100%;
+        padding: 0;
+    }
+
+    .bienvenido img {
+        width: 100%;
+        top: 0;
+        position: relative;
+    }
+}
+
+
+/* endregion */
+
 /* region --eventos--*/
 
 .todos_los_eventos{
@@ -118,42 +196,4 @@ h1{
     align-items: center;
     padding: var(--espaciado_superpequeno);
 }
-
-
-/* endregion */
-/* region --telefono--*/
-@media (max-width: 785px) {
-    .contenido {
-        width: 100%;
-    }
-
-    .saludo {
-        height: 15vh;
-    }
-
-    .todos_los_eventos {
-        flex-direction: column;
-        width: 100vw;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .dia_de_la_semana {
-        width: 90%;
-        height: auto !important; /* <-- Esto sí anula el 65vh */
-        min-height: auto;
-        justify-content: center;
-    }
-
-    .dia_de_la_semana ol {
-        overflow-y: visible !important; /* <-- Esto sí fuerza que se muestre completo */
-    }
-}
-@media (max-width: 550px) {
-    .saludo {
-        height: 20vh;
-    }
-}
-
-
 /* endregion */

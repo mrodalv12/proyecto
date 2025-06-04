@@ -13,6 +13,9 @@ if (!isset($_SESSION['asignatura']['id_asignatura'])) {
 
 $id_asignatura = $_SESSION['asignatura']['id_asignatura'];
 $mensaje = '';
+if (isset($_GET['tarea']) && $_GET['tarea'] === 'ok') {
+    $mensaje = 'La tarea se ha agregado correctamente.';
+}
 
 // Procesar el formulario cuando se envía
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -26,8 +29,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->bind_param("ssssi", $titulo, $fecha, $descripcion, $instrucciones, $id_asignatura);
 
         if ($stmt->execute()) {
-        header("Location: ../Profesor_Alumno/agregarTareas.php?tarea=ok");
-        exit;
+            header("Location: ../Profesor_Alumno/agregarTareas.php?tarea=ok");
+            exit;
         } else {
             $mensaje = "Error al agregar la tarea.";
         }

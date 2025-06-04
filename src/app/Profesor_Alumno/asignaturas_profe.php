@@ -19,7 +19,7 @@
 
         <!-- Buscador -->
         <form class="buscador" method="GET">
-            <button type="submit"><img src="../../../img/iconoBuscar.png" alt="Buscar"></button>
+            <button type="submit"><img src="../../img/iconoBuscar.png" alt="Buscar"></button>
             <input type="search" name="busqueda" placeholder="Nombre de la asignatura..." value="<?= htmlspecialchars($busqueda) ?>">
         </form>
     </div>
@@ -28,7 +28,7 @@
         <!-- Filtros -->
         <aside>
             <div class="titulo_filtrar">
-                <img src="../../../img/iconofiltrar.svg" alt="imagen_filtrar">
+                <img src="../../img/iconofiltrar.svg" alt="imagen_filtrar">
                 <h2>Filtrar</h2>
             </div>
             <form method="GET">

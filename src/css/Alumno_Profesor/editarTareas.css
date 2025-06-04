@@ -13,13 +13,13 @@ h1, h2, h3, h4, h5, h6 { text-wrap: balance; }
 img, video, svg { height: auto; max-width: 100%; }
 
 @media (prefers-reduced-motion: reduce)  {
-,::before, ::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-    transition: none;
-}
+    ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+        transition: none;
+    }
 }
 
 a { color: inherit; }
@@ -96,20 +96,22 @@ input, textarea, select, button {
     background: #D07F8B;
     color: var(--color_blancoProa);
 }
+
 .alert {
-    margin-top: var(--espaciado_pequeno);
-    padding: var(--espaciado_pequeno);
-    display: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 15px 0;
+    font-weight: bold;
+    text-align: center;
+    opacity: 1; /* empieza visible */
 }
 
-.success {
-    background-color: var(--color_exito_fondo);
-    color: var(--color_exito_texto);
-    display: block;
+.alert.success {
+    background-color: #d4edda;
+    color: #155724;
 }
 
-.error {
-    background-color: var(--color_error_fondo);
-    color: var(--color_error_texto);
-    display: block;
+.alert.error {
+    background-color: #f8d7da;
+    color: #831a1f;
 }

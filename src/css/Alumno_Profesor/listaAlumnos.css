@@ -110,4 +110,24 @@ td {
 .no-entregado {
     color: black;
 }
+@media(max-width: 565px){
+    h1 {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+    .btn-volver{
+        height: 70px;
+        font-size: 12px;
+    }
+
+    .tablaAlumnos th{
+        font-size: 12px;
+    }
+    .tablaAlumnos td{
+        font-size: 12px;
+    }
+}
 
